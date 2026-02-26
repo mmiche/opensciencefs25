@@ -556,11 +556,11 @@ egPost - kgPost - (egMid - kgMid)
 
     ## [1] -5.12381
 
-Viel wichtiger als sich auf diese Zahlen zu konzentrieren, ist es, die
-dazugehörige Graphik zu verstehen und viel wichtiger, sie kritisch zu
-hinterfragen (Stichwort Forschungsparadigma) und zu einem subjektiven
+Wichtiger als sich auf diese Zahlen zu konzentrieren, ist es, die
+dazugehörige Graphik zu verstehen und noch viel wichtiger, sie kritisch
+zu hinterfragen (Stichwort Forschungsparadigma) und zu einem subjektiven
 Urteil zu gelangen. Ohne dies bleibt ‘Kompetenz’ bzw. ‘Expertise’ bloss
-ein leere Worthülse, ein Bluff.
+eine leere Worthülse, ein Bluff.
 
 ![](osfs26_files/figure-gfm/chunkK5-1.png)<!-- -->
 
@@ -587,8 +587,9 @@ zu subjektiven Urteilen kommt, wer sonst?
 **Fazit**: Open science trägt also (implizit) auch die Hoffnung in sich,
 dass wenn Forscher/innen alles transparent machen, inkl. Ergebnisse
 adäquat zu visualisieren, dass dann vielleicht auch mehr kritisches
-Hinterfragen stattfindet als bisher von der grossenteils intransparenten
-Forschungs- und Publikationspraxis.
+Hinterfragen stattfindet als das bisher in der grossenteils
+intransparenten Forschungs- und Publikationspraxis der Fall war und noch
+ist.
 
 # Visualisierung
 
