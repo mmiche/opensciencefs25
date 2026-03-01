@@ -1,7 +1,7 @@
 Open science FS26
 ================
 Marcel Miché
-2026-02-27
+2026-03-01
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
@@ -453,6 +453,8 @@ wiederum hängt aufs Engste mit dem Forschungsparadigma zusammen, in dem
 man sich aufhält. Es folgt das visualisierte und numerische Ergebnis,
 das gerade beschrieben wurde:
 
+    ## Warning: package 'readr' was built under R version 4.5.2
+
 ``` r
 (dssinteraction <-
 ggplot(data=dataPlot_long, aes(x=Time, y=BDI, color=group, group=group)) +
@@ -721,12 +723,17 @@ nicht.
 Ähnlich wie oben, wo der Prädiktor als kontinuierlich behandelt wurde,
 ist die einzig entscheidende Frage, ob bzw. welches Interesse der/die
 Forscher/in hat, d.h. welche Information er/sie aus den Daten erhalten
-möchte. Wenn polynomiale (= nicht-lineare) Trends von Interesse sind,
-wäre diese Analyse passend. Bei polynomialen Trends muss man jedoch sehr
-aufpassen, dass man sich nicht vom statistischen Modelfit blenden lässt,
-d.h. eine Überanpassung (overfit) verletzt den wissenschaftlichen
-Grundsatz eines möglichst sparsamen (parsimonious) Datenmodels (Azzalini
-2023).
+möchte. Wenn polynomiale Trends des Grades 2 oder mehr (= nicht-lineare
+Trends) exploriert werden sollen, wäre diese Analyse passend. Bei
+polynomialen Trends höheren Grades muss man jedoch sehr aufpassen, dass
+man sich nicht vom statistischen Modelfit blenden lässt, d.h. eine
+Überanpassung (overfit) verletzt den wissenschaftlichen Grundsatz eines
+möglichst sparsamen (parsimonious) Datenmodels (Azzalini 2023).
+
+In diesem [Video (8:56
+Min.)](https://www.youtube.com/watch?v=QptI-vDle8Y) wird gut erklärt und
+veranschaulicht, was polynomiale Regression ist und was es mit Polynomen
+zweiten usw. Grades auf sich hat.
 
 **Vorläufiges Fazit**: Genau wie die gesamte Publikation, so sollte auch
 eine Graphik so leicht verständlich wie möglich sein, was bei so etwas
