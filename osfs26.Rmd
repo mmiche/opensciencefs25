@@ -165,7 +165,7 @@ Es handelt sich um 31 Psychologiestudierende, deren Depressionssymptomschwere (D
 
 Aus der Erstversion der begutachteten Masterarbeit war für mich nicht eindeutig klar, ob die Hypothese ungerichtet oder gerichtet war. In der Datenanalyse wurde sie jedenfalls ungerichtet ausgewertet. Womöglich aber nur deshalb, weil die Standardausgabe der verwendeten Software (R und R Paket lme4) eine ungerichtete Hypothese voraussetzt. Ich hätte dieses Beispiel nicht gewählt, wenn sich nicht eine 'besondere' Situation ergeben hätte: Bei ungerichteter Hypothese war der Interaktionseffekt aus Gruppe (EG vs KG) und Zeit (MZP 2 vs MZP 3) nicht stat. sign. (zweiseitiger p-Wert = .07), bei gerichteter Hypothese aber schon (einseitiger p-Wert = .07/2 = .035), trotz der sehr kleinen Stichprobe. In ein solches Scheindilemma kann man nur geraten, wenn man das Signifikanzniveau von 5% wirklich ernstnimmt. Das Ernstnehmen wiederum hängt aufs Engste mit dem Forschungsparadigma zusammen, in dem man sich aufhält. Es folgt das visualisierte und numerische Ergebnis, das gerade beschrieben wurde:
 
-```{r chunkK1, echo=FALSE, eval=TRUE, message=FALSE}
+```{r chunkK1, echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE}
 library(tidyverse)
 data <- read.csv2("/Users/mmiche/Desktop/TeachingClass/FS2026MA_OCD/CamilleRérat/Erstversion/data_Masters_thesis.csv")
 data$group <- factor(
@@ -314,7 +314,13 @@ ggplot(dfOrd) +
 mean(predict(modOrd, newdata=data.frame(group=ordered(1:3))))
 ```
 
-Der lineare Trend ist exakt derselbe wie oben ([siehe Kontinuierlicher Prädiktor](#kontinuierlicher-prädiktor)). Der quadratische Trend geht exakt durch die Mittelwerte der drei Gruppen (2.92, 3.94, 3.68). Der Intercept ist der Mittelwert dieser drei Mittelwerte (3.51). Der quadratische Trend zeigt einen besseren Modelfit, weil der Betrag des t-Wertes grösser ist als beim linearen Trend. Dies ist nicht überraschend, weil der quadratische Trend alle drei Mittelwerte exakt 'trifft', was als 'Overfitting' bezeichnet wird.
+Der lineare Trend ist exakt derselbe wie oben ([siehe Kontinuierlicher Prädiktor](#kontinuierlicher-prädiktor)). Der quadratische Trend geht exakt durch die Mittelwerte der drei Gruppen (2.92, 3.94, 3.68). Der Intercept ist der Mittelwert dieser drei Mittelwerte (3.51). Der quadratische Trend zeigt einen besseren Modelfit, was daran zu erkennen ist, dass der Betrag des t-Wertes |2.1| grösser ist als der t-Wert des linearen Trends (1.96). Dies ist nicht überraschend, weil die Datenpunkte etwas besser dem quadratischen Trend entsprechen, als dem linearen Trend.
+
+Der lineare Trend tested, ob die Daten mit dem linearen Model besser als mit dem Nullmodel beschrieben werden können, welches verglichen mit dem linearen Model einer horizontalen Geraden entspricht. Der quadratische Trend testet, ob die Daten mit dem quadratischen Model besser beschrieben werden können, verglichen mit linearen Model, welches somit in diesem Vergleich als Nullmodel fungiert. Was genau die Zahlen in der Spalte Estimate bedeuten, mit Ausnahme des Intercept, weiss ich leider nicht.
+
+Ähnlich wie oben, wo der Prädiktor als kontinuierlich behandelt wurde, ist die einzig entscheidende Frage, ob bzw. welches Interesse der/die Forscher/in hat, d.h. welche Information er/sie aus den Daten erhalten möchte. Wenn polynomiale Trends des Grades 2 oder mehr (= nicht-lineare Trends) exploriert werden sollen, wäre diese Analyse passend. Bei polynomialen Trends höheren Grades muss man jedoch sehr aufpassen, dass man sich nicht vom statistischen Modelfit blenden lässt, d.h. eine Überanpassung (overfit) verletzt den wissenschaftlichen Grundsatz eines möglichst sparsamen (parsimonious) Datenmodels [@azzalini2023use].
+
+In diesem [Video (8:56 Min.)](https://www.youtube.com/watch?v=QptI-vDle8Y) wird gut erklärt und veranschaulicht, was polynomiale Regression ist und was es mit Polynomen zweiten usw. Grades auf sich hat.
 
 **Vorläufiges Fazit**: Genau wie die gesamte Publikation, so sollte auch eine Graphik so leicht verständlich wie möglich sein, was bei so etwas Selbstverständlichem wie der Erkennbarkeit beginnt, z.B. der Schriftgrösse der Achsen:
 
@@ -330,6 +336,9 @@ ggplot(data=dat, aes(x=x1, y=x2)) +
         panel.border = element_rect(color="grey", fill=NA))
 ```
 
+## URLs etc. zu Visualisierung
+
+Das Internet ist voll von Beiträgen, z.B. [Visual Statistics](https://visualstats.bryer.org/), die der Visualisierung empirischer Ergebnisse dienen sollen. Publikationen zum selben Zweck nicht zu vergessen, z.B. @stoudt2025storyboard oder @majumder2025developing. Zugleich ist das Bedienen an einem Buffet oder das Orientieren an einem 'Storyboard' wie kaum etwas anderes dazu geeignet, in die Unachtsamkeit abzudriften, was um jeden Preis zu vermeiden ist ([siehe Misstrauen, Skepsis](#misstrauen-skepsis))! Ein Beispiel für Unachtsamkeit wäre, dass man eine möglichst 'eindrucksschindende' Visualisierung produziert, anstatt eine Graphik, die sowohl möglichst einfach aussieht (= nicht aufdringlich) als auch möglichst optimal das Verständnis des empirischen Ergebnisses fördert und/oder erleichtert.
 
 # Literaturverzeichnis
 

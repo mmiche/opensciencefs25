@@ -1,7 +1,7 @@
 Open science FS26
 ================
 Marcel Miché
-2026-03-01
+2026-03-02
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
@@ -15,6 +15,7 @@ Marcel Miché
 - [Visualisierung](#visualisierung)
   - [Kontinuierlicher Prädiktor](#kontinuierlicher-prädiktor)
   - [Ordinaler Prädiktor](#ordinaler-prädiktor)
+  - [URLs etc. zu Visualisierung](#urls-etc-zu-visualisierung)
 - [Literaturverzeichnis](#literaturverzeichnis)
 
 # Misstrauen, Skepsis
@@ -757,6 +758,21 @@ alt="Grössere Beschriftung und bessere Erkennbarkeit." />
 Erkennbarkeit.</figcaption>
 </figure>
 
+## URLs etc. zu Visualisierung
+
+Das Internet ist voll von Beiträgen, z.B. [Visual
+Statistics](https://visualstats.bryer.org/), die der Visualisierung
+empirischer Ergebnisse dienen sollen. Publikationen zum selben Zweck
+nicht zu vergessen, z.B. Stoudt and Nolan (2025) oder Majumder et al.
+(2025). Zugleich ist das Bedienen an einem Buffet oder das Orientieren
+an einem ‘Storyboard’ wie kaum etwas anderes dazu geeignet, in die
+Unachtsamkeit abzudriften, was um jeden Preis zu vermeiden ist ([siehe
+Misstrauen, Skepsis](#misstrauen-skepsis))! Ein Beispiel für
+Unachtsamkeit wäre, dass man eine möglichst ‘eindrucksschindende’
+Visualisierung produziert, anstatt eine Graphik, die sowohl möglichst
+einfach aussieht (= nicht aufdringlich) als auch möglichst optimal das
+Verständnis des empirischen Ergebnisses fördert und/oder erleichtert.
+
 # Literaturverzeichnis
 
 <div id="refs" class="references csl-bib-body hanging-indent"
@@ -832,6 +848,16 @@ Quantitative Reasoning.” *Statistics in Medicine* 38 (21): 4189–97.
 
 </div>
 
+<div id="ref-majumder2025developing" class="csl-entry">
+
+Majumder, Mahbubul, Becky Brusky, Michelle Friend, Julie Dierberger,
+Sarah Moulton, Andrew W Swift, and Betty Love. 2025. “Developing a Data
+Literacy and Visualization Service Learning Course That Fulfills
+Undergraduate Quantitative Literacy Requirements.” *Journal of
+Statistics and Data Science Education*, 1–12.
+
+</div>
+
 <div id="ref-mize2019general" class="csl-entry">
 
 Mize, Trenton D, Long Doan, and J Scott Long. 2019. “A General Framework
@@ -894,6 +920,14 @@ Compatibility and Surprise.” *BMC Medical Research Methodology* 20 (1):
 Searle, Shayle R, F Michael Speed, and George A Milliken. 1980.
 “Population Marginal Means in the Linear Model: An Alternative to Least
 Squares Means.” *The American Statistician* 34 (4): 216–21.
+
+</div>
+
+<div id="ref-stoudt2025storyboard" class="csl-entry">
+
+Stoudt, Sara, and Deborah Nolan. 2025. “The Storyboard: A Tool to
+Synthesize, Reflect on, and Write about Data Investigations.” *The
+American Statistician*, 1–9.
 
 </div>
 
