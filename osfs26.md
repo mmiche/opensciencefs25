@@ -29,6 +29,7 @@ Marcel Miché
     - [Alpha Signifikanzniveau](#alpha-signifikanzniveau)
     - [Nullismus](#nullismus)
     - [Zwischenfazit](#zwischenfazit)
+    - [Likelihood Ratio (LR)](#likelihood-ratio-lr)
 - [Literaturverzeichnis](#literaturverzeichnis)
 
 # Misstrauen, Skepsis
@@ -908,24 +909,25 @@ Ist das eben beschriebene Grundprinzip kompliziert? Ich würde sagen,
 dass es eher primitiv einfach ist. Es ist ein durch und durch
 mechanisches Grundprinzip, für das eigentlich gar keine menschliche
 Intelligenz nötig ist, es sei denn man möchte NHST kompetent und
-verantwortungsvoll durchführen. Sofern man das will, fehlen nur noch
-wenige, jedoch sehr wichtige, Komponenten: Eine zuvor bestimmte und
-begründete Effektgrösse, d.h. eine Antwort auf die Frage ‘Welcher Effekt
-wäre sowohl praktisch relevant als auch theoretisch zu erwarten?’ Zudem
-eine Antwort auf die Frage, wie hoch die statistische Power sein soll,
-mit der man den erwarteten Effekt entdecken können möchte? Sofern das
-alpha Signifikanzniveau ebenfalls kompetent und verantwortungsvoll
-gewählt wurde, d.h. durch Abwägen wichtiger Aspekte aus der realen Welt,
-lässt sich für das gewählte statistische Testverfahren bestimmen, wie
-gross die Stichprobe sein sollte.
+verantwortungsvoll durchführen. Sofern man das will, fehlen noch sehr
+wichtige Komponenten: Eine zuvor bestimmte und begründete Effektgrösse,
+d.h. eine Antwort auf die Frage ‘Welcher Effekt wäre sowohl praktisch
+relevant als auch theoretisch zu erwarten?’ Zudem eine Antwort auf die
+Frage, wie hoch die statistische Power sein soll, mit der man den
+erwarteten Effekt entdecken können möchte? Sofern das alpha
+Signifikanzniveau ebenfalls kompetent und verantwortungsvoll gewählt
+wurde, d.h. durch Abwägen wichtiger Aspekte aus der realen Welt, lässt
+sich für das gewählte statistische Testverfahren bestimmen, wie gross
+die Stichprobe sein sollte.
 
 Es sind diese wichtigen Vorabinformationen, die furchtbar häufig in
 Publikationen fehlen und von denen man als Leser/in den deutlichen
 Eindruck hat, dass sie nicht einfach nur in der Publikation fehlen,
 sondern dass sie bei den Publikationsverantwortlichen gar keine Rolle
-spielten. Die Bayesianische Statistik ist wie jede Statistik beschränkt,
-aber wenigstens spielen dort diese wichtigen Vorabinformationen eine so
-zentrale Rolle, dass man sie unter keinen Umständen ‘vergessen’ könnte.
+spielten. Die Bayesianische Statistik ist wie jede Statistikvariante
+beschränkt, aber wenigstens spielen dort diese wichtigen
+Vorabinformationen eine so zentrale Rolle, dass man sie unter keinen
+Umständen ‘vergessen’ könnte.
 
 Vielleicht hilft es manchen, diese relativ wenigen statistischen
 Grundprinzipien in ein anderes Bild zu setzen: Die Anwendung eines
@@ -1333,9 +1335,9 @@ Besonders erwähnenswert ist dieses Beispiel jedoch aus zwei Gründen:
     berichtet. Das prediction interval zeigt den Bereich an, in dem man
     das Ergebnis einer neuen Studie erwarten würde, basierend auf den
     bisherigen Ergebnissen und deren Heterogenität. Das Ergebnis (-6.2
-    bis 4.3) legt eine noch grössere Ernüchterung nahe, ob man einen
-    ‘Unterschied’ zwischen der Experimental- und der Kontrollgruppe
-    annehmen möchte.
+    bis 4.3) legt eine noch grössere Ernüchterung nahe als das 95% KI,
+    ob man einen ‘Unterschied’ zwischen der Experimental- und der
+    Kontrollgruppe annehmen möchte.
 
 <!-- -->
 
@@ -1401,10 +1403,10 @@ Besonders erwähnenswert ist dieses Beispiel jedoch aus zwei Gründen:
 
 Das Konfidenzintervall (KI) und der p-Wert der frequentistischen
 Inferenzstatistik (fIs) sind beide komplizierter als man glaubt! Leider
-ist der Glaube, KI und p-Wert seien ganz einfach, bei sehr vielen
-Wissenschaftler/innen stärker als die Fakten. Folgendes ist sowohl wahr
-als auch den meisten Psycholog/innen entweder entfallen oder nie
-wirklich klar geworden. Es gibt eine extrem wichtige Unterscheidung
+scheint der Glaube, KI und p-Wert seien ganz einfach, bei sehr vielen
+Wissenschaftler/innen stärker zu sein als die Fakten. Folgendes ist
+sowohl wahr als auch den meisten Psycholog/innen entweder entfallen oder
+nie wirklich klar geworden. Es gibt eine extrem wichtige Unterscheidung
 zwischen **vorher** und **nachher**. Die Hauptbedeutung des KI bzw. des
 p-Werts in der fIs bezieht sich auf das **Vorher**. Dann nämlich sollten
 alle Abwägungen gemacht werden (Lakens et al. 2018), auf Basis der
@@ -1467,7 +1469,12 @@ wenn empirischer p-Wert \> 5%) und zudem niemals konsequent hinterfragt
 hat, warum eigentlich der Effekt von exakt Null immer die Nullhypothese
 darstellen soll, der/die wird meist die Gewohnheit entwickeln, sich
 mental daran zu orientieren, ob das 95% KI den Wert 0 enthält (=
-Misserfolg) oder nicht enthält (= Erfolg).
+Misserfolg) oder nicht enthält (= Erfolg). Auf dieses Defizit verweisen
+die letzten zwei Sätze in Ramos (2025): ‘You can always test for an
+effect that you deem practically significant if you want to,
+acknowledging that doing so does remove your chances of discovering
+smaller statistically significant effects. After all, you were not
+interested in them anyway, right?’
 
 ### Zwischenfazit
 
@@ -1477,6 +1484,50 @@ sichtbar(er) zu machen (Unterschied zwischen Gruppen relativiert an
 Variabilität der Daten in den Gruppen), und andererseits um die
 Nüchternheit, mit der die sichtbar gemachten Unterschiede
 (miss-)verstanden, und dementsprechend publiziert werden.
+
+### Likelihood Ratio (LR)
+
+Auf die LR spricht Nuzzo (2014) (siehe Überschrift ‘What does it all
+mean’) mit dieser Beschreibung an:
+
+> ‘That requires another piece of information: the odds that a real
+> effect was there in the first place. To ignore this would be like
+> waking up with a headache and concluding that you have a rare brain
+> tumour — possible, but so unlikely that it requires a lot more
+> evidence to supersede an everyday explanation such as an allergic
+> reaction. The more implausible the hypothesis — telepathy, aliens,
+> homeopathy — the greater the chance that an exciting finding is a
+> false alarm, no matter what the P value is.’
+
+Die LR ist also ein Konversionsfaktor, der die *a priori* und die *a
+posteriori* Wahrscheinlichkeit einer Hypothese miteinander verbindet. Da
+in diesem Fall Hypothesen mit Auftretenswahrscheinlichkeiten versehen
+sind, befinden wir uns automatisch in der Baysianischen Statistik.
+Jedoch spielt das Konzept ‘Likelihood’ (Etz 2018) auch in der
+frequentistischen Statistik eine wichtige Rolle. So nutzen z.B.
+generalisierte lineare Modelle wie die logistische Regression die sog.
+‘maximum likelihood’ Methode (Pedersen 2025), um die Regressionsgewichte
+zu ermitteln. Wie Bayesianische und frequentistische Statistik verbunden
+sind, versucht u.a. Sidebotham et al. (2023) zu erklären.
+
+Der LR Konversionsfaktor ist im Rahmen eines Bewerbungsverfahrens
+vielleicht am einfachsten zu verstehen. Je mehr die Kriterien für
+potenzielle Bewerber/innen auf die Spitze getrieben werden, desto
+weniger Personen kann es (weltweit) überhaupt geben, die (annähernd) für
+die ausgeschriebene Stelle infrage kämen. Es wird damit zunehmend
+unwahrscheinlich, dass sich solch ein seltenes Exemplar tatsächlich
+unter den Bewerber/innen auf die ausgeschriebene Stelle befinden, d.h.
+die *a priori* Wahrscheinlichkeit war extrem gering (solch eine/n
+Bewerber/in) zu erreichen, weshalb auch die *a posteriori*
+Wahrscheinlichkeit nicht besonders gross sein kann. Wie gross sie
+tatsächlich ist, wird von der LR beschrieben, d.h. wenn die
+Stellenausschreibung wie durch ein Wunder mehr als ein solch seltenes
+Exemplar dazu bewogen haben sollte, sich zu bewerben, dann wäre die LR
+ziemlich gross.
+
+In der (klinischen) Diagnostik (Deeks and Altman 2004) sowie in der
+(klinischen) Forschung (randomized trials) spielt die LR ebenfalls eine
+sehr wichtige, weil praktische, Rolle (Perneger 2021).
 
 <!--
 - Thematisieren und empirisches, korrektes(!) Prüfen der Testannahmen, und es publizieren.
@@ -1562,10 +1613,25 @@ for Psychology* 17 (1): 1–6.
 
 </div>
 
+<div id="ref-deeks2004diagnostic" class="csl-entry">
+
+Deeks, Jonathan J, and Douglas G Altman. 2004. “Diagnostic Tests 4:
+Likelihood Ratios.” *Bmj* 329 (7458): 168–69.
+
+</div>
+
 <div id="ref-emmert2024trends" class="csl-entry">
 
 Emmert-Streib, Frank. 2024. “Trends in Null Hypothesis Significance
 Testing: Still Going Strong.” *Heliyon* 10 (21).
+
+</div>
+
+<div id="ref-etz2018introduction" class="csl-entry">
+
+Etz, Alexander. 2018. “Introduction to the Concept of Likelihood and Its
+Applications.” *Advances in Methods and Practices in Psychological
+Science* 1 (1): 60–69.
 
 </div>
 
@@ -1773,6 +1839,13 @@ Logistic Regression Models.” *Jama* 321 (13): 1304–5.
 
 </div>
 
+<div id="ref-nuzzo2014scientific" class="csl-entry">
+
+Nuzzo, Regina. 2014. “Scientific Method: Statistical Errors.” *Nature*
+506 (7487).
+
+</div>
+
 <div id="ref-pandey2025research" class="csl-entry">
 
 Pandey, Chandra Shekhar, Patanjali Mishra, Shri Ram Pandey, Ratan Deep
@@ -1789,11 +1862,26 @@ Positivism Paradigm of Research.” *Academic Medicine* 95 (5): 690–94.
 
 </div>
 
+<div id="ref-pedersen2025maximum" class="csl-entry">
+
+Pedersen, Cæcilie Bøje. 2025. “Maximum Likelihood Estimation.”
+<https://www.ind.ku.dk/publikationer/studenterserien/studenterserien-publikationer/129-maximumlikelihoodestimation/129-C.B.Pedersen.pdf>.
+
+</div>
+
 <div id="ref-pek2018reporting" class="csl-entry">
 
 Pek, Jolynn, and David B Flora. 2018. “Reporting Effect Sizes in
 Original Psychological Research: A Discussion and Tutorial.”
 *Psychological Methods* 23 (2): 208.
+
+</div>
+
+<div id="ref-perneger2021use" class="csl-entry">
+
+Perneger, Thomas V. 2021. “How to Use Likelihood Ratios to Interpret
+Evidence from Randomized Trials.” *Journal of Clinical Epidemiology*
+136: 235–42.
 
 </div>
 
@@ -1811,6 +1899,14 @@ Rafi, Zad, and Sander Greenland. 2020. “Semantic and Cognitive Tools to
 Aid Statistical Science: Replace Confidence and Significance by
 Compatibility and Surprise.” *BMC Medical Research Methodology* 20 (1):
 244.
+
+</div>
+
+<div id="ref-ramos2025bad" class="csl-entry">
+
+Ramos, Mark Louie F. 2025. “Bad Stats: A Regular Series Exploring
+Slip-Ups, Snafus and Salutary Lessons from the World of Statistics.”
+*Significance* 22 (5): 42–44. <https://doi.org/10.1093/jrssig/qmaf061>.
 
 </div>
 
@@ -1850,6 +1946,15 @@ Squares Means.” *The American Statistician* 34 (4): 216–21.
 <div id="ref-sedgwick2014understanding" class="csl-entry">
 
 Sedgwick, Philip. 2014. “Understanding Confidence Intervals.” *BMJ* 349.
+
+</div>
+
+<div id="ref-sidebotham2023interpreting" class="csl-entry">
+
+Sidebotham, David, C Jake Barlow, Janet Martin, and Philip M Jones.
+2023. “Interpreting Frequentist Hypothesis Tests: Insights from Bayesian
+Inference.” *Canadian Journal of Anesthesia/Journal Canadien
+d’anesthésie* 70 (10): 1560–75.
 
 </div>
 
