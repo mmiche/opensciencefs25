@@ -28,6 +28,7 @@ Marcel Miché
     - [Konfidenzintervall](#konfidenzintervall)
     - [Alpha Signifikanzniveau](#alpha-signifikanzniveau)
     - [Nullismus](#nullismus)
+    - [Zwischenfazit](#zwischenfazit)
 - [Literaturverzeichnis](#literaturverzeichnis)
 
 # Misstrauen, Skepsis
@@ -1451,21 +1452,31 @@ geschafft, es (klinischen) Psycholog/innen schmackhaft zu machen
 
 ### Nullismus
 
-Der Nullismus (Greenland 2017c) und die Dichotomanie sind eng verwandt.
-Warum? Wenn man wissenschaftliche Ergebnisse hauptsächlich oder sogar
-ausschliesslich dichotom versteht (Erfolg = stat. sign. auf dem 5%
-Niveau; Misserfolg, wenn empirischer p-Wert \> 5%) und zudem niemals
-konsequent hinterfragt hat, warum eigentlich der Effekt von exakt Null
-immer die Nullhypothese darstellen soll, der/die wird meist die
-Gewohnheit entwickeln, sich mental daran zu orientieren, ob das 95% KI
-den Wert 0 enthält (= Misserfolg) oder nicht enthält (= Erfolg).
-Nullismus bedeutet genau diese Gewohnheit, nämlich die
+Nullismus (Greenland 2017c) ist die Gewohnheit, die
 Default-Nullhypothese von exakt Null Effekt zu verwenden, ohne jemals
 darüber konsequent zu reflektieren, ob und warum dies gerechtfertigt
 sein soll. Damit wird die Passivität wissenschaftlichen Arbeits
 gefördert, was eigentlich ein Widerspruch in sich ist. Aber im Rahmen
 des (Post-)Positivismus erscheint es als eine wissenschaftliche Tugend,
 anstatt als kognitives Defizit.
+
+Der Nullismus und die Dichotomanie sind eng verwandt. Warum? Wenn man
+wissenschaftliche Ergebnisse hauptsächlich oder sogar ausschliesslich
+dichotom versteht (Erfolg = stat. sign. auf dem 5% Niveau; Misserfolg,
+wenn empirischer p-Wert \> 5%) und zudem niemals konsequent hinterfragt
+hat, warum eigentlich der Effekt von exakt Null immer die Nullhypothese
+darstellen soll, der/die wird meist die Gewohnheit entwickeln, sich
+mental daran zu orientieren, ob das 95% KI den Wert 0 enthält (=
+Misserfolg) oder nicht enthält (= Erfolg).
+
+### Zwischenfazit
+
+Alle Themen bisher kreisen, wie oben angekündigt, einerseits um den
+Versuch einen Unterschied mithilfe statistischer Hilfsmittel
+sichtbar(er) zu machen (Unterschied zwischen Gruppen relativiert an
+Variabilität der Daten in den Gruppen), und andererseits um die
+Nüchternheit, mit der die sichtbar gemachten Unterschiede
+(miss-)verstanden, und dementsprechend publiziert werden.
 
 <!--
 - Thematisieren und empirisches, korrektes(!) Prüfen der Testannahmen, und es publizieren.
