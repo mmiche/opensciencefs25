@@ -340,5 +340,263 @@ ggplot(data=dat, aes(x=x1, y=x2)) +
 
 Das Internet ist voll von Beiträgen, z.B. [Visual Statistics](https://visualstats.bryer.org/), die der Visualisierung empirischer Ergebnisse dienen sollen (Download des R-Pakets [VisualStats](https://github.com/jbryer/VisualStats) von GitHub). Publikationen zum selben Zweck nicht zu vergessen, z.B. @stoudt2025storyboard oder @majumder2025developing. Zugleich ist das Bedienen an einem Buffet oder das Orientieren an einem 'Storyboard' wie kaum etwas anderes dazu geeignet, in die Unachtsamkeit abzudriften, was um jeden Preis zu vermeiden ist ([siehe Misstrauen, Skepsis](#misstrauen-skepsis))! Ein Beispiel für Unachtsamkeit wäre, dass man eine möglichst 'eindrucksschindende' Visualisierung produziert, anstatt eine Graphik, die sowohl möglichst einfach aussieht (= nicht aufdringlich) als auch möglichst optimal das Verständnis des empirischen Ergebnisses fördert und/oder erleichtert.
 
+# Vermeide Kontraproduktivität
+
+**Heute: 2026-03-17**
+
+Open science als relativ *neuartige* Bewegung kann durchaus als Armutszeugnis verstanden werden, d.h. wenn Wissenschaft in der akademischen Psychologie in Übereinstimmung mit der ursprünglichen Idee von Wissenschaft funktioniert hätte, dann würde es diese Bewegung nicht brauchen. Dass es sie braucht, zeigt, dass Wissenschaft alles andere als ein Selbstläufer ist.
+<!--Ich liste im Folgenden Themen auf, die ich als relevant für die akademische Psychologie einschätze, meist deshalb, weil jene Themen trotz ihrer Relevanz von der Mehrheit psychologischer Forscher/innen unberücksichtigt geblieben ist, was auch weiterhin der Fall ist. Es handelt sich eigentlich immer um methodische Details, in denen bekanntlich der (Fehler-)Teufel steckt. Warum es (vermutlich) nirgends so sehr relevant ist wie in open science, methodische Details zu kennen und sie angemessen zu berücksichtigen, braucht wohl nicht extra erklärt zu werden.-->
+
+Erinnerung: Checklisten sind kontraproduktiv, solange man nicht genau weiss, was man warum auf welche Weise machen will, d.h. um welches psychologische Problem (oder Phänomen) es einem **inhaltlich** geht, z.B. Essstörung bei Frauen in den Wechseljahren [@vincent2024disordered]. Als kleines Selbstexperiment bietet es sich an, die Publikation 'Improving statistical reporting in psychology' von @schubert2025improving anzusehen, und dabei aufmerksam zu beobachten, wie stark sich das Gefühl aufdrängt, sich dieser Checkliste willenlos zu unterwerfen, weil man 'ja eh keine Chance hat mitzureden'. Weiterhin kann die Kontraproduktivität darin bestehen, dass der Aufwand so viele kognitive Kapazitäten beansprucht, aufgrund der vielen methodischen Details, der Durchführung (z.B. R Code) und der Ergebnisauswertung, dass der/die Forscher/in völlig vergisst, dass es doch eigentlich um das inhaltliche Problem (Phänomen) gehen sollte. Stattdessen kann es so kommen, dass man am Ende den Eindruck hat, dass der Inhalt zur Neben- und die Methodik zur Hauptsache geworden ist.
+
+Aus diesen Aussagen ergibt sich ein Reihenfolgeproblem (wer hat eigentlich die Führung, die Checklist oder der/die Forscher/in?), das man ernstnehmen sollte. Da es eine Tatsache ist, dass es sehr viele methodische Details gibt, über deren (Un-)Wichtigkeit man selbst entweder nur eingeschränkt oder gar nicht kompetent urteilen kann, braucht es eine gute Strategie. Sich einer Checkliste zu unterwerfen, ist mit die schlechteste Strategie. Eine bessere Strategie ist, dass man sich methodische Sicherheit aneignet, und zwar so, dass man sie berechtigt empfindet. Ohne Einsicht und subjektives Verständnis ist Kontraproduktivität praktisch unausweichlich. Ich spreche von methodischen Grundprinzipien, die man sich aneignen kann. Es sind wenige und sie sind nicht kompliziert. Bewerte selbst ...
+
+## Methodische Sicherheit
+
+Ohne Statistik, Mathematik o.ä. zu studieren, lässt sich dennoch methodische Sicherheit gewinnen. Wie das? Man muss sich bewusst machen und darf es dann nicht mehr vergessen, dass es eine allgemein menschliche Fähigkeit ist, Unterschiede zu erkennen und sie gewöhnlich adäquat zu interpretieren. Diese Fähigkeit stellen alle Menschen vielfach täglich unter Beweis. Wenn in einem Regal im Supermarkt nur noch zwei Packungen Toastbrot liegen, statt wie üblich 20 oder mehr, sind wir erleichtert noch eine Packung bekommen zu haben. Dieses implizite bzw. intuitive Verständnis für Unterschiede ist in der Publikation von @masnick2022model geschildert. Das Endergebnis eines beliebigen statistischen Testverfahrens zeigt an, ob ein Unterschied festgestellt werden konnte. Statistische Testverfahren sind also bloss Hilfsmittel, um Unterschiede festzustellen, ähnlich wie eine Brille ein Hilfsmittel ist, um besser zu sehen. Man darf somit nicht blind sein, sonst hilft auch keine Brille.
+
+Was wird also von einem statistischen Testverfahren genutzt, um einen Unterschied festzustellen? Ausser dem Unterschied selbst, z.B. zwischen zwei oder mehr Gruppen, wird zudem berücksichtigt, wie stark die Werte in den Gruppen variieren. Insgesamt heisst das im Fachjargon: Unterschiede zwischen den Gruppen (between group differences) werden relativiert an Unterschieden innerhalb der Gruppen (within group differences). Als Grundprinzip ausgedrückt: Unterschiede (zwischen Gruppen) werden an Variabilität (in den Gruppen) relativiert. Das Ergebnis hiervor ist das statistische Endergebnis, z.B. ein t-Wert. Falls man null hypothesis significance testing (NHST) betreiben sollte, wird zuletzt noch geprüft, ob das statistische Endergebnis (der ermittelte t-Wert) unter der Wahrscheinlichkeitsverteilung der Nullhypothese (unter der t-Verteilung mit ? vielen Freiheitsgraden) extremer ist als der gewählte Cutoff-Wert (alpha Signifikanzniveau). Folgende Ergebnisse stammen von oben, [siehe Kontinuierlicher Prädiktor](#kontinuierlicher-prädiktor).
+
+```{r chunk9}
+summary(modKontin)
+# t-Wert = Estimate/Std. Error = .3453/.2012
+estimate <- coefficients(summary(modKontin))["group","Estimate"]
+stdError <- coefficients(summary(modKontin))["group","Std. Error"]
+(tVal <- estimate/stdError)
+# Zweiseitiger empirischer p-Wert
+pt(q=tVal, df=36, lower.tail = FALSE)*2
+```
+
+Ist das eben beschriebene Grundprinzip kompliziert? Ich würde sagen, dass es eher primitiv einfach ist. Es ist ein durch und durch mechanisches Grundprinzip, für das eigentlich gar keine menschliche Intelligenz nötig ist, es sei denn man möchte NHST kompetent und verantwortungsvoll durchführen. Sofern man das will, fehlen nur noch wenige, jedoch sehr wichtige, Komponenten: Eine zuvor bestimmte und begründete Effektgrösse, d.h. eine Antwort auf die Frage 'Welcher Effekt wäre sowohl praktisch relevant als auch theoretisch zu erwarten?' Zudem eine Antwort auf die Frage, wie hoch die statistische Power sein soll, mit der man den erwarteten Effekt entdecken können möchte? Sofern das alpha Signifikanzniveau ebenfalls kompetent und verantwortungsvoll gewählt wurde, d.h. durch Abwägen wichtiger Aspekte aus der realen Welt, lässt sich für das gewählte statistische Testverfahren bestimmen, wie gross die Stichprobe sein sollte.
+
+Es sind diese wichtigen Vorabinformationen, die furchtbar häufig in Publikationen fehlen und von denen man als Leser/in den deutlichen Eindruck hat, dass sie nicht einfach nur in der Publikation fehlen, sondern dass sie bei den Publikationsverantwortlichen gar keine Rolle spielten. Die Bayesianische Statistik ist wie jede Statistik beschränkt, aber wenigstens spielen dort diese wichtigen Vorabinformationen eine so zentrale Rolle, dass man sie unter keinen Umständen 'vergessen' könnte.
+
+Vielleicht hilft es manchen, diese relativ wenigen statistischen Grundprinzipien in ein anderes Bild zu setzen: Die Anwendung eines statistischen Testverfahrens ist prinzipiell ähnlich, wie wenn man ein Mikroskop verwendet. Man muss vorher genau wissen, was man sich anschauen will, z.B. Mikroben. Könnte man sie mit dem blossen Auge sehen, würde man vielleicht gar kein Mikrospkop verwenden. Man muss weiterhin vorab festlegen, wie gross das Forschungsobjekt ist (ähnlich zu vorab festgelegter Effektgrösse) und in welcher Vergrösserung man es sich anschauen will (ähnlich zu vorab festgelegter Power). Stichprobengrösse und alpha Signifikanzniveau machen in diesem Bild leider keinen erkennbaren Sinn.
+
+Methodische Sicherheit ist übrigens nicht nur möglich, sondern sogar sehr wichtig. Und zwar damit man nicht auf die Idee kommt, Dinge wie das 5% alpha Signifikanzniveau (die 'Kontrolle' des Fehlers erster Art) mit Sicherheit zu verwechseln. Jedes qualitative oder quantitive wissenschaftliche Ergebnis ist und bleibt unsicher. Erst wenn man eine zweifelsfreie kausale Ursache für ein Ergebnis bestimmen kann, hätte man Sicherheit. Dann bräuchte man in dieser Angelegenheit nicht weiter zu forschen. Forschung macht nur Sinn bei relativer Unsicherheit. Methodische Sicherheit bedeutet bloss, dass man weiss, wie man ein methodisches Hilfsmittel, z.B. ein Mikroskop oder Statistik, korrekt verwendet. Das Forschungsobjekt, das man sich damit sichtbar(er) zu machen versucht, bleibt (relativ) unsicher. Ist das schwer zu verstehen?
+
+Bevor man sich also statistischer Auswertung zuwendet, sollte man sich darüber klar sein, welche Effekte man auf welche Weise und aus welchem Grund statistisch sichtbar zu machen versucht. Wenn man das nicht weiss oder vergessen haben sollte, z.B. aufgrund kognitiver Kapazitätsüberlastung, sollte man sich zuerst obige Frage erneut stellen und beantworten. Der action bias [@jeremiah2025making], d.h. das vorschnelle Handeln, allein des Handelns willen, ist sehr kontraproduktiv! Man geht ja auch nicht über die Strasse und kümmert sich erst währenddessen oder danach, ob von links oder rechts etwas kommt oder gekommen ist. Vielleicht wäre es gut, wenn einem auch in der Statistik der action bias lebensgefährlich werden könnte?
+
+**Open science**, wenn ernst und gewissenhaft ausgeführt, kann also schon deshalb sehr nützlich sein, weil es dazu veranlasst, sich sehr früh, z.B. (lange) bevor man die Daten der Studie zu sehen bekommt, mit relevanten methodischen Details aktiv auseinanderzusetzen.
+
+Die beiden letztlich einzig wichtigen empirischen Fragen sind:
+
+1. Liegt der statistisch sichtbar gemachte Unterschied in der erwarteten Richtung?
+2. Ist der statistisch sichtbar gemachte Unterschied von praktischer Bedeutung?
+
+Eine Zusatzfrage, die natürlich alle am liebsten beantworten können möchten, ist:
+Vorausgesetzt, dass der sichtbar gemachte Unterschied echt ist (anstatt eines statistischen Artefakts), was verursacht ihn? Diese Frage ist in der wissenschaftlichen Psychologie, inklusive psychologischer Laborexperimente, bisher noch nie zweifelsfrei beantwortet worden.
+
+Notiz: Ich habe oben überall von Unterschied gesprochen, nicht von Zusammenhang. Grund: Ein Zusammenhang ist eine Verallgemeinerung des Konzepts Unterschied (siehe oben [Checklisten, Regelsammlungen](#checklisten-regelsammlungen)).
+
+## Methodische Details
+>
+> - Sofern alles gelesen, verstanden und subjektiv eingesehen (= kritisch reflektiert) wurde, was oben steht, und es nicht wieder vergessen wird, können wir uns ab hier dem ein oder anderen methodischen Detail widmen, das man entweder auf dem Schirm haben sollte oder es zumindest von Vorteil wäre, wenn man darüber Bescheid weiss.
+> - Alle methodischen Details zeigen in Richtung Nüchternheit (Gegenteil von 'overconfidence'). Das ist erwähnenswert, weil akademische Wissenschaft sich äusserlich gerne als nüchtern gebärdet, es jedoch leicht zu erkennen ist, dass der akademische Karrieremotor verreckt, sobald etwas anderes als 'overconfidence' im Tank ist.
+> Wer etwas mehr hierüber erfahren möchte, siehe z.B. @greenland2017and oder @smith2018continuing.
+> - Mindestens ebenso wichtig zu erwähnen: Ein neues Manuskript [@van2026statistical] deutet darauf hin, dass das bisherige wissenschaftliche Vorgehen insofern optimistisch stimmen sollte, als zumindest die *Richtung* der untersuchten Effekte korrekt festgestellt zu werden schien. Zudem wird im Manuskript betont, dass 'Replikation' unter den weiterhin dominanten NHST Bedingungen ein sehr impotentes Kriterium für wissenschaftlichen Erfolg ist.
+
+### Indzidenz und Regressionsmodell
+
+Folgendes Beispiel hat diesen Hintergrund. Eine Arbeitskollegin, die die Ergebnisse eines Regressionsmodells auf einer Konferenz präsentieren wollte, fragte mich (ein wenig besorgt), was sie antworten könne, falls ein/e Zuschauer/in fragen sollte, warum das Regressionsgewicht der Variable Sex nicht das zeigte, was alle wissen, nämlich dass Suizidversuche (SV) bei Frauen häufiger als bei Männern beobachtet werden.
+
+Die Antwort war, dass es in diesem Fall ein statistisches Artefakt ist. Wir können die Ergebnisse zudem nutzen, um daran zu erinnern, warum bei einem (multiplen) Regressionsmodel per Default immer ein zweiseitiger statistischer Test stattfindet (Erinnerung: Jedes Regressionsgewicht und der Intercept werden statistisch getestet). Der Grund ist, dass man bei Hinzunahme weiterer Prädiktoren ins Modell nie wissen kann, wie stark sich die Regressionsgewichte der bis dahin enthaltenen Prädiktoren ändern, was eben auch die Möglichkeit umfasst, dass sich das Vorzeichen ändert. Genau das ist hier passiert:
+
+```{r chunk10, eval=FALSE}
+# Outcome: Suizidversuch (SV)
+Stichprobengrösse = 4050 (Anzahl Männer = 1841, Frauen = 2209)
+# Prozentual: 1.03% der Männer mit SV, 1.31% der Frauen mit SV.   
+            0         1
+  0 98.967952  1.032048
+  1 98.687189  1.312811
+# Regressionsmodell mit: 
+# Prädikor Sex
+(Intercept)         Sex 
+ -4.5632511   0.2434668
+# Prädikoren Sex, Age
+(Intercept)         Sex         Age 
+-2.11576636  0.29337492 -0.04826642
+# Prädikoren Sex, Age, früherer SV
+(Intercept)         Sex         Age        SUA2 
+-2.56253404  0.04332210 -0.04776294  2.85591644
+# Prädikoren Sex, Age, früherer SV, frühere psych. Störung
+(Intercept)         Sex         Age        SUA2    mentalDx 
+-4.02962663 -0.06306595 -0.04230424  2.54458514  1.71131043  
+```
+
+Beim letzten Modell ist das Vorzeichen von Sex negativ, weshalb es fälschlicherweise (= Artefakt) erscheint, als ob Männer häufiger SV begingen als Frauen. Die insgesamt sehr geringe SV Inzidenz (48/4050 = 1.19%) und der sehr geringe Unterschied der SV Inzidenz zwischen Männern (1.03%) und Frauen (1.31%) waren ausschlaggebend, dass sich das Vorzeichen änderte. Die Ergebnisse des letzten Modells entstammen dieser [Publikation](https://doi.org/10.1186/s12888-024-05647-w) (siehe dort, Table 2, leider übersehener Druckfehler bei Lifetime mental disorder, 1.1711 ist falsch, 1.711 ist richtig).
+
+### Überfrachtetes Regressionsmodell
+
+Ein Regressionsmodell ist wehrlos, d.h. es kann nicht zurückmelden, dass sich viel zu viele Prädiktoren im Modell befinden. Der/die Forscher/in muss um dieses mögliche Problem wissen. Mehrere Analysen von Publikationen (in Medizin und Psychologie) haben ergeben, dass dieses Wissen mehrheitlich entweder nie vorlag oder vergessen oder aus irgendwelchen Gründen ignoriert wurde [@babyak2004you; @freedland2009multivariable; @dalicandro2021prevalent]. Das Problembewusstsein scheint auch aktuell nicht so stark ausgeprägt zu sein wie es sein sollte, obwohl das Wort 'Overfitting' fast allen Forscher/innen sehr gut bekannt ist. Sie wissen meist was damit gemeint ist, nämlich dass ein Regressionsmodell dank zu vieler Prädiktoren zu stark den Besonderheiten der vorliegenden Stichprobe angepasst wird (was die Daten betrifft), wodurch teilweise das verloren geht, wofür die Regressionsanalyse 'eigentlich' durchgeführt wurde, nämlich um die Ergebnisse inferenzstatistisch generalisieren zu können. Man kann Overfitting zudem auch so verstehen, dass zu viele Prädiktoren im Modell die Stabilität der Effektschätzungen (= der Regressionsgewichte) schwächen, was von @greenland2021noncollapsibility beschrieben wird als 'too many covariates chasing too few data points'. Mit covariates sind die Prädiktoren im Modell gemeint.
+
+Trotzdem es keine harten Grenzen sondern eher empirische Daumenregeln sind, es gibt sie [@babyak2004you] und man kann sie sich leicht merken:
+
+- Sollte der Outcome auf einer kontinuierlichen Skala liegen, dann bitte mindestens 10 Studienteilnehmer/innen je Prädiktor im Modell.
+
+- Sollte der Outcome dichtom (= binär) sein, dann bitte mindestens 10 Studienteilnehmer/innen, die den Outcome aufweisen, je Prädiktor im Modell.
+
+Ob diese Daumenregel eingehalten wurde, lässt sich in allen Publikationen prüfen, worin Ergebnisse eines Regressionsmodells berichtet werden und sofern die beiden nötigen Informationen (Outcome kontinuierlich oder dichotom? Anzahl Prädiktoren im Modell?) vorliegen. Sie liegen im Normalfall immer vor.
+
+Beispiel: In Tabelle 3 in @maric2022covid sind sechs Regressionsmodelle aufgeführt. Die Zeilen der Tabelle stellen die Anzahl der Prädiktoren dar, genauer genommen, die Anzahl durchgeführter statistischer Tests, in diesem Fall 20. Manche Prädiktoren, z.B. Altersgruppe, sind faktisch mehr als ein Prädiktor, in diesem Fall drei, denn es wurden drei statistische Tests durchgeführt für die Altersgruppe 18-29 Jahre, 30-39 und 40-49, zur Referenzgruppe 50-65 Jahre. Die ersten vier der sechs Regressionsmodelle hatten einen dichotomen Outcome, d.h. für sie gilt die zweite der beiden Daumenregeln. Die Häufigkeit des Outcome in den vier Modellen war 183, 55, 52 und 96. Die zweite Daumenregel erfordert 200 Outcomefälle (20 Prädiktoren * 10). Nur das erste Modell hält sich sehr grob in dieser Nähe auf. Die letzten beiden Regressionsmodelle hatten einen kontinuierlichen Outcome. Da die Stichprobe 1203 Personen umfasste, war bei ihnen die erste Daumenregel erfüllt.
+
+Tabelle 3 in @maric2022covid zeigt weitere Mängel, von denen eine von @greenland2017invited als Dichotomanie bezeichnet wurde, d.h. die unwissenschaftliche und dennoch in vielen 'wissenschaftlichen' Bereichen allgemein praktizierte (und somit akzeptierte) Nutzung des 5% alpha Signifikanzniveaus als harte Grenze, um damit Ergebnisse in 'signifikant' (in Tabelle 3 fett hervorgehobene p-Werte) und 'nicht signifikant' zu unterteilen, und diese Unterteilung als finalen Schritt der Datenanalyse zu behandeln (NHST at its best; das ist sarkastisch gemeint!!).
+
+Laut @kraemer2015source ist das Überfrachten von Regressionsmodellen eine wahrscheinliche und plausible Quelle, die zur Replikationskrise beigetragen haben dürfte. Diesen möglichen Beitrag wollte ich einmal an den sechs Regressionsmodellen aus Tabelle 3 in @maric2022covid prüfen. Hierfür musste ich mir erst einmal ausdenken, wie man so etwas 'prüfen' könnte. Ob meine Idee hierfür gut genug ist, dürft ihr und andere bewerten. So bin ich vorgegangen: Die 20 oben genannten 'Prädiktoren' reduzieren sich zu 15 Prädiktoren, aus demselben Grund wie im simulierten Beispiel (oben) in diesem Dokument:
+
+```{r chunk11}
+# Der kategoriale Prädiktor 'group' (3 Kategorien) wird im Regressionsmodell
+# automatisch zu 2 Prädiktoren (group2, group3) umfunktioniert.
+coefficients(summary(mod))
+```
+
+Meine Idee war es, alle möglichen Regressionsmodelle für jeden der sechs Outcomes zu prüfen. Bei 15 Prädiktoren macht das 32'767 Modelle, z.B. Modell mit allen 15 Prädiktoren, Modell mit Prädiktoren 1-14, usw. Dann wollte ich sehen, in wie viel Prozent aller Modelle, in denen Prädiktor x enthalten war, sein p-Wert kleiner oder gleich 5% war. Stabilität des Regressionsgewichts hatte ich in diesem Fall festgelegt als 'konsistent über alle Modelle hinweg', d.h. wenn er im gesamten Modell (nicht) stat. sign. war, dann sollte er über fast alle Modelle hinweg ebenfalls (nicht) stat. sign. sein. 'Fast alle' hatte ich übersetzt als 'in mind. 90% aller Modelle'. Ergebnisse:
+
+**Modell 1** (183 Fälle mit Outcome). Stat. sign.: 1 von 8 instabil, er war in 64% aller Fälle nicht signifikant. Stat. nicht sign.: 3 von 12 instabil, sie waren stat. sign. in 32%, 50% und in 95% aller Fälle.
+
+**Modell 2** (55 Fälle mit Outcome). Stat. sign.: 0 von 2 instabil. Stat. nicht sign.: 6 von 18 instabil, sie waren stat. sign. in 15%, 22%, zweimal 31%, 39% und in 81% aller Fälle.
+
+**Modell 3** (52 Fälle mit Outcome). Stat. sign.: 1 von 7 instabil, er war in 30% aller Fälle nicht signifikant. Stat. nicht sign.: 4 von 13 instabil, sie waren stat. sign. in 15%, 33% und zweimal in 70% aller Fälle.
+
+**Modell 4** (96 Fälle mit Outcome). Stat. sign.: 0 von 3 instabil. Stat. nicht sign.: 6 von 17 instabil, sie waren stat. sign. in 15%, 18%, 20%, 50%, 67% und in 92% aller Fälle.
+
+**Modell 5** (kontin. Outcome Depression). Stat. sign.: 0 von 6 instabil. Stat. nicht sign.: 4 von 14 instabil, sie waren stat. sign. in 12%, 72%, 76% und in 90% aller Fälle.
+
+**Modell 6** (kontin. Outcome Angst). Stat. sign.: 1 von 7 instabil, er war in 73% aller Fälle nicht signifikant. Stat. nicht sign.: 4 von 13 instabil, sie waren stat. sign. in 12%, 17%, 44%, 61%, 83% und in 89% aller Fälle.
+
+**Gesamtergebnis**: Kein klares Gesamtbild. In Einzelfällen zeigt sich, dass je nach Anzahl der Prädiktoren im Modell, manche Regressionsgewichte einen völlig anderen Eindruck machen, im Vergleich zum Modell mit allen Prädiktoren. Heisst: In jedem der 6 Modelle kam mind. ein Prädiktor vor, der in mind. 70% der Fälle instabil war; in Modell 2 und 6 war dies bei zwei, in Modell 5 sogar bei 3 Prädiktoren der Fall; immer war es so, dass diese Prädiktoren im Gesamtmodell nicht stat. sign. waren, es aber in mind. 70% aller Modelle gewesen wären, in denen diese Prädiktoren enthalten waren.
+
+### Dichotomanie
+
+Bei Einzelstudien ist es bereits höchst fragwürdig, ob das 5% Signifikanzniveau zur Unterteilung in 'signifikant' und 'nicht signifikant' sinnvoll ist. Eine bessere Alternative wäre die beschreibende Herangehensweise an statistische Ergebnisse, siehe hierzu pValueIssue2.html und compatibilitySurprisal.html.
+
+Ausser bei Einzelstudien zeigt sich das Problem der Dichotomanie [@greenland2017invited] (= Signifikanzwahn) besonders bei [Meta-Analysen](https://doing-meta.guide/) oder auch beim narrativen Abgleich einer Studie mit anderen Einzelstudien, wie es im Diskussionsteil jeder Einzelstudie üblich ist.
+<!--Autor/innen von Meta-Analysen (in Medizin und Psychologie) wollen bzw. müssen ebenfalls viel und in prestigeträchtigen Fachjournalen publizieren, wenn sie ihre Forschungskarriere aufrechterhalten oder sogar vorantreiben wollen. Vielleicht 'vergessen' sie unter anderem deshalb ihr Versprechen so regelmässig, das sie mind. einmal gemacht haben, z.B. am Ende ihrer PhD-Disputation. Das Versprechen lautet, dass man alle Fähig- und Fertigkeiten dafür einsetzen werde, mit wissenschaftlichen Mitteln zur Wahrheit beizutragen. Dichotomanie und dieses Versprechen können nicht koexistieren.-->
+Eines von (sehr) vielen traurigen Beispielen ist von @greenland2017serious kritisiert worden. Thema: Einnahme eines Medikaments (bzw. eine bestimmte Dosis) zur Verringerung des Risikos eines bösartigen Krebstumors im Gehirn oder Rückenmark (Gliom). Autoren einer Einzelstudie hatten in ihrem Diskussionsteil zwei weitere Studien mit ihrer eigenen Studie verglichen. Dieser Vergleich verleitete sie zur Schlussfolgerung, dass jenes Medikament das Gliom-Risiko nicht verringern könne, was in diesem Fall sehr nach Dichotomanie aussieht:
+
+```{r chunk12, message=FALSE, warning=FALSE}
+library(meta)
+# Drei Fall-Kontroll Einzelstudien:
+# https://doi.org/10.1007/s10654-016-0145-7, page 950
+# https://doi.org/10.1002/ijc.27536, pages E1032 and E1034
+# https://doi.org/10.1038/bjc.2012.536, page 717
+# Beachte: Diese Tabelle enthält adjustierte OR Ergebnisse.
+#                Author   OR 95lo 95up
+# Seliger et al. (2016) 0.75 0.48 1.17
+#  Ferris et al. (2012) 0.72 0.52 1.00
+#   Gaist et al. (2013) 0.76 0.59 0.98
+# Aus diesen Einzelstudien stammende Anzahl an Beobachtungen.
+dfMeta <- data.frame(Author=c("Seliger et al. 2016",
+                              "Ferris et al. 2012",
+                              "Gaist et al. 2013"),
+                 Ee=c(24, 122, 96), Ne=c(2469, 517, 2656),
+                 Ec=c(332, 126, 831), Nc=c(24690, 400, 18480))
+# Die metabin Funktion berechnet nicht-adjustierte OR.
+(m.bin <- metabin(Ee, Ne, Ec, Nc,
+                 data = dfMeta,
+                 studlab = paste(Author),
+                 common = FALSE,
+                 random = TRUE,
+                 overall.hetstat = FALSE,
+                 method = "Inverse",
+                 sm = "OR"))
+```
+
+Bereits ohne das metaanalytische Ergebnis lässt sich an den 95% Konfidenzintervallen (95% KI) erkennen, dass der Grossteil der Effektschätzungen in Richtung Chancenverringerung geht, z.B. Odds Ratio von .48 bedeutet 52% Verringerung, .52 bedeutet 48% Verringerung und .59 bedeutet 41% Verringerung, wohingegen 1.17 eine Gliom-Chancenerhöhung von 17% bedeutet. Was bedeutet in diesem Fall Dichotomanie? Laut 5% Signifikanzniveau sind 2 der 3 Studien stat. nicht signifikant, weil der Wert 1 entweder im 95% KI liegt oder dessen Grenze darstellt (die Grenze gehört zum Intervall dazu). Eine Studie ist stat. signifikant. Somit lautete das Gesamturteil 2:1 für 'stat. nicht signifikant'. Was die Autoren ausser Acht gelassen hatten, war, dass ihre eigene Studie die geringste Präzision aufwies (= das breiteste 95% KI zeigte).
+
+Zwei weitere wichtige, methodische Details, die hierhin gehören:
+
+1. Warum sprechen die Autoren der Studien von Risikoverringerung, ich aber von Chancenverringerung? Das Odds Ratio bezieht sich rein methodisch auf ein Chancenverhältnis (Odds = Chance, Ratio = Verhältnis). Es gibt ein anderes Mass in der Epidemiologie, dass zwei Risiken ins Verhältnis setzt, das relative Risiko (Risk Ratio). Konzeptuell gibt es keine Berechtigung Chance und Risiko synonym zu setzen. Was die numerischen Ergebnisse betrifft, kann es jedoch so sein, dass diese sich so gut wie nicht voneinander unterscheiden, und zwar je geringer die Outcomehäufigkeit ist (siehe Table 2 in @schmidt2008use, point estimate bei Inzidenz von 4% wesentlich ähnlicher als bei Inzidenz 62%). Die Bedeutung des Wortes muss man zudem beachten: Ein Faktor kann nur dann inhaltlich als 'Risikofaktor' gelten, wenn garantiert ist, dass er zeitlich vor der Erstmanifestation des Outcome vorgelegen hat. Dasselbe gilt auch für 'Protektivfaktor'. Während ein Risikofaktor das Risiko für den Outcome erhöht, verringert ein Protektivfaktor das Risiko, den Outcome zu entwickeln.
+2. Bei Meta-Analysen wird empfohlen, dass man das 'prediction interval' berechnet, um die Heterogenität der Effektgrössen der Einzelstudien empirisch adäquat zu berücksichtigen [@higgins2008commentary], jedoch sollten hierfür mindestens 5 Einzelstudien vorliegen. Im Beispiel oben sind es nur 3 Studien.
+
+### Präzision
+
+Präzision wird empirisch als Breite des Konfidenzintervalls verstanden. Bei steigender Stichprobengrösse wird es enger (weil dadurch die Standardabweichung (standard deviation; SD) verringert wird), d.h. die Präzision der Effektschätzung wird besser [@sedgwick2014understanding; @button2013confidence]. Leider ist es in den sog. weichen Wissenschaften wie Psychologie, Soziologie usw. weitaus schwerer Effekte präzise zu schätzen als z.B. in der Physik. Beziehungsweise wären Stichprobengrössen nötig, die jeden finanziellen Rahmen sprengen würden. Meta-Analysen werden u.a. auch gerade deshalb durchgeführt, um die Stichproben der Einzelstudien zu einer wesentlich grösseren 'Meta'-Stichprobe zusammenzuführen [@liu2015sample].
+
+Hierzu habe ich ein Beispiel. Siehe @luo2020comparison, Figure 3 im Corrigendum! Änderungen der Zahlen betreffen zwei der 14 Studien (Choi 2014 und Wright 2005). Zudem habe sie bei Mohr 2012 den Mittelwert der Kontrollgruppe zu 10.32 korrigiert, ohne es explizit zu erwähnen.
+
+Warum führe ich dieses Beispiel hier beim Thema Präzision auf? Es war (wem auch immer) erst nach der Publikation aufgefallen, dass die zweite der 14 Studien durch extrem kleine SD auffiel, zudem identisch in beiden Gruppen (nämlich .2). Nach der Korrektur konnte ich ihr Ergebnis leider trotzdem nicht exakt reproduzieren. Zwei mögliche Erklärungen sind, dass mind. eine Einstellung bei der Berechnung des random 95% CI abweicht, und/oder das deren verwendete Software (RevMan) leicht andere Einstellungen nutzt als das meta Paket in R.
+
+Besonders erwähnenswert ist dieses Beispiel jedoch aus zwei Gründen:
+
+1. Die Autor/innen der Studie haben sich auf die Dichotomanie verlassen, weil ihr korrigiertes Ergebnis noch immer die 0 nicht im 95% KI enthalten hatte: -1.76 bis -.09. Sie schrieben deshalb: 'This error did not change the results, direction, or the conclusions.' Laut meinem 95% KI hat sich etwas geändert: -2.35 bis .44.
+2. Die Autor/innen der Studie haben das 'prediction interval' nicht berichtet. Das prediction interval zeigt den Bereich an, in dem man das Ergebnis einer neuen Studie erwarten würde, basierend auf den bisherigen Ergebnissen und deren Heterogenität. Das Ergebnis (-6.2 bis 4.3) legt eine noch grössere Ernüchterung nahe, ob man einen 'Unterschied' zwischen der Experimental- und der Kontrollgruppe annehmen möchte.
+
+```{r chunk13, echo=FALSE, eval=TRUE}
+# Use Luo et al. 2020, Figure 3.
+# Use: https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/pooling-es.html#pooling-smd
+# smd = Std. Mean Difference.
+# Use metcont to pool results.
+# Take .e as one condition (e.g., eCBT), therefore .c must be the other condition (Face to Face)
+#
+# Go to Corrigendum data, see last two pages of pdf Luo_2020.
+(Luo2020Data <- data.frame(
+    author=c("A2013", "C2014", "G2012", "H2013",
+             "K2014", "KL2009", "L2016", "M2012",
+             "N2003", "P2016", "S2010", "S2013",
+             "W2014", "W2005"),
+    n.e = c(33, 56, 7, 16, 50, 32, 62, 163,
+            14, 51, 9, 23, 32, 15),
+    mean.e = c(10, 9.86, 9.4, 6.3, 9.4, 11.5, 13, 9.25,
+               7.7, 4.7, .7, 5.5, 10.6, 20.4),
+    sd.e = c(1.9, 1.3, 3.5, 2.5, 1.5, 2.8, 2.2, .7,
+             2.9, 2.4, 3.4, 1.2, 2.1, 2.9),
+    n.c = c(36, 63, 7, 18, 53, 35, 59, 162,
+            14, 50, 10, 21, 30, 15),
+    mean.c = c(7, 13.67, 2.8, 8.7, 10, 18.3, 18, 10.35,
+               1.9, 4, 11.8, 13.6, 11.1, 14.7),
+    sd.c = c(1.6, 1.25, 3.5, 2.1, 1.1, 2.4, 2.2, .8,
+             3.9, 2.4, 1.9, 1.3, 2.1, 2.8)))
+# Help page for function metacont from package meta.
+# ?meta::metacont
+m.cont <- meta::metacont(
+    n.e = n.e,
+    mean.e = mean.e,
+    sd.e = sd.e,
+    n.c = n.c,
+    mean.c = mean.c,
+    sd.c = sd.c,
+    studlab = author,
+    data = Luo2020Data,
+    sm = "SMD",
+    method.smd = "Hedges",
+    common = FALSE,
+    # -> THIS IS THE PREDICTION INTERVAL (set argument to TRUE)
+    random = TRUE,
+    method.tau = "REML",
+    method.random.ci = "HK",
+    prediction = TRUE,
+    title = "eCBT vs. Face to Face")
+summary(m.cont)
+```
+
+### Konfidenzintervall
+
+Das Konfidenzintervall (KI) und der p-Wert der frequentistischen Inferenzstatistik (fIs) sind beide komplizierter als man glaubt! Leider ist der Glaube, KI und p-Wert seien ganz einfach, bei sehr vielen Wissenschaftler/innen stärker als die Fakten. Folgendes ist sowohl wahr als auch den meisten Psycholog/innen entweder entfallen oder nie wirklich klar geworden. Es gibt eine extrem wichtige Unterscheidung zwischen **vorher** und **nachher**. Die Hauptbedeutung des KI bzw. des p-Werts in der fIs bezieht sich auf das **Vorher**. Dann nämlich sollten alle Abwägungen gemacht werden [@lakens2018justify], auf Basis der Expertise des/der Forscher/in und der Bedeutung der noch zu ermittelnden Analyseergebnisse. Das Fazit bestünde in der Wahl eines adäquaten alpha Signifikanzniveaus, z.B. alpha = .003, wodurch automatisch auch das KI festgelegt wäre, nämlich 99.7%. Kommt man jedoch beim **Nachher** an, wenn also die Ergebnisse vorliegen, dann **muss** man aufpassen, nicht unbemerkt zum/zur Bayesianer/in zu werden. **Nachher**, d.h. wenn die Ergebnisse vorliegen, haben die (in unserem Beispiel) 99.7% keine spezielle Bedeutung mehr, denn egal welches KI gewählt wurde, es ist **IMMER** so, dass die Wahrscheinlichkeit 50% ist, dass der wahre Wert im Intervall oder ausserhalb des Intervalls liegt (man weiss es eben nie). Warum? Weil es EIN EINZIGES Ergebnis ist. Der Frequentismus heisst so, weil er sich auf theoretisch unendlich viele Ergebnisse bezieht. Unter sehr eng gefassten und sehr gut kontrollierbaren Umständen funktioniert die fIs tadellos, z.B. bei Würfelexperimenten (viele Male einen Würfel werfen und jedes Mal das Ergebnis festhalten). Die Geschichte der fIs etwas zu kennen [@zyphur2020statistics] kann sehr wichtige Fragen provozieren, z.B. ob und wie gut man es auch bei psychologischen Experimenten oder Beobachtungsstudien anwenden kann. Ich erinnere daran: Beim Versuch solche Fragen zu beantworten, drängt sich unmittelbar Ernüchterung auf, was der akademischen Karriere durchaus gefährlich werden kann.
+
+### Alpha Signifikanzniveau
+
+Es ist extrem wichtig zu betonen, dass eine subjektiv abwägende Art das alpha Signifikanzniveau zu bestimmen, ohne Ausnahme **vorher** (bevor man von den Daten Wind bekommt) stattfinden müsste. Es danach, also post hoc, zu wählen, wäre kontraproduktiv [@hemerik2026choosing]. Bei all den alpha Problemen, scheint es durchaus plausibel, dass manche Methodolog/innen gefordert haben, das alpha Signifikanzniveau komplett aus dem Programm zu nehmen [@mcshane2019abandon; @amrhein2019scientists; @ciapponi2021there], wennschon nicht ohne Protest [@ioannidis2019importance].
+
+Das Problem dabei ist immer dasselbe, und zwar: Was soll anstelle von alpha treten, welche Alternative(n) gibt es? Ich erinnere hier an compatibility intervals und surprisals, die beide auf der Informationstheorie von Claude Shannon basieren, das Unsicherheit als zentrales Konzept nutzt [@cole1993shannon]. Bisher hat es jedoch kaum jemand geschafft, es (klinischen) Psycholog/innen schmackhaft zu machen [@rohlfsen2025entropy].
+
+### Nullismus
+
+Der Nullismus [@greenland2017invited] und die Dichotomanie sind eng verwandt. Warum? Wenn man wissenschaftliche Ergebnisse hauptsächlich oder sogar ausschliesslich dichotom versteht (Erfolg = stat. sign. auf dem 5% Niveau; Misserfolg, wenn empirischer p-Wert > 5%) und zudem niemals konsequent hinterfragt hat, warum eigentlich der Effekt von exakt Null immer die Nullhypothese darstellen soll, der/die wird meist die Gewohnheit entwickeln, sich mental daran zu orientieren, ob das 95% KI den Wert 0 enthält (= Misserfolg) oder nicht enthält (= Erfolg). Nullismus bedeutet genau diese Gewohnheit, nämlich die Default-Nullhypothese von exakt Null Effekt zu verwenden, ohne jemals darüber konsequent zu reflektieren, ob und warum dies gerechtfertigt sein soll. Damit wird die Passivität wissenschaftlichen Arbeits gefördert, was eigentlich ein Widerspruch in sich ist. Aber im Rahmen des (Post-)Positivismus erscheint es als eine wissenschaftliche Tugend, anstatt als kognitives Defizit.
+
+<!--
+- Thematisieren und empirisches, korrektes(!) Prüfen der Testannahmen, und es publizieren.
+- Der kognitiven Verzerrung 'Dichotomanie' entgegenwirken.
+- Die methodischen Bereiche 'beschreibend', 'explanatorisch' und 'prädiktiv' voneinander unterscheiden können und dann in Übereinstimmung mit der Forschungsarbeit adäquat anwenden (Shmueli, 2025)
+- Unterscheiden können, was warum 'explorativ' und was warum 'konfirmatorisch' ist, und dann adäquat anwenden (https://doi.org/10.5964/meth.17705).
+- Das Regressionsmodell nicht überfrachten ('too many variables chasing too few data points')
+- Alternative Datenanalysen durchführen, falls die Voraussetzungen parametrischer Analysemodelle zu sehr verletzt sind (Höfler_2025Preprint), z.B. robust regression.
+- Sensitivitätsanalyse(n) durchführen.
+- Fehlende Werte imputieren (in diesem Bereich hat sich sehr viel getan)
+- Nicht für multiples Testen korrigieren, falls nicht wirklich angemessen (Hooper).
+- Statistische Power angemessen thematisieren, d.h. falls nicht konfirmatorisch getestet wird, dann sollte zumindest erwähnt werden, aus welchen Gründen welche Effektgrösse als realistisch erachtet wird und ob bzw. welche Bedeutung der vorhandenen Stichprobengrösse zukommt.
+- Die Präzision eines statistischen Testergebnisses explizit thematisieren, d.h. insbesondere die Bedeutung der Präzision (= Breite des Konfidenzintervalls).
+- Gardner 2013 und Hedge 2018 average not the same as individual. -->
+
 # Literaturverzeichnis
 
