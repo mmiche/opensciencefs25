@@ -1518,8 +1518,8 @@ die ausgeschriebene Stelle infrage kämen. Es wird damit zunehmend
 unwahrscheinlich, dass sich solch ein seltenes Exemplar tatsächlich
 unter den Bewerber/innen auf die ausgeschriebene Stelle befinden, d.h.
 die *a priori* Wahrscheinlichkeit war extrem gering (solch eine/n
-Bewerber/in) zu erreichen, weshalb auch die *a posteriori*
-Wahrscheinlichkeit nicht besonders gross sein kann. Wie gross sie
+Bewerber/in zu erreichen), weshalb auch die *a posteriori*
+Wahrscheinlichkeit nur minimal grösser sein dürfte. Wie gross sie
 tatsächlich ist, wird von der LR beschrieben, d.h. wenn die
 Stellenausschreibung wie durch ein Wunder mehr als ein solch seltenes
 Exemplar dazu bewogen haben sollte, sich zu bewerben, dann wäre die LR
@@ -1528,6 +1528,26 @@ ziemlich gross.
 In der (klinischen) Diagnostik (Deeks and Altman 2004) sowie in der
 (klinischen) Forschung (randomized trials) spielt die LR ebenfalls eine
 sehr wichtige, weil praktische, Rolle (Perneger 2021).
+
+An folgendes Beispiel zu diesem Thema (Konversionsfaktor, wenn auch
+nicht unter diesem Begriff) erinnere ich mich, weil es der Inhalt meiner
+ersten Statistikvorlesung war, die ich als frischer Psychologiestudent
+besuchte. Es ging um die abschliessende Frage, wie wahrscheinlich es
+wäre, dass eine Person mit einem positiven diagnostischen Ergebnis die
+diagnostizierte Krankheit tatsächlich habe, bei diesen Voraussetzungen:
+
+- Prävalenz der Krankheit in der Bevölkerung sei 5%.
+- Sensitivität des diagn. Tests sei 99%
+- Spezifität des diagn. Tests sei 90%
+
+Es ist ca. 34% wahrscheinlich, dass das positive diagnostische Ergebnis
+bedeutet, dass die Person die Krankheit tatsächlich habe.
+
+**Fazit**: Um Dinge wie LR zu wissen, insbesondere im Bereich klinischer
+Diagnosen in der realen Welt, kann unter Umständen traumatische
+Ereignisse oder sogar Suizide verhindern helfen! Warum? Viele Menschen
+erleben eine Diagnose als etwas Fixes, nicht als etwas Wahrscheinliches,
+und schon gar nicht als etwas gering Wahrscheinliches.
 
 <!--
 - Thematisieren und empirisches, korrektes(!) Prüfen der Testannahmen, und es publizieren.
