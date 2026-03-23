@@ -1457,7 +1457,7 @@ geschafft, es (klinischen) Psycholog/innen schmackhaft zu machen
 Nullismus (Greenland 2017c) ist die Gewohnheit, die
 Default-Nullhypothese von exakt Null Effekt zu verwenden, ohne jemals
 darüber konsequent zu reflektieren, ob und warum dies gerechtfertigt
-sein soll. Damit wird die Passivität wissenschaftlichen Arbeits
+sein soll. Damit wird die Passivität wissenschaftlichen Arbeit
 gefördert, was eigentlich ein Widerspruch in sich ist. Aber im Rahmen
 des (Post-)Positivismus erscheint es als eine wissenschaftliche Tugend,
 anstatt als kognitives Defizit.
@@ -1518,8 +1518,9 @@ wäre es ebenso wichtig, starke Evidenz zu haben, die erklärt, warum ein
 bestimmtes Phänomen nicht auftritt (negative LR bzw. LR-). **Die
 allgemeine Idee hinter LR ist also DIE Idee, die Wissenschaft zu
 Wissenschaft macht!** (Starke Belege, die in wiederholt gleichbleibend
-starker Weise emirisch demonstrieren, warum das Phänomen (nicht)
-auftritt (= Faktische Replizierbarkeit).)
+starker Weise empirisch demonstrieren und inhaltlich erklären, warum das
+Phänomen (nicht) auftritt (= Faktische Replizierbarkeit); was uns in der
+Psychologie noch weitestgehend nicht gelingt.)
 
 <!--Der LR Veränderungsfaktor ist im Rahmen eines Bewerbungsverfahrens vielleicht am einfachsten zu verstehen. Je mehr die Kriterien für potenzielle Bewerber/innen auf die Spitze getrieben werden, desto weniger Personen kann es (weltweit) überhaupt geben, die (annähernd) für die ausgeschriebene Stelle infrage kämen. Es wird damit zunehmend unwahrscheinlich, dass sich solch ein seltenes Exemplar tatsächlich unter den Bewerber/innen auf die ausgeschriebene Stelle befinden, d.h. die *a priori* Wahrscheinlichkeit war extrem gering (solch eine/n Bewerber/in zu erreichen), weshalb auch die *a posteriori* Wahrscheinlichkeit nur minimal grösser sein dürfte. Wie gross sie tatsächlich ist, wird von der LR beschrieben, d.h. wenn die Stellenausschreibung wie durch ein Wunder mehr als ein solch seltenes Exemplar dazu bewogen haben sollte, sich zu bewerben, dann wäre die LR ziemlich gross.-->
 
