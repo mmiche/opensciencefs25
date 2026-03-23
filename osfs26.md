@@ -1668,7 +1668,7 @@ sondern lediglich, dass die Testsensitivität und -spezifität bei nahezu
 einordnen, obwohl 17% weit von 100% entfernt liegt. Sehr viele Menschen,
 darunter leider auch (sehr) viele Diagnostiker/innen bzw. Ärzt/innen und
 Therapeut/innen, sind nicht ausreichend sensibilisiert für die Bedeutung
-des Themas LR in der Praxis.
+des Themas LR in der Praxis (Mendes, Manesh, and Sanchez 2025).
 
 <!--
 - Thematisieren und empirisches, korrektes(!) Prüfen der Testannahmen, und es publizieren.
@@ -1961,6 +1961,14 @@ Reasoning.” *Education Sciences* 12 (2): 71.
 McShane, Blakeley B, David Gal, Andrew Gelman, Christian Robert, and
 Jennifer L Tackett. 2019. “Abandon Statistical Significance.” *The
 American Statistician* 73 (sup1): 235–45.
+
+</div>
+
+<div id="ref-mendes2025re" class="csl-entry">
+
+Mendes, Thiago Bosco, Reza Manesh, and Andrew Sanchez. 2025. “Re: The
+Post Hoc Pitfall: Rethinking Sensitivity and Specificity in Clinical
+Practice.” *Journal of General Internal Medicine* 40 (2): 492–92.
 
 </div>
 
