@@ -819,7 +819,7 @@ am Ende den Eindruck hat, dass der Inhalt zur Neben- und die Methodik
 zur Hauptsache geworden ist.
 
 Aus diesen Aussagen ergibt sich ein Reihenfolgeproblem (wer hat
-eigentlich die Führung, die Checklist oder der/die Forscher/in?), das
+eigentlich die Führung, die Checkliste oder der/die Forscher/in?), das
 man ernstnehmen sollte. Da es eine Tatsache ist, dass es sehr viele
 methodische Details gibt, über deren (Un-)Wichtigkeit man selbst
 entweder nur eingeschränkt oder gar nicht kompetent urteilen kann,
@@ -1035,7 +1035,7 @@ sich die Regressionsgewichte der bis dahin enthaltenen Prädiktoren
 
 ``` r
 # Outcome: Suizidversuch (SV)
-Stichprobengrösse = 4050 (Anzahl Männer = 1841, Frauen = 2209)
+# Stichprobengrösse = 4050 (Anzahl Männer = 1841, Frauen = 2209)
 # Prozentual: 1.03% der Männer mit SV, 1.31% der Frauen mit SV.   
             0         1
   0 98.967952  1.032048
@@ -1105,7 +1105,7 @@ Sie liegen im Normalfall immer vor.
 
 Beispiel: In Tabelle 3 in Marić et al. (2022) sind sechs
 Regressionsmodelle aufgeführt. Die Zeilen der Tabelle stellen die Anzahl
-der Prädiktoren dar, genauer genommen, die Anzahl durchgeführter
+der Prädiktoren dar, genau genommen, die Anzahl durchgeführter
 statistischer Tests, in diesem Fall 20. Manche Prädiktoren, z.B.
 Altersgruppe, sind faktisch mehr als ein Prädiktor, in diesem Fall drei,
 denn es wurden drei statistische Tests durchgeführt für die Altersgruppe
@@ -1300,15 +1300,16 @@ Zwei weitere wichtige, methodische Details, die hierhin gehören:
 
 Präzision wird empirisch als Breite des Konfidenzintervalls verstanden.
 Bei steigender Stichprobengrösse wird es enger (weil dadurch die
-Standardabweichung (standard deviation; SD) verringert wird), d.h. die
-Präzision der Effektschätzung wird besser (Sedgwick 2014; Button et al.
-2013). Leider ist es in den sog. weichen Wissenschaften wie Psychologie,
-Soziologie usw. weitaus schwerer Effekte präzise zu schätzen als z.B. in
-der Physik. Beziehungsweise wären Stichprobengrössen nötig, die jeden
-finanziellen Rahmen sprengen würden. Meta-Analysen werden u.a. auch
-gerade deshalb durchgeführt, um die Stichproben der Einzelstudien zu
-einer wesentlich grösseren ‘Meta’-Stichprobe zusammenzuführen (Liu
-2015).
+Standardabweichung (standard deviation; SD) verringert wird und somit
+auch der Standardfehler), d.h. die Präzision der Effektschätzung wird
+besser (Sedgwick 2014; Button et al. 2013). Leider ist es in den sog.
+weichen Wissenschaften wie Psychologie, Soziologie usw. weitaus
+schwerer, Effekte präzise zu schätzen als z.B. in der Physik.
+Beziehungsweise wären Stichprobengrössen nötig, die jeden finanziellen
+Rahmen sprengen würden. Meta-Analysen werden u.a. auch gerade deshalb
+durchgeführt, um die Stichproben der Einzelstudien zu einer wesentlich
+grösseren ‘Meta’-Stichprobe zusammenzuführen (Liu 2015), d.h. eine
+präzisere Schätzung des Effekts zu erreichen.
 
 Hierzu habe ich ein Beispiel. Siehe Luo et al. (2020), Figure 3 im
 Corrigendum! Änderungen der Zahlen betreffen zwei der 14 Studien (Choi
@@ -1457,10 +1458,10 @@ geschafft, es (klinischen) Psycholog/innen schmackhaft zu machen
 Nullismus (Greenland 2017c) ist die Gewohnheit, die
 Default-Nullhypothese von exakt Null Effekt zu verwenden, ohne jemals
 darüber konsequent zu reflektieren, ob und warum dies gerechtfertigt
-sein soll. Damit wird die Passivität wissenschaftlichen Arbeit
+sein soll. Damit wird die Passivität wissenschaftlichen Arbeitens
 gefördert, was eigentlich ein Widerspruch in sich ist. Aber im Rahmen
 des (Post-)Positivismus erscheint es als eine wissenschaftliche Tugend,
-anstatt als kognitives Defizit.
+anstatt als kognitives, oder eher moralisches?, Defizit.
 
 Der Nullismus und die Dichotomanie sind eng verwandt. Warum? Wenn man
 wissenschaftliche Ergebnisse hauptsächlich oder sogar ausschliesslich
@@ -1483,7 +1484,8 @@ Versuch einen Unterschied mithilfe statistischer Hilfsmittel
 sichtbar(er) zu machen (Unterschied zwischen Gruppen relativiert an
 Variabilität der Daten in den Gruppen), und andererseits um die
 Nüchternheit, mit der die sichtbar gemachten Unterschiede
-(miss-)verstanden, und dementsprechend publiziert werden.
+(miss-)verstanden, und dementsprechend ((over-)confidently) publiziert
+werden.
 
 ### Likelihood Ratio (LR)
 
@@ -1628,19 +1630,9 @@ post-Test Wahrscheinlichkeit?
 
 ``` r
 # lrp: likelihood ratio positive
-(lrp <- .99/(1-.98)) # LR+
-```
-
-    ## [1] 49.5
-
-``` r
+lrp <- .99/(1-.98) # LR+ = 49.5
 # lrn: likelihood ratio negative
-(lrn <- (1-.99)/.98) # LR-
-```
-
-    ## [1] 0.01020408
-
-``` r
+lrn <- (1-.99)/.98 # LR- = .01
 # Prävalenz der Krankheit in der Bevölkerung
 probability <- .004
 pretestOdds <- probability/(1-probability)

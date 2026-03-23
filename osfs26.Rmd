@@ -349,7 +349,7 @@ Open science als relativ *neuartige* Bewegung kann durchaus als Armutszeugnis ve
 
 Erinnerung: Checklisten sind kontraproduktiv, solange man nicht genau weiss, was man warum auf welche Weise machen will, d.h. um welches psychologische Problem (oder Phänomen) es einem **inhaltlich** geht, z.B. Essstörung bei Frauen in den Wechseljahren [@vincent2024disordered]. Als kleines Selbstexperiment bietet es sich an, die Publikation 'Improving statistical reporting in psychology' von @schubert2025improving anzusehen, und dabei aufmerksam zu beobachten, wie stark sich das Gefühl aufdrängt, sich dieser Checkliste willenlos zu unterwerfen, weil man 'ja eh keine Chance hat mitzureden'. Weiterhin kann die Kontraproduktivität darin bestehen, dass der Aufwand so viele kognitive Kapazitäten beansprucht, aufgrund der vielen methodischen Details, der Durchführung (z.B. R Code) und der Ergebnisauswertung, dass der/die Forscher/in völlig vergisst, dass es doch eigentlich um das inhaltliche Problem (Phänomen) gehen sollte. Stattdessen kann es so kommen, dass man am Ende den Eindruck hat, dass der Inhalt zur Neben- und die Methodik zur Hauptsache geworden ist.
 
-Aus diesen Aussagen ergibt sich ein Reihenfolgeproblem (wer hat eigentlich die Führung, die Checklist oder der/die Forscher/in?), das man ernstnehmen sollte. Da es eine Tatsache ist, dass es sehr viele methodische Details gibt, über deren (Un-)Wichtigkeit man selbst entweder nur eingeschränkt oder gar nicht kompetent urteilen kann, braucht es eine gute Strategie. Sich einer Checkliste zu unterwerfen, ist mit die schlechteste Strategie. Eine bessere Strategie ist, dass man sich methodische Sicherheit aneignet, und zwar so, dass man sie berechtigt empfindet. Ohne Einsicht und subjektives Verständnis ist Kontraproduktivität praktisch unausweichlich. Ich spreche von methodischen Grundprinzipien, die man sich aneignen kann. Es sind wenige und sie sind nicht kompliziert. Bewerte selbst ...
+Aus diesen Aussagen ergibt sich ein Reihenfolgeproblem (wer hat eigentlich die Führung, die Checkliste oder der/die Forscher/in?), das man ernstnehmen sollte. Da es eine Tatsache ist, dass es sehr viele methodische Details gibt, über deren (Un-)Wichtigkeit man selbst entweder nur eingeschränkt oder gar nicht kompetent urteilen kann, braucht es eine gute Strategie. Sich einer Checkliste zu unterwerfen, ist mit die schlechteste Strategie. Eine bessere Strategie ist, dass man sich methodische Sicherheit aneignet, und zwar so, dass man sie berechtigt empfindet. Ohne Einsicht und subjektives Verständnis ist Kontraproduktivität praktisch unausweichlich. Ich spreche von methodischen Grundprinzipien, die man sich aneignen kann. Es sind wenige und sie sind nicht kompliziert. Bewerte selbst ...
 
 ## Methodische Sicherheit
 
@@ -404,7 +404,7 @@ Die Antwort war, dass es in diesem Fall ein statistisches Artefakt ist. Wir kön
 
 ```{r chunk10, eval=FALSE}
 # Outcome: Suizidversuch (SV)
-Stichprobengrösse = 4050 (Anzahl Männer = 1841, Frauen = 2209)
+# Stichprobengrösse = 4050 (Anzahl Männer = 1841, Frauen = 2209)
 # Prozentual: 1.03% der Männer mit SV, 1.31% der Frauen mit SV.   
             0         1
   0 98.967952  1.032048
@@ -438,7 +438,7 @@ Trotzdem es keine harten Grenzen sondern eher empirische Daumenregeln sind, es g
 
 Ob diese Daumenregel eingehalten wurde, lässt sich in allen Publikationen prüfen, worin Ergebnisse eines Regressionsmodells berichtet werden und sofern die beiden nötigen Informationen (Outcome kontinuierlich oder dichotom? Anzahl Prädiktoren im Modell?) vorliegen. Sie liegen im Normalfall immer vor.
 
-Beispiel: In Tabelle 3 in @maric2022covid sind sechs Regressionsmodelle aufgeführt. Die Zeilen der Tabelle stellen die Anzahl der Prädiktoren dar, genauer genommen, die Anzahl durchgeführter statistischer Tests, in diesem Fall 20. Manche Prädiktoren, z.B. Altersgruppe, sind faktisch mehr als ein Prädiktor, in diesem Fall drei, denn es wurden drei statistische Tests durchgeführt für die Altersgruppe 18-29 Jahre, 30-39 und 40-49, zur Referenzgruppe 50-65 Jahre. Die ersten vier der sechs Regressionsmodelle hatten einen dichotomen Outcome, d.h. für sie gilt die zweite der beiden Daumenregeln. Die Häufigkeit des Outcome in den vier Modellen war 183, 55, 52 und 96. Die zweite Daumenregel erfordert 200 Outcomefälle (20 Prädiktoren * 10). Nur das erste Modell hält sich sehr grob in dieser Nähe auf. Die letzten beiden Regressionsmodelle hatten einen kontinuierlichen Outcome. Da die Stichprobe 1203 Personen umfasste, war bei ihnen die erste Daumenregel erfüllt.
+Beispiel: In Tabelle 3 in @maric2022covid sind sechs Regressionsmodelle aufgeführt. Die Zeilen der Tabelle stellen die Anzahl der Prädiktoren dar, genau genommen, die Anzahl durchgeführter statistischer Tests, in diesem Fall 20. Manche Prädiktoren, z.B. Altersgruppe, sind faktisch mehr als ein Prädiktor, in diesem Fall drei, denn es wurden drei statistische Tests durchgeführt für die Altersgruppe 18-29 Jahre, 30-39 und 40-49, zur Referenzgruppe 50-65 Jahre. Die ersten vier der sechs Regressionsmodelle hatten einen dichotomen Outcome, d.h. für sie gilt die zweite der beiden Daumenregeln. Die Häufigkeit des Outcome in den vier Modellen war 183, 55, 52 und 96. Die zweite Daumenregel erfordert 200 Outcomefälle (20 Prädiktoren * 10). Nur das erste Modell hält sich sehr grob in dieser Nähe auf. Die letzten beiden Regressionsmodelle hatten einen kontinuierlichen Outcome. Da die Stichprobe 1203 Personen umfasste, war bei ihnen die erste Daumenregel erfüllt.
 
 Tabelle 3 in @maric2022covid zeigt weitere Mängel, von denen eine von @greenland2017invited als Dichotomanie bezeichnet wurde, d.h. die unwissenschaftliche und dennoch in vielen 'wissenschaftlichen' Bereichen allgemein praktizierte (und somit akzeptierte) Nutzung des 5% alpha Signifikanzniveaus als harte Grenze, um damit Ergebnisse in 'signifikant' (in Tabelle 3 fett hervorgehobene p-Werte) und 'nicht signifikant' zu unterteilen, und diese Unterteilung als finalen Schritt der Datenanalyse zu behandeln (NHST at its best; das ist sarkastisch gemeint!!).
 
@@ -511,7 +511,7 @@ Zwei weitere wichtige, methodische Details, die hierhin gehören:
 
 ### Präzision
 
-Präzision wird empirisch als Breite des Konfidenzintervalls verstanden. Bei steigender Stichprobengrösse wird es enger (weil dadurch die Standardabweichung (standard deviation; SD) verringert wird), d.h. die Präzision der Effektschätzung wird besser [@sedgwick2014understanding; @button2013confidence]. Leider ist es in den sog. weichen Wissenschaften wie Psychologie, Soziologie usw. weitaus schwerer Effekte präzise zu schätzen als z.B. in der Physik. Beziehungsweise wären Stichprobengrössen nötig, die jeden finanziellen Rahmen sprengen würden. Meta-Analysen werden u.a. auch gerade deshalb durchgeführt, um die Stichproben der Einzelstudien zu einer wesentlich grösseren 'Meta'-Stichprobe zusammenzuführen [@liu2015sample].
+Präzision wird empirisch als Breite des Konfidenzintervalls verstanden. Bei steigender Stichprobengrösse wird es enger (weil dadurch die Standardabweichung (standard deviation; SD) verringert wird und somit auch der Standardfehler), d.h. die Präzision der Effektschätzung wird besser [@sedgwick2014understanding; @button2013confidence]. Leider ist es in den sog. weichen Wissenschaften wie Psychologie, Soziologie usw. weitaus schwerer, Effekte präzise zu schätzen als z.B. in der Physik. Beziehungsweise wären Stichprobengrössen nötig, die jeden finanziellen Rahmen sprengen würden. Meta-Analysen werden u.a. auch gerade deshalb durchgeführt, um die Stichproben der Einzelstudien zu einer wesentlich grösseren 'Meta'-Stichprobe zusammenzuführen [@liu2015sample], d.h. eine präzisere Schätzung des Effekts zu erreichen.
 
 Hierzu habe ich ein Beispiel. Siehe @luo2020comparison, Figure 3 im Corrigendum! Änderungen der Zahlen betreffen zwei der 14 Studien (Choi 2014 und Wright 2005). Zudem habe sie bei Mohr 2012 den Mittelwert der Kontrollgruppe zu 10.32 korrigiert, ohne es explizit zu erwähnen.
 
@@ -582,13 +582,13 @@ Das Problem dabei ist immer dasselbe, und zwar: Was soll anstelle von alpha tret
 
 ### Nullismus
 
-Nullismus [@greenland2017invited] ist die Gewohnheit, die Default-Nullhypothese von exakt Null Effekt zu verwenden, ohne jemals darüber konsequent zu reflektieren, ob und warum dies gerechtfertigt sein soll. Damit wird die Passivität wissenschaftlichen Arbeit gefördert, was eigentlich ein Widerspruch in sich ist. Aber im Rahmen des (Post-)Positivismus erscheint es als eine wissenschaftliche Tugend, anstatt als kognitives Defizit. 
+Nullismus [@greenland2017invited] ist die Gewohnheit, die Default-Nullhypothese von exakt Null Effekt zu verwenden, ohne jemals darüber konsequent zu reflektieren, ob und warum dies gerechtfertigt sein soll. Damit wird die Passivität wissenschaftlichen Arbeitens gefördert, was eigentlich ein Widerspruch in sich ist. Aber im Rahmen des (Post-)Positivismus erscheint es als eine wissenschaftliche Tugend, anstatt als kognitives, oder eher moralisches?, Defizit. 
 
 Der Nullismus und die Dichotomanie sind eng verwandt. Warum? Wenn man wissenschaftliche Ergebnisse hauptsächlich oder sogar ausschliesslich dichotom versteht (Erfolg = stat. sign. auf dem 5% Niveau; Misserfolg, wenn empirischer p-Wert > 5%) und zudem niemals konsequent hinterfragt hat, warum eigentlich der Effekt von exakt Null immer die Nullhypothese darstellen soll, der/die wird meist die Gewohnheit entwickeln, sich mental daran zu orientieren, ob das 95% KI den Wert 0 enthält (= Misserfolg) oder nicht enthält (= Erfolg). Auf dieses Defizit verweisen die letzten zwei Sätze in @ramos2025bad: 'You can always test for an effect that you deem practically significant if you want to, acknowledging that doing so does remove your chances of discovering smaller statistically significant effects. After all, you were not interested in them anyway, right?'
 
 ### Zwischenfazit
 
-Alle Themen bisher kreisen, wie oben angekündigt, einerseits um den Versuch einen Unterschied mithilfe statistischer Hilfsmittel sichtbar(er) zu machen (Unterschied zwischen Gruppen relativiert an Variabilität der Daten in den Gruppen), und andererseits um die Nüchternheit, mit der die sichtbar gemachten Unterschiede (miss-)verstanden, und dementsprechend publiziert werden.
+Alle Themen bisher kreisen, wie oben angekündigt, einerseits um den Versuch einen Unterschied mithilfe statistischer Hilfsmittel sichtbar(er) zu machen (Unterschied zwischen Gruppen relativiert an Variabilität der Daten in den Gruppen), und andererseits um die Nüchternheit, mit der die sichtbar gemachten Unterschiede (miss-)verstanden, und dementsprechend ((over-)confidently) publiziert werden.
 
 ### Likelihood Ratio (LR)
 
@@ -649,9 +649,9 @@ negativePostTestOdds/(1+negativePostTestOdds)
 
 ```{r chunk17}
 # lrp: likelihood ratio positive
-(lrp <- .99/(1-.98)) # LR+
+lrp <- .99/(1-.98) # LR+ = 49.5
 # lrn: likelihood ratio negative
-(lrn <- (1-.99)/.98) # LR-
+lrn <- (1-.99)/.98 # LR- = .01
 # Prävalenz der Krankheit in der Bevölkerung
 probability <- .004
 pretestOdds <- probability/(1-probability)
