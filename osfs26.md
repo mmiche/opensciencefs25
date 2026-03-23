@@ -1,7 +1,7 @@
 Open science FS26
 ================
 Marcel Miché
-2026-03-22
+2026-03-23
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
@@ -1487,8 +1487,8 @@ Nüchternheit, mit der die sichtbar gemachten Unterschiede
 
 ### Likelihood Ratio (LR)
 
-Auf die LR spricht Nuzzo (2014) (siehe Überschrift ‘What does it all
-mean’) mit dieser Beschreibung an:
+Auf die allgemeine Idee, die hinter LR steht, spricht Nuzzo (2014)
+(siehe Überschrift ‘What does it all mean’) mit dieser Beschreibung an:
 
 > ‘That requires another piece of information: the odds that a real
 > effect was there in the first place. To ignore this would be like
@@ -1499,55 +1499,172 @@ mean’) mit dieser Beschreibung an:
 > homeopathy — the greater the chance that an exciting finding is a
 > false alarm, no matter what the P value is.’
 
-Die LR ist also ein Konversionsfaktor, der die *a priori* und die *a
-posteriori* Wahrscheinlichkeit einer Hypothese miteinander verbindet. Da
-in diesem Fall Hypothesen mit Auftretenswahrscheinlichkeiten versehen
-sind, befinden wir uns automatisch in der Baysianischen Statistik.
-Jedoch spielt das Konzept ‘Likelihood’ (Etz 2018) auch in der
-frequentistischen Statistik eine wichtige Rolle. So nutzen z.B.
-generalisierte lineare Modelle wie die logistische Regression die sog.
-‘maximum likelihood’ Methode (Pedersen 2025), um die Regressionsgewichte
-zu ermitteln. Wie Bayesianische und frequentistische Statistik verbunden
-sind, versucht u.a. Sidebotham et al. (2023) zu erklären.
+Die LR ist also ein Veränderungsfaktor, der die *a priori* in die *a
+posteriori* Wahrscheinlichkeit einer Hypothese übersetzt. Da in diesem
+Fall Hypothesen mit Auftretenswahrscheinlichkeiten versehen sind,
+befinden wir uns automatisch in der Bayesianischen Statistik. Jedoch
+spielt das Konzept ‘Likelihood’ (Etz 2018) auch in der frequentistischen
+Statistik eine zentrale Rolle. So nutzen z.B. generalisierte lineare
+Modelle wie die logistische Regression die ‘maximum likelihood’ Methode
+(Pedersen 2025), um die Regressionsgewichte zu ermitteln. Wie
+Bayesianische und frequentistische Statistik verbunden sind, versucht
+u.a. Sidebotham et al. (2023) zu erklären.
 
-Der LR Konversionsfaktor ist im Rahmen eines Bewerbungsverfahrens
-vielleicht am einfachsten zu verstehen. Je mehr die Kriterien für
-potenzielle Bewerber/innen auf die Spitze getrieben werden, desto
-weniger Personen kann es (weltweit) überhaupt geben, die (annähernd) für
-die ausgeschriebene Stelle infrage kämen. Es wird damit zunehmend
-unwahrscheinlich, dass sich solch ein seltenes Exemplar tatsächlich
-unter den Bewerber/innen auf die ausgeschriebene Stelle befinden, d.h.
-die *a priori* Wahrscheinlichkeit war extrem gering (solch eine/n
-Bewerber/in zu erreichen), weshalb auch die *a posteriori*
-Wahrscheinlichkeit nur minimal grösser sein dürfte. Wie gross sie
-tatsächlich ist, wird von der LR beschrieben, d.h. wenn die
-Stellenausschreibung wie durch ein Wunder mehr als ein solch seltenes
-Exemplar dazu bewogen haben sollte, sich zu bewerben, dann wäre die LR
-ziemlich gross.
+Der LR Veränderungsfaktor bezeichnet die Stärke der empirischen Evidenz,
+also genau das, worum es in der Wissenschaft andauernd und in zentaler
+Weise geht: Die Suche nach **starker** empirischer Evidenz, die erklärt,
+warum ein bestimmtes Phänomen auftritt (positive LR bzw. LR+). Umgekehrt
+wäre es ebenso wichtig, starke Evidenz zu haben, die erklärt, warum ein
+bestimmtes Phänomen nicht auftritt (negative LR bzw. LR-). **Die
+allgemeine Idee hinter LR ist also DIE Idee, die Wissenschaft zu
+Wissenschaft macht!** (Starke Belege, die in wiederholt gleichbleibend
+starker Weise emirisch demonstrieren, warum das Phänomen (nicht)
+auftritt (= Faktische Replizierbarkeit).)
+
+<!--Der LR Veränderungsfaktor ist im Rahmen eines Bewerbungsverfahrens vielleicht am einfachsten zu verstehen. Je mehr die Kriterien für potenzielle Bewerber/innen auf die Spitze getrieben werden, desto weniger Personen kann es (weltweit) überhaupt geben, die (annähernd) für die ausgeschriebene Stelle infrage kämen. Es wird damit zunehmend unwahrscheinlich, dass sich solch ein seltenes Exemplar tatsächlich unter den Bewerber/innen auf die ausgeschriebene Stelle befinden, d.h. die *a priori* Wahrscheinlichkeit war extrem gering (solch eine/n Bewerber/in zu erreichen), weshalb auch die *a posteriori* Wahrscheinlichkeit nur minimal grösser sein dürfte. Wie gross sie tatsächlich ist, wird von der LR beschrieben, d.h. wenn die Stellenausschreibung wie durch ein Wunder mehr als ein solch seltenes Exemplar dazu bewogen haben sollte, sich zu bewerben, dann wäre die LR ziemlich gross.-->
 
 In der (klinischen) Diagnostik (Deeks and Altman 2004) sowie in der
-(klinischen) Forschung (randomized trials) spielt die LR ebenfalls eine
-sehr wichtige, weil praktische, Rolle (Perneger 2021).
-
-An folgendes Beispiel zu diesem Thema (Konversionsfaktor, wenn auch
-nicht unter diesem Begriff) erinnere ich mich, weil es der Inhalt meiner
-ersten Statistikvorlesung war, die ich als frischer Psychologiestudent
-besuchte. Es ging um die abschliessende Frage, wie wahrscheinlich es
-wäre, dass eine Person mit einem positiven diagnostischen Ergebnis die
-diagnostizierte Krankheit tatsächlich habe, bei diesen Voraussetzungen:
+(klinischen) Forschung (randomized trials) spielt LR eine sehr wichtige,
+weil praktische, Rolle (Perneger 2021). In folgendem Beispiel geht es um
+die Frage, wie wahrscheinlich es ist, dass eine Person, die ein
+**positives** diagnostisches Ergebnis erhalten hat, die diagnostizierte
+Krankheit tatsächlich habe (Einschlussdiagnostik), und zwar bei diesen
+Voraussetzungen:
 
 - Prävalenz der Krankheit in der Bevölkerung sei 5%.
-- Sensitivität des diagn. Tests sei 99%
-- Spezifität des diagn. Tests sei 90%
+- Sensitivität des diagnostischen Tests sei 99%.
+- Spezifität des diagnostischen Tests sei 90%.
 
-Es ist ca. 34% wahrscheinlich, dass das positive diagnostische Ergebnis
-bedeutet, dass die Person die Krankheit tatsächlich habe.
+Es gibt zudem Ausschlussdiagnostik. Dort geht es um die Frage, wie
+wahrscheinlich es ist, dass eine Person, die ein **negatives**
+diagnostisches Ergebnis erhalten hat, die Krankheit habe.
 
-**Fazit**: Um Dinge wie LR zu wissen, insbesondere im Bereich klinischer
+In diesem Zahlenbeispiel würde jemand, der keinerlei Test durchführt,
+für eine beliebige Person x annehmen, dass es 5% wahrscheinlich ist,
+dass diese Person die fragliche Krankheit habe, und zwar weil dies die
+Prävalenz der Krankheit ist. Ein diagnostischer Test ist umso besser, je
+stärker er diese Ratewahrscheinlichkeit erhöht (was von der LR+
+angezeigt wird) bzw. verringert (was von der LR- angezeigt wird).
+
+Die Formel für LR+ lautet Sensitivität/(1-Spezifität). Das heisst, dass
+die Wahrscheinlichkeit einer erkrankten Person unter denen mit positivem
+Testergebnis (Sensitivität) zur Wahrscheinlichkeit einer erkrankten
+Person unter denen mit negativem Testergebnis (1-Spezifität) ins
+Verhältnis gesetzt wird.
+
+``` r
+# lrp: likelihood ratio positive
+(lrp <- .99/(1-.9)) # LR+
+```
+
+    ## [1] 9.9
+
+Die Formel für LR- lautet (1-Sensitivität)/Spezifität. Das heisst, dass
+die Wahrscheinlichkeit einer gesunden Person unter denen mit positivem
+Testergebnis (1-Sensitivität) zur Wahrscheinlichkeit einer gesunden
+Person unter denen mit negativem Testergebnis (Spezifität) ins
+Verhältnis gesetzt wird.
+
+``` r
+# lrn: likelihood ratio negative
+(lrn <- (1-.99)/.9) # LR-
+```
+
+    ## [1] 0.01111111
+
+Bevor es mit dem Rechnen weitergeht, will ich die Ergebnisse
+vorwegschicken und sagen, dass per Daumenregel ein LR+ von 10 (oder
+mehr) und ein LR- von .1 (oder weniger) als sehr guter diagnostischer
+Test gilt. In der Einschlussdiagnostik würde obiger Test die
+Wahrscheinlichkeit von 5% zu 34% erhöhen, dass Person x bei positivem
+Ergebnis die Krankheit habe. In der Ausschlussdiagnostik würde obiger
+Test die Wahrscheinlichkeit von 5% zu .05% verringern, dass Person x bei
+negativem Ergebnis die Krankheit habe.
+
+Nachdem die Ergebnisse feststehen, wie kommen sie zustande? Hierzu
+braucht es die Formeln in der blauen Textbox auf S.168 in Deeks and
+Altman (2004). Darin spielt das statistische Konzepts ‘Chance’ bzw.
+‘Odds’ eine Rolle, welches definiert ist als Wahrscheinlichkeit (p) im
+Verhältnis zur Gegenwahrscheinlichkeit (1-p). LR ist der
+Veränderungsfaktor (siehe oben: LR+ = 9.9 und LR- = .0111), der die *a
+priori* bzw. *pretest* Wahrscheinlichkeit in die *a posteriori* bzw.
+*post-test* Wahrscheinlichkeit übersetzt. Wir brauchen also noch die *a
+priori* Odds, multiplizieren das mit dem LR und müssen zuletzt das
+Ergebnis (das *a posteriori* Odds) in die *a posteriori*
+Wahrscheinlichkeit übersetzen (hierzu die Formel: Odds/(1 + Odds)).
+
+``` r
+# Prävalenz der Krankheit in der Bevölkerung
+probability <- .05
+pretestOdds <- probability/(1-probability)
+# Veränderungsfaktor bei seiner 'Arbeit'
+positivePostTestOdds <- pretestOdds*lrp
+negativePostTestOdds <- pretestOdds*lrn
+# A posteriori probability due to LR+ = 34%
+positivePostTestOdds/(1+positivePostTestOdds)
+```
+
+    ## [1] 0.3425606
+
+``` r
+# A posteriori probability due to LR- = 0.5%
+negativePostTestOdds/(1+negativePostTestOdds)
+```
+
+    ## [1] 0.0005844535
+
+<!--Es gibt eine positive und eine negative LR, je nachdem worauf der Fokus liegt. Wird ein Test durchgeführt, um einen Zustand zu diagnostizieren oder um ihn auszuschliessen? Im Zahlenbeispiel von eben würde jemand, der keinen Test nutzt nur auf Basis der Prävalenz raten, d.h. man würde die Wahrscheinlichkeit von 5% annehmen, dass Person x jene Krankheit habe. Führt der diagnostische Test dazu, dass diese Wahrscheinlichkeit erhöht werden kann, dann sollte man ihn wohl durchführen. In diesem Zahlenbeispiel steigt die Wahrscheinlichkeit von 5% auf 34% (also um 29 Prozentpunkte gestiegen). Die positive LR (LR+) zeigt, wie viel wahrscheinlicher ein positives Testergebnis für eine Person ist, die die Krankheit hat, verglichen mit einem positiven Testergebnis für eine Person, die die Krankheit nicht hat. Eine LR+ von 10 (oder mehr) zeigt gewöhnlich einen starken diagnostischen Test an. Berechnung: LR+ = Sensitivität/(1-Spezifität)-->
+
+**Fazit**: Um Dinge wie LR zu wissen, z.B. im Bereich klinischer
 Diagnosen in der realen Welt, kann unter Umständen traumatische
 Ereignisse oder sogar Suizide verhindern helfen! Warum? Viele Menschen
-erleben eine Diagnose als etwas Fixes, nicht als etwas Wahrscheinliches,
-und schon gar nicht als etwas gering Wahrscheinliches.
+erleben eine Diagnose als etwas Feststehendes, nicht als etwas
+Wahrscheinliches, und schon gar nicht als etwas gering Wahrscheinliches.
+Man stelle sich vor, die Krankheitsprävalenz einer entsetzlichen
+Krankheit sei nicht 5% sondern nur .4%, während die Sensitivität .99 und
+Spezifität .98 sei. Wie hoch wäre dann die positive und die negative
+post-test Wahrscheinlichkeit?
+
+``` r
+# lrp: likelihood ratio positive
+(lrp <- .99/(1-.98)) # LR+
+```
+
+    ## [1] 49.5
+
+``` r
+# lrn: likelihood ratio negative
+(lrn <- (1-.99)/.98) # LR-
+```
+
+    ## [1] 0.01020408
+
+``` r
+# Prävalenz der Krankheit in der Bevölkerung
+probability <- .004
+pretestOdds <- probability/(1-probability)
+# Veränderungsfaktor bei seiner 'Arbeit'
+positivePostTestOdds <- pretestOdds*lrp
+negativePostTestOdds <- pretestOdds*lrn
+# A posteriori probability due to LR+ = 16.6%
+positivePostTestOdds/(1+positivePostTestOdds)
+```
+
+    ## [1] 0.1658291
+
+``` r
+# A posteriori probability due to LR- = 0.004%
+negativePostTestOdds/(1+negativePostTestOdds)
+```
+
+    ## [1] 4.097857e-05
+
+Die Wahrscheinlichkeit, dass eine Person mit positivem diagnostischen
+Testergebnis die Krankheit tatsächlich habe, wäre ca. 17%. Wenn diese
+Zahl der Person nicht deutlich gesagt werden würde, sondern lediglich,
+dass die Testsensitivität und -spezifität bei nahezu 100% liegen, würde
+diese Person auch die Diagnose als nahezu 100% sicher einordnen, obwohl
+17% weit von 100% entfernt liegt.
 
 <!--
 - Thematisieren und empirisches, korrektes(!) Prüfen der Testannahmen, und es publizieren.
