@@ -1584,7 +1584,7 @@ negativem Ergebnis die Krankheit habe.
 
 Nachdem die Ergebnisse feststehen, wie kommen sie zustande? Hierzu
 braucht es die Formeln in der blauen Textbox auf S.168 in Deeks and
-Altman (2004). Darin spielt das statistische Konzepts ‘Chance’ bzw.
+Altman (2004). Darin spielt das statistische Konzept ‘Chance’ bzw.
 ‘Odds’ eine Rolle, welches definiert ist als Wahrscheinlichkeit (p) im
 Verhältnis zur Gegenwahrscheinlichkeit (1-p). LR ist der
 Veränderungsfaktor (siehe oben: LR+ = 9.9 und LR- = .0111), der die *a
@@ -1616,15 +1616,15 @@ negativePostTestOdds/(1+negativePostTestOdds)
 
 <!--Es gibt eine positive und eine negative LR, je nachdem worauf der Fokus liegt. Wird ein Test durchgeführt, um einen Zustand zu diagnostizieren oder um ihn auszuschliessen? Im Zahlenbeispiel von eben würde jemand, der keinen Test nutzt nur auf Basis der Prävalenz raten, d.h. man würde die Wahrscheinlichkeit von 5% annehmen, dass Person x jene Krankheit habe. Führt der diagnostische Test dazu, dass diese Wahrscheinlichkeit erhöht werden kann, dann sollte man ihn wohl durchführen. In diesem Zahlenbeispiel steigt die Wahrscheinlichkeit von 5% auf 34% (also um 29 Prozentpunkte gestiegen). Die positive LR (LR+) zeigt, wie viel wahrscheinlicher ein positives Testergebnis für eine Person ist, die die Krankheit hat, verglichen mit einem positiven Testergebnis für eine Person, die die Krankheit nicht hat. Eine LR+ von 10 (oder mehr) zeigt gewöhnlich einen starken diagnostischen Test an. Berechnung: LR+ = Sensitivität/(1-Spezifität)-->
 
-**Fazit**: Um Dinge wie LR zu wissen, z.B. im Bereich klinischer
-Diagnosen in der realen Welt, kann unter Umständen traumatische
-Ereignisse oder sogar Suizide verhindern helfen! Warum? Viele Menschen
-erleben eine Diagnose als etwas Feststehendes, nicht als etwas
-Wahrscheinliches, und schon gar nicht als etwas gering Wahrscheinliches.
-Man stelle sich vor, die Krankheitsprävalenz einer entsetzlichen
-Krankheit sei nicht 5% sondern nur .4%, während die Sensitivität .99 und
+**Fazit**: LR zu kennen, z.B. im Bereich klinischer Diagnosen in der
+realen Welt, kann unter Umständen traumatische Ereignisse oder sogar
+Suizide verhindern helfen! Warum? Viele Menschen erleben eine Diagnose
+als etwas Feststehendes, nicht als etwas Wahrscheinliches, und schon gar
+nicht als etwas gering Wahrscheinliches. Man stelle sich vor, die
+Krankheitsprävalenz einer entsetzlichen Krankheit sei nicht 5% sondern
+.4%, während die Sensitivität des diagnostischen Tests .99 und
 Spezifität .98 sei. Wie hoch wäre dann die positive und die negative
-post-test Wahrscheinlichkeit?
+post-Test Wahrscheinlichkeit?
 
 ``` r
 # lrp: likelihood ratio positive
@@ -1662,10 +1662,13 @@ negativePostTestOdds/(1+negativePostTestOdds)
 
 Die Wahrscheinlichkeit, dass eine Person mit positivem diagnostischen
 Testergebnis die Krankheit tatsächlich habe, wäre ca. 17%. Wenn diese
-Zahl der Person nicht deutlich gesagt werden würde, sondern lediglich,
-dass die Testsensitivität und -spezifität bei nahezu 100% liegen, würde
-diese Person auch die Diagnose als nahezu 100% sicher einordnen, obwohl
-17% weit von 100% entfernt liegt.
+Zahl der diagnostizierten Person nicht deutlich gesagt werden würde,
+sondern lediglich, dass die Testsensitivität und -spezifität bei nahezu
+100% liegen, würde diese Person auch die Diagnose als nahezu 100% sicher
+einordnen, obwohl 17% weit von 100% entfernt liegt. Sehr viele Menschen,
+darunter leider auch (sehr) viele Diagnostiker/innen bzw. Ärzt/innen und
+Therapeut/innen, sind nicht ausreichend sensibilisiert für die Bedeutung
+des Themas LR in der Praxis.
 
 <!--
 - Thematisieren und empirisches, korrektes(!) Prüfen der Testannahmen, und es publizieren.
