@@ -1696,8 +1696,9 @@ verstanden wurde, empfehle ich [dieses Video (21:13
 Min.)](https://www.youtube.com/watch?v=lG4VkPoG3ko) anzusehen, weil
 darin noch viel mehr betont wird, welche erkenntnistheoretische
 Grundidee die Hauptsache ist, die es zu verstehen gilt (zu verstehen wie
-Verstehen formalisiert wurde). Zudem wird im Video LR mit dem Bayes
-Factor verknüpft, was ich nicht gemacht habe.
+Verstehen formalisiert wurde und warum sie gerade so formalisiert
+wurde). Zudem wird im Video LR mit dem Bayes Factor verknüpft, was ich
+bis hierhin noch nicht gemacht habe.
 
 <!--
 - Thematisieren und empirisches, korrektes(!) Prüfen der Testannahmen, und es publizieren.

@@ -672,7 +672,7 @@ negativePostTestOdds/(1+negativePostTestOdds)
 
 Die Wahrscheinlichkeit, dass eine Person mit positivem diagnostischen Testergebnis die Krankheit tatsächlich habe, wäre ca. 17%. Wenn diese Zahl der diagnostizierten Person nicht deutlich gesagt werden würde, sondern lediglich, dass die Testsensitivität und -spezifität bei nahezu 100% liegen, würde diese Person auch die Diagnose als nahezu 100% sicher einordnen, obwohl 17% weit von 100% entfernt liegt. Sehr viele Menschen, darunter leider auch (sehr) viele Diagnostiker/innen bzw. Ärzt/innen und Therapeut/innen, sind nicht ausreichend sensibilisiert für die Bedeutung des Themas LR in der Praxis [@mendes2025re].
 
-Nachdem LR und auch dessen zentrale Bedeutsamkeit einigermassen verstanden wurde, empfehle ich [dieses Video (21:13 Min.)](https://www.youtube.com/watch?v=lG4VkPoG3ko) anzusehen, weil darin noch viel mehr betont wird, welche erkenntnistheoretische Grundidee die Hauptsache ist, die es zu verstehen gilt (zu verstehen wie Verstehen formalisiert wurde). Zudem wird im Video LR mit dem Bayes Factor verknüpft, was ich nicht gemacht habe.
+Nachdem LR und auch dessen zentrale Bedeutsamkeit einigermassen verstanden wurde, empfehle ich [dieses Video (21:13 Min.)](https://www.youtube.com/watch?v=lG4VkPoG3ko) anzusehen, weil darin noch viel mehr betont wird, welche erkenntnistheoretische Grundidee die Hauptsache ist, die es zu verstehen gilt (zu verstehen wie Verstehen formalisiert wurde und warum sie gerade so formalisiert wurde). Zudem wird im Video LR mit dem Bayes Factor verknüpft, was ich bis hierhin noch nicht gemacht habe.
 
 <!--
 - Thematisieren und empirisches, korrektes(!) Prüfen der Testannahmen, und es publizieren.
