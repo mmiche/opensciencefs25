@@ -986,10 +986,38 @@ Frage ist in der wissenschaftlichen Psychologie, inklusive
 psychologischer Laborexperimente, bisher noch nie zweifelsfrei
 beantwortet worden.
 
-Notiz: Ich habe oben überall von Unterschied gesprochen, nicht von
-Zusammenhang. Grund: Ein Zusammenhang ist eine Verallgemeinerung des
-Konzepts Unterschied (siehe oben [Checklisten,
+Notiz 1: Ich habe oben überall von Unterschied gesprochen, nicht von
+linearem Zusammenhang. Grund: Ein linearer Zusammenhang ist eine
+Verallgemeinerung des Konzepts Unterschied (siehe oben [Checklisten,
 Regelsammlungen](#checklisten-regelsammlungen)).
+
+Notiz 2: Eine sehr häufiges Detail, das übersehen wird, bezieht sich auf
+Notiz 1, nämlich ein Zusammenhang zweier Variabeln kann jede beliebige
+Form annehmen. Die lineare Form ist also nur eine von unzählig vielen
+Möglichkeiten. Jedoch werden in der Psychologie fast ausschliesslich
+lineare Zusammenhänge in den Publikationen berichtet, weshalb der
+falsche Eindruck entstehen kann, dass ein Zusammenhang automatisch
+linear sein müsse.
+
+Notiz 3: Ein vielleicht noch häufiger übersehenes Detail (Bezug zu Notiz
+2) ist, dass eine Pearson Korrelation eine Korrelation und zugleich ein
+linearer Zusammenhang ist, jedoch ist ein linearer Zusammenhang (in
+einem Regressionsmodell) nicht automatisch eine Korrelation! Ich habe
+schon etliche Studierende auf ein Regressionsgewicht zeigen sehen und
+zugleich von ihnen das Wort “Korrelation” gehört. Dies ist nur unter
+einer Bedingung richtig: Wenn es eine simple lineare Regression ist und
+beide Variabeln mit einer kontinuierlichen Skala gemessen wurden (=
+Intervallskalenniveau) und beide Variabeln Mittelwert = 0 und Varianz =
+1 besitzen, also z.B. z-transformiert worden sind.
+
+Notiz 4: Noch ein so unerhörtes Detail (Bezug zu Notiz 3). Es wird
+leider auch häufig ‘vergessen’, dass sogenannte standardisierte
+Regressionsgewichte (d.h. wenn die Variabeln im Regressionsmodell alle
+standardisiert wurden) den Betrag von 1 überschreiten können, sobald
+mind. 2 Prädiktoren im Modell sind. Nur bei der simplen linearen
+Regression, wie in Notiz 3 beschrieben, kann das Regressionsgewicht den
+Betrag von 1 nicht überschreiten, weil das Ergebnis dann identisch mit
+dem Ergebnis der Pearson Korrelation ist.
 
 ## Methodische Details
 
@@ -1662,6 +1690,14 @@ einordnen, obwohl 17% weit von 100% entfernt liegt. Sehr viele Menschen,
 darunter leider auch (sehr) viele Diagnostiker/innen bzw. Ärzt/innen und
 Therapeut/innen, sind nicht ausreichend sensibilisiert für die Bedeutung
 des Themas LR in der Praxis (Mendes, Manesh, and Sanchez 2025).
+
+Nachdem LR und auch dessen zentrale Bedeutsamkeit einigermassen
+verstanden wurde, empfehle ich [dieses Video (21:13
+Min.)](https://www.youtube.com/watch?v=lG4VkPoG3ko) anzusehen, weil
+darin noch viel mehr betont wird, welche erkenntnistheoretische
+Grundidee die Hauptsache ist, die es zu verstehen gilt (zu verstehen wie
+Verstehen formalisiert wurde). Zudem wird im Video LR mit dem Bayes
+Factor verknüpft, was ich nicht gemacht habe.
 
 <!--
 - Thematisieren und empirisches, korrektes(!) Prüfen der Testannahmen, und es publizieren.
