@@ -680,5 +680,15 @@ Die Wahrscheinlichkeit, dass eine Person mit positivem diagnostischen Testergebn
 - Die Präzision eines statistischen Testergebnisses explizit thematisieren, d.h. insbesondere die Bedeutung der Präzision (= Breite des Konfidenzintervalls).
 - Gardner 2013 und Hedge 2018 average not the same as individual. -->
 
+## Lesehinweise
+
+Hier werde ich Links zu Open Science Inhalten, inkl. Publikationen, auflisten, die mir relevant genug erscheinen, um sie hier zu nennen:
+
+Open science in academia: a framework for monitoring universities' Open Science programs (Morselli und Zuiderwijk, 2026, [doi](https://doi.org/10.1093/reseval/rvaf058))
+
+[Cultures of Trial and Error: The Narrative Side of (Open) Science](https://doi.org/10.36850/448e9a73-75b2) (Bartscherer, S. F., 2026-02-02)
+
+Fostering open science literacy through an asynchronous CURE: challenges and strategies of a fully online student research experience (Ponsero und Hurwitz, 2026, [doi](https://doi.org/10.3389/feduc.2026.1710077)). Obwohl diese Publikation auf das Fach Biologie ausgerichtet ist, geht es doch allgemein um open science literacy, d.h. das Lernen von open science ab dem ersten Bachelor-Semester, damit open science als Standard verstanden wird, nicht als etwas neuartiges, anderes und mühsames.
+
 # Literaturverzeichnis
 
