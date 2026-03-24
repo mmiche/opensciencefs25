@@ -19,8 +19,7 @@ Marcel Miché
 - [Vermeide Kontraproduktivität](#vermeide-kontraproduktivität)
   - [Methodische Sicherheit](#methodische-sicherheit)
   - [Methodische Details](#methodische-details)
-    - [Indzidenz und
-      Regressionsmodell](#indzidenz-und-regressionsmodell)
+    - [Inzidenz und Regressionsmodell](#inzidenz-und-regressionsmodell)
     - [Überfrachtetes
       Regressionsmodell](#überfrachtetes-regressionsmodell)
     - [Dichotomanie](#dichotomanie)
@@ -991,7 +990,7 @@ linearem Zusammenhang. Grund: Ein linearer Zusammenhang ist eine
 Verallgemeinerung des Konzepts Unterschied (siehe oben [Checklisten,
 Regelsammlungen](#checklisten-regelsammlungen)).
 
-Notiz 2: Eine sehr häufiges Detail, das übersehen wird, bezieht sich auf
+Notiz 2: Ein sehr häufiges Detail, das übersehen wird, bezieht sich auf
 Notiz 1, nämlich ein Zusammenhang zweier Variabeln kann jede beliebige
 Form annehmen. Die lineare Form ist also nur eine von unzählig vielen
 Möglichkeiten. Jedoch werden in der Psychologie fast ausschliesslich
@@ -1042,7 +1041,7 @@ dem Ergebnis der Pearson Korrelation ist.
 >   ‘Replikation’ unter den weiterhin dominanten NHST Bedingungen ein
 >   sehr impotentes Kriterium für wissenschaftlichen Erfolg ist.
 
-### Indzidenz und Regressionsmodell
+### Inzidenz und Regressionsmodell
 
 Folgendes Beispiel hat diesen Hintergrund. Eine Arbeitskollegin, die die
 Ergebnisse eines Regressionsmodells auf einer Konferenz präsentieren

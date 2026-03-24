@@ -389,7 +389,7 @@ Vorausgesetzt, dass der sichtbar gemachte Unterschied echt ist (anstatt eines st
 
 Notiz 1: Ich habe oben überall von Unterschied gesprochen, nicht von linearem Zusammenhang. Grund: Ein linearer Zusammenhang ist eine Verallgemeinerung des Konzepts Unterschied (siehe oben [Checklisten, Regelsammlungen](#checklisten-regelsammlungen)).
 
-Notiz 2: Eine sehr häufiges Detail, das übersehen wird, bezieht sich auf Notiz 1, nämlich ein Zusammenhang zweier Variabeln kann jede beliebige Form annehmen. Die lineare Form ist also nur eine von unzählig vielen Möglichkeiten. Jedoch werden in der Psychologie fast ausschliesslich lineare Zusammenhänge in den Publikationen berichtet, weshalb der falsche Eindruck entstehen kann, dass ein Zusammenhang automatisch linear sein müsse.
+Notiz 2: Ein sehr häufiges Detail, das übersehen wird, bezieht sich auf Notiz 1, nämlich ein Zusammenhang zweier Variabeln kann jede beliebige Form annehmen. Die lineare Form ist also nur eine von unzählig vielen Möglichkeiten. Jedoch werden in der Psychologie fast ausschliesslich lineare Zusammenhänge in den Publikationen berichtet, weshalb der falsche Eindruck entstehen kann, dass ein Zusammenhang automatisch linear sein müsse.
 
 Notiz 3: Ein vielleicht noch häufiger übersehenes Detail (Bezug zu Notiz 2) ist, dass eine Pearson Korrelation eine Korrelation und zugleich ein linearer Zusammenhang ist, jedoch ist ein linearer Zusammenhang (in einem Regressionsmodell) nicht automatisch eine Korrelation! Ich habe schon etliche Studierende auf ein Regressionsgewicht zeigen sehen und zugleich von ihnen das Wort "Korrelation" gehört. Dies ist nur unter einer Bedingung richtig: Wenn es eine simple lineare Regression ist und beide Variabeln mit einer kontinuierlichen Skala gemessen wurden (= Intervallskalenniveau) und beide Variabeln Mittelwert = 0 und Varianz = 1 besitzen, also z.B. z-transformiert worden sind.
 
@@ -402,7 +402,7 @@ Notiz 4: Noch ein so unerhörtes Detail (Bezug zu Notiz 3). Es wird leider auch 
 > Wer etwas mehr hierüber erfahren möchte, siehe z.B. @greenland2017and oder @smith2018continuing.
 > - Mindestens ebenso wichtig zu erwähnen: Ein neues Manuskript [@van2026statistical] deutet darauf hin, dass das bisherige wissenschaftliche Vorgehen insofern optimistisch stimmen sollte, als zumindest die *Richtung* der untersuchten Effekte korrekt festgestellt zu werden schien. Zudem wird im Manuskript betont, dass 'Replikation' unter den weiterhin dominanten NHST Bedingungen ein sehr impotentes Kriterium für wissenschaftlichen Erfolg ist.
 
-### Indzidenz und Regressionsmodell
+### Inzidenz und Regressionsmodell
 
 Folgendes Beispiel hat diesen Hintergrund. Eine Arbeitskollegin, die die Ergebnisse eines Regressionsmodells auf einer Konferenz präsentieren wollte, fragte mich (ein wenig besorgt), was sie antworten könne, falls ein/e Zuschauer/in fragen sollte, warum das Regressionsgewicht der Variable Sex nicht das zeigte, was alle wissen, nämlich dass Suizidversuche (SV) bei Frauen häufiger als bei Männern beobachtet werden.
 
