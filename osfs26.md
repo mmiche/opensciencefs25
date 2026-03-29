@@ -1731,22 +1731,30 @@ ihren Publikationen ihr Fehlverständnis des p-Werts dokumentieren.
 Nämlich: Sie glauben, der p-Wert sei eine Szenario 2 Antwort, d.h. dass
 er angäbe, wie wahrscheinlich ihre Nullhypothese wahr sei, in
 Abhängigkeit der Daten bzw. des Ergebnisses: P(H0\|Daten). Tatsächlich
-ist es aber eine Szenario 1 Antwort, d.h. das genau Gegenteil der
+ist es aber eine Szenario 1 Antwort, d.h. das genaue Gegenteil der
 Szenario 2 Antwort. Der p-Wert gibt an, wie wahrscheinlich die Daten
-bzw. das Ergebnis ist, unter der vorab festgelegten Annahme, dass die
-Nullhypothese wahr ist: P(Daten\|H0).
+bzw. das Ergebnis ist, unter der vorab als wahr festgelegten Annahme,
+dass der Nullhypothese: P(Daten\|H0).
 
-Dieses Fehlverständnis ist ein menschlich-kognitives Problem, das
-eigentlich aus der Welt geschafft werden muss. Stattdessen erfreut es
-sich allgemeiner Beliebtheit, wie es scheint, denn es wird ungebrochen
-weiter in Publikationen demonstriert. Nur ist das leider keine
-Kleinigkeit. Wissenschaftler/innen sind zwar auch nur Menschen, die
-Fehler machen können, doch diese Sache mit dem p-Wert ist ein Fehler,
-der eine mittlerweile fast 100jährige Geschichte menschlicher
+Zur Sicherheit wiederhole ich es besser nochmal: In der
+frequentistischen Inferenzstatistik nimmt man die Nullhypothese vorab
+als wahr an. Diese Annahme gilt also ungebrochen, wenn man das Ergebnis
+des statistischen Tests sieht. Einzig vor dem Hintergrund dieser 100%
+Annahme ist der p-Wert definiert: So wahrscheinlich ist das Ergebnis
+unter der Bedingung, die Nullhypothese sei wahr, mitsamt aller damit
+weiter verbundenen Annahmen.
+
+Das Fehlverständnis des p-Werts ist ein menschlich-kognitives Problem,
+das eigentlich aus der Welt geschafft werden muss. Stattdessen erfreut
+es sich allgemeiner Beliebtheit, wie es scheint, denn es wird
+ungebrochen weiter in Publikationen demonstriert. Nur ist das leider
+keine Kleinigkeit. Wissenschaftler/innen sind zwar auch nur Menschen,
+die Fehler machen können, doch diese Sache mit dem p-Wert ist ein
+Fehler, der eine mittlerweile fast 100-jährige Geschichte menschlicher
 Nachlässigkeit ist. Aus meiner Sicht ist es eine Schande, dass
 Wissenschaftler/innen diese Angelegenheit auch weiterhin nicht
-ernstnehmen, sondern so weitermachen als gäbe es überhaupt kein Problem
-(Emmert-Streib 2024).
+ernstnehmen, sondern so weitermachen als gäbe es das Problem überhaupt
+nicht (Emmert-Streib 2024).
 
 ### Likelihood
 
