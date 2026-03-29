@@ -1733,8 +1733,8 @@ er angäbe, wie wahrscheinlich ihre Nullhypothese wahr sei, in
 Abhängigkeit der Daten bzw. des Ergebnisses: P(H0\|Daten). Tatsächlich
 ist es aber eine Szenario 1 Antwort, d.h. das genaue Gegenteil der
 Szenario 2 Antwort. Der p-Wert gibt an, wie wahrscheinlich die Daten
-bzw. das Ergebnis ist, unter der vorab als wahr festgelegten Annahme,
-dass der Nullhypothese: P(Daten\|H0).
+bzw. das Ergebnis ist, unter der vorab als wahr festgelegten Annahme der
+Nullhypothese: P(Daten\|H0).
 
 Zur Sicherheit wiederhole ich es besser nochmal: In der
 frequentistischen Inferenzstatistik nimmt man die Nullhypothese vorab
