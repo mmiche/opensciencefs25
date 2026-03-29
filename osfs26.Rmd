@@ -674,7 +674,57 @@ Die Wahrscheinlichkeit, dass eine Person mit positivem diagnostischen Testergebn
 
 Nachdem LR und auch dessen zentrale Bedeutsamkeit einigermassen verstanden wurde, empfehle ich [dieses Video (21:13 Min.)](https://www.youtube.com/watch?v=lG4VkPoG3ko) anzusehen, weil darin noch viel mehr betont wird, welche erkenntnistheoretische Grundidee die Hauptsache ist, die es zu verstehen gilt (zu verstehen wie Verstehen formalisiert wurde und warum sie gerade so formalisiert wurde). Zudem wird im Video LR mit dem Bayes Factor verknüpft, was ich bis hierhin noch nicht gemacht habe.
 
+### Direktes oder inverses Problem?
+
+Die knapp 2-seitige Publikation von @naimi2025inferential ist sehr interessant für alle, die gerne grundlegend wissen wollen, wie und vor allem warum man statistische Informationen korrekt einordnen können sollte, um tatsächlich etwas gewinnbringendes aus ihnen ziehen zu können. Hierzu ist es laut der Autoren wichtig, dass man weiss, dass es direkte und inverse Problemstellungen in der Statistik gibt. Worin besteht also der Unterschied?
+
+Da die Publikation sehr kurz und einfach zu verstehen ist, werde ich hier nichts weiter zusammenfassen. Einzig teile ich meine Abschlussnotiz mit, nachdem ich den Artikel ein zweites Mal gelesen hatte. Sie bezieht sich auf den letzten Satz des zweiten Absatzes unter der Überschrift 'Inverse problems and statistics':
+
+In der angewandten Statistik (also in der realen Welt) fragt man eine Szenario 2 Frage (Szenario 2 = Man hat keinerlei Ahnung über den Mechanismus, durch den die Daten produziert wurden, mit denen man es zu tun hat), und zwar ganz einfach deshalb, weil man sich in Szenario 2 (reale Welt) befindet. Jedoch ist der p-Wert der Inferenzstatistik die Antwort auf eine Szenario 1 Frage (Szenario 1 = Datensimulation, d.h. man hat vollständiges Wissen über den Mechanismus und alle weiteren Dinge, die die Daten produziert haben). Das könnte eine Hauptrolle spielen, weshalb so auffällig viele Wissenschaftler/innen wiederholt in ihren Publikationen ihr Fehlverständnis des p-Werts dokumentieren. Nämlich: Sie glauben, der p-Wert sei eine Szenario 2 Antwort, d.h. dass er angäbe, wie wahrscheinlich ihre Nullhypothese wahr sei, in Abhängigkeit der Daten bzw. des Ergebnisses: P(H0|Daten). Tatsächlich ist es aber eine Szenario 1 Antwort, d.h. das genau Gegenteil der Szenario 2 Antwort. Der p-Wert gibt an, wie wahrscheinlich die Daten bzw. das Ergebnis ist, unter der vorab festgelegten Annahme, dass die Nullhypothese wahr ist: P(Daten|H0).
+
+Dieses Fehlverständnis ist ein menschlich-kognitives Problem, das eigentlich aus der Welt geschafft werden muss. Stattdessen erfreut es sich allgemeiner Beliebtheit, wie es scheint, denn es wird ungebrochen weiter in Publikationen demonstriert. Nur ist das leider keine Kleinigkeit. Wissenschaftler/innen sind zwar auch nur Menschen, die Fehler machen können, doch diese Sache mit dem p-Wert ist ein Fehler, der eine mittlerweile fast 100jährige Geschichte menschlicher Nachlässigkeit ist. Aus meiner Sicht ist es eine Schande, dass Wissenschaftler/innen diese Angelegenheit auch weiterhin nicht ernstnehmen, sondern so weitermachen als gäbe es überhaupt kein Problem [@emmert2024trends].
+
+### Likelihood
+
+Als erstes empfehle ich dieses sehr kurze [Video](https://www.youtube.com/shorts/LM316199wC8) anzusehen, um einen (kommentarlosen) Eindruck zu erhalten, was mit 'likelihood' in der Statistik gemeint ist. Likelihood ist **KEINE** Wahrscheinlichkeit. Jedoch steht likelihood in einem bestimmten Verhältnis zu Wahrscheinlichkeiten. Das ist der Grund, warum likelihood sowohl in Bayesianischen als auch in der frequentistischen Statistik das Salz in der Suppe ist. Sehr empfehlenswert ist die Publikation von @etz2018introduction, die gut verständlich likelihood erklärt. Einer der ersten und wichtigsten Aspekte ist, dass likelihood nur im Verhältnis zu einem zweiten likelihood sinnvoll ist. Zwei likelihoods im Verhältnis zueinander heisst: likelihood ratio (LR; siehe oben in diesem Dokument).
+
+Ich verwende hier ein Teilbeispiel aus @etz2018introduction, d.h. aus dessen zusammen mit der Publikation veröffentlichten R-Skript. Die dazugehörige Frage lautet: Nach 10 Münzwürfen ist das Ergebnis 6 Mal Kopf und 4 Mal Zahl. Wie viel wahrscheinlicher ist die Hypothese, dass die Münze fair ist (Wahrscheinlichkeit p = 50%) als die Hypothese, dass es eine Trickmünze ist (p = 75%)?
+
+```{r chunk18, fig.width=5, fig.height=5, fig.cap="Verhältnis zweier likelihoods."}
+# Code copy pasted and modified; original R code by Alexander Etz, published as part of this publication: https://doi.org/10.1177/251524591774431
+LR <- function(h,n,p1=.5,p2=.75,Title="",Xlab=""){
+    L1 <- dbinom(h,n,p1)
+    L2 <- dbinom(h,n,p2)
+    Ratio <- L1/L2 ## Likelihood ratio for p1 vs p2
+    curve((dbinom(h,n,x)), xlim = c(0,1), ylab = "Likelihood",
+          xlab = Xlab,las=1, main = Title, lwd = 2, n=10001)
+    points(p1, L1, cex = 2, pch = 21, bg = "grey62")
+    points(p2, L2, cex = 2, pch = 21, bg = "grey62")
+    lines(c(p1, p2), c(L1, L1), lwd = 2, lty = 5, col = "grey62")
+    lines(c(p2, p2), c(L1, L2), lwd = 2, lty = 5, col = "grey62")
+    abline(v = h/n, lty = 3, lwd = 2, col = "grey63")
+    return(Ratio) ## Returns the likelihood ratio for p1 vs p2
+}
+# Likelihood L1 = .2050781
+# Likelihood L2 = .145998
+# Likelihood Ratio L1/L2 = 1.404664
+LR(6,10)
+```
+
+Die Hypothese einer fairen Münze ist 1.4 Mal wahrscheinlicher als die Hypothese, es sei eine Trickmünze von 75% Kopf-Wahrscheinlichkeit. Dem sogenannten likelihood Profil (ich wiederhole: Es ist **KEINE** Wahrscheinlichkeitsdichte) kann unmittelbar entnommen werden, dass die maximum likelihood bei einer Kopf-Wahrscheinlichkeit von 60% liegt.
+
+Zudem finde ich besonders erwähnenswert, worauf @etz2018introduction in seiner Abbildung 2 hinweist, nämlich dass LR eine Art ist, einen Unterschied zu messen (entlang der vertikalen log likelihood Achse von Abbildung 2), wohingegen der Wald Test denselben Unterschied in Einheiten des Standardfehlers misst (entlang der horizontalen Wahrscheinlichkeits-Achse.in Abbildung 2). Dies erinnert daran, dass mancherorts Distanzen in Metern, andernorts in Fuss gemessen werden. Damit will ich sagen, dass in der Wissenschaft (und deshalb in der Statistik) eine Distanz (ein Unterschied) von Hauptinteresse ist und er deshalb gemessen wird. Auf welche Art der Unterschied ausgedrückt wird, sollte eigentlich unerheblich sein.
+
+Zuletzt erwähnenswert: Likelihood bezieht sich ausschliesslich auf die vorliegenden Daten einer Studie. Es werden keine Hilfsannahmen benutzt, wie z.B. in der frequentistischen Inferenzstatistik, die nur Sinn macht, wenn man der Annahme zustimmt, dass Studie x zumindest theoretisch unendlich oft identisch wiederholt werden könnte.
+
+### Bayesianische Statistik
+
+Hierüber brauche ich in diesem Dokument nichts zu schreiben, es reicht zwei Publikationen zu empfehlen: @gaona2022frequentist vergleichen frequentistische Statistik (FS) mit Bayesianischer Statistik (BS), und sprechen sich klar für die BS aus. Am Ende ihrer kurz gehaltenen Publikation machen sie leider zwei Mal denselben Fehler bezogen auf die FS. Sie schreiben, dass man in der FS die Nullhypothese entweder zurückweisen oder akzeptieren könne. Zurückweisen ist richtig, akzeptieren ist falsch. Das ist tatsächlich einer der häufigsten Fehler, die Wissenschaftler/innen in Publikationen machen, sie akzeptieren die Nullhypothese, weil das Ergebnis nicht statistisch signifikant geworden ist. @van2021bayesian konzentrieren sich voll auf die BS, zudem ist die Publikation eher lang gehalten, darunter viele Visualisierungen.
+
+Eine wichtige Notiz zur BS: Wie ich weiter oben in diesem Dokument schon geschrieben habe, wenn man blind ist, dann hilft auch keine Brille. Statistik macht als wissenschaftliches Hilfsmittel nur Sinn, wenn man kompetenten Gebrauch davon machen kann und will. Wenn man Statistik nur pro forma durchführt, was Gigerenzer als ['statistical ritual'](https://www.gerd-gigerenzer.com/scientific-creativity-and-statistical-rituals) bezeichnet, dann wird Statistik ohnehin in Sackgassen (ver)enden, egal ob man FS oder BS glaubt durchgeführt zu haben. Es wurde kürzlich kritisiert, dass auch für die Anwendung des Bayes Factors ähnlicher Unsinn feststellbar ist wie beim NHST [@tendeiro2024diagnosing].
+
 <!--
+Melodie im Hintergrund vom likelihood video: Anthem of Inspiration
 - Thematisieren und empirisches, korrektes(!) Prüfen der Testannahmen, und es publizieren.
 - Der kognitiven Verzerrung 'Dichotomanie' entgegenwirken.
 - Die methodischen Bereiche 'beschreibend', 'explanatorisch' und 'prädiktiv' voneinander unterscheiden können und dann in Übereinstimmung mit der Forschungsarbeit adäquat anwenden (Shmueli, 2025)
