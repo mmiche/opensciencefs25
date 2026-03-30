@@ -1778,7 +1778,9 @@ ist (Wahrscheinlichkeit p = 50%) als die Hypothese, dass es eine
 Trickmünze ist (p = 75%)?
 
 ``` r
-# Code copy pasted and modified; original R code by Alexander Etz, published as part of this publication: https://doi.org/10.1177/251524591774431
+# Code copy pasted and modified; original R code by Alexander Etz,
+# published as part of: https://doi.org/10.1177/251524591774431
+# I removed the scaling factor from the original R code.
 LR <- function(h,n,p1=.5,p2=.75,Title="",Xlab=""){
     L1 <- dbinom(h,n,p1)
     L2 <- dbinom(h,n,p2)
@@ -1800,9 +1802,9 @@ LR(6,10)
 
 <figure>
 <img src="osfs26_files/figure-gfm/chunk18-1.png"
-alt="Verhältnis zweier likelihoods." />
-<figcaption aria-hidden="true">Verhältnis zweier
-likelihoods.</figcaption>
+alt="Verhältnis zweier likelihoods. Siehe Abbildung 1, top panel, in Etz (2018)." />
+<figcaption aria-hidden="true">Verhältnis zweier likelihoods. Siehe
+Abbildung 1, top panel, in Etz (2018).</figcaption>
 </figure>
 
     ## [1] 1.404664
