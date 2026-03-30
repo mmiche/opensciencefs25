@@ -1,7 +1,7 @@
 Open science FS26
 ================
 Marcel Miché
-2026-03-29
+2026-03-30
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
@@ -1712,11 +1712,10 @@ können. Hierzu ist es laut der Autoren wichtig, dass man weiss, dass es
 direkte und inverse Problemstellungen in der Statistik gibt. Worin
 besteht also der Unterschied?
 
-Da die Publikation sehr kurz und einfach zu verstehen ist, werde ich
-hier nichts weiter zusammenfassen. Einzig teile ich meine Abschlussnotiz
-mit, nachdem ich den Artikel ein zweites Mal gelesen hatte. Sie bezieht
-sich auf den letzten Satz des zweiten Absatzes unter der Überschrift
-‘Inverse problems and statistics’:
+Folgendes ist meine Abschlussnotiz, nachdem ich naimi2025inferential ein
+zweites Mal gelesen hatte. Sie bezieht sich auf den letzten Satz des
+zweiten Absatzes unter der Überschrift ‘Inverse problems and
+statistics’:
 
 In der angewandten Statistik (also in der realen Welt) fragt man eine
 Szenario 2 Frage (Szenario 2 = Man hat keinerlei Ahnung über den
