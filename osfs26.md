@@ -1712,9 +1712,9 @@ können. Hierzu ist es laut der Autoren wichtig, dass man weiss, dass es
 direkte und inverse Problemstellungen in der Statistik gibt. Worin
 besteht also der Unterschied?
 
-Folgendes ist meine Abschlussnotiz, nachdem ich naimi2025inferential ein
-zweites Mal gelesen hatte. Sie bezieht sich auf den letzten Satz des
-zweiten Absatzes unter der Überschrift ‘Inverse problems and
+Folgendes ist meine Abschlussnotiz, nachdem ich Naimi and Whitcomb
+(2025) ein zweites Mal gelesen hatte. Sie bezieht sich auf den letzten
+Satz des zweiten Absatzes unter der Überschrift ‘Inverse problems and
 statistics’:
 
 In der angewandten Statistik (also in der realen Welt) fragt man eine
