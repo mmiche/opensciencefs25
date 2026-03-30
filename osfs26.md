@@ -1539,7 +1539,9 @@ behauptet, dass die logistische Regression durchgeführt wurde und dass
 damit das Odds Ratio ermittelt wurde. Beides stimmt nicht, da die
 Autoren hierfür eine Spezifikation im R-Befehl ‘glm’ hätten machen
 müssen, die sie aber unterlassen haben. Damit haben sie (unwissentlich)
-die lineare Regression ausgeführt.
+die lineare Regression ausgeführt. Für die logistische Regression hätten
+sie das Argument ‘family’ des ‘glm’ Befehls auf ‘binomial’ setzen
+müssen, da ‘glm’ per Default ‘gaussian’ verwendet.
 
 ### Alpha Signifikanzniveau
 

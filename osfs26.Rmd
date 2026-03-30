@@ -598,7 +598,7 @@ Um die erste Frage zu beantworten, müssen wir verstehen, was eigentlich das bei
 
 Um die zweite Frage zu beantworten, darf sich jede/r selbst befragen bzw. über die Frage reflektieren.
 
-Ich schliesse das Thema KI hier ab, indem ich noch darauf hinweise, dass das publizierte R-Skript, das zum Paper von @naimi2020can gehört, einen nennenswerten Fehler beinhaltet. Im Paper selbst wird behauptet, dass die logistische Regression durchgeführt wurde und dass damit das Odds Ratio ermittelt wurde. Beides stimmt nicht, da die Autoren hierfür eine Spezifikation im R-Befehl 'glm' hätten machen müssen, die sie aber unterlassen haben. Damit haben sie (unwissentlich) die lineare Regression ausgeführt.
+Ich schliesse das Thema KI hier ab, indem ich noch darauf hinweise, dass das publizierte R-Skript, das zum Paper von @naimi2020can gehört, einen nennenswerten Fehler beinhaltet. Im Paper selbst wird behauptet, dass die logistische Regression durchgeführt wurde und dass damit das Odds Ratio ermittelt wurde. Beides stimmt nicht, da die Autoren hierfür eine Spezifikation im R-Befehl 'glm' hätten machen müssen, die sie aber unterlassen haben. Damit haben sie (unwissentlich) die lineare Regression ausgeführt. Für die logistische Regression hätten sie das Argument 'family' des 'glm' Befehls auf 'binomial' setzen müssen, da 'glm' per Default 'gaussian' verwendet.
 
 ### Alpha Signifikanzniveau
 
