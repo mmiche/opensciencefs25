@@ -1462,7 +1462,84 @@ wichtige Fragen provozieren, z.B. ob und wie gut man es auch bei
 psychologischen Experimenten oder Beobachtungsstudien anwenden kann. Ich
 erinnere daran: Beim Versuch solche Fragen zu beantworten, drängt sich
 unmittelbar Ernüchterung auf, was der akademischen Karriere durchaus
-gefährlich werden kann.
+gefährlich werden kann. (Ich weiss natürlich, dass man denkt, dass es
+umgekehrt sein muss, d.h. dass kritisches Hinterfragen der akademischen
+Karriere förderlich ist, unabhängig davon, ob es Ernüchterung nach sich
+zieht; aber das ist leider falsch bzw. träumerisch gedacht.)
+
+Die Publikation von Naimi and Whitcomb (2020) (Titel: Can Confidence
+Intervals Be Interpreted?) ist sehr empfehlenswert, u.a. weil sie nur 2
+Seiten umfasst und das Thema gut erläutert ist. Ich empfehle sehr,
+während des Lesens aktiv zu identifizieren, wo die beiden Autoren das
+**Vorher** und das **Nachher** betonen. Zweitens möchte ich dies zur
+Debatte stellen: Ich habe oben geschrieben, dass die Wahrscheinlichkeit
+50% sei, dass der wahre Wert im KI liegt oder ausserhalb, unabhängig von
+der Prozentzahl des KI. Hingegen schreiben Naimi and Whitcomb (2020):
+‘\[…\] confidence interval estimate will either include or exclude the
+truth with 100% probability.’ Ist einer von beiden oder sind beide Sätze
+korrekt (ich spreche von 50%, die beiden Autoren sprechen von 100%)?
+
+Zuletzt muss noch folgende Denkfalle (fallacy) entblösst werden: Worin
+unterscheiden sich zwei verschiedene KI, z.B. das 98% und das 93% KI?
+Wir wissen ja bereits, dass es **NICHTS** mit x prozentigem Vertrauen zu
+tun hat! Der Unterschied von 5% (98-93) hat also überhaupt keine
+Bedeutung. Das erste Problem ist sicherlich die Frage, ob und unter
+welchen Bedingungen es eigentlich ‘erlaubt’ ist, ein anderes als das 95%
+KI zu wählen. Ein daraus abgeleitetes Problem ist, dass man einsehen
+muss, dass das 95% KI keine wissenschaftlich gerechtfertigte
+Sonderstellung hat (und nie gehabt hat). Es sei denn, dass man es als
+zulässig erachtet, dass Forscher/innen das alpha Signifikanniveau (siehe
+nächster Beitrag) erstmals wählen, **nachdem** sie ihre Ergebnisse
+gesehen haben. Obige Denkfalle besteht jedenfalls darin, dass das 98% KI
+in keiner Weise ‘besser’ ist als das 93% KI, und umgekehrt natürlich
+ebensowenig. Der Grund dafür ist, dass die gewählte Breite des KI das
+Ergebnis aller **vorherigen** Abwägungen des/der Forscher/in sein
+sollte, wie es bereits oben im ersten Absatz steht.
+
+Es folgt eine Demonstration, die auf den ersten Blick (Stichwort:
+Denkfalle) der intuitiven Erwartung widerspricht: Beim Wechsel vom
+beidseitigen 95% zum 98% KI wird das Intervall breiter, nicht etwa
+enger. Ich verwende das bereits bekannte Beispiel von oben:
+
+``` r
+# Zeige nur x% KI für Prädiktor group (nicht für Intercept)
+confint(modKontin, level = .95)["group",]
+```
+
+    ##       2.5 %      97.5 % 
+    ## -0.06272686  0.75335153
+
+``` r
+confint(modKontin, level = .98)["group",]
+```
+
+    ##        1 %       99 % 
+    ## -0.1444919  0.8351166
+
+Warum ist das so? Und warum widerspricht es der intuitiven Erwartung?
+
+Um die erste Frage zu beantworten, müssen wir verstehen, was eigentlich
+das beidseitige 100% KI bedeutet. Darin sind alle theoretisch möglichen
+Unterschiede enthalten, genauer gesagt: das 100% KI hat keine Grenzen,
+andernfalls könnte es nicht alle theoretisch möglichen Unterschiede
+umfassen, von negativ bis positiv unendlich. Erinnere, dass die
+Wahrscheinlichkeitsdichte sowohl der t- als auch der
+Standardnormalverteilung sich insgesamt zu 1 summiert
+(Wahrscheinlichkeit = 100%) und nach links und rechts ins Unendliche
+verläuft. Das 98% KI hat Grenzen und beinhaltet weniger theoretisch
+mögliche Unterschiede als das 100% KI, aber mehr als das 95% KI.
+
+Um die zweite Frage zu beantworten, darf sich jede/r selbst befragen
+bzw. über die Frage reflektieren.
+
+Ich schliesse das Thema KI hier ab, indem ich noch darauf hinweise, dass
+das publizierte R-Skript, das zum Paper von Naimi and Whitcomb (2020)
+gehört, einen nennenswerten Fehler beinhaltet. Im Paper selbst wird
+behauptet, dass die logistische Regression durchgeführt wurde und dass
+damit das Odds Ratio ermittelt wurde. Beides stimmt nicht, da die
+Autoren hierfür eine Spezifikation im R-Befehl ‘glm’ hätten machen
+müssen, die sie aber unterlassen haben. Damit haben sie (unwissentlich)
+die lineare Regression ausgeführt.
 
 ### Alpha Signifikanzniveau
 
@@ -2201,11 +2278,17 @@ for Comparing Predictions and Marginal Effects Across Models.”
 
 </div>
 
+<div id="ref-naimi2020can" class="csl-entry">
+
+Naimi, Ashley I, and Brian W Whitcomb. 2020. “Can Confidence Intervals
+Be Interpreted?” *American Journal of Epidemiology* 189 (7): 631–33.
+
+</div>
+
 <div id="ref-naimi2025inferential" class="csl-entry">
 
-Naimi, Ashley I, and Brian W Whitcomb. 2025. “Inferential Statistics and
-Direct Versus Inverse Problems.” *American Journal of Epidemiology*,
-kwaf064.
+———. 2025. “Inferential Statistics and Direct Versus Inverse Problems.”
+*American Journal of Epidemiology*, kwaf064.
 
 </div>
 
