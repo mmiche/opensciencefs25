@@ -1,7 +1,7 @@
 Open science FS26
 ================
 Marcel Miché
-2026-03-30
+2026-03-31
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
@@ -27,11 +27,15 @@ Marcel Miché
     - [Konfidenzintervall](#konfidenzintervall)
     - [Alpha Signifikanzniveau](#alpha-signifikanzniveau)
     - [Nullismus](#nullismus)
-    - [Zwischenfazit](#zwischenfazit)
+    - [Zwischenfazit 1](#zwischenfazit-1)
     - [Likelihood Ratio (LR)](#likelihood-ratio-lr)
     - [Direktes oder inverses Problem?](#direktes-oder-inverses-problem)
     - [Likelihood](#likelihood)
     - [Bayesianische Statistik](#bayesianische-statistik)
+    - [Frequentistische Statistik](#frequentistische-statistik)
+    - [Forschungsfrage(n) formulieren](#forschungsfragen-formulieren)
+    - [Daten … wie weiter?](#daten--wie-weiter)
+    - [Zwischenfazit 2](#zwischenfazit-2)
   - [Lesehinweise](#lesehinweise)
 - [Literaturverzeichnis](#literaturverzeichnis)
 
@@ -1541,7 +1545,8 @@ Autoren hierfür eine Spezifikation im R-Befehl ‘glm’ hätten machen
 müssen, die sie aber unterlassen haben. Damit haben sie (unwissentlich)
 die lineare Regression ausgeführt. Für die logistische Regression hätten
 sie das Argument ‘family’ des ‘glm’ Befehls auf ‘binomial’ setzen
-müssen, da ‘glm’ per Default ‘gaussian’ verwendet.
+müssen, da ‘glm’ per Default ‘gaussian’ verwendet (somit also die
+lineare Regression ausführt).
 
 ### Alpha Signifikanzniveau
 
@@ -1587,7 +1592,7 @@ acknowledging that doing so does remove your chances of discovering
 smaller statistically significant effects. After all, you were not
 interested in them anyway, right?’
 
-### Zwischenfazit
+### Zwischenfazit 1
 
 Alle Themen bisher kreisen, wie oben angekündigt, einerseits um den
 Versuch einen Unterschied mithilfe statistischer Hilfsmittel
@@ -1650,14 +1655,16 @@ Voraussetzungen:
 
 Es gibt zudem Ausschlussdiagnostik. Dort geht es um die Frage, wie
 wahrscheinlich es ist, dass eine Person, die ein **negatives**
-diagnostisches Ergebnis erhalten hat, die Krankheit habe.
+diagnostisches Ergebnis erhalten hat, die Krankheit habe. (Wer denkt, es
+müsse ‘die Krankheit nicht habe’ heissen, irrt.)
 
 In diesem Zahlenbeispiel würde jemand, der keinerlei Test durchführt,
-für eine beliebige Person x annehmen, dass es 5% wahrscheinlich ist,
-dass diese Person die fragliche Krankheit habe, und zwar weil dies die
-Prävalenz der Krankheit ist. Ein diagnostischer Test ist umso besser, je
-stärker er diese Ratewahrscheinlichkeit erhöht (was von der LR+
-angezeigt wird) bzw. verringert (was von der LR- angezeigt wird).
+für eine beliebige Person x annehmen (= raten), dass es 5%
+wahrscheinlich ist, dass diese Person die fragliche Krankheit habe, und
+zwar weil dies die Prävalenz der Krankheit ist. Ein diagnostischer Test
+ist umso besser, je stärker er diese Ratewahrscheinlichkeit erhöht (was
+von der LR+ angezeigt wird) bzw. verringert (was von der LR- angezeigt
+wird).
 
 Die Formel für LR+ lautet Sensitivität/(1-Spezifität). Das heisst, dass
 die Wahrscheinlichkeit einer erkrankten Person unter denen mit positivem
@@ -1797,12 +1804,12 @@ Satz des zweiten Absatzes unter der Überschrift ‘Inverse problems and
 statistics’:
 
 In der angewandten Statistik (also in der realen Welt) fragt man eine
-Szenario 2 Frage (Szenario 2 = Man hat keinerlei Ahnung über den
+Szenario 2 Frage (**Szenario 2** = Man hat keinerlei Ahnung über den
 Mechanismus, durch den die Daten produziert wurden, mit denen man es zu
 tun hat), und zwar ganz einfach deshalb, weil man sich in Szenario 2
 (reale Welt) befindet. Jedoch ist der p-Wert der Inferenzstatistik die
-Antwort auf eine Szenario 1 Frage (Szenario 1 = Datensimulation, d.h.
-man hat vollständiges Wissen über den Mechanismus und alle weiteren
+Antwort auf eine Szenario 1 Frage (**Szenario 1** = Datensimulation,
+d.h. man hat vollständiges Wissen über den Mechanismus und alle weiteren
 Dinge, die die Daten produziert haben). Das könnte eine Hauptrolle
 spielen, weshalb so auffällig viele Wissenschaftler/innen wiederholt in
 ihren Publikationen ihr Fehlverständnis des p-Werts dokumentieren.
@@ -1939,6 +1946,116 @@ ob man FS oder BS glaubt durchgeführt zu haben. Es wurde kürzlich
 kritisiert, dass auch für die Anwendung des Bayes Factors ähnlicher
 Unsinn feststellbar ist wie beim NHST (Tendeiro et al. 2024).
 
+### Frequentistische Statistik
+
+Frequentistische Statistik (FS) ist nicht automatisch mit NHST
+gleichzusetzen, d.h. man kann und sollte es auseinanderhalten, wenn
+möglich. FS bezeichnet das (theoretisch) extrem häufige, identische
+Wiederholen ein und desselben Experiments, jedes Mal jedoch mit neuen
+Teilnehmer/innen. Wüsste man das wahre Ergebnis dieses Experiments
+(siehe Szenario 1 in [‘Direktes oder inverses
+Problem’](#direktes-oder-inverses-problem)), könnte man sofort
+auszählen, ob der wahre Wert in x% aller x% Konfidenzintervalle
+enthalten ist. Zum Thema FS gibt es genügend Publikationen (z.B. Haucke
+et al. 2021; Dunleavy and Lacasse 2021; Bland and Altman 1998).
+Jedenfalls stellt die FS den Anspruch auf Objektivität, indem behauptet
+wird, Wahrscheinlichkeit käme zustande durch die gerade beschriebene
+langzeitliche, wiederholte Häufigkeit der notierten (= beobachteten)
+Ergebnisse. Diese Webseite [seeing theory: Frequentist
+inference](https://seeing-theory.brown.edu/frequentist-inference/index.html)
+ist sehr empfehlenswert, um mit der FS etwas zu interagieren. Doch ist
+es überaus auffällig, dass sobald man über die FS genauer reflektiert,
+anfängliche Gefühle der ‘Objektivität’ schwierig bis unmöglich bestehen
+bleiben. Ein sehr klar geschriebener Essay von ca. 3.5 Seiten ist an
+dieser Stelle sehr zu empfehlen (Ambaum 2012).
+
+NHST hat bei der FS sehr viele Anleihen gemacht, darunter der Anspruch
+auf Objektivität. Nur leider fehlt grösstenteils die Übereinstimmung der
+frequentistischen Theorie mit der (psychologischen) Praxis.
+
+### Forschungsfrage(n) formulieren
+
+Zu diesem **überaus wichtigen, weil ersten, Schritt**, im Rahmen jeder
+wissenschaftlich-empirischen Arbeit, empfehle ich sehr Alfuth et al.
+(2025) aufmerksam zu lesen und aktiv zu nutzen. Ich habe zwei kritische
+Anmerkungen zum Paper:
+
+- Im Text unterhalb von Abbildung 2 in Alfuth et al. (2025) steht:
+  ‘\[…\] advice and recommendations from authors \[…\] are the main
+  triggers for initiating needed research.’ Schön wäre es, wenn diese
+  Beschreibung nur positiv verstanden zu werden bräuchte. Jedoch war der
+  Trigger für Alfuth et al. (2025), dass bei auffällig vielen
+  Forschungspublikationen die Forschungsfrage viel zu ungenau formuliert
+  worden war, worunter alles Folgende, z.B. Studiendesign, Hypothesen,
+  Durchführung, Datensammlung und -analyse, leiden musste. Deshalb
+  sollten viele (solcher) Studien vielleicht gerade **nicht** der
+  Trigger für neue Forschung sein, aufgrund der zwingend ungenauen
+  Interpretationen und Schlussfolgerungen solcher Studien. Wenn sie
+  Trigger sein sollen, dann wohl am ehesten im Sinne von: An wie vielen
+  und welchen Stellen müsste man jene Studie verbessern, damit man mit
+  den Ergebnissen und Schlussfolgerungen etwas vernünftiges anfangen
+  kann, z.B. eine kohärente Anschlussstudie planen?
+- Im letzten Satz oberhalb der Überschrift ‘Conclusion’ fehlt meiner
+  Meinung nach das Wort ‘unduly’ am Ende des Satzes. Wenn nämlich
+  jegliche(?) Form von Schaden immer Sorgen bereiten sollte (was
+  genau(!) ist damit gemeint?), dann wäre wesentlich weniger
+  psychologische Forschung möglich. Man denke nur an all die Forschung,
+  bei denen menschliche Studienteilnehmer/innen absichtlich falsch
+  informiert werden, bevor die Untersuchung beginnt, um erst am Ende
+  darüber aufgeklärt zu werden, dass, worüber und warum man sie falsch
+  informiert hat. Deshalb: In jeder gesundheitsbezogenen Intervention
+  ist die Devise stets: Wird der zu erwartende Schaden (oder Schmerz),
+  z.B. Nebenwirkungen eines Medikaments, ausreichend aufgewogen durch
+  den Nutzen für den/die Patient/in? (Hippokratischer Eid)
+
+Besonders nennenswert finde ich noch ein Satzende, das deutlich vor dem
+‘action bias’ warnt: ‘Researchers should \[…\], rather than jumping
+directly to finding solutions to specific problems.’
+
+### Daten … wie weiter?
+
+Der für meine Begriffe wichtigste Aspekt empirischer Forschungsarbeit
+liegt darin, möglichst praxisrelevante, wenn möglich sowohl neuartige
+als auch akkurate Informationen aus den Daten einer wissenschaftlichen
+Studie zu ziehen. Dies lässt sich mit absoluter Sicherheit nicht
+erreichen, wenn man darauf fokussiert ist, ein statistisch signifikantes
+Ergebnis zu präsentieren.
+
+Masnick and Morris (2022) bezeichnet es als ‘data reasoning’ bzw. ‘data
+sensemaking’, während Sand (2022) es ‘interpreting data’ nennt. Das Ziel
+von NHST ist die Generalisierung (von der Stichprobe auf die
+Zielpopulation) eines angeblich gefundenen, weil statistisch
+signifikanten, Effekts. Beim Reflektieren über NHST wird sehr deutlich,
+dass es als Werkzeug explizit nicht zur Interpretation von Daten
+geeignet ist (Sand 2022). Andere Werkzeuge sind wesentlich geeigneter,
+z.B. das Konzept likelihood (siehe oben, [Likelihood](#likelihood)) und
+insbesondere auch die beschreibende Herangehensweise via Kompatibilität
+und Surprisal (siehe compatibilitySurprisal.html).
+
+### Zwischenfazit 2
+
+Der subjektive Eindruck der Liste methodischer Details ist klar: That’s
+a lot! Und die Liste wird weiter ergänzt werden. Puh. Deshalb hier
+nochmals zur Erinnerung (siehe oben, [Methodische
+Sicherheit](#methodische-sicherheit)): Es geht in jedem Punkt
+grundlegend immer nur um das Konzept ‘Unterschied’, welches statistisch
+bedeutet: Unterschied zwischen Gruppen, relativiert an der Variabilität
+der Daten in den Gruppen. Daran direkt angeschlossen sind die beiden
+einzig wichtigen empirischen Fragen:
+
+1.  Liegt der statistisch sichtbar gemachte Unterschied in der
+    erwarteten Richtung?
+2.  Ist der statistisch sichtbar gemachte Unterschied von praktischer
+    Bedeutung?
+
+Ist das viel? Nein. Schwer? Nein. Alles übrige sind methodisch (mal mehr
+mal weniger) wichtige Details, die um diese zentrale Frage kreisen.
+Diese Frage sollte also hauptsächlich und ständig präsent sein. Damit
+man weiss, worauf die Details zu beziehen sind, denn andernfalls hängen
+die Details sinnleer in der Luft und werden womöglich von Opportunisten
+genutzt, um wehrlose Studierende damit in Angst und Schrecken zu
+versetzen. Das wäre kontraproduktiv, nicht wahr?!
+
 <!--
 Melodie im Hintergrund vom likelihood video: Anthem of Inspiration
 - Thematisieren und empirisches, korrektes(!) Prüfen der Testannahmen, und es publizieren.
@@ -1980,6 +2097,23 @@ verstanden wird, nicht als etwas neuartiges, anderes und mühsames.
 <div id="refs" class="references csl-bib-body hanging-indent"
 entry-spacing="0">
 
+<div id="ref-alfuth2025square" class="csl-entry">
+
+Alfuth, Martin, Jonas Klemp, Annette Schmidt, Lukas Streese, Nikolai
+Ramadanov, and Robert Prill. 2025. “SQUARE-IT: A Proposed Approach to
+Square the Identified Research Problem in the Literature with the
+Objectives, the Appropriate Clinical Research Question, and the Research
+Hypothesis.” *BMC Medical Research Methodology* 25 (1): 19.
+
+</div>
+
+<div id="ref-ambaum2012frequentist" class="csl-entry">
+
+Ambaum, Maarten HP. 2012. “Frequentist Vs Bayesian Statistics-a
+Non-Statisticians View.” *arXiv Preprint arXiv:1208.2141*.
+
+</div>
+
 <div id="ref-amrhein2019scientists" class="csl-entry">
 
 Amrhein, Valentin, Sander Greenland, and Blake McShane. 2019.
@@ -2000,6 +2134,13 @@ Variables.” *Stat* 12 (1): e624.
 Babyak, Michael A. 2004. “What You See May Not Be What You Get: A Brief,
 Nontechnical Introduction to Overfitting in Regression-Type Models.”
 *Biopsychosocial Science and Medicine* 66 (3): 411–21.
+
+</div>
+
+<div id="ref-bland1998bayesians" class="csl-entry">
+
+Bland, J Martin, and Douglas G Altman. 1998. “Bayesians and
+Frequentists.” *Bmj* 317 (7166): 1151–60.
 
 </div>
 
@@ -2049,6 +2190,14 @@ for Psychology* 17 (1): 1–6.
 
 Deeks, Jonathan J, and Douglas G Altman. 2004. “Diagnostic Tests 4:
 Likelihood Ratios.” *Bmj* 329 (7458): 168–69.
+
+</div>
+
+<div id="ref-dunleavy2021use" class="csl-entry">
+
+Dunleavy, Daniel J, and Jeffrey R Lacasse. 2021. “The Use and Misuse of
+Classical Statistics: A Primer for Social Workers.” *Research on Social
+Work Practice* 31 (5): 438–53.
 
 </div>
 
@@ -2119,6 +2268,15 @@ Odds Ratio?” *Journal of Clinical Epidemiology* 139: 264–68.
 
 Haeffel, Gerald J. 2022. “Psychology Needs to Get Tired of Winning.”
 *Royal Society Open Science* 9 (6).
+
+</div>
+
+<div id="ref-haucke2021bayesian" class="csl-entry">
+
+Haucke, Matthias, Jonas Miosga, Rink Hoekstra, and Don van Ravenzwaaij.
+2021. “Bayesian Frequentists: Examining the Paradox Between What
+Researchers Can Conclude Versus What They Want to Conclude from
+Statistical Results.” *Collabra: Psychology* 7 (1): 19026.
 
 </div>
 
@@ -2379,6 +2537,13 @@ Rohlfsen, Cory, Kevin Shannon, and Andrew S Parsons. 2025. “Entropy in
 Clinical Decision-Making: A Narrative Review Through the Lens of
 Decision Theory: Rohlfsen Et Al.” *Journal of General Internal Medicine*
 40 (16): 4033–39.
+
+</div>
+
+<div id="ref-sand2022inferential" class="csl-entry">
+
+Sand, Anders. 2022. “Inferential Statistics Is an Unfit Tool for
+Interpreting Data.” *Applied Sciences* 12 (15): 7691.
 
 </div>
 
