@@ -1977,12 +1977,12 @@ frequentistischen Theorie mit der (psychologischen) Praxis.
 ### Unterschied BS zu FS
 
 Der Hauptunterschied besteht darin, dass die Bayesianer/innen vom
-Praxisstandpunkt in Richtung Theorie schauen (siehe Szenario 2 in Naimi
-and Whitcomb (2025)), während die Frequentist/innen vom
-Theoriestandpunkt in Richtung Praxis schauen (siehe Szenario 1 in Naimi
-and Whitcomb (2025)). In Publikationen, die FS und BS vergleichen (z.B.
-Bland and Altman 1998), werden Szenario 1 und 2 meist so oder ähnlich
-ausgedrückt:
+subjektiven Praxisstandpunkt in Richtung Theorie schauen (siehe Szenario
+2 in Naimi and Whitcomb (2025)), während die Frequentist/innen vom (wie
+ihnen scheint) objektiven Theoriestandpunkt in Richtung Praxis schauen
+(siehe Szenario 1 in Naimi and Whitcomb (2025)). In Publikationen, die
+FS und BS vergleichen (z.B. Bland and Altman 1998), werden Szenario 1
+und 2 meist so oder ähnlich ausgedrückt:
 
 Szenario 1 (**FS**): Die Hypothese ist fixiert (= der wahre,
 theoretische Parameter in der Population, z.B. Risikounterschied Suizid
@@ -2028,6 +2028,15 @@ logisch noch praktisch. Einfach ausgedrückt: Beide Seiten spielen auf
 Sieg, und beide halten den Sieg für möglich oder sogar für
 wahrscheinlich, erreichen aber mit Sicherheit nie etwas anderes als ein
 Unentschieden. Ist diese Erkenntnis nicht auch Empirie?
+
+Man könnte schlussfolgern, dass die Frequentist/innen das ‘Subjekt’ (die
+subjektive Wahrnehmung) mit grosser Anstrengung auszuschalten versuchen
+(siehe Positivismus und Behaviorismus; das Subjekt wird maschinisiert
+bzw. objektiviert), während die Bayesianer/innen den Gegenpol dazu
+darstellen, indem sie betonen, dass was auch immer als ‘objektiv’ gelten
+soll, immer nur unter der *a priori* Bedingung der subjektiven
+Wahrnehmung existieren kann, und somit immer nur in Form subjektiver
+Wahrscheinlichkeit, d.h. mehr oder weniger (un)sicher.
 
 ### Forschungsfrage(n) formulieren
 
