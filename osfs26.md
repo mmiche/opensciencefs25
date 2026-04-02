@@ -2006,14 +2006,28 @@ Unsinn, wie eine Art Besessenheit mit anschliessendem Zwangsverhalten:
 “Wir liegen richtig, nein wir, nein wir, nein wir, …” ad infinitum.
 
 Von einem dritten Standpunkt aus ist sofort und mühelos ersichtlich: Die
-Frequentist/innen nehmen die Perspektive von Aristoteles ein (ALLES ist
-aussen; Materie), die Bayesianer/innen nehmen die Perspektive von Plato
-ein (ALLES ist innen; Idee). Wer aus der Geschichte nicht lernt,
-wiederholt sie eben, nämlich sich ewig zu streiten, trotzdem ein dritter
-Standpunkt in Reichweite ist, der zeigt, weshalb der Streit niemals zu
-**einer** Lösung finden kann. Einfach ausgedrückt: Beide Seiten spielen
-auf Sieg, erreichen aber mit Sicherheit nie etwas anderes als ein
-Unentschieden.
+Frequentist/innen fokussieren auf das wahrgenommene Objekt (was
+beobachtet wurde; objektive Empirie), die Bayesianer/innen fokussieren
+auf das Subjekt (den/die wahrnehmende Beobachter/in; subjektive
+Empirie). Empirie hat laut Duden zwei Bedeutungen:
+
+- Methode, die sich auf wissenschaftliche Erfahrung stützt, um
+  Erkenntnisse zu gewinnen.
+- aus wissenschaftlicher Erfahrung gewonnenes Wissen (Erfahrungswissen)
+
+Es bleibt somit unklar (unentschieden), ob ‘Erfahrung(swissen)’ eine
+Sache ist (etwas, das man besitzt oder nicht besitzt; eine Art Objekt)
+oder ein Prozess (ein Werkzeug, dessen Benutzung etwas hervorbringen
+oder erzeugen kann). Oder vielleicht liegt der Duden (teilweise) falsch.
+Vielleicht ist Empirie (auch noch) etwas anderes.
+
+Wer aus der Geschichte nicht lernt, wiederholt sie eben, nämlich sich
+ewig zu streiten, trotzdem ein dritter Standpunkt in Reichweite ist, der
+zeigt, weshalb der Streit niemals zu **einer** Lösung finden kann, weder
+logisch noch praktisch. Einfach ausgedrückt: Beide Seiten spielen auf
+Sieg, und beide halten den Sieg für möglich oder sogar für
+wahrscheinlich, erreichen aber mit Sicherheit nie etwas anderes als ein
+Unentschieden. Ist diese Erkenntnis nicht auch Empirie?
 
 ### Forschungsfrage(n) formulieren
 
