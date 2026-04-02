@@ -1,7 +1,7 @@
 Open science FS26
 ================
 Marcel Miché
-2026-03-31
+2026-04-02
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
@@ -31,8 +31,9 @@ Marcel Miché
     - [Likelihood Ratio (LR)](#likelihood-ratio-lr)
     - [Direktes oder inverses Problem?](#direktes-oder-inverses-problem)
     - [Likelihood](#likelihood)
-    - [Bayesianische Statistik](#bayesianische-statistik)
-    - [Frequentistische Statistik](#frequentistische-statistik)
+    - [Bayesianische Statistik (BS)](#bayesianische-statistik-bs)
+    - [Frequentistische Statistik (FS)](#frequentistische-statistik-fs)
+    - [Unterschied BS zu FS](#unterschied-bs-zu-fs)
     - [Forschungsfrage(n) formulieren](#forschungsfragen-formulieren)
     - [Daten … wie weiter?](#daten--wie-weiter)
     - [Zwischenfazit 2](#zwischenfazit-2)
@@ -1919,7 +1920,7 @@ wie z.B. in der frequentistischen Inferenzstatistik, die nur Sinn macht,
 wenn man der Annahme zustimmt, dass Studie x zumindest theoretisch
 unendlich oft identisch wiederholt werden könnte.
 
-### Bayesianische Statistik
+### Bayesianische Statistik (BS)
 
 Hierüber brauche ich in diesem Dokument nichts zu schreiben, es reicht
 zwei Publikationen zu empfehlen: Gaona et al. (2022) vergleichen
@@ -1946,7 +1947,7 @@ ob man FS oder BS glaubt durchgeführt zu haben. Es wurde kürzlich
 kritisiert, dass auch für die Anwendung des Bayes Factors ähnlicher
 Unsinn feststellbar ist wie beim NHST (Tendeiro et al. 2024).
 
-### Frequentistische Statistik
+### Frequentistische Statistik (FS)
 
 Frequentistische Statistik (FS) ist nicht automatisch mit NHST
 gleichzusetzen, d.h. man kann und sollte es auseinanderhalten, wenn
@@ -1973,6 +1974,47 @@ NHST hat bei der FS sehr viele Anleihen gemacht, darunter der Anspruch
 auf Objektivität. Nur leider fehlt grösstenteils die Übereinstimmung der
 frequentistischen Theorie mit der (psychologischen) Praxis.
 
+### Unterschied BS zu FS
+
+Der Hauptunterschied besteht darin, dass die Bayesianer/innen vom
+Praxisstandpunkt in Richtung Theorie schauen (siehe Szenario 2 in Naimi
+and Whitcomb (2025)), während die Frequentist/innen vom
+Theoriestandpunkt in Richtung Praxis schauen (siehe Szenario 1 in Naimi
+and Whitcomb (2025)). In Publikationen, die FS und BS vergleichen (z.B.
+Bland and Altman 1998), werden Szenario 1 und 2 meist so oder ähnlich
+ausgedrückt:
+
+Szenario 1 (**FS**): Die Hypothese ist fixiert (= der wahre,
+theoretische Parameter in der Population, z.B. Risikounterschied Suizid
+zu begehen, wenn man traumatische Kriegserfahrungen gemacht hat *versus*
+sie nicht gemacht hat). Die Daten können variieren. Somit erklärt sich
+P(Daten\|H0), siehe oben, [‘Direktes oder inverses
+Problem’](#direktes-oder-inverses-problem). P steht für
+Wahrscheinlichkeit, \| steht für ‘unter der Bedingung von’, H0 heisst
+Nullhypothese.
+
+Szeanario 2 (**BS**): Die Daten sind fixiert. Die Hypothese kann
+variieren. Somit erklärt sich P(H0\|Daten), siehe oben, [‘Direktes oder
+inverses Problem’](#direktes-oder-inverses-problem).
+
+Das wirklich Verwirrende scheint (mir) zu sein, dass ein dritter
+Standpunkt fehlt, von dem aus deutlich würde, dass sowohl die BS als
+auch die FS lediglich gegensätzliche Standpunkte sind, von denen aus ein
+Werturteil (wer Recht habe) im Voraus zum Scheitern verurteilt ist. In
+jeder Auseinandersetzung dieser beiden “Lager” wiederholt sich derselbe
+Unsinn, wie eine Art Besessenheit mit anschliessendem Zwangsverhalten:
+“Wir liegen richtig, nein wir, nein wir, nein wir, …” ad infinitum.
+
+Von einem dritten Standpunkt aus ist sofort und mühelos ersichtlich: Die
+Frequentist/innen nehmen die Perspektive von Aristoteles ein (ALLES ist
+aussen; Materie), die Bayesianer/innen nehmen die Perspektive von Plato
+ein (ALLES ist innen; Idee). Wer aus der Geschichte nicht lernt,
+wiederholt sie eben, nämlich sich ewig zu streiten, trotzdem ein dritter
+Standpunkt in Reichweite ist, der zeigt, weshalb der Streit niemals zu
+**einer** Lösung finden kann. Einfach ausgedrückt: Beide Seiten spielen
+auf Sieg, erreichen aber mit Sicherheit nie etwas anderes als ein
+Unentschieden.
+
 ### Forschungsfrage(n) formulieren
 
 Zu diesem **überaus wichtigen, weil ersten, Schritt**, im Rahmen jeder
@@ -1985,8 +2027,8 @@ Anmerkungen zum Paper:
   triggers for initiating needed research.’ Schön wäre es, wenn diese
   Beschreibung nur positiv verstanden zu werden bräuchte. Jedoch war der
   Trigger für Alfuth et al. (2025), dass bei auffällig vielen
-  Forschungspublikationen die Forschungsfrage viel zu ungenau formuliert
-  worden war, worunter alles Folgende, z.B. Studiendesign, Hypothesen,
+  Publikationen die Forschungsfrage viel zu ungenau formuliert worden
+  war, worunter alles Folgende, z.B. Studiendesign, Hypothesen,
   Durchführung, Datensammlung und -analyse, leiden musste. Deshalb
   sollten viele (solcher) Studien vielleicht gerade **nicht** der
   Trigger für neue Forschung sein, aufgrund der zwingend ungenauen
@@ -1994,7 +2036,7 @@ Anmerkungen zum Paper:
   Trigger sein sollen, dann wohl am ehesten im Sinne von: An wie vielen
   und welchen Stellen müsste man jene Studie verbessern, damit man mit
   den Ergebnissen und Schlussfolgerungen etwas vernünftiges anfangen
-  kann, z.B. eine kohärente Anschlussstudie planen?
+  kann?
 - Im letzten Satz oberhalb der Überschrift ‘Conclusion’ fehlt meiner
   Meinung nach das Wort ‘unduly’ am Ende des Satzes. Wenn nämlich
   jegliche(?) Form von Schaden immer Sorgen bereiten sollte (was
