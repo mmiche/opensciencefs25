@@ -1,7 +1,7 @@
 Open science FS26
 ================
 Marcel Miché
-2026-04-02
+2026-04-07
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
@@ -37,6 +37,7 @@ Marcel Miché
     - [Forschungsfrage(n) formulieren](#forschungsfragen-formulieren)
     - [Daten … wie weiter?](#daten--wie-weiter)
     - [Zwischenfazit 2](#zwischenfazit-2)
+    - [DAGs, instrumentelle Variablen](#dags-instrumentelle-variablen)
   - [Lesehinweise](#lesehinweise)
 - [Literaturverzeichnis](#literaturverzeichnis)
 
@@ -1571,13 +1572,13 @@ geschafft, es (klinischen) Psycholog/innen schmackhaft zu machen
 
 ### Nullismus
 
-Nullismus (Greenland 2017c) ist die Gewohnheit, die
+Nullismus (Greenland 2017c, 2011) ist die Gewohnheit, die
 Default-Nullhypothese von exakt Null Effekt zu verwenden, ohne jemals
 darüber konsequent zu reflektieren, ob und warum dies gerechtfertigt
 sein soll. Damit wird die Passivität wissenschaftlichen Arbeitens
 gefördert, was eigentlich ein Widerspruch in sich ist. Aber im Rahmen
 des (Post-)Positivismus erscheint es als eine wissenschaftliche Tugend,
-anstatt als kognitives, oder eher moralisches?, Defizit.
+anstatt als kognitives, oder eher moralisches(?), Defizit.
 
 Der Nullismus und die Dichotomanie sind eng verwandt. Warum? Wenn man
 wissenschaftliche Ergebnisse hauptsächlich oder sogar ausschliesslich
@@ -2084,7 +2085,11 @@ liegt darin, möglichst praxisrelevante, wenn möglich sowohl neuartige
 als auch akkurate Informationen aus den Daten einer wissenschaftlichen
 Studie zu ziehen. Dies lässt sich mit absoluter Sicherheit nicht
 erreichen, wenn man darauf fokussiert ist, ein statistisch signifikantes
-Ergebnis zu präsentieren.
+Ergebnis zu präsentieren. Warum nicht? Weil dies für etwas völlig
+anderes konzipiert wurde, nämlich gemäss eines *a priori* festgelegten
+Kriteriums (alpha Signifikanzniveau) eine (binäre) Entscheidung (nein
+oder ja) zu treffen. Wie informativ ist das? Exakt 2 bit (bit = binary
+digit, 0 = nein, 1 = ja), d.h. minimal.
 
 Masnick and Morris (2022) bezeichnet es als ‘data reasoning’ bzw. ‘data
 sensemaking’, während Sand (2022) es ‘interpreting data’ nennt. Das Ziel
@@ -2120,6 +2125,73 @@ man weiss, worauf die Details zu beziehen sind, denn andernfalls hängen
 die Details sinnleer in der Luft und werden womöglich von Opportunisten
 genutzt, um wehrlose Studierende damit in Angst und Schrecken zu
 versetzen. Das wäre kontraproduktiv, nicht wahr?!
+
+### DAGs, instrumentelle Variablen
+
+Directed acyclic graphs (DAGs) und ‘instrumentelle Variablen’ sind zwei
+(nicht mehr als modern zu bezeichnende) Ideen (Feeney, Hartwig, and
+Davies 2025; Walker et al. 2024; Labrecque and Kezios 2026). Worum geht
+es hierbei? Es geht um die Frage nach dem ‘heiligen Gral’ jeder
+wissenschaftlichen Forschung: Kausalität, genauer: K. in
+Beobachtungsstudien (Igelström et al. 2022). Ist der vermutete kausale
+Faktor wirklich kausal? Ist es der (oder wenigstens ein) Wirkungsfaktor
+(unter anderen), bezogen darauf, warum sich der Outcome entwickelt?
+
+Diese Frage konnte in der Psychologie bisher noch nie für irgendeinen
+Outcome abschliessend beantwortet werden. Nichtsdestotrotz stellen
+einige Wissenschaftler/innen häufig bereits die Folgefrage (als ob man
+die Wirkungsfrage schon beantwortet hätte), nämlich: Wirkt der Faktor so
+wie vermutet? Anders gefragt: Wissen wir über den Wirkmechanismus genau
+Bescheid? Ich wiederhole: Wir wissen noch nicht einmal, ob es der
+vermutete Faktor ist, der wirkt, geschweige denn wie der genaue
+Wirkmechanismus wissenschaftlich erforscht, und noch viel weniger, wie
+er nachgewiesen werden könnte.
+
+Kausalforschung in der Psychologie erscheint manchmal als kontrovers
+(z.B. Haber et al. 2022; D’Amico et al. 2025; Hernán et al. 2025).
+Leider begegnen wir hier scheinbar demselben Grundproblem wie bei den
+beiden Lagern ‘Bayesianische’ und ‘frequentistische’ Statistik. Jede
+Seite scheint überzeugt zu sein, dass sie (aber eben nicht die anderen)
+es beurteilen können, wer warum (nicht) Recht hat. Das ist offenkundig
+zum Scheitern verurteilt. Das kurze Paper von Maldonado and Cox (2020)
+gibt einen kurzen Einblick in ‘causal reasoning in epidemiology’. Dort
+erfährt man einerseits, dass beträchtlich viel davon, was ‘Kausalität’
+bedeutet, nicht statistisch ermittelt werden kann. Andererseits wird man
+mit weiteren Ideen konfrontiert, die dem Thema Kausalität angehören,
+allen voran die Idee von ‘counterfactuals’ (Maldonado 2016). Auch ein
+‘causal cookbook’ (Chatton and Rohrer 2024) gibt es, darin u.a. eine
+(weitere) Erläuterung eines DAG (Box 2 bzw. Abbildung 1). Wohl am
+interessantesten für Psychologinnen: Wie ‘funktionieren’ DAGs in der
+psychologischen Forschung (Rohrer 2024), ist unter den Papern, die
+Rohrer (2024) zitieren, mindestens eines dabei, die DAGs konkret
+anwendet (anstatt es potentiellen Anwender/innen zu erklären)? Ja, z.B.
+Don et al. (2025).
+
+Mit Sicherheit lässt sich also sagen, dass DAGs usw. konzeptuelle und
+visuelle Hilfsmittel sind, deren Nutzung es möglicherweise verbessert
+und/oder erleichtert, sich selbst und dem/der Leser/in einer
+wissenschaftlichen Publikation zu erläutern, welche Rolle man Variablen
+zuschreibt und welche Beziehungen jener Variablen man annimmt; zuerst
+einmal rein theoretisch (Ellison and Rhoma 2025). Die empirische Prüfung
+steht auf einem anderen Blatt, z.B. ist das Studiendesign
+längsschnittlich, usw.? Stolperfallen scheint es jedenfalls auch zu
+geben (Weidlich, Gašević, and Drachsler 2022). Letztlich sprechen wir
+hier allem Anschein nach schon wieder von der Forderung
+Forschungsergebnisse mehr als bisher ‘beschreibend’ zu publizieren (Dyer
+2025; Fox et al. 2022), im Gegensatz zu ‘entscheidend’ (Erinnere:
+Abweichungs- *versus* Entscheidungs-P-Wert).
+
+**Fazit**: Allein auf Grundlage statistischer Hilfsmittel wird
+‘Kausalforschung’ in der Psychologie (und vermutlich auch in allen
+anderen Naturbereichen) stets etwas fehlen, gerade weil jene Hilfsmittel
+(egal wie komplex oder ‘sophisticated’) begrenzt sein müssen
+(Statistische Modelle = Idealisierung). Etliche Dinge, die für
+Kausalität relevant sind, müssen wissenschaftlich berücksichtigt werden,
+ausserhalb der Statistik, die ja nicht mit Wissenschaft identisch ist.
+Somit sprechen wir hier letztlich (wieder einmal) davon, ob Menschen die
+Energie, das Geld und die Geduld aufbringen (oder eben nicht;
+Erinnerung: ‘action bias’), Kausalitätsforschung umfänglich zu
+betreiben.
 
 <!--
 Melodie im Hintergrund vom likelihood video: Anthem of Inspiration
@@ -2226,6 +2298,15 @@ Publishing.
 
 </div>
 
+<div id="ref-chatton2024causal" class="csl-entry">
+
+Chatton, Arthur, and Julia M Rohrer. 2024. “The Causal Cookbook: Recipes
+for Propensity Scores, g-Computation, and Doubly Robust
+Standardization.” *Advances in Methods and Practices in Psychological
+Science* 7 (1): 25152459241236149.
+
+</div>
+
 <div id="ref-ciapponi2021there" class="csl-entry">
 
 Ciapponi, Agustı́n, José M Belizán, Gilda Piaggio, and Sanni Yaya. 2021.
@@ -2239,6 +2320,16 @@ Health* 18 (1): 80.
 Cole, Charles. 1993. “Shannon Revisited: Information in Terms of
 Uncertainty.” *Journal of the American Society for Information Science*
 44 (4): 204–11.
+
+</div>
+
+<div id="ref-dAmico2025association" class="csl-entry">
+
+D’Amico, Filippo, Marilena Marmiere, Martina Fonti, Mariarita Battaglia,
+and Alessandro Belletti. 2025. “Association Does Not Mean Causation,
+When Observational Data Were Misinterpreted as Causal: The Observational
+Interpretation Fallacy.” *Journal of Evaluation in Clinical Practice* 31
+(1): e14288.
 
 </div>
 
@@ -2258,11 +2349,37 @@ Likelihood Ratios.” *Bmj* 329 (7458): 168–69.
 
 </div>
 
+<div id="ref-don2025perceived" class="csl-entry">
+
+Don, Brian P, Kieren J Lilly, Chris G Sibley, Nickola C Overall, and
+Danny Osborne. 2025. “Perceived Inequality and Wellness: Investigating
+the Longitudinal Links Between Relative Deprivation, Facets of
+Well-Being, and Self-Rated Health.” *Affective Science* 6 (2): 308–20.
+
+</div>
+
 <div id="ref-dunleavy2021use" class="csl-entry">
 
 Dunleavy, Daniel J, and Jeffrey R Lacasse. 2021. “The Use and Misuse of
 Classical Statistics: A Primer for Social Workers.” *Research on Social
 Work Practice* 31 (5): 438–53.
+
+</div>
+
+<div id="ref-dyer2025distinction" class="csl-entry">
+
+Dyer, Brett P. 2025. “The Distinction Between Causal, Predictive, and
+Descriptive Research–There Is Still Room for Improvement.” *Journal of
+Clinical Epidemiology*, 111960.
+
+</div>
+
+<div id="ref-ellison2025directed" class="csl-entry">
+
+Ellison, George, and Hanan Rhoma. 2025. “Directed Acyclic Graphs as
+Conceptual and Analytical Tools in Applied and Theoretical Epidemiology:
+Advances, Setbacks and Future Possibilities.” *Mathematical Biosciences
+and Engineering (MBE)* 22 (6): 1280–1306.
 
 </div>
 
@@ -2278,6 +2395,22 @@ Testing: Still Going Strong.” *Heliyon* 10 (21).
 Etz, Alexander. 2018. “Introduction to the Concept of Likelihood and Its
 Applications.” *Advances in Methods and Practices in Psychological
 Science* 1 (1): 60–69.
+
+</div>
+
+<div id="ref-feeney2025use" class="csl-entry">
+
+Feeney, Timothy, Fernando Pires Hartwig, and Neil M Davies. 2025. “How
+to Use Directed Acyclic Graphs: Guide for Clinical Researchers.” *Bmj*
+388.
+
+</div>
+
+<div id="ref-fox2022need" class="csl-entry">
+
+Fox, Matthew P, Eleanor J Murray, Catherine R Lesko, and Shawnita
+Sealy-Jefferson. 2022. “On the Need to Revitalize Descriptive
+Epidemiology.” *American Journal of Epidemiology* 191 (7): 1174–79.
 
 </div>
 
@@ -2298,11 +2431,19 @@ Colombiana* 31 (3): 130–40.
 
 </div>
 
+<div id="ref-greenland2011null" class="csl-entry">
+
+Greenland, Sander. 2011. “Null Misinterpretation in Statistical Testing
+and Its Impact on Health Risk Assessment.” *Preventive Medicine* 53
+(4-5): 225–28.
+
+</div>
+
 <div id="ref-greenland2017serious" class="csl-entry">
 
-Greenland, Sander. 2017a. “A Serious Misinterpretation of a Consistent
-Inverse Association of Statin Use with Glioma Across 3 Case-Control
-Studies.” *European Journal of Epidemiology* 32: 87–88.
+———. 2017a. “A Serious Misinterpretation of a Consistent Inverse
+Association of Statin Use with Glioma Across 3 Case-Control Studies.”
+*European Journal of Epidemiology* 32: 87–88.
 
 </div>
 
@@ -2326,6 +2467,16 @@ Methodology.” *American Journal of Epidemiology* 186 (6): 639–45.
 ———. 2021. “Noncollapsibility, Confounding, and Sparse-Data Bias. Part
 2: What Should Researchers Make of Persistent Controversies about the
 Odds Ratio?” *Journal of Clinical Epidemiology* 139: 264–68.
+
+</div>
+
+<div id="ref-haber2022causal" class="csl-entry">
+
+Haber, Noah A, Sarah E Wieten, Julia M Rohrer, Onyebuchi A Arah, Peter
+WG Tennant, Elizabeth A Stuart, Eleanor J Murray, et al. 2022. “Causal
+and Associational Language in Observational Health Research: A
+Systematic Evaluation.” *American Journal of Epidemiology* 191 (12):
+2084–97.
 
 </div>
 
@@ -2371,6 +2522,15 @@ Science* 41 (1): 222–26.
 
 </div>
 
+<div id="ref-hernan2025target" class="csl-entry">
+
+Hernán, Miguel A, Issa J Dahabreh, Barbra A Dickerman, and Sonja A
+Swanson. 2025. “The Target Trial Framework for Causal Inference from
+Observational Data: Why and When Is It Helpful?” *Annals of Internal
+Medicine* 178 (3): 402–7.
+
+</div>
+
 <div id="ref-higgins2008commentary" class="csl-entry">
 
 Higgins, Julian PT. 2008. “Commentary: Heterogeneity in Meta-Analysis
@@ -2391,6 +2551,15 @@ Comparisons.” *Journal of Clinical Epidemiology* 180: 111688.
 Howell-Moroney, Michael. 2024. “Inconvenient Truths about Logistic
 Regression and the Remedy of Marginal Effects.” *Public Administration
 Review* 84 (6): 1218–36.
+
+</div>
+
+<div id="ref-igelstrom2022causal" class="csl-entry">
+
+Igelström, Erik, Peter Craig, Jim Lewsey, John Lynch, Anna Pearce, and
+Srinivasa Vittal Katikireddi. 2022. “Causal Inference and Effect
+Estimation Using Observational Data.” *J Epidemiol Community Health* 76
+(11): 960–66.
 
 </div>
 
@@ -2423,6 +2592,13 @@ Bias in Higher Education: Pedagogical Insights on Critical Thinking.”
 Kraemer, Helena Chmura. 2015. “A Source of False Findings in Published
 Research Studies: Adjusting for Covariates.” *JAMA Psychiatry* 72 (10):
 961–62.
+
+</div>
+
+<div id="ref-labrecque2026and" class="csl-entry">
+
+Labrecque, Jeremy A, and Katrina L Kezios. 2026. “How and When to Use
+Causal and Associational Language.” *Bmj* 392.
 
 </div>
 
@@ -2459,6 +2635,20 @@ Sarah Moulton, Andrew W Swift, and Betty Love. 2025. “Developing a Data
 Literacy and Visualization Service Learning Course That Fulfills
 Undergraduate Quantitative Literacy Requirements.” *Journal of
 Statistics and Data Science Education*, 1–12.
+
+</div>
+
+<div id="ref-maldonado2016role" class="csl-entry">
+
+Maldonado, George. 2016. “The Role of Counterfactual Theory in Causal
+Reasoning.” *Annals of Epidemiology* 26 (10): 681–82.
+
+</div>
+
+<div id="ref-maldonado2020causal" class="csl-entry">
+
+Maldonado, George, and Louis Anthony Cox. 2020. “Causal Reasoning in
+Epidemiology: Philosophy and Logic.” *Global Epidemiology* 2: 100020.
 
 </div>
 
@@ -2605,6 +2795,14 @@ Decision Theory: Rohlfsen Et Al.” *Journal of General Internal Medicine*
 
 </div>
 
+<div id="ref-rohrer2024causal" class="csl-entry">
+
+Rohrer, Julia M. 2024. “Causal Inference for Psychologists Who Think
+That Causal Inference Is Not for Them.” *Social and Personality
+Psychology Compass* 18 (3): e12948.
+
+</div>
+
 <div id="ref-sand2022inferential" class="csl-entry">
 
 Sand, Anders. 2022. “Inferential Statistics Is an Unfit Tool for
@@ -2705,6 +2903,23 @@ Vincent, Coralie, Alexandra M Bodnaruc, Denis Prud’homme, Jacob
 Guenette, and Isabelle Giroux. 2024. “Disordered Eating Behaviours
 During the Menopausal Transition: A Systematic Review.” *Applied
 Physiology, Nutrition, and Metabolism* 49 (10): 1286–1308.
+
+</div>
+
+<div id="ref-walker2024reading" class="csl-entry">
+
+Walker, Venexia, Eleanor Sanderson, Michael G Levin, Scott M Damraurer,
+Timothy Feeney, and Neil M Davies. 2024. “Reading and Conducting
+Instrumental Variable Studies: Guide, Glossary, and Checklist.” *Bmj*
+387.
+
+</div>
+
+<div id="ref-weidlich2022causal" class="csl-entry">
+
+Weidlich, Joshua, Dragan Gašević, and Hendrik Drachsler. 2022. “Causal
+Inference and Bias in Learning Analytics: A Primer on Pitfalls Using
+Directed Acyclic Graphs.” *Journal of Learning Analytics* 9 (3): 183–99.
 
 </div>
 
