@@ -142,6 +142,11 @@ ob ein **bedingter Unterschied** vorliegt oder nicht. Bei einem
 vermuteten PF dreht sich lediglich die Richtung des erwarteten
 Unterschiedes um, im Gegensatz zu einem vermuteten RF.
 
+**Notiz**: Ich bin zufällig auf ein aktuelles Paper gestossen (Krieger
+et al. 2026), das etwas sehr ähnliches untersucht hat, nämlich
+Zusammenhänge zwischen verschiedenen Diskriminierungserfahrungen, z.B.
+Sexismus, und psychologischem Distress.
+
 ### Checklisten, Regelsammlungen
 
 Im Seminar zu open science (Bereich: empirische Psychologie) geht es -
@@ -1566,7 +1571,7 @@ Das Problem dabei ist immer dasselbe, und zwar: Was soll anstelle von
 alpha treten, welche Alternative(n) gibt es? Ich erinnere hier an
 compatibility intervals und surprisals, die beide auf der
 Informationstheorie von Claude Shannon basieren, das Unsicherheit als
-zentrales Konzept nutzt (Cole 1993). Bisher hat es jedoch kaum jemand
+zentrales Konzept nutzt (C. Cole 1993). Bisher hat es jedoch kaum jemand
 geschafft, es (klinischen) Psycholog/innen schmackhaft zu machen
 (Rohlfsen, Shannon, and Parsons 2025).
 
@@ -2132,66 +2137,99 @@ Directed acyclic graphs (DAGs) und ‘instrumentelle Variablen’ sind zwei
 (nicht mehr als modern zu bezeichnende) Ideen (Feeney, Hartwig, and
 Davies 2025; Walker et al. 2024; Labrecque and Kezios 2026). Worum geht
 es hierbei? Es geht um die Frage nach dem ‘heiligen Gral’ jeder
-wissenschaftlichen Forschung: Kausalität, genauer: K. in
+wissenschaftlichen Forschung: Kausalität, genauer: Kausalität in
 Beobachtungsstudien (Igelström et al. 2022). Ist der vermutete kausale
 Faktor wirklich kausal? Ist es der (oder wenigstens ein) Wirkungsfaktor
 (unter anderen), bezogen darauf, warum sich der Outcome entwickelt?
 
-Diese Frage konnte in der Psychologie bisher noch nie für irgendeinen
-Outcome abschliessend beantwortet werden. Nichtsdestotrotz stellen
-einige Wissenschaftler/innen häufig bereits die Folgefrage (als ob man
-die Wirkungsfrage schon beantwortet hätte), nämlich: Wirkt der Faktor so
-wie vermutet? Anders gefragt: Wissen wir über den Wirkmechanismus genau
+DAGs sind visuelle Hilfsmittel, womit man Variablen in einem
+statistischen Model bestimmte Rollen zuweisen und spezifische
+Beziehungen zwischen den Variablen benennen kann. Anders ausgedrückt, es
+kann zu vermeiden helfen, Variablen falsche Rollen zuzuschreiben, z.B.
+Kontrollvariable anstatt Mediator. All dies ist selbstverständlich rein
+theoretisch (G. Ellison and Rhoma 2025; Tennant et al. 2021). Die
+empirische Prüfung steht auf einem anderen Blatt, z.B. ist das
+Studiendesign längsschnittlich, usw.? Achtung vor Stolperfallen
+(Weidlich, Gašević, and Drachsler 2022). Auch DAGs gehören zur bekannten
+Forderung, Forschungsergebnisse mehr als bisher ‘beschreibend’ zu
+präsentieren (Dyer 2025; Fox et al. 2022), im Gegensatz zu
+‘entscheidend’ (Erinnere: Abweichungs- *versus* Entscheidungs-P-Wert).
+
+Kausalitätsfragen konnte in der Psychologie bisher noch nie für
+irgendeinen Outcome abschliessend beantwortet werden, wofür u.a. die
+Existenz des Bio-Psycho-Sozialen Erklärungsmodells psychischer Phänomene
+ein Indiz ist. Nichtsdestotrotz stellen einige Wissenschaftler/innen
+häufig bereits die Folgefrage (als ob man die Wirkungsfrage schon
+beantwortet hätte), nämlich: Wissen wir über den Wirkmechanismus genau
 Bescheid? Ich wiederhole: Wir wissen noch nicht einmal, ob es der
 vermutete Faktor ist, der wirkt, geschweige denn wie der genaue
 Wirkmechanismus wissenschaftlich erforscht, und noch viel weniger, wie
-er nachgewiesen werden könnte.
+er nachgewiesen werden könnte. Zumindest gilt das für die klinische
+Psychologie (Eronen 2020), anscheinend nicht (mehr) für die
+Arbeits-/Organisationspsychologie (Cornelissen and Werner 2026).
 
-Kausalforschung in der Psychologie erscheint manchmal als kontrovers
-(z.B. Haber et al. 2022; D’Amico et al. 2025; Hernán et al. 2025).
-Leider begegnen wir hier scheinbar demselben Grundproblem wie bei den
+Kausalforschung in der Psychologie ist kontrovers (z.B. Haber et al.
+2022; D’Amico et al. 2025; Hernán et al. 2025; Conway et al. 2025), d.h.
+manche sagen, dass Kausalität in Beobachtungsstudien nirgends suggeriert
+und schon gar nicht behauptet werden sollte, andere sehen dies völlig
+anders. Leider begegnen wir hier scheinbar demselben Problem wie bei den
 beiden Lagern ‘Bayesianische’ und ‘frequentistische’ Statistik. Jede
-Seite scheint überzeugt zu sein, dass sie (aber eben nicht die anderen)
-es beurteilen können, wer warum (nicht) Recht hat. Das ist offenkundig
-zum Scheitern verurteilt. Das kurze Paper von Maldonado and Cox (2020)
-gibt einen kurzen Einblick in ‘causal reasoning in epidemiology’. Dort
-erfährt man einerseits, dass beträchtlich viel davon, was ‘Kausalität’
-bedeutet, nicht statistisch ermittelt werden kann. Andererseits wird man
-mit weiteren Ideen konfrontiert, die dem Thema Kausalität angehören,
-allen voran die Idee von ‘counterfactuals’ (Maldonado 2016). Auch ein
+Seite ist überzeugt, sie (aber nicht die anderen) könnten es beurteilen,
+wer Recht hat. Das ist offenkundig zum Scheitern verurteilt. Das Paper
+von Maldonado and Cox (2020) gibt einen kurzen Einblick in ‘causal
+reasoning in epidemiology’ (siehe zudem Maldonado (2016)). Auch ein
 ‘causal cookbook’ (Chatton and Rohrer 2024) gibt es, darin u.a. eine
-(weitere) Erläuterung eines DAG (Box 2 bzw. Abbildung 1). Wohl am
-interessantesten für Psychologinnen: Wie ‘funktionieren’ DAGs in der
-psychologischen Forschung (Rohrer 2024), ist unter den Papern, die
-Rohrer (2024) zitieren, mindestens eines dabei, die DAGs konkret
-anwendet (anstatt es potentiellen Anwender/innen zu erklären)? Ja, z.B.
-Don et al. (2025).
-
-Mit Sicherheit lässt sich also sagen, dass DAGs usw. konzeptuelle und
-visuelle Hilfsmittel sind, deren Nutzung es möglicherweise verbessert
-und/oder erleichtert, sich selbst und dem/der Leser/in einer
-wissenschaftlichen Publikation zu erläutern, welche Rolle man Variablen
-zuschreibt und welche Beziehungen jener Variablen man annimmt; zuerst
-einmal rein theoretisch (Ellison and Rhoma 2025). Die empirische Prüfung
-steht auf einem anderen Blatt, z.B. ist das Studiendesign
-längsschnittlich, usw.? Stolperfallen scheint es jedenfalls auch zu
-geben (Weidlich, Gašević, and Drachsler 2022). Letztlich sprechen wir
-hier allem Anschein nach schon wieder von der Forderung
-Forschungsergebnisse mehr als bisher ‘beschreibend’ zu publizieren (Dyer
-2025; Fox et al. 2022), im Gegensatz zu ‘entscheidend’ (Erinnere:
-Abweichungs- *versus* Entscheidungs-P-Wert).
+(weitere) Erläuterung eines DAG (Box 2 bzw. Abbildung 1). Wie sehen DAGs
+in der psychologischen Forschung aus (Rohrer 2024)? Gibt es Paper, die
+DAGs konkret anwenden? Ja, z.B. Don et al. (2025). Insgesamt wurden sie
+von Psycholog/innen jedoch eher selten in Publikationen verwendet (Poppe
+et al. 2025).
 
 **Fazit**: Allein auf Grundlage statistischer Hilfsmittel wird
 ‘Kausalforschung’ in der Psychologie (und vermutlich auch in allen
-anderen Naturbereichen) stets etwas fehlen, gerade weil jene Hilfsmittel
-(egal wie komplex oder ‘sophisticated’) begrenzt sein müssen
+anderen Naturbereichen) stets unvollständig bleiben, gerade weil jene
+Hilfsmittel (egal wie komplex oder ‘sophisticated’) begrenzt sein müssen
 (Statistische Modelle = Idealisierung). Etliche Dinge, die für
-Kausalität relevant sind, müssen wissenschaftlich berücksichtigt werden,
-ausserhalb der Statistik, die ja nicht mit Wissenschaft identisch ist.
-Somit sprechen wir hier letztlich (wieder einmal) davon, ob Menschen die
+Kausalität relevant sind, müssen ausserhalb der Statistik
+wissenschaftlich berücksichtigt werden. Statistik war und ist nicht mit
+Wissenschaft deckungsgleich. Somit hängt es davon ab, ob Menschen die
 Energie, das Geld und die Geduld aufbringen (oder eben nicht;
 Erinnerung: ‘action bias’), Kausalitätsforschung umfänglich zu
 betreiben.
+
+**Zusatz 1**: Das Paper von G. T. Ellison (2021) berichtet über
+beträchtliche DAGs-Anlaufschwierigkeiten von medizinischen
+Bachelorstudierenden. Das dürfte auch für Psychologiestudierende (und
+vielleicht darüber hinaus) zu erwarten sein.
+
+**Zusatz 2**: Theorie und Praxis sind meist deutlich verschieden, was
+auch für DAGs gilt. Sie *sollen* eine Erleichterung/Verbesserung
+ermöglichen, können dies jedoch nur dann, wenn die nutzende Person aktiv
+mitdenkt und lenkt, d.h. zu keiner Zeit passiv wird. Drei Paper, in
+denen es um das Hin und Her geht, zwischen aktiv mitdenken/lenken und
+passiv einem Hilfsmittel die Kontrolle zu überlassen, sind Oberndorfer
+et al. (2026), Carlin (2026) und Dyer (2026). Betont wird auch die
+zentrale Bedeutung, wie spezifisch, klar und eindeutig die
+Forschungsfrage ausgearbeitet wurde (Erinnere das SQUARE-IT Paper von
+Alfuth et al. (2025)).
+
+**Zusatz 3**: Wann immer Struktur- und/oder Pfadmodelle und statistisch
+gestützte Kausalitätsforschung kombiniert werden, muss unbedingt auch
+das Thema ‘unkorrigierte Messfehler’ zumindest erwähnt werden (D. A.
+Cole and Preacher 2014), weil diese per Default in multiplen
+Regressionsmodellen völlig unberücksichtigt bleiben, obwohl es genügend
+viele und realistische Möglichkeiten gibt, dass sie die berichteten
+Schätzgrössen verzerren können. Hiermit ebenfalls eng verknüpft ist das
+Paper von Westfall and Yarkoni (2016), dessen Titel lautet, dass es
+‘schwerer als gedacht sei, statistisch Konfundierung zu kontrollieren’
+(siehe zudem Wysocki, Lawson, and Rhemtulla 2022).
+
+**Zusatzfazit**: Über diese drei Zusätze hinweg, lautet das Fazit,
+einerseits eine möglichst präzise Forschungsfrage zu erarbeiten, die
+andererseits ein möglichst einfaches, anstatt komplexes, statistisches
+Modell verlangt. Dies wäre zudem in Übereinstimmung mit dem Prinzip von
+Ockham’s Rasierklinge, d.h. Modelle so simpel wie möglich zu halten,
+ohne sie jedoch zu übersimplifizieren.
 
 <!--
 Melodie im Hintergrund vom likelihood video: Anthem of Inspiration
@@ -2290,6 +2328,14 @@ Neuroscience* 14 (8): 585–85.
 
 </div>
 
+<div id="ref-carlin2026identifying" class="csl-entry">
+
+Carlin, John B. 2026. “‘Identifying Variables That Independently
+Predict…’ Is Not a Well-Defined Research Task.” *Journal of Clinical
+Epidemiology* 189.
+
+</div>
+
 <div id="ref-casler2025pragmatism" class="csl-entry">
 
 Casler, Catherine, and Dean Pierides. 2025. “Pragmatism.” In *Elgar
@@ -2320,6 +2366,30 @@ Health* 18 (1): 80.
 Cole, Charles. 1993. “Shannon Revisited: Information in Terms of
 Uncertainty.” *Journal of the American Society for Information Science*
 44 (4): 204–11.
+
+</div>
+
+<div id="ref-cole2014manifest" class="csl-entry">
+
+Cole, David A, and Kristopher J Preacher. 2014. “Manifest Variable Path
+Analysis: Potentially Serious and Misleading Consequences Due to
+Uncorrected Measurement Error.” *Psychological Methods* 19 (2): 300.
+
+</div>
+
+<div id="ref-conway2025addressing" class="csl-entry">
+
+Conway, Christopher M, Holly E Jenkins, Alice E Milne, Sonia Singh, and
+Benjamin Wilson. 2025. “Addressing the Theory Crisis in Statistical
+Learning Research.” *Npj Science of Learning* 10 (1): 68.
+
+</div>
+
+<div id="ref-cornelissen2026mechanisms" class="csl-entry">
+
+Cornelissen, Joep P, and Mirjam Werner. 2026. “What Are Mechanisms? Ways
+of Conceptualizing and Studying Causal Mechanisms.” *Organizational
+Research Methods* 29 (2): 147–76.
 
 </div>
 
@@ -2374,6 +2444,22 @@ Clinical Epidemiology*, 111960.
 
 </div>
 
+<div id="ref-dyer2026response" class="csl-entry">
+
+———. 2026. “Response to:‘identifying Variables That Independently
+Predict…’ Is Not a Well-Defined Research Task.” *Journal of Clinical
+Epidemiology* 189.
+
+</div>
+
+<div id="ref-ellison2021might" class="csl-entry">
+
+Ellison, George TH. 2021. “Might Temporal Logic Improve the
+Specification of Directed Acyclic Graphs (DAGs)?” *Journal of Statistics
+and Data Science Education* 29 (2): 202–13.
+
+</div>
+
 <div id="ref-ellison2025directed" class="csl-entry">
 
 Ellison, George, and Hanan Rhoma. 2025. “Directed Acyclic Graphs as
@@ -2387,6 +2473,13 @@ and Engineering (MBE)* 22 (6): 1280–1306.
 
 Emmert-Streib, Frank. 2024. “Trends in Null Hypothesis Significance
 Testing: Still Going Strong.” *Heliyon* 10 (21).
+
+</div>
+
+<div id="ref-eronen2020causal" class="csl-entry">
+
+Eronen, Markus I. 2020. “Causal Discovery and the Problem of
+Psychological Interventions.” *New Ideas in Psychology* 59: 100785.
 
 </div>
 
@@ -2595,6 +2688,17 @@ Research Studies: Adjusting for Covariates.” *JAMA Psychiatry* 72 (10):
 
 </div>
 
+<div id="ref-krieger2026psychological" class="csl-entry">
+
+Krieger, Nancy, Nykesha Johnson, Jarvis T Chen, Sari L Reisner,
+Maddalena Marini, Merrily E LeBlanc, Kenneth H Mayer, et al. 2026.
+“Psychological Distress, Racism, Sexism, Cissexism, Heterosexism,
+Ageism, and Sizeism: Analyzing Patterns of Association Using Explicit
+and Implicit Measures of Discrimination.” *AJE Advances: Research in
+Epidemiology* 2 (1): uuag007.
+
+</div>
+
 <div id="ref-labrecque2026and" class="csl-entry">
 
 Labrecque, Jeremy A, and Katrina L Kezios. 2026. “How and When to Use
@@ -2722,6 +2826,15 @@ Nuzzo, Regina. 2014. “Scientific Method: Statistical Errors.” *Nature*
 
 </div>
 
+<div id="ref-oberndorfer2026descriptive" class="csl-entry">
+
+Oberndorfer, Moritz, Annie Herbert, S Vittal Katikireddi, and Anna
+Pearce. 2026. “Descriptive Estimands, Causal Estimands, and Avoiding the
+Jungle of Adjusted Associations ‘in Between’.” *Journal of Epidemiology
+and Community Health*. BMJ Publishing Group Ltd.
+
+</div>
+
 <div id="ref-pandey2025research" class="csl-entry">
 
 Pandey, Chandra Shekhar, Patanjali Mishra, Shri Ram Pandey, Ratan Deep
@@ -2758,6 +2871,16 @@ Original Psychological Research: A Discussion and Tutorial.”
 Perneger, Thomas V. 2021. “How to Use Likelihood Ratios to Interpret
 Evidence from Randomized Trials.” *Journal of Clinical Epidemiology*
 136: 235–42.
+
+</div>
+
+<div id="ref-poppe2025develop" class="csl-entry">
+
+Poppe, Louise, Johan Steen, Wen Wei Loh, Geert Crombez, Fien De Block,
+Noortje Jacobs, Peter WG Tennant, Jelle Van Cauwenberg, and Annick L De
+Paepe. 2025. “How to Develop Causal Directed Acyclic Graphs for
+Observational Health Research: A Scoping Review.” *Health Psychology
+Review* 19 (1): 45–65.
 
 </div>
 
@@ -2874,6 +2997,16 @@ Science* 7 (1): 25152459231213371.
 
 </div>
 
+<div id="ref-tennant2021use" class="csl-entry">
+
+Tennant, Peter WG, Eleanor J Murray, Kellyn F Arnold, Laurie Berrie,
+Matthew P Fox, Sarah C Gadd, Wendy J Harrison, et al. 2021. “Use of
+Directed Acyclic Graphs (DAGs) to Identify Confounders in Applied Health
+Research: Review and Recommendations.” *International Journal of
+Epidemiology* 50 (2): 620–32.
+
+</div>
+
 <div id="ref-thomson2017making" class="csl-entry">
 
 Thomson, Carrie Louise, Neal Maskrey, and Ivo Vlaev. 2017. “Making
@@ -2920,6 +3053,23 @@ Instrumental Variable Studies: Guide, Glossary, and Checklist.” *Bmj*
 Weidlich, Joshua, Dragan Gašević, and Hendrik Drachsler. 2022. “Causal
 Inference and Bias in Learning Analytics: A Primer on Pitfalls Using
 Directed Acyclic Graphs.” *Journal of Learning Analytics* 9 (3): 183–99.
+
+</div>
+
+<div id="ref-westfall2016statistically" class="csl-entry">
+
+Westfall, Jacob, and Tal Yarkoni. 2016. “Statistically Controlling for
+Confounding Constructs Is Harder Than You Think.” *PloS One* 11 (3):
+e0152719.
+
+</div>
+
+<div id="ref-wysocki2022statistical" class="csl-entry">
+
+Wysocki, Anna C, Katherine M Lawson, and Mijke Rhemtulla. 2022.
+“Statistical Control Requires Causal Justification.” *Advances in
+Methods and Practices in Psychological Science* 5 (2):
+25152459221095823.
 
 </div>
 
