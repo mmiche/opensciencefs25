@@ -1,7 +1,7 @@
 Open science FS26
 ================
 Marcel Miché
-2026-04-07
+2026-04-08
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
@@ -38,6 +38,9 @@ Marcel Miché
     - [Daten … wie weiter?](#daten--wie-weiter)
     - [Zwischenfazit 2](#zwischenfazit-2)
     - [DAGs, instrumentelle Variablen](#dags-instrumentelle-variablen)
+    - [Adjustierung](#adjustierung)
+    - [Sensitivitätsanalyse,
+      Unsicherheitsanalyse](#sensitivitätsanalyse-unsicherheitsanalyse)
   - [Lesehinweise](#lesehinweise)
 - [Literaturverzeichnis](#literaturverzeichnis)
 
@@ -2092,9 +2095,10 @@ Studie zu ziehen. Dies lässt sich mit absoluter Sicherheit nicht
 erreichen, wenn man darauf fokussiert ist, ein statistisch signifikantes
 Ergebnis zu präsentieren. Warum nicht? Weil dies für etwas völlig
 anderes konzipiert wurde, nämlich gemäss eines *a priori* festgelegten
-Kriteriums (alpha Signifikanzniveau) eine (binäre) Entscheidung (nein
-oder ja) zu treffen. Wie informativ ist das? Exakt 2 bit (bit = binary
-digit, 0 = nein, 1 = ja), d.h. minimal.
+Kriteriums (alpha Signifikanzniveau) eine binäre Entscheidung zu
+treffen. Wie informativ ist das? Exakt 2 bit (bit = binary digit, 0 =
+statistisch nicht signifikant, 1 = statistisch signifikant). Weniger
+Information ist nicht möglich.
 
 Masnick and Morris (2022) bezeichnet es als ‘data reasoning’ bzw. ‘data
 sensemaking’, während Sand (2022) es ‘interpreting data’ nennt. Das Ziel
@@ -2110,8 +2114,8 @@ und Surprisal (siehe compatibilitySurprisal.html).
 ### Zwischenfazit 2
 
 Der subjektive Eindruck der Liste methodischer Details ist klar: That’s
-a lot! Und die Liste wird weiter ergänzt werden. Puh. Deshalb hier
-nochmals zur Erinnerung (siehe oben, [Methodische
+a lot! Und die Liste wird weiter ergänzt werden … Deshalb hier nochmals
+zur Erinnerung (siehe oben, [Methodische
 Sicherheit](#methodische-sicherheit)): Es geht in jedem Punkt
 grundlegend immer nur um das Konzept ‘Unterschied’, welches statistisch
 bedeutet: Unterschied zwischen Gruppen, relativiert an der Variabilität
@@ -2127,9 +2131,9 @@ Ist das viel? Nein. Schwer? Nein. Alles übrige sind methodisch (mal mehr
 mal weniger) wichtige Details, die um diese zentrale Frage kreisen.
 Diese Frage sollte also hauptsächlich und ständig präsent sein. Damit
 man weiss, worauf die Details zu beziehen sind, denn andernfalls hängen
-die Details sinnleer in der Luft und werden womöglich von Opportunisten
-genutzt, um wehrlose Studierende damit in Angst und Schrecken zu
-versetzen. Das wäre kontraproduktiv, nicht wahr?!
+die Details sinnleer in der Luft und werden womöglich genutzt, um
+wehrlose Studierende damit in Angst und Schrecken zu versetzen. Das wäre
+kontraproduktiv, nicht wahr?!
 
 ### DAGs, instrumentelle Variablen
 
@@ -2170,20 +2174,20 @@ Arbeits-/Organisationspsychologie (Cornelissen and Werner 2026).
 
 Kausalforschung in der Psychologie ist kontrovers (z.B. Haber et al.
 2022; D’Amico et al. 2025; Hernán et al. 2025; Conway et al. 2025), d.h.
-manche sagen, dass Kausalität in Beobachtungsstudien nirgends suggeriert
-und schon gar nicht behauptet werden sollte, andere sehen dies völlig
-anders. Leider begegnen wir hier scheinbar demselben Problem wie bei den
-beiden Lagern ‘Bayesianische’ und ‘frequentistische’ Statistik. Jede
-Seite ist überzeugt, sie (aber nicht die anderen) könnten es beurteilen,
-wer Recht hat. Das ist offenkundig zum Scheitern verurteilt. Das Paper
-von Maldonado and Cox (2020) gibt einen kurzen Einblick in ‘causal
-reasoning in epidemiology’ (siehe zudem Maldonado (2016)). Auch ein
-‘causal cookbook’ (Chatton and Rohrer 2024) gibt es, darin u.a. eine
-(weitere) Erläuterung eines DAG (Box 2 bzw. Abbildung 1). Wie sehen DAGs
-in der psychologischen Forschung aus (Rohrer 2024)? Gibt es Paper, die
-DAGs konkret anwenden? Ja, z.B. Don et al. (2025). Insgesamt wurden sie
-von Psycholog/innen jedoch eher selten in Publikationen verwendet (Poppe
-et al. 2025).
+manche sagen, Kausalität solle in Beobachtungsstudien nirgends
+suggeriert und schon gar nicht behauptet werden, andere sehen dies
+völlig anders. Leider begegnen wir hier scheinbar demselben Problem wie
+bei den beiden Lagern ‘Bayesianische’ und ‘frequentistische’ Statistik.
+Jede Seite ist überzeugt, sie (aber nicht die andere Seite) könne es
+beurteilen, wer Recht hat. Das ist offenkundig zum Scheitern verurteilt.
+Das Paper von Maldonado and Cox (2020) gibt einen kurzen Einblick in
+‘causal reasoning in epidemiology’ (siehe zudem Maldonado (2016)). Auch
+ein ‘causal cookbook’ (Chatton and Rohrer 2024) gibt es, darin u.a. eine
+(weitere) Erläuterung eines DAG (Box 2 bzw. Abbildung 1). Wie DAGs in
+der psychologischen Forschung aussehen könnten, siehe Rohrer (2024).
+Gibt es Paper, die DAGs konkret anwenden? Ja, z.B. Don et al. (2025).
+Insgesamt wurden sie von Psycholog/innen jedoch eher selten in
+Publikationen verwendet (Poppe et al. 2025).
 
 **Fazit**: Allein auf Grundlage statistischer Hilfsmittel wird
 ‘Kausalforschung’ in der Psychologie (und vermutlich auch in allen
@@ -2191,11 +2195,11 @@ anderen Naturbereichen) stets unvollständig bleiben, gerade weil jene
 Hilfsmittel (egal wie komplex oder ‘sophisticated’) begrenzt sein müssen
 (Statistische Modelle = Idealisierung). Etliche Dinge, die für
 Kausalität relevant sind, müssen ausserhalb der Statistik
-wissenschaftlich berücksichtigt werden. Statistik war und ist nicht mit
-Wissenschaft deckungsgleich. Somit hängt es davon ab, ob Menschen die
-Energie, das Geld und die Geduld aufbringen (oder eben nicht;
-Erinnerung: ‘action bias’), Kausalitätsforschung umfänglich zu
-betreiben.
+wissenschaftlich berücksichtigt werden. Statistik war und ist **nicht**
+mit Wissenschaft deckungsgleich. Somit hängt es davon ab, ob Menschen
+die Energie, das Geld, die Geduld und eben die Kompetenz aufbieten (oder
+eben nicht; Erinnerung: ‘action bias’), Kausalitätsforschung angemessen
+zu betreiben.
 
 **Zusatz 1**: Das Paper von G. T. Ellison (2021) berichtet über
 beträchtliche DAGs-Anlaufschwierigkeiten von medizinischen
@@ -2215,21 +2219,103 @@ Alfuth et al. (2025)).
 
 **Zusatz 3**: Wann immer Struktur- und/oder Pfadmodelle und statistisch
 gestützte Kausalitätsforschung kombiniert werden, muss unbedingt auch
-das Thema ‘unkorrigierte Messfehler’ zumindest erwähnt werden (D. A.
-Cole and Preacher 2014), weil diese per Default in multiplen
-Regressionsmodellen völlig unberücksichtigt bleiben, obwohl es genügend
-viele und realistische Möglichkeiten gibt, dass sie die berichteten
-Schätzgrössen verzerren können. Hiermit ebenfalls eng verknüpft ist das
-Paper von Westfall and Yarkoni (2016), dessen Titel lautet, dass es
-‘schwerer als gedacht sei, statistisch Konfundierung zu kontrollieren’
-(siehe zudem Wysocki, Lawson, and Rhemtulla 2022).
+das Thema ‘unkorrigierte Messfehler’ erwähnt werden (D. A. Cole and
+Preacher 2014), weil diese per Default in multiplen Regressionsmodellen
+völlig unberücksichtigt bleiben, obwohl es genügend viele und
+realistische Möglichkeiten gibt, dass sie die berichteten Schätzgrössen
+verzerren können. Hiermit ebenfalls eng verknüpft ist das Paper von
+Westfall and Yarkoni (2016), dessen Titel aussagt, dass es ‘schwerer als
+gedacht sei, statistisch Konfundierung zu kontrollieren’ (siehe zudem
+Wysocki, Lawson, and Rhemtulla 2022).
 
 **Zusatzfazit**: Über diese drei Zusätze hinweg, lautet das Fazit,
 einerseits eine möglichst präzise Forschungsfrage zu erarbeiten, die
 andererseits ein möglichst einfaches, anstatt komplexes, statistisches
 Modell verlangt. Dies wäre zudem in Übereinstimmung mit dem Prinzip von
-Ockham’s Rasierklinge, d.h. Modelle so simpel wie möglich zu halten,
-ohne sie jedoch zu übersimplifizieren.
+Ockham’s Rasierklinge (Lazar 2010), d.h. Modelle so simpel wie möglich
+zu halten, ohne sie jedoch zu übersimplifizieren.
+
+### Adjustierung
+
+In statistischen Regressionsmodellen wird fast immer adjustiert. Grund:
+Diese Modelle werden sehr häufig für Daten aus Beobachtungsstudien
+verwendet, worin eine Randomisierung vorab bekannter
+Konfundierungsvariablen, z.B. Geschlecht und Alter, fast nie möglich
+ist. Jedenfalls besteht die Gefahr, dass der/die Nutzer/in des
+Regressionsmodells die Gewohnheit entwickelt hat, dass Adjustierung
+**ganz automatisch** von der Statistiksoftware durchgeführt wird. Es
+gibt kaum etwas einfacheres, eine Variable einem statistischen
+Regressionsmodell hinzuzufügen. Ich wiederhole jedoch: **Open science
+bedeutet Transparenz.** Man gibt also alles zu erkennen, wozu auch
+gehört, ob man die Idee, d.h. den Zweck, von Adjustierung überhaupt
+verstanden hat. Das zeigt sich u.a. darin, ob die Rechtfertigung für
+jede gewählte Adjustierungsvariable nachvollziehbar ist, und zwar aus
+dem inhaltlichen Hintergrund, der Forschungsfrage sowie dem
+Forschungsziel. Oberndorfer et al. (2026) liefern in ihrem sehr kurzen
+Paper deutliche Beispiele. Würde man etwa ‘beschreibend’
+(Divergenz-P-Wert) statt ‘entscheidend’ (Entscheidungs-P-Wert; NHST)
+forschen, so wäre die Verwendung von Adjustierungsvariablen in einem
+Regressionsmodell sehr verwirrend, da ‘beschreibende’ Forschung gerade
+nicht das Ziel verfolgt, eine möglichst verzerrungsfreie Schätzung des
+Effektparameters, z.B. relatives Risiko für Suizid, in der
+Zielpopulation zu liefern.
+
+Neben der Frage **ob** man adjustiert ist ebenso wichtig, **welche**
+Variablen aus welchem Grund als Adjustierungsvariable sinnvoll(!) gelten
+sollen (siehe oben, [DAGs](#dags-instrumentelle-variablen)). Auch
+hierfür liefern Oberndorfer et al. (2026) ein gutes Beispiel, das gleich
+aus zwei Gründen wertvoll ist. Der eine Grund wurde oben gerade genannt
+(Forschungsziel = Entscheidung, ob Effekt existiert). Der zweite Grund
+lautet, dass durch Hinzunahme einer (oder mehr) Adjustierungsvariablen
+sich die Interpretation des Regressionsgewichts ändert, und zwar auch
+dann, wenn sich rein numerisch das Regressionsgewicht annähernd gar
+nicht ändern würde! Damit tritt man von der konkreten Stichprobe über
+zur hypothetischen Zielpopulation.
+
+**Fazit**: Effektschätzung mit dem Forschungsziel ‘Entscheidung’
+bedeutet immer, dass man ein statistisches Modell für genau diesen Zweck
+aufgestellt und ausgewertet haben muss. Hierfür muss man (Stichwort
+Transparenz) **vorab** den Zweck des Modells **tatsächlich** verstanden
+haben, d.h. insbesondere die Rollen und die Beziehungen aller Variablen
+im Modell. Zudem muss man vorab tatsächlich verstanden haben, was im
+Rahmen statistischer Regressionsmodelle die Begriffe ‘estimand’,
+‘estimator’ und ‘estimate’ bedeuten (z.B. Little and Lewis 2021). Der
+‘estimand’ ist die theoretisch definierte Zielgrösse in der
+Zielpopulation, z.B. Risikounterschied in Gesamtpopulation. Der
+‘estimator’ ist die gewählte empirische Form jener Zielgrösse, z.B. der
+Unterschied der prozentualen Häufigkeiten des Outcome zwischen zwei
+Gruppen. ‘Estimate’ ist das konkrete Ergebnis, basierend auf der
+durchgeführten Studie in der gewählten Stichprobe, z.B. der numerisch
+ausgedrückte Unterschied der prozentualen Outcomehäufigkeit. Diese drei
+Konzepte spielen in allen quantitativen empirischen Studien eine
+wichtige Rolle, nicht nur dann, wenn explizit die Entdeckung ‘kausaler
+Effekte’ das Forschungsziel ist (Lundberg, Johnson, and Stewart 2021).
+Es ist leider wiederholt festgestellt worden, dass auffällig viele
+Forscher/innen sich entweder viel zu oberflächlich oder annähernd gar
+keine Mühe geben, die Frage ‘Was ist der estimand?’ explizit zu
+beantworten (Lundberg, Johnson, and Stewart 2021; Ung and Dahabreh 2025;
+Kahan and Devane 2025); Stichwort ‘action bias’(?). Fragen wie diese,
+inklusive zur Adjustierung, beziehen sich auf ‘wichtige methodische
+Details’. Wenn sie nicht explizit thematisiert, d.h. beantwortet werden,
+muss der/die Leser/in davon ausgehen, dass wichtige methodische Aspekte
+als zu selbstverständlich betrachtet wurden, was der Wissenschaft
+zuwiderläuft. Dadurch entsteht nämlich genau das, was Gigerenzer als
+‘statistical rituals’ bezeichnet, d.h. eine **ganz automatische**
+Prozedur, fast komplett ohne erkennbares menschliches know-how und
+know-why.
+
+### Sensitivitätsanalyse, Unsicherheitsanalyse
+
+Sowohl eine Sensitivitäts- als auch Unsicherheitsanalyse (Saltelli et
+al. 2019) ist unmittelbar mit dem Thema Adjustierung (Synonyme:
+Kontrollvariablen, Kovariaten) verknüpft (Segerstrom 2019). Als
+generelle Frage formuliert: Wird dem Regressionsgewicht (= ‘estimate’)
+durch die gewählten Adjustierungsvariablen mehr Verzerrung
+herausgenommen (wie beabsichtigt) als ihm zugeführt wird (nicht
+beabsichtigt)? Dies ist ein weiteres ‘methodisch wichtiges Detail’, das
+auffällig oft (fast) keine erkennbare Rolle in Publikationen zu spielen
+scheint. Siehe oben, [Überfrachtetes
+Regressionsmodell](#überfrachtetes-regressionsmodell).
 
 <!--
 Melodie im Hintergrund vom likelihood video: Anthem of Inspiration
@@ -2266,6 +2352,10 @@ Obwohl diese Publikation auf das Fach Biologie ausgerichtet ist, geht es
 doch allgemein um open science literacy, d.h. das Lernen von open
 science ab dem ersten Bachelor-Semester, damit open science als Standard
 verstanden wird, nicht als etwas neuartiges, anderes und mühsames.
+
+Open Science in Health Psychology and Behavioral Medicine: A Statement
+From the Behavioral Medicine Research Council (Segerstrom et al. 2023).
+Siehe darin, u.a. Box 1 auf Seite 359.
 
 # Literaturverzeichnis
 
@@ -2680,6 +2770,13 @@ Bias in Higher Education: Pedagogical Insights on Critical Thinking.”
 
 </div>
 
+<div id="ref-kahan2025estimands" class="csl-entry">
+
+Kahan, Brennan C, and Declan Devane. 2025. “Estimands: What They Are and
+Why We Should Use Them.” *Journal of Clinical Epidemiology*, 112054.
+
+</div>
+
 <div id="ref-kraemer2015source" class="csl-entry">
 
 Kraemer, Helena Chmura. 2015. “A Source of False Findings in Published
@@ -2714,11 +2811,33 @@ Your Alpha.” *Nature Human Behaviour* 2 (3): 168–71.
 
 </div>
 
+<div id="ref-lazar2010ockham" class="csl-entry">
+
+Lazar, Nicole. 2010. “Ockham’s Razor.” *Wiley Interdisciplinary Reviews:
+Computational Statistics* 2 (2): 243–46.
+
+</div>
+
+<div id="ref-little2021estimands" class="csl-entry">
+
+Little, Roderick J, and Roger J Lewis. 2021. “Estimands, Estimators, and
+Estimates.” *Jama* 326 (10): 967–68.
+
+</div>
+
 <div id="ref-liu2015sample" class="csl-entry">
 
 Liu, Xiaofeng Steven. 2015. “Sample Size and the Precision of the
 Confidence Interval in Meta-Analyses.” *Therapeutic Innovation &
 Regulatory Science* 49 (4): 593–98.
+
+</div>
+
+<div id="ref-lundberg2021your" class="csl-entry">
+
+Lundberg, Ian, Rebecca Johnson, and Brandon M Stewart. 2021. “What Is
+Your Estimand? Defining the Target Quantity Connects Statistical
+Evidence to Theory.” *American Sociological Review* 86 (3): 532–65.
 
 </div>
 
@@ -2926,6 +3045,16 @@ Psychology Compass* 18 (3): e12948.
 
 </div>
 
+<div id="ref-saltelli2019so" class="csl-entry">
+
+Saltelli, Andrea, Ksenia Aleksankina, William Becker, Pamela Fennell,
+Federico Ferretti, Niels Holst, Sushan Li, and Qiongli Wu. 2019. “Why so
+Many Published Sensitivity Analyses Are False: A Systematic Review of
+Sensitivity Analysis Practices.” *Environmental Modelling & Software*
+114: 29–39.
+
+</div>
+
 <div id="ref-sand2022inferential" class="csl-entry">
 
 Sand, Anders. 2022. “Inferential Statistics Is an Unfit Tool for
@@ -2960,6 +3089,27 @@ Squares Means.” *The American Statistician* 34 (4): 216–21.
 <div id="ref-sedgwick2014understanding" class="csl-entry">
 
 Sedgwick, Philip. 2014. “Understanding Confidence Intervals.” *BMJ* 349.
+
+</div>
+
+<div id="ref-segerstrom2019statistical" class="csl-entry">
+
+Segerstrom, Suzanne C. 2019. “Statistical Guideline# 3: Designate and
+Justify Covariates a Priori, and Report Results with and Without
+Covariates.” *International Journal of Behavioral Medicine* 26 (6):
+577–79.
+
+</div>
+
+<div id="ref-segerstrom2023open" class="csl-entry">
+
+Segerstrom, Suzanne C, Michael A Diefenbach, Kyra Hamilton, Daryl B
+O’Connor, A Janet Tomiyama, and Behavioral Medicine Research Council
+Bacon Simon L Bennett Gary G Brondolo Elizabeth Czajkowski Susan M
+Davidson Karina W Epel Elissa S Revenson Tracey A Ruiz John M. 2023.
+“Open Science in Health Psychology and Behavioral Medicine: A Statement
+from the Behavioral Medicine Research Council.” *Annals of Behavioral
+Medicine* 57 (5): 357–67.
 
 </div>
 
@@ -3012,6 +3162,14 @@ Epidemiology* 50 (2): 620–32.
 Thomson, Carrie Louise, Neal Maskrey, and Ivo Vlaev. 2017. “Making
 Decisions Better: An Evaluation of an Educational Intervention.”
 *Journal of Evaluation in Clinical Practice* 23 (2): 251–56.
+
+</div>
+
+<div id="ref-ung2025keep" class="csl-entry">
+
+Ung, Lawson, and Issa J Dahabreh. 2025. “Keep Asking: What Do i Want?
+What Do i Have? What Do i Do? L. Ung, IJ Dahabreh.” *European Journal of
+Epidemiology* 40 (3): 245–54.
 
 </div>
 
