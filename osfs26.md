@@ -2139,12 +2139,13 @@ kontraproduktiv, nicht wahr?!
 
 Directed acyclic graphs (DAGs) und ‘instrumentelle Variablen’ sind zwei
 (nicht mehr als modern zu bezeichnende) Ideen (Feeney, Hartwig, and
-Davies 2025; Walker et al. 2024; Labrecque and Kezios 2026). Worum geht
-es hierbei? Es geht um die Frage nach dem ‘heiligen Gral’ jeder
-wissenschaftlichen Forschung: Kausalität, genauer: Kausalität in
-Beobachtungsstudien (Igelström et al. 2022). Ist der vermutete kausale
-Faktor wirklich kausal? Ist es der (oder wenigstens ein) Wirkungsfaktor
-(unter anderen), bezogen darauf, warum sich der Outcome entwickelt?
+Davies 2025; Walker et al. 2024; Labrecque and Kezios 2026; Doi et al.
+2026). Worum geht es hierbei? Es geht um die Frage nach dem ‘heiligen
+Gral’ jeder wissenschaftlichen Forschung: Kausalität, genauer:
+Kausalität in Beobachtungsstudien (Igelström et al. 2022). Ist der
+vermutete kausale Faktor wirklich kausal? Ist es der (oder wenigstens
+ein) Wirkungsfaktor (unter anderen), bezogen darauf, warum sich der
+Outcome entwickelt?
 
 DAGs sind visuelle Hilfsmittel, womit man Variablen in einem
 statistischen Model bestimmte Rollen zuweisen und spezifische
@@ -2220,13 +2221,15 @@ Alfuth et al. (2025)).
 **Zusatz 3**: Wann immer Struktur- und/oder Pfadmodelle und statistisch
 gestützte Kausalitätsforschung kombiniert werden, muss unbedingt auch
 das Thema ‘unkorrigierte Messfehler’ erwähnt werden (D. A. Cole and
-Preacher 2014), weil diese per Default in multiplen Regressionsmodellen
-völlig unberücksichtigt bleiben, obwohl es genügend viele und
+Preacher 2014), weil diese in multiplen Regressionsmodellen völlig
+unberücksichtigt bleiben (Grund: Kombination aus Standardeinstellung der
+Software und annähernd keine Kenntnisse der Forscher/innen, wie man
+quantitative Biasanalysen durchführt), obwohl es genügend viele und
 realistische Möglichkeiten gibt, dass sie die berichteten Schätzgrössen
 verzerren können. Hiermit ebenfalls eng verknüpft ist das Paper von
 Westfall and Yarkoni (2016), dessen Titel aussagt, dass es ‘schwerer als
-gedacht sei, statistisch Konfundierung zu kontrollieren’ (siehe zudem
-Wysocki, Lawson, and Rhemtulla 2022).
+gedacht sei, statistisch Konfundierung zu kontrollieren’; siehe zudem
+Wysocki, Lawson, and Rhemtulla (2022).
 
 **Zusatzfazit**: Über diese drei Zusätze hinweg, lautet das Fazit,
 einerseits eine möglichst präzise Forschungsfrage zu erarbeiten, die
@@ -2302,7 +2305,10 @@ als zu selbstverständlich betrachtet wurden, was der Wissenschaft
 zuwiderläuft. Dadurch entsteht nämlich genau das, was Gigerenzer als
 ‘statistical rituals’ bezeichnet, d.h. eine **ganz automatische**
 Prozedur, fast komplett ohne erkennbares menschliches know-how und
-know-why.
+know-why. Dies ist einer der Gründe, warum Carlin and Moreno-Betancur
+(2025) fordern, dass Regressionsmodelle anders als in den letzten
+(mindestens) 70 Jahren (Greenland 2025) praktiziert und gelehrt werden
+sollten.
 
 ### Sensitivitätsanalyse, Unsicherheitsanalyse
 
@@ -2357,6 +2363,29 @@ Open Science in Health Psychology and Behavioral Medicine: A Statement
 From the Behavioral Medicine Research Council (Segerstrom et al. 2023).
 Siehe darin, u.a. Box 1 auf Seite 359.
 
+Das Review von Elaine Toomey et al. (2025) hebt die Bedeutung von
+Fachzeitschriften hervor, bezüglich dessen, wie gut sich open science
+(nicht) etablieren wird. Derzeit ‘stärkste’ Fortschritte liegen in der
+Benutzung von reporting guidelines und Datentransparenz. ‘Schwach’
+vertreten ist bisher die Präregistrierung dessen, wie die Daten
+analysiert werden sollen. Insgesamt scheint noch recht viel Luft nach
+oben zu sein (‘poorly adopted within health psychology’). Siehe zudem E.
+Toomey and Norris (2025).
+
+Dieses Paper von Mayo-Wilson et al. (2025) gibt sehr wertvolle Hinweise,
+Terminologie im Rahmen von open science zu präzisieren, z.B. das Wort
+‘Präregistrierung’, um die Verwendung von open science dadurch zu
+fördern.
+
+Dieses preprint Manuscript von Darda et al. (2023) macht darauf
+aufmerksam, dass open science in grossem Masse auch davon abhängt, wie
+(un-)freundlich unter Wissenschaftler/innen umgegangen wird.
+
+Dieses Paper von Bakermans (2024) (Bereich: Ecology and Evolution)
+beschreibt den Kreislauf, der nötig ist, um Studierenden open science
+als ‘normale’ wissenschaftliche Praxis beizubringen, wozu u.a. die
+Qualität der gegenwärtigen open science Umsetzung zählt.
+
 # Literaturverzeichnis
 
 <div id="refs" class="references csl-bib-body hanging-indent"
@@ -2402,6 +2431,14 @@ Nontechnical Introduction to Overfitting in Regression-Type Models.”
 
 </div>
 
+<div id="ref-bakermans2024integrating" class="csl-entry">
+
+Bakermans, Marja H. 2024. “Integrating Open Education Practices with
+Data Analysis of Open Science in an Undergraduate Course.” *Ecology and
+Evolution* 14 (8): e70129.
+
+</div>
+
 <div id="ref-bland1998bayesians" class="csl-entry">
 
 Bland, J Martin, and Douglas G Altman. 1998. “Bayesians and
@@ -2423,6 +2460,14 @@ Neuroscience* 14 (8): 585–85.
 Carlin, John B. 2026. “‘Identifying Variables That Independently
 Predict…’ Is Not a Well-Defined Research Task.” *Journal of Clinical
 Epidemiology* 189.
+
+</div>
+
+<div id="ref-carlin2025uses" class="csl-entry">
+
+Carlin, John B, and Margarita Moreno-Betancur. 2025. “On the Uses and
+Abuses of Regression Models: A Call for Reform of Statistical Practice
+and Teaching.” *Statistics in Medicine* 44 (13-14): e10244.
 
 </div>
 
@@ -2502,10 +2547,28 @@ for Psychology* 17 (1): 1–6.
 
 </div>
 
+<div id="ref-darda2023promoting" class="csl-entry">
+
+Darda, Kohinoor M, Clare Conry-Murray, Kathleen Schmidt, Mahmoud M
+Elsherif, Matthew Peverill, Tomiko Yoneda, Katherine M Lawson, et al.
+2023. “Promoting Civility in Formal and Informal Open Science Contexts.”
+*PsyArXiv Preprints*.
+
+</div>
+
 <div id="ref-deeks2004diagnostic" class="csl-entry">
 
 Deeks, Jonathan J, and Douglas G Altman. 2004. “Diagnostic Tests 4:
 Likelihood Ratios.” *Bmj* 329 (7458): 168–69.
+
+</div>
+
+<div id="ref-doi2026causal" class="csl-entry">
+
+Doi, Suhail A, Asma Syed, Habib H Farooqui, Giridhara R Babu, Salma M
+Khaled, Muhammad Naseem Khan, et al. 2026. “Causal Clarity: Directed
+Acyclic Graphs in Medical Research.” *Current Opinion in Epidemiology
+and Public Health*.
 
 </div>
 
@@ -2650,6 +2713,13 @@ Methodology.” *American Journal of Epidemiology* 186 (6): 639–45.
 ———. 2021. “Noncollapsibility, Confounding, and Sparse-Data Bias. Part
 2: What Should Researchers Make of Persistent Controversies about the
 Odds Ratio?” *Journal of Clinical Epidemiology* 139: 264–68.
+
+</div>
+
+<div id="ref-greenland2025some" class="csl-entry">
+
+———. 2025. “Some Ways to Make Regression Modeling More Helpful Than
+Misleading.” *Statistics in Medicine* 44 (13-14): e10313.
 
 </div>
 
@@ -2889,6 +2959,15 @@ Survey in Serbia.” *Epidemiology and Psychiatric Sciences* 31: e36.
 
 Masnick, Amy M, and Bradley J Morris. 2022. “A Model of Scientific Data
 Reasoning.” *Education Sciences* 12 (2): 71.
+
+</div>
+
+<div id="ref-mayo2025consistent" class="csl-entry">
+
+Mayo-Wilson, Evan, Sean Grant, Katherine S Corker, and David Moher.
+2025. “Consistent and Precise Description of Research Outputs Could
+Improve Implementation of Open Science.” *Advances in Methods and
+Practices in Psychological Science* 8 (4): 25152459251375445.
 
 </div>
 
@@ -3162,6 +3241,25 @@ Epidemiology* 50 (2): 620–32.
 Thomson, Carrie Louise, Neal Maskrey, and Ivo Vlaev. 2017. “Making
 Decisions Better: An Evaluation of an Educational Intervention.”
 *Journal of Evaluation in Clinical Practice* 23 (2): 251–56.
+
+</div>
+
+<div id="ref-toomey2025adoption" class="csl-entry">
+
+Toomey, Elaine, Rory Coyne, Christina Derksen, Sean P Grant, Christopher
+M Jones, Marta Kijowska, Ilona McNeill, Felix Naughton, Aoife O’Mahony,
+and Emma Norris. 2025. “Adoption of the Transparency and Openness
+Promotion (TOP) Guidelines Within Health Psychology and Behavioural
+Medicine Journal Policies: A Cross-Sectional Study.” *Health Psychology
+Review* 19 (4): 763–80.
+
+</div>
+
+<div id="ref-toomey2025moving" class="csl-entry">
+
+Toomey, E, and E Norris. 2025. “Moving Towards Openness: Introduction to
+the Registered Reports and Data Notes Article Collection.” *Health
+Psychology and Behavioral Medicine*. Taylor & Francis.
 
 </div>
 
