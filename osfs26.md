@@ -1,7 +1,7 @@
 Open science FS26
 ================
 Marcel Miché
-2026-04-08
+2026-04-10
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
@@ -2160,7 +2160,7 @@ Forderung, Forschungsergebnisse mehr als bisher ‘beschreibend’ zu
 präsentieren (Dyer 2025; Fox et al. 2022), im Gegensatz zu
 ‘entscheidend’ (Erinnere: Abweichungs- *versus* Entscheidungs-P-Wert).
 
-Kausalitätsfragen konnte in der Psychologie bisher noch nie für
+Kausalitätsfragen konnten in der Psychologie bisher noch nie für
 irgendeinen Outcome abschliessend beantwortet werden, wofür u.a. die
 Existenz des Bio-Psycho-Sozialen Erklärungsmodells psychischer Phänomene
 ein Indiz ist. Nichtsdestotrotz stellen einige Wissenschaftler/innen
@@ -2171,7 +2171,28 @@ vermutete Faktor ist, der wirkt, geschweige denn wie der genaue
 Wirkmechanismus wissenschaftlich erforscht, und noch viel weniger, wie
 er nachgewiesen werden könnte. Zumindest gilt das für die klinische
 Psychologie (Eronen 2020), anscheinend nicht (mehr) für die
-Arbeits-/Organisationspsychologie (Cornelissen and Werner 2026).
+Arbeits-/Organisationspsychologie (AOP) (Cornelissen and Werner 2026).
+
+**Korrektur**: Die Absätze 1 und 2 in Cornelissen and Werner (2026)
+lassen bereits erkennen, dass ‘causal mechanisms’ in der AOP doch nicht
+untersucht werden können, aus den Gründen, die Eronen (2020) beschreibt.
+Ich werte das als ein weiteres Indiz für den ‘action bias’, d.h. dem
+Drang etwas zu tun (zu forschen und zu publizieren) vorschnell
+nachzugeben, anstatt dass alle Forscherinnen gemeinsam feststellen, dass
+sie bezüglich des wissenschaftlich wichtigsten Konzepts, nämlich
+**Kausalität**, aneinander vorbeireden. Vernünftig wäre das Innehalten
+und das gemeinsame Diskutieren darüber, dass Kausalität nicht einfach
+von Individuum zu Individuum ‘uminterpretiert’ werden kann. Sobald dies
+geschieht, müsste man konsequent von Rollenwechsel sprechen: Was
+ursprünglich Forschung in AOP war, wird dann zu einer Mischform von AOP
+und Laienphilosophie. *Fazit*: Unterschiedliche Perspektiven sind
+wichtig, aber es gibt Ausnahmen. Das Konzept Kausalität ist in jedem
+Wissenschaftsbereich so zentral, dass es sowohl als fixiert als auch als
+zwingend verbindlich gelten muss. Dieses Konzept ist u.a. von Eronen
+(2020) deutlich und leicht verständlich beschrieben worden. Wenn dieses
+Konzept zu teils unlösbar erscheinenden Schwierigkeiten führt, dann ist
+das eben so. Kausalität ‘anders zu verstehen’ als andere, erscheint mir
+jedenfalls völlig unvernünftig.
 
 Kausalforschung in der Psychologie ist kontrovers (z.B. Haber et al.
 2022; D’Amico et al. 2025; Hernán et al. 2025; Conway et al. 2025), d.h.
