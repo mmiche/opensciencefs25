@@ -1,7 +1,7 @@
 Open science FS26
 ================
 Marcel Miché
-2026-04-10
+2026-04-11
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
@@ -2163,14 +2163,15 @@ präsentieren (Dyer 2025; Fox et al. 2022), im Gegensatz zu
 Kausalitätsfragen konnten in der Psychologie bisher noch nie für
 irgendeinen Outcome abschliessend beantwortet werden, wofür u.a. die
 Existenz des Bio-Psycho-Sozialen Erklärungsmodells psychischer Phänomene
-ein Indiz ist. Nichtsdestotrotz stellen einige Wissenschaftler/innen
-häufig bereits die Folgefrage (als ob man die Wirkungsfrage schon
-beantwortet hätte), nämlich: Wissen wir über den Wirkmechanismus genau
-Bescheid? Ich wiederhole: Wir wissen noch nicht einmal, ob es der
-vermutete Faktor ist, der wirkt, geschweige denn wie der genaue
-Wirkmechanismus wissenschaftlich erforscht, und noch viel weniger, wie
-er nachgewiesen werden könnte. Zumindest gilt das für die klinische
-Psychologie (Eronen 2020), anscheinend nicht (mehr) für die
+ein Indiz ist (Stichworte: Multikausalität und Multifinalität, u.a.
+thematisiert in Yang et al. (2025)). Nichtsdestotrotz stellen einige
+Wissenschaftler/innen häufig bereits die Folgefrage (als ob man die
+Wirkungsfrage schon beantwortet hätte), nämlich: Wissen wir über den
+Wirkmechanismus genau Bescheid? Ich wiederhole: Wir wissen noch nicht
+einmal, ob es der vermutete Faktor ist, der wirkt, geschweige denn wie
+der genaue Wirkmechanismus wissenschaftlich erforscht, und noch viel
+weniger, wie er nachgewiesen werden könnte. Zumindest gilt das für die
+klinische Psychologie (Eronen 2020), anscheinend nicht (mehr) für die
 Arbeits-/Organisationspsychologie (AOP) (Cornelissen and Werner 2026).
 
 **Korrektur**: Die Absätze 1 und 2 in Cornelissen and Werner (2026)
@@ -2182,17 +2183,12 @@ nachzugeben, anstatt dass alle Forscherinnen gemeinsam feststellen, dass
 sie bezüglich des wissenschaftlich wichtigsten Konzepts, nämlich
 **Kausalität**, aneinander vorbeireden. Vernünftig wäre das Innehalten
 und das gemeinsame Diskutieren darüber, dass Kausalität nicht einfach
-von Individuum zu Individuum ‘uminterpretiert’ werden kann. Sobald dies
-geschieht, müsste man konsequent von Rollenwechsel sprechen: Was
-ursprünglich Forschung in AOP war, wird dann zu einer Mischform von AOP
-und Laienphilosophie. *Fazit*: Unterschiedliche Perspektiven sind
-wichtig, aber es gibt Ausnahmen. Das Konzept Kausalität ist in jedem
-Wissenschaftsbereich so zentral, dass es sowohl als fixiert als auch als
-zwingend verbindlich gelten muss. Dieses Konzept ist u.a. von Eronen
-(2020) deutlich und leicht verständlich beschrieben worden. Wenn dieses
-Konzept zu teils unlösbar erscheinenden Schwierigkeiten führt, dann ist
-das eben so. Kausalität ‘anders zu verstehen’ als andere, erscheint mir
-jedenfalls völlig unvernünftig.
+individuell ‘uminterpretiert’ werden
+kann.<!-- Sobald dies geschieht, müsste man konsequent von Rollenwechsel sprechen: Was ursprünglich Forschung in AOP war, wird dann zu einer Mischform von AOP und Laienphilosophie. *Fazit*: Unterschiedliche Perspektiven sind wichtig, aber es gibt Ausnahmen. Das Konzept Kausalität ist in jedem Wissenschaftsbereich so zentral, dass es sowohl als fixiert als auch als zwingend verbindlich gelten muss. -->
+Dieses Konzept ist u.a. von Eronen (2020) deutlich und leicht
+verständlich beschrieben worden. Wenn dieses Konzept zu teils unlösbar
+erscheinenden Schwierigkeiten führt, dann ist das eben
+so.<!--Kausalität 'anders zu verstehen' als andere, erscheint mir jedenfalls völlig unvernünftig.-->
 
 Kausalforschung in der Psychologie ist kontrovers (z.B. Haber et al.
 2022; D’Amico et al. 2025; Hernán et al. 2025; Conway et al. 2025), d.h.
@@ -2203,13 +2199,13 @@ bei den beiden Lagern ‘Bayesianische’ und ‘frequentistische’ Statistik.
 Jede Seite ist überzeugt, sie (aber nicht die andere Seite) könne es
 beurteilen, wer Recht hat. Das ist offenkundig zum Scheitern verurteilt.
 Das Paper von Maldonado and Cox (2020) gibt einen kurzen Einblick in
-‘causal reasoning in epidemiology’ (siehe zudem Maldonado (2016)). Auch
-ein ‘causal cookbook’ (Chatton and Rohrer 2024) gibt es, darin u.a. eine
-(weitere) Erläuterung eines DAG (Box 2 bzw. Abbildung 1). Wie DAGs in
-der psychologischen Forschung aussehen könnten, siehe Rohrer (2024).
-Gibt es Paper, die DAGs konkret anwenden? Ja, z.B. Don et al. (2025).
-Insgesamt wurden sie von Psycholog/innen jedoch eher selten in
-Publikationen verwendet (Poppe et al. 2025).
+‘causal reasoning in epidemiology’ (siehe zudem Maldonado (2016) und
+Morabia (2005)). Auch ein ‘causal cookbook’ (Chatton and Rohrer 2024)
+gibt es, darin u.a. eine (weitere) Erläuterung eines DAG (Box 2 bzw.
+Abbildung 1). Wie DAGs in der psychologischen Forschung aussehen
+könnten, siehe Rohrer (2024). Gibt es Paper, die DAGs konkret anwenden?
+Ja, z.B. Don et al. (2025). Insgesamt wurden sie von Psycholog/innen
+jedoch eher selten in Publikationen verwendet (Poppe et al. 2025).
 
 **Fazit**: Allein auf Grundlage statistischer Hilfsmittel wird
 ‘Kausalforschung’ in der Psychologie (und vermutlich auch in allen
@@ -3016,6 +3012,13 @@ for Comparing Predictions and Marginal Effects Across Models.”
 
 </div>
 
+<div id="ref-morabia2005epidemiological" class="csl-entry">
+
+Morabia, Alfredo. 2005. “Epidemiological Causality.” *History and
+Philosophy of the Life Sciences*, 365–79.
+
+</div>
+
 <div id="ref-naimi2020can" class="csl-entry">
 
 Naimi, Ashley I, and Brian W Whitcomb. 2020. “Can Confidence Intervals
@@ -3347,6 +3350,14 @@ Wysocki, Anna C, Katherine M Lawson, and Mijke Rhemtulla. 2022.
 “Statistical Control Requires Causal Justification.” *Advances in
 Methods and Practices in Psychological Science* 5 (2):
 25152459221095823.
+
+</div>
+
+<div id="ref-yang2025risk" class="csl-entry">
+
+Yang, Ruiyu, Sabrena Tuy, Lea Rose Dougherty, and Jillian Lee Wiggins.
+2025. “Risk and Resilience Profiles and Their Transition Pathways in the
+ABCD Study.” *Development and Psychopathology* 37 (4): 2055–64.
 
 </div>
 
