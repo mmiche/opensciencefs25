@@ -614,6 +614,10 @@ Nullismus [@greenland2017invited; @greenland2011null] ist die Gewohnheit, die De
 
 Der Nullismus und die Dichotomanie sind eng verwandt. Warum? Wenn man wissenschaftliche Ergebnisse hauptsächlich oder sogar ausschliesslich dichotom versteht (Erfolg = stat. sign. auf dem 5% Niveau; Misserfolg, wenn empirischer p-Wert > 5%) und zudem niemals konsequent hinterfragt hat, warum eigentlich der Effekt von exakt Null immer die Nullhypothese darstellen soll, der/die wird meist die Gewohnheit entwickeln, sich mental daran zu orientieren, ob das 95% KI den Wert 0 enthält (= Misserfolg) oder nicht enthält (= Erfolg). Auf dieses Defizit verweisen die letzten zwei Sätze in @ramos2025bad: 'You can always test for an effect that you deem practically significant if you want to, acknowledging that doing so does remove your chances of discovering smaller statistically significant effects. After all, you were not interested in them anyway, right?'
 
+### Null hypothesis significance test (NHST)
+
+Die NHST Übersichtsarbeit von @vandongen2025overview ist extrem hilfreich: Sie präsentieren 20 Verteidigungs- und 70 Angriffsversuche, sowie 33 Verbesserungsvorschläge. Ein Paper wie das von @morgan2025alternative zeigt, dass es nicht nur in der Psychologie gehörige Verständnisschwierigkeiten mit der NHST-'Logik' gibt.
+
 ### Zwischenfazit 1
 
 Alle Themen bisher kreisen, wie oben angekündigt, einerseits um den Versuch einen Unterschied mithilfe statistischer Hilfsmittel sichtbar(er) zu machen (Unterschied zwischen Gruppen relativiert an Variabilität der Daten in den Gruppen), und andererseits um die Nüchternheit, mit der die sichtbar gemachten Unterschiede (miss-)verstanden, und dementsprechend ((over-)confidently) publiziert werden.

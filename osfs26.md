@@ -1,7 +1,7 @@
 Open science FS26
 ================
 Marcel Miché
-2026-04-11
+2026-04-13
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
@@ -27,6 +27,8 @@ Marcel Miché
     - [Konfidenzintervall](#konfidenzintervall)
     - [Alpha Signifikanzniveau](#alpha-signifikanzniveau)
     - [Nullismus](#nullismus)
+    - [Null hypothesis significance test
+      (NHST)](#null-hypothesis-significance-test-nhst)
     - [Zwischenfazit 1](#zwischenfazit-1)
     - [Likelihood Ratio (LR)](#likelihood-ratio-lr)
     - [Direktes oder inverses Problem?](#direktes-oder-inverses-problem)
@@ -1602,6 +1604,14 @@ acknowledging that doing so does remove your chances of discovering
 smaller statistically significant effects. After all, you were not
 interested in them anyway, right?’
 
+### Null hypothesis significance test (NHST)
+
+Die NHST Übersichtsarbeit von Dongen and Grootel (2025) ist extrem
+hilfreich: Sie präsentieren 20 Verteidigungs- und 70 Angriffsversuche,
+sowie 33 Verbesserungsvorschläge. Ein Paper wie das von Morgan (2025)
+zeigt, dass es nicht nur in der Psychologie gehörige
+Verständnisschwierigkeiten mit der NHST-‘Logik’ gibt.
+
 ### Zwischenfazit 1
 
 Alle Themen bisher kreisen, wie oben angekündigt, einerseits um den
@@ -2598,6 +2608,14 @@ Well-Being, and Self-Rated Health.” *Affective Science* 6 (2): 308–20.
 
 </div>
 
+<div id="ref-vandongen2025overview" class="csl-entry">
+
+Dongen, Noah van, and Leonie van Grootel. 2025. “Overview on the Null
+Hypothesis Significance Test: A Systematic Review on Essay Literature on
+Its Problems and Solutions.” *Meta-Psychology* 9.
+
+</div>
+
 <div id="ref-dunleavy2021use" class="csl-entry">
 
 Dunleavy, Daniel J, and Jeffrey R Lacasse. 2021. “The Use and Misuse of
@@ -3016,6 +3034,13 @@ for Comparing Predictions and Marginal Effects Across Models.”
 
 Morabia, Alfredo. 2005. “Epidemiological Causality.” *History and
 Philosophy of the Life Sciences*, 365–79.
+
+</div>
+
+<div id="ref-morgan2025alternative" class="csl-entry">
+
+Morgan, Josh L. 2025. “Alternative to the Statistical Mass Confusion of
+Testing for ‘No Effect’.” *Journal of Cell Biology* 224 (8): e202403034.
 
 </div>
 
