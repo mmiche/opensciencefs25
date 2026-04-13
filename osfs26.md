@@ -1608,9 +1608,12 @@ interested in them anyway, right?’
 
 Die NHST Übersichtsarbeit von Dongen and Grootel (2025) ist extrem
 hilfreich: Sie präsentieren 20 Verteidigungs- und 70 Angriffsversuche,
-sowie 33 Verbesserungsvorschläge. Ein Paper wie das von Morgan (2025)
-zeigt, dass es nicht nur in der Psychologie gehörige
-Verständnisschwierigkeiten mit der NHST-‘Logik’ gibt.
+sowie 33 Verbesserungsvorschläge. Jedoch erwähnen sie leider manche
+Alternativen nicht, z.B. die beschreibende Herangehensweise an
+Datenanalysen (Shmueli 2025), die zu unterscheiden ist von der
+erklärenden und von der vorhersagenden Herangehensweise. Ein Paper wie
+das von Morgan (2025) zeigt, dass es nicht nur in der Psychologie
+gehörige Verständnisschwierigkeiten mit der NHST-‘Logik’ gibt.
 
 ### Zwischenfazit 1
 
@@ -3238,6 +3241,15 @@ Davidson Karina W Epel Elissa S Revenson Tracey A Ruiz John M. 2023.
 “Open Science in Health Psychology and Behavioral Medicine: A Statement
 from the Behavioral Medicine Research Council.” *Annals of Behavioral
 Medicine* 57 (5): 357–67.
+
+</div>
+
+<div id="ref-shmueli2025explain" class="csl-entry">
+
+Shmueli, Galit. 2025. “To Explain, to Predict, or to Describe: Figuring
+Out the Study Goal \[Commentary on ‘on the Uses and Abuses of Regression
+Models’ by Carlin and Moreno-Betancur\].” *Statistics in Medicine* 44
+(13-14): e10307.
 
 </div>
 

@@ -616,7 +616,7 @@ Der Nullismus und die Dichotomanie sind eng verwandt. Warum? Wenn man wissenscha
 
 ### Null hypothesis significance test (NHST)
 
-Die NHST Übersichtsarbeit von @vandongen2025overview ist extrem hilfreich: Sie präsentieren 20 Verteidigungs- und 70 Angriffsversuche, sowie 33 Verbesserungsvorschläge. Ein Paper wie das von @morgan2025alternative zeigt, dass es nicht nur in der Psychologie gehörige Verständnisschwierigkeiten mit der NHST-'Logik' gibt.
+Die NHST Übersichtsarbeit von @vandongen2025overview ist extrem hilfreich: Sie präsentieren 20 Verteidigungs- und 70 Angriffsversuche, sowie 33 Verbesserungsvorschläge. Jedoch erwähnen sie leider manche Alternativen nicht, z.B. die beschreibende Herangehensweise an Datenanalysen [@shmueli2025explain], die zu unterscheiden ist von der erklärenden und von der vorhersagenden Herangehensweise. Ein Paper wie das von @morgan2025alternative zeigt, dass es nicht nur in der Psychologie gehörige Verständnisschwierigkeiten mit der NHST-'Logik' gibt.
 
 ### Zwischenfazit 1
 
