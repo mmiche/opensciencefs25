@@ -838,6 +838,28 @@ Neben der Frage **ob** man adjustiert ist ebenso wichtig, **welche** Variablen a
 
 Sowohl eine Sensitivitäts- als auch Unsicherheitsanalyse [@saltelli2019so] ist unmittelbar mit dem Thema Adjustierung (Synonyme: Kontrollvariablen, Kovariaten) verknüpft [@segerstrom2019statistical]. Als generelle Frage formuliert: Wird dem Regressionsgewicht (= 'estimate') durch die gewählten Adjustierungsvariablen mehr Verzerrung herausgenommen (wie beabsichtigt) als ihm zugeführt wird (nicht beabsichtigt)? Dies ist ein weiteres 'methodisch wichtiges Detail', das auffällig oft (fast) keine erkennbare Rolle in Publikationen zu spielen scheint. Siehe oben, [Überfrachtetes Regressionsmodell](#überfrachtetes-regressionsmodell).
 
+### Systematik
+
+Wissenschaftliches Handeln und Systematik sollte gleichbedeutend sein. Systematik wiederum hat die Bedeutung einer durchdacht beabsichtigten Ordnung. Diese Systematik wird möglicherweise nicht immer exakt gleich dargestellt, trotzdem ist sie leicht zu erkennen, sofern man darüber ernsthaft reflektiert hat. Diese Systematik hat 3 Bestandteile.
+
+1. Annahme, ein bestimmtes Phänomen sei wahr. Beispiel: Risiko, eine Major Depression (MDD) im Laufe des Lebens zu entwickeln, unterscheide sich weltweit zwischen Männern und Frauen.
+2. Absicht, die Annahme in Erfahrung zu bringen. Überlegung und Festlegung, wie man das Risiko für die Entwicklung eines Outcome sichtbar machen kann. Beispiel: Ergebnis der Überlegung = Festlegung, Geschlecht zu beobachten (zu 'messen') und MDD zu diagnostizieren. Zuletzt: Beide Messungen einander gegenüberstellen, um zu beobachten, ob sich die prozentuale Häufigkeit von MDD zwischen Männern und Frauen unterscheidet.
+3. Ausführung der Absicht. In diesem dritten Punkt wird Tür und Tor für alle methodischen Details geöffnet, die für die konkrete wissenschaftliche Untersuchung relevant sind. Beispiel: Da die Frage einer Risikodifferenz für MDD zwischen Männern und Frauen kein experimentelles Forschungsdesign erlaubt, bleiben nur Beobachtungsstudien übrig. Man kann also keine vermuteten Konfundierungsfaktoren kontrollieren, sondern höchstens die statistische Analyse hierfür adjustieren. Es steckt zwar die exakt selbe Absicht dahinter, ist jedoch eine vollkommen andere Handlung. Zudem besteht bei Beobachtungsstudien keine Möglichkeit der Randomisierung. Weitere konkrete Fragen, die sich stellen: Was genau soll 'MDD Diagnose' heissen, d.h. wie findet diese 'Messung' statt? Goldstandard ist ein systematisches, voll- oder teilstrukturiertes, klinisches Interview.
+
+Annahme, Absicht, Ausführung entspricht dem oben genannten 'estimand', 'estimator' und 'estimate'. Eine andere Form wäre: Inhalt (Was?), Operationalisierung (Wie?), statistische Analyse (Ergebnis?). Man könnte es in Alltagssprache vielleicht so übersetzen:
+
+1. Um welche Show soll es gehen? Antwort: Depression und Geschlecht.
+2. Wie soll die Show aussehen? Antwort: Diagnose von Depression bei Männer und Frauen vergleichen.
+3. Wie sieht die Show rückblickend aus? Antwort: Diagnose Depression soundso viel Prozent bei Männern und soundso viel Prozent bei Frauen. Aber ... Einschränkungen: 1, 2, ...
+
+Am Ende dieser Systematik warten dann, wie oben zwei Mal erwähnt, die beiden Hauptfragen:
+
+1. Liegt der statistisch sichtbar gemachte Unterschied in der erwarteten Richtung?
+2. Ist der statistisch sichtbar gemachte Unterschied von praktischer Bedeutung?
+
+Eine der vielen (leider sehr häufig unter den Teppich gekehrten) implizit vorhandenen Fragen: Ist der statistisch sichtbar gemachte Unterschied gültig? Stichwort: Prüfung der Testannahmen.
+
+**Fazit**: Diese Systematik kann nur dann als wirkliche Systematik gelten, wenn es kein vernünftiges Argument gibt, demzufolge diese Systematik fehlerhaft oder schwachsinnig ist. Gibt es solch ein Argument nicht, dann sollte wissenschaftliches Handeln aus dieser Systematik bestehen. Nur gilt dabei (wie immer), dass man es durch und durch verstanden und verinnerlicht haben sollte (Stichwort: Reflektieren), um es als verlässlichen Orientierungsrahmen zu nutzen. **Wichtig**: Wenn man diese Systematik verstanden und verinnerlicht hat, dann beginnt die eigentliche wissenschaftliche Arbeit erst, d.h. es ist nichts erledigt und wer glaubt, es gäbe einen verlässlichen Automatismus, der/die hat schlicht und einfach noch gut wie gar nichts verstanden (Stichwort: Auswendiglernen).
 
 <!--
 Melodie im Hintergrund vom likelihood video: Anthem of Inspiration
