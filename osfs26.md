@@ -2421,7 +2421,7 @@ es als verlässlichen Orientierungsrahmen zu nutzen. **Wichtig**: Wenn
 man diese Systematik verstanden und verinnerlicht hat, dann beginnt die
 eigentliche wissenschaftliche Arbeit erst, d.h. es ist nichts erledigt
 und wer glaubt, es gäbe einen verlässlichen Automatismus, der/die hat
-schlicht und einfach noch gut wie gar nichts verstanden (Stichwort:
+schlicht und einfach noch so gut wie gar nichts verstanden (Stichwort:
 Auswendiglernen).
 
 <!--
