@@ -1,7 +1,7 @@
 Open science FS26
 ================
 Marcel Miché
-2026-04-14
+2026-04-15
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
@@ -44,6 +44,7 @@ Marcel Miché
     - [Sensitivitätsanalyse,
       Unsicherheitsanalyse](#sensitivitätsanalyse-unsicherheitsanalyse)
     - [Systematik](#systematik)
+    - [G-computation](#g-computation)
   - [Lesehinweise](#lesehinweise)
 - [Literaturverzeichnis](#literaturverzeichnis)
 
@@ -2424,6 +2425,73 @@ und wer glaubt, es gäbe einen verlässlichen Automatismus, der/die hat
 schlicht und einfach noch so gut wie gar nichts verstanden (Stichwort:
 Auswendiglernen).
 
+### G-computation
+
+**Vorweg wichtig**: Wer hinsichtlich g-computation damit beginnt,
+Publikationen (z.B. Loh and Ren 2023; Chatton and Rohrer 2024), open
+books o.ä. zu lesen (z.B.
+[dieses](https://marginaleffects.com/chapters/gcomputation.html) oder
+[jenes](https://www.r-causal.org/chapters/13-g-comp)), mit dem Ziel,
+g-computation zu verstehen und anzuwenden, macht meiner Meinung nach
+sehr wahrscheinlich folgenden Fehler. Schritt 1 wird ausgelassen. Es
+wird nämlich eine fundamental wichtige Frage nicht gestellt und somit
+auch nicht beantwortet: Welche Beziehung, wenn es eine gibt, besteht
+zwischen der Realität und dem statistischen Modell? Ich spreche hier von
+nichts anderem als vom ‘action bias’. Dieser mag häufig so stark sein,
+dass man ihm Folge leistet, obwohl man weiss, was der action bias ist
+und warum er in sehr vielen Fällen kontraproduktiv ist. Das heisst, dass
+man beim Überspringen von Schritt 1 Gefahr läuft, sich mit sehr vielen
+Annahmen Einverstanden zu erklären, ohne es zu bemerken und somit ohne
+zu wissen, welche Annahmen das sind. Würde man wenigstens die
+wichtigsten Annahmen explizit auf den Tisch legen, würde man unter
+Umständen leicht und unmittelbar einsehen, dass man entweder:
+
+- g-computation rundheraus ablehnt, oder wenigstens,
+- g-computation nüchtern, anstatt betäubt, durchführt.
+
+Worauf will ich hier hinaus? Die Frage, die scheinbar nicht einmal
+gedanklich gestellt wird, lautet: ‘Gibt es eine Übertragung kausaler
+Effekte aus einem *causal inference* Datenmodel auf die ihnen
+entsprechenden kausalen Effekte in der realen Welt?’ Denn
+ausschliesslich letztere sind der Grund für das Aufstellen und
+Analysieren des Datenmodells, bzw. für die Ergebnispräsentation
+(Greenland and Mansournia 2015). Wir wissen aber leider annähernd nichts
+zu jener Übertragung. Ausser sie in der Realität zu überprüfen, haben
+wir keine andere Möglichkeit, etwas zu jener Übertragung in Erfahrung zu
+bringen (Cliff 1983; Jørgensen, Gresele, and Weichwald 2025).
+
+**Fazit**: Sich über *causal inference* Datenanalysen den Kopf zu
+zerbrechen, erscheint mir überflüssig, solange nicht wenigstens narrativ
+begründet wird, warum die ‘kausalen’ Effekte im Datenmodell auch in der
+realen Welt beobachtet werden sollten. Wem nutzen ‘kausale’ Effekte, die
+(vielleicht ausschliesslich) in der Datenwelt existieren? Das wäre
+völliger Blödsinn!
+
+Mit diesen Gedanken im Bewusstsein kann man einmal diese Publikationen
+überfliegen: Zanga, Ozkirimli, and Stella (2022); Nogueira et al.
+(2022); Gong et al. (2024); Ilievski et al. (2025); Naser (2024); Dawid
+(2021); Bollen and Pearl (2013); Cinelli, Forney, and Pearl (2024);
+Deffner, Rohrer, and McElreath (2022); Lawes, West, and Eid (2025), und
+darüber reflektieren, was man da so liest, ob man es ablehnt (und warum)
+oder wenigstens nüchtern betrachtet (und warum).
+
+Nebenbei: Da g-computation Teil von DAGs ist, gilt obige Frage
+automatisch auch bezogen auf DAGs. Immerhin habe ich bei der für
+g-computation gesichteten Literatur endlich einmal einen Grund gelesen,
+weshalb heutzutage so oft geglaubt wird, man könne ‘Kausalität’ offen
+behaupten, sogar für Ergebnisse, die aus (psychologischen)
+Beobachtungsstudien stammen. Nämlich: ‘Comparisons of randomized
+experiments and well-designed observational studies sharing the same
+treatment and control groups have shown that they frequently lead to
+comparable estimates of causal effects’ (Lawes, West, and Eid 2025).
+Wenn dies jedoch ein ausreichendes Argument sein soll, dann gute Nacht!
+Allein schon Mythos 1 in Bollen and Pearl (2013) reicht aus, um die
+Unsinnigkeit deutlich zu erkennen. Das Hauptproblem scheint mir, dass
+solche Paper nur zitiert, aber nicht ernsthaft reflektiert werden,
+jedenfalls nicht von der grossen Mehrheit der Forscher/innen. Warum
+nicht? Vielleicht weil Wissenschaft nichts anderes (mehr) ist als
+Marketing (Peter and Olson 1983)?
+
 <!--
 Melodie im Hintergrund vom likelihood video: Anthem of Inspiration
 - Thematisieren und empirisches, korrektes(!) Prüfen der Testannahmen, und es publizieren.
@@ -2547,6 +2615,14 @@ Frequentists.” *Bmj* 317 (7166): 1151–60.
 
 </div>
 
+<div id="ref-bollen2013eight" class="csl-entry">
+
+Bollen, Kenneth A, and Judea Pearl. 2013. “Eight Myths about Causality
+and Structural Equation Models.” In *Handbook of Causal Analysis for
+Social Research*, 301–28. Springer.
+
+</div>
+
 <div id="ref-button2013confidence" class="csl-entry">
 
 Button, Katherine S, John PA Ioannidis, Claire Mokrysz, Brian A Nosek,
@@ -2594,6 +2670,21 @@ Science* 7 (1): 25152459241236149.
 Ciapponi, Agustı́n, José M Belizán, Gilda Piaggio, and Sanni Yaya. 2021.
 “There Is Life Beyond the Statistical Significance.” *Reproductive
 Health* 18 (1): 80.
+
+</div>
+
+<div id="ref-cinelli2024crash" class="csl-entry">
+
+Cinelli, Carlos, Andrew Forney, and Judea Pearl. 2024. “A Crash Course
+in Good and Bad Controls.” *Sociological Methods & Research* 53 (3):
+1071–1104.
+
+</div>
+
+<div id="ref-cliff1983some" class="csl-entry">
+
+Cliff, Norman. 1983. “Some Cautions Concerning the Application of Causal
+Modeling Methods.” *Multivariate Behavioral Research* 18 (1): 115–26.
 
 </div>
 
@@ -2657,10 +2748,25 @@ Elsherif, Matthew Peverill, Tomiko Yoneda, Katherine M Lawson, et al.
 
 </div>
 
+<div id="ref-dawid2021decision" class="csl-entry">
+
+Dawid, Philip. 2021. “Decision-Theoretic Foundations for Statistical
+Causality.” *Journal of Causal Inference* 9 (1): 39–77.
+
+</div>
+
 <div id="ref-deeks2004diagnostic" class="csl-entry">
 
 Deeks, Jonathan J, and Douglas G Altman. 2004. “Diagnostic Tests 4:
 Likelihood Ratios.” *Bmj* 329 (7458): 168–69.
+
+</div>
+
+<div id="ref-deffner2022causal" class="csl-entry">
+
+Deffner, Dominik, Julia M Rohrer, and Richard McElreath. 2022. “A Causal
+Framework for Cross-Cultural Generalizability.” *Advances in Methods and
+Practices in Psychological Science* 5 (3): 25152459221106366.
 
 </div>
 
@@ -2786,6 +2892,14 @@ Colombiana* 31 (3): 130–40.
 
 </div>
 
+<div id="ref-gong2024causal" class="csl-entry">
+
+Gong, Chang, Chuzhe Zhang, Di Yao, Jingping Bi, Wenbin Li, and Yongjun
+Xu. 2024. “Causal Discovery from Temporal Data: An Overview and New
+Perspectives.” *ACM Computing Surveys* 57 (4): 1–38.
+
+</div>
+
 <div id="ref-greenland2011null" class="csl-entry">
 
 Greenland, Sander. 2011. “Null Misinterpretation in Statistical Testing
@@ -2829,6 +2943,15 @@ Odds Ratio?” *Journal of Clinical Epidemiology* 139: 264–68.
 
 ———. 2025. “Some Ways to Make Regression Modeling More Helpful Than
 Misleading.” *Statistics in Medicine* 44 (13-14): e10313.
+
+</div>
+
+<div id="ref-greenland2015limitations" class="csl-entry">
+
+Greenland, Sander, and Mohammad Ali Mansournia. 2015. “Limitations of
+Individual Causal Models, Causal Graphs, and Ignorability Assumptions,
+as Illustrated by Random Confounding and Design Unfaithfulness.”
+*European Journal of Epidemiology* 30 (10): 1101–10.
 
 </div>
 
@@ -2925,6 +3048,15 @@ Estimation Using Observational Data.” *J Epidemiol Community Health* 76
 
 </div>
 
+<div id="ref-ilievski2025aligning" class="csl-entry">
+
+Ilievski, Filip, Barbara Hammer, Frank van Harmelen, Benjamin Paassen,
+Sascha Saralajew, Ute Schmid, Michael Biehl, et al. 2025. “Aligning
+Generalization Between Humans and Machines.” *Nature Machine
+Intelligence* 7 (9): 1378–89.
+
+</div>
+
 <div id="ref-infanger2019p" class="csl-entry">
 
 Infanger, Denis, and Arno Schmidt-Trucksäss. 2019. “P Value Functions:
@@ -2946,6 +3078,14 @@ Prespecified Statistical Analyses: Do Not Abandon Significance.” *Jama*
 Jeremiah, Faith, and Robert Istvan Radics. 2025. “Making Sense of Action
 Bias in Higher Education: Pedagogical Insights on Critical Thinking.”
 *Behavioral Sciences* 15 (10): 1372.
+
+</div>
+
+<div id="ref-jorgensen2025causal" class="csl-entry">
+
+Jørgensen, Frederik Hytting, Luigi Gresele, and Sebastian Weichwald.
+2025. “What Is Causal about Causal Models and Representations?” *arXiv
+Preprint arXiv:2501.19335*.
 
 </div>
 
@@ -2990,6 +3130,14 @@ Your Alpha.” *Nature Human Behaviour* 2 (3): 168–71.
 
 </div>
 
+<div id="ref-lawes2025guide" class="csl-entry">
+
+Lawes, Mario, Stephen G West, and Michael Eid. 2025. “A Guide to Causal
+Inference in Life-Event Studies.” *Advances in Methods and Practices in
+Psychological Science* 8 (1): 25152459241302015.
+
+</div>
+
 <div id="ref-lazar2010ockham" class="csl-entry">
 
 Lazar, Nicole. 2010. “Ockham’s Razor.” *Wiley Interdisciplinary Reviews:
@@ -3009,6 +3157,15 @@ Estimates.” *Jama* 326 (10): 967–68.
 Liu, Xiaofeng Steven. 2015. “Sample Size and the Precision of the
 Confidence Interval in Meta-Analyses.” *Therapeutic Innovation &
 Regulatory Science* 49 (4): 593–98.
+
+</div>
+
+<div id="ref-loh2023tutorial" class="csl-entry">
+
+Loh, Wen Wei, and Dongning Ren. 2023. “A Tutorial on Causal Inference in
+Longitudinal Data with Time-Varying Confounding Using g-Estimation.”
+*Advances in Methods and Practices in Psychological Science* 6 (3):
+25152459231174029.
 
 </div>
 
@@ -3132,6 +3289,24 @@ Be Interpreted?” *American Journal of Epidemiology* 189 (7): 631–33.
 
 </div>
 
+<div id="ref-naser2024causality" class="csl-entry">
+
+Naser, Mohannad Z. 2024. “Causality and Causal Inference for Engineers:
+Beyond Correlation, Regression, Prediction and Artificial Intelligence.”
+*Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery*
+14 (4): e1533.
+
+</div>
+
+<div id="ref-nogueira2022methods" class="csl-entry">
+
+Nogueira, Ana Rita, Andrea Pugnana, Salvatore Ruggieri, Dino Pedreschi,
+and João Gama. 2022. “Methods and Tools for Causal Discovery and Causal
+Inference.” *Wiley Interdisciplinary Reviews: Data Mining and Knowledge
+Discovery* 12 (2): e1449.
+
+</div>
+
 <div id="ref-norton2019marginal" class="csl-entry">
 
 Norton, Edward C, Bryan E Dowd, and Matthew L Maciejewski. 2019.
@@ -3192,6 +3367,13 @@ Original Psychological Research: A Discussion and Tutorial.”
 Perneger, Thomas V. 2021. “How to Use Likelihood Ratios to Interpret
 Evidence from Randomized Trials.” *Journal of Clinical Epidemiology*
 136: 235–42.
+
+</div>
+
+<div id="ref-peter1983science" class="csl-entry">
+
+Peter, J Paul, and Jerry C Olson. 1983. “Is Science Marketing?” *Journal
+of Marketing* 47 (4): 111–25.
 
 </div>
 
@@ -3466,6 +3648,14 @@ Methods and Practices in Psychological Science* 5 (2):
 Yang, Ruiyu, Sabrena Tuy, Lea Rose Dougherty, and Jillian Lee Wiggins.
 2025. “Risk and Resilience Profiles and Their Transition Pathways in the
 ABCD Study.” *Development and Psychopathology* 37 (4): 2055–64.
+
+</div>
+
+<div id="ref-zanga2022survey" class="csl-entry">
+
+Zanga, Alessio, Elif Ozkirimli, and Fabio Stella. 2022. “A Survey on
+Causal Discovery: Theory and Practice.” *International Journal of
+Approximate Reasoning* 151: 101–29.
 
 </div>
 
