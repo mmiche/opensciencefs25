@@ -2446,8 +2446,8 @@ zu wissen, welche Annahmen das sind. Würde man wenigstens die
 wichtigsten Annahmen explizit auf den Tisch legen, würde man unter
 Umständen leicht und unmittelbar einsehen, dass man entweder:
 
-- g-computation rundheraus ablehnt, oder wenigstens,
-- g-computation nüchtern, anstatt betäubt, durchführt.
+- g-computation rundheraus ablehnen sollte, oder wenigstens,
+- g-computation nüchtern, anstatt betäubt, durchführen sollte.
 
 Worauf will ich hier hinaus? Die Frage, die scheinbar nicht einmal
 gedanklich gestellt wird, lautet: ‘Gibt es eine Übertragung kausaler
@@ -2458,22 +2458,32 @@ Analysieren des Datenmodells, bzw. für die Ergebnispräsentation
 (Greenland and Mansournia 2015). Wir wissen aber leider annähernd nichts
 zu jener Übertragung. Ausser sie in der Realität zu überprüfen, haben
 wir keine andere Möglichkeit, etwas zu jener Übertragung in Erfahrung zu
-bringen (Cliff 1983; Jørgensen, Gresele, and Weichwald 2025).
+bringen (Cliff 1983; Jørgensen, Gresele, and Weichwald 2025). Aber
+meines Wissens hat bisher niemand es versucht, diese Übertragung in der
+Psychologie zu überprüfen. Diese Übertragungsthematik wird in dieser
+medizinischen Publikation (Ali et al. 2025) angesprochen. Es wird darin
+gezeigt, dass je nachdem wie der Outcome ‘Körpergewicht’ mit Daten
+gebildet wird, ‘kausale’ Effektschätzungen ganz unterschiedlich
+ausfallen können, was zu entsprechend unterschiedlichen
+Interventionsempfehlungen (in der realen Welt!) führen würde. Unter den
+unabhängigen Variablen befindet sich eine dichotome psychologische
+Variable, die durch einen Fragebogen zustande kam, nämlich ob irgendeine
+depressive Problematik vorgelegen haben könnte.
 
 **Fazit**: Sich über *causal inference* Datenanalysen den Kopf zu
-zerbrechen, erscheint mir überflüssig, solange nicht wenigstens narrativ
-begründet wird, warum die ‘kausalen’ Effekte im Datenmodell auch in der
-realen Welt beobachtet werden sollten. Wem nutzen ‘kausale’ Effekte, die
-(vielleicht ausschliesslich) in der Datenwelt existieren? Das wäre
-völliger Blödsinn!
+zerbrechen, erscheint mir überflüssig, solange nicht wenigstens
+theoretisch begründet werden könnte, warum die ‘kausalen’ Effekte im
+Datenmodell auch in der realen Welt beobachtet werden sollten. Wem
+nutzen ‘kausale’ Effekte, die (vielleicht ausschliesslich) in der
+Datenwelt existieren? Das wäre völliger Blödsinn!
 
 Mit diesen Gedanken im Bewusstsein kann man einmal diese Publikationen
 überfliegen: Zanga, Ozkirimli, and Stella (2022); Nogueira et al.
 (2022); Gong et al. (2024); Ilievski et al. (2025); Naser (2024); Dawid
 (2021); Bollen and Pearl (2013); Cinelli, Forney, and Pearl (2024);
 Deffner, Rohrer, and McElreath (2022); Lawes, West, and Eid (2025), und
-darüber reflektieren, was man da so liest, ob man es ablehnt (und warum)
-oder wenigstens nüchtern betrachtet (und warum).
+darüber reflektieren, was man da so liest, d.h. wie man dazu steht und
+warum.
 
 Nebenbei: Da g-computation Teil von DAGs ist, gilt obige Frage
 automatisch auch bezogen auf DAGs. Immerhin habe ich bei der für
@@ -2487,10 +2497,10 @@ comparable estimates of causal effects’ (Lawes, West, and Eid 2025).
 Wenn dies jedoch ein ausreichendes Argument sein soll, dann gute Nacht!
 Allein schon Mythos 1 in Bollen and Pearl (2013) reicht aus, um die
 Unsinnigkeit deutlich zu erkennen. Das Hauptproblem scheint mir, dass
-solche Paper nur zitiert, aber nicht ernsthaft reflektiert werden,
-jedenfalls nicht von der grossen Mehrheit der Forscher/innen. Warum
-nicht? Vielleicht weil Wissenschaft nichts anderes (mehr) ist als
-Marketing (Peter and Olson 1983)?
+Paper wie z.B. Bollen and Pearl (2013) nur zitiert, aber nicht ernsthaft
+reflektiert werden, jedenfalls nicht von der grossen Mehrheit der
+Forscher/innen. Aber warum nicht? Vielleicht weil Wissenschaft nichts
+anderes (mehr) ist als Marketing (Peter and Olson 1983)?
 
 <!--
 Melodie im Hintergrund vom likelihood video: Anthem of Inspiration
@@ -2567,6 +2577,16 @@ Ramadanov, and Robert Prill. 2025. “SQUARE-IT: A Proposed Approach to
 Square the Identified Research Problem in the Literature with the
 Objectives, the Appropriate Clinical Research Question, and the Research
 Hypothesis.” *BMC Medical Research Methodology* 25 (1): 19.
+
+</div>
+
+<div id="ref-ali2025composite" class="csl-entry">
+
+Ali, Ridda, Andrew Prestwich, Jiaqi Ge, Claire Griffiths, Richard
+Allmendinger, Azar Shahgholian, Yu-wang Chen, Mohammad Ali Mansournia,
+and Mark S Gilthorpe. 2025. “Composite Variable Bias: Causal Analysis of
+Weight Outcomes: Epidemiology and Population Health.” *International
+Journal of Obesity* 49 (6): 1043–50.
 
 </div>
 
