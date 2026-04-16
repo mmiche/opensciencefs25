@@ -1,7 +1,7 @@
 Open science FS26
 ================
 Marcel Miché
-2026-04-15
+2026-04-16
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
@@ -1617,6 +1617,11 @@ erklärenden und von der vorhersagenden Herangehensweise. Ein Paper wie
 das von Morgan (2025) zeigt, dass es nicht nur in der Psychologie
 gehörige Verständnisschwierigkeiten mit der NHST-‘Logik’ gibt.
 
+> Ich empfehle dringend das Manuskript von Carol Ting zu lesen (Version
+> 2 - März 2026), in dem beschrieben wird, wann und weshalb NHST zur
+> Dominanz gelangt ist und welche Zerstörung es versucht (hat) (Ting
+> 2026).
+
 ### Zwischenfazit 1
 
 Alle Themen bisher kreisen, wie oben angekündigt, einerseits um den
@@ -2435,47 +2440,60 @@ books o.ä. zu lesen (z.B.
 g-computation zu verstehen und anzuwenden, macht meiner Meinung nach
 sehr wahrscheinlich folgenden Fehler. Schritt 1 wird ausgelassen. Es
 wird nämlich eine fundamental wichtige Frage nicht gestellt und somit
-auch nicht beantwortet: Welche Beziehung, wenn es eine gibt, besteht
-zwischen der Realität und dem statistischen Modell? Ich spreche hier von
-nichts anderem als vom ‘action bias’. Dieser mag häufig so stark sein,
-dass man ihm Folge leistet, obwohl man weiss, was der action bias ist
-und warum er in sehr vielen Fällen kontraproduktiv ist. Das heisst, dass
-man beim Überspringen von Schritt 1 Gefahr läuft, sich mit sehr vielen
-Annahmen Einverstanden zu erklären, ohne es zu bemerken und somit ohne
-zu wissen, welche Annahmen das sind. Würde man wenigstens die
-wichtigsten Annahmen explizit auf den Tisch legen, würde man unter
-Umständen leicht und unmittelbar einsehen, dass man entweder:
+auch nicht beantwortet: Welche Beziehung, wenn es überhaupt eine gibt,
+besteht zwischen der Realität und dem statistischen Modell? Ich spreche
+hier von nichts anderem als vom ‘action bias’. Dieser mag häufig so
+stark sein, dass man ihm Folge leistet, obwohl man weiss, was der action
+bias ist und warum er in sehr vielen Fällen kontraproduktiv ist. Das
+heisst, dass man beim Überspringen von Schritt 1 Gefahr läuft, sehr
+viele theoretische Annahmen zu akzeptieren, ohne es zu bemerken und
+somit ohne zu wissen, wie diese Annahmen eigentlich lauten. Würde man
+wenigstens die wichtigsten Annahmen explizit auf den Tisch legen, würde
+man unter Umständen leicht und unmittelbar einsehen, dass man entweder:
 
 - g-computation rundheraus ablehnen sollte, oder wenigstens,
 - g-computation nüchtern, anstatt betäubt, durchführen sollte.
 
-Worauf will ich hier hinaus? Die Frage, die scheinbar nicht einmal
-gedanklich gestellt wird, lautet: ‘Gibt es eine Übertragung kausaler
-Effekte aus einem *causal inference* Datenmodel auf die ihnen
-entsprechenden kausalen Effekte in der realen Welt?’ Denn
-ausschliesslich letztere sind der Grund für das Aufstellen und
-Analysieren des Datenmodells, bzw. für die Ergebnispräsentation
-(Greenland and Mansournia 2015). Wir wissen aber leider annähernd nichts
-zu jener Übertragung. Ausser sie in der Realität zu überprüfen, haben
-wir keine andere Möglichkeit, etwas zu jener Übertragung in Erfahrung zu
-bringen (Cliff 1983; Jørgensen, Gresele, and Weichwald 2025). Aber
-meines Wissens hat bisher niemand es versucht, diese Übertragung in der
-Psychologie zu überprüfen. Diese Übertragungsthematik wird in dieser
-medizinischen Publikation (Ali et al. 2025) angesprochen. Es wird darin
-gezeigt, dass je nachdem wie der Outcome ‘Körpergewicht’ mit Daten
-gebildet wird, ‘kausale’ Effektschätzungen ganz unterschiedlich
-ausfallen können, was zu entsprechend unterschiedlichen
-Interventionsempfehlungen (in der realen Welt!) führen würde. Unter den
-unabhängigen Variablen befindet sich eine dichotome psychologische
-Variable, die durch einen Fragebogen zustande kam, nämlich ob irgendeine
-depressive Problematik vorgelegen haben könnte.
+Worauf will ich hinaus? Die Frage, die scheinbar nicht einmal gedanklich
+gestellt wird, lautet: ‘Gibt es eine Übertragung kausaler Effekte aus
+einem *causal inference* Datenmodel auf die ihnen entsprechenden
+kausalen Effekte in der realen Welt?’ Denn ausschliesslich letztere sind
+der Grund für das Aufstellen und Analysieren des Datenmodells, bzw. für
+die Ergebnispräsentation (Greenland and Mansournia 2015). Wir wissen
+aber leider annähernd nichts zu jener Übertragung. Ausser sie in der
+Realität zu überprüfen, haben wir keine andere Möglichkeit, etwas zu
+jener Übertragung in Erfahrung zu bringen (Cliff 1983; Jørgensen,
+Gresele, and Weichwald 2025). Aber meines Wissens hat bisher niemand
+versucht, diese Übertragung in der Psychologie zu überprüfen.
+
+> Wichtig: Die ursprüngliche Idee von Dingen wie
+> Strukturgleichungsmodellen und DAGs ist, dass ein *im Voraus*
+> vorhandenes, wenn auch nur anfängliches, Wissen, oder wenigstens eine
+> Ahnung über die kausale Struktur vorliegt. Es zeigt sich jedoch in
+> etlichen Publikationen, dass Forscher/innen tatsächlich erwarten, dass
+> die Verwendung jener Datenmodelle ihnen Hinweise zur kausalen Struktur
+> gibt, d.h. **ohne** dass sie sie *im Voraus* besessen haben müssten.
+> Es findet somit eine komplette Umkehr statt, die scheinbar völlig
+> bedenkenlos ist. Leider ist sie nicht bedenkenlos, jedoch gedankenlos.
+> **So kann Wissenschaft nicht funktionieren**.
+
+Die Übertragungsthematik wird in dieser medizinischen Publikation (Ali
+et al. 2025) angesprochen. Es wird darin gezeigt, dass je nachdem wie
+der Outcome ‘Körpergewicht’ mit Daten gebildet wird, ‘kausale’
+Effektschätzungen ganz unterschiedlich ausfallen können, was zu
+entsprechend unterschiedlichen Interventionsempfehlungen (in der realen
+Welt!) führen würde. Unter den unabhängigen Variablen befindet sich eine
+dichotome psychologische Variable, die durch einen Fragebogen zustande
+kam, nämlich ob irgendeine depressive Problematik vorgelegen haben
+könnte.
 
 **Fazit**: Sich über *causal inference* Datenanalysen den Kopf zu
 zerbrechen, erscheint mir überflüssig, solange nicht wenigstens
 theoretisch begründet werden könnte, warum die ‘kausalen’ Effekte im
 Datenmodell auch in der realen Welt beobachtet werden sollten. Wem
 nutzen ‘kausale’ Effekte, die (vielleicht ausschliesslich) in der
-Datenwelt existieren? Das wäre völliger Blödsinn!
+Datenwelt existieren? Das wäre völliger Irrsinn! Kein Mensch kann in die
+Datenwelt ziehen, um dort kausale Effekte zu erleben.
 
 Mit diesen Gedanken im Bewusstsein kann man einmal diese Publikationen
 überfliegen: Zanga, Ozkirimli, and Stella (2022); Nogueira et al.
@@ -2488,19 +2506,19 @@ warum.
 Nebenbei: Da g-computation Teil von DAGs ist, gilt obige Frage
 automatisch auch bezogen auf DAGs. Immerhin habe ich bei der für
 g-computation gesichteten Literatur endlich einmal einen Grund gelesen,
-weshalb heutzutage so oft geglaubt wird, man könne ‘Kausalität’ offen
-behaupten, sogar für Ergebnisse, die aus (psychologischen)
-Beobachtungsstudien stammen. Nämlich: ‘Comparisons of randomized
-experiments and well-designed observational studies sharing the same
-treatment and control groups have shown that they frequently lead to
-comparable estimates of causal effects’ (Lawes, West, and Eid 2025).
-Wenn dies jedoch ein ausreichendes Argument sein soll, dann gute Nacht!
-Allein schon Mythos 1 in Bollen and Pearl (2013) reicht aus, um die
-Unsinnigkeit deutlich zu erkennen. Das Hauptproblem scheint mir, dass
-Paper wie z.B. Bollen and Pearl (2013) nur zitiert, aber nicht ernsthaft
-reflektiert werden, jedenfalls nicht von der grossen Mehrheit der
-Forscher/innen. Aber warum nicht? Vielleicht weil Wissenschaft nichts
-anderes (mehr) ist als Marketing (Peter and Olson 1983)?
+weshalb geglaubt wird, man könne ‘Kausalität’ offen behaupten, sogar für
+Ergebnisse, die aus (psychologischen) Beobachtungsstudien stammen.
+Nämlich: ‘Comparisons of randomized experiments and well-designed
+observational studies sharing the same treatment and control groups have
+shown that they frequently lead to comparable estimates of causal
+effects’ (Lawes, West, and Eid 2025). Wenn dies jedoch ein ausreichendes
+Argument sein soll, dann gute Nacht! Allein schon Mythos 1 in Bollen and
+Pearl (2013) reicht aus, um die Unsinnigkeit deutlich zu erkennen. Das
+Hauptproblem scheint mir, dass Paper wie z.B. Bollen and Pearl (2013)
+nur zitiert, aber nicht ernsthaft reflektiert werden, jedenfalls nicht
+von der grossen Mehrheit der Forscher/innen. Aber warum nicht?
+Vielleicht weil Wissenschaft nichts anderes (mehr) ist als Marketing
+(Peter and Olson 1983)?
 
 <!--
 Melodie im Hintergrund vom likelihood video: Anthem of Inspiration
@@ -3575,6 +3593,14 @@ Epidemiology* 50 (2): 620–32.
 Thomson, Carrie Louise, Neal Maskrey, and Ivo Vlaev. 2017. “Making
 Decisions Better: An Evaluation of an Educational Intervention.”
 *Journal of Evaluation in Clinical Practice* 23 (2): 251–56.
+
+</div>
+
+<div id="ref-ting2026rise" class="csl-entry">
+
+Ting, Carol. 2026. “The Rise of Null Hypothesis Significance Testing
+(NHST): Institutional Massification and the Emergence of a Procedural
+Epistemology.” *arXiv Preprint arXiv:2603.14757*.
 
 </div>
 
