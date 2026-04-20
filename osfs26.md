@@ -1,7 +1,7 @@
 Open science FS26
 ================
 Marcel Miché
-2026-04-16
+2026-04-20
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
@@ -45,6 +45,7 @@ Marcel Miché
       Unsicherheitsanalyse](#sensitivitätsanalyse-unsicherheitsanalyse)
     - [Systematik](#systematik)
     - [G-computation](#g-computation)
+    - [Kausalität und Psychologie?](#kausalität-und-psychologie)
   - [Lesehinweise](#lesehinweise)
 - [Literaturverzeichnis](#literaturverzeichnis)
 
@@ -2520,6 +2521,70 @@ von der grossen Mehrheit der Forscher/innen. Aber warum nicht?
 Vielleicht weil Wissenschaft nichts anderes (mehr) ist als Marketing
 (Peter and Olson 1983)?
 
+### Kausalität und Psychologie?
+
+Die einzige kausale Ursache (= Daseinsgrund) von ‘Wissenschaft’ ist das
+menschliche Verlangen nach kausalen Erklärungen für beobachtete
+Ereignisse. Wenn man es nur so betrachtet, ist es völlig
+nachvollziehbar, explizit das Wort ‘kausal’ in Forschungsfragen und
+Hypothesen zu verwenden. Warum sollte es in der Psychologie anders sein
+als in anderen Bereichen der Wissenschaft? Ein möglicher Grund ist, dass
+Wissenschaft zwingend verlangt, nichts zu behaupten, das man nicht
+(wenigstens theoretisch) experimentell überprüfen kann. Wissenschaft
+verbietet natürlich keine Gedankenexperimente, ganz im Gegenteil! Jedoch
+besteht die Gefahr, dass man allein durch Verwendung des Wortes
+‘kausal’, sich selbst und/oder anderen gegenüber suggeriert, man verfüge
+über entsprechend glaubhafte Belege, z.B. aus einer Reihe durchgeführter
+Präventionsstudien, deren Ergebnisse nahelegen, dass ‘Kausalität’
+zwischen Variable x und Ereignis y in der Realität plausibel angenommen
+werden könne. Dies scheint jedoch gegenwärtig in der Psychologie
+**realistisch** unmöglich zu sein (Eronen 2020).
+
+Kommen wir jetzt zur Realität. Es zeigt sich leider fast immer, dass
+blosse Mehrheiten ausreichen (selbst in der Wissenschaft), um etwas zu
+erzwingen, selbst wenn es Unfug sein sollte, z.B. NHST (Ting 2026). Es
+zeigt sich bereits sehr deutlich, dass die Zahl an Papern sehr gross ist
+und weiter steigt, die sich für die Verwendung des Wortes ‘kausal’ in
+Forschungsfragen und Hypothesen aussprechen (z.B. Labrecque and Kezios
+2026). Eine oberflächlich nachvollziehbare Begründung lautet, dass es
+Forscher/innen doch nicht verboten werden solle, kausale
+Forschungsfragen zu stellen, wenn sie kausale Forschungsfragen haben,
+anstatt sie zu zwingen, jegliche Kausalausdrücke als Tabu (Grosz,
+Rohrer, and Thoemmes 2020) zu behandeln.
+
+Ich bin unsicher, ob man sagen kann, dass es absehbar ist, dass sich
+mehr und mehr Psycholog/innen dazu entscheiden werden, das Wort ‘kausal’
+auch im Rahmen von Beobachtungsstudien zu verwenden. Ein aktuelles
+Paper, das davor warnt, stammt von Quimpo and Steiner (2026), worin
+(ähnlich wie in Eronen (2020)) erläutert wird, das kausale Effekte in
+der Psychologie (derzeit) häufig unmöglich bestimmt werden können. Warum
+eigentlich nicht? Ein Hinweis: Selbst wenn man die komplexe reale Welt
+mit einfacheren, psychologischen Kausalitätsauffassungen (z.B.
+biopsychosoziales Entstehungsmodell psychischer Störungen) ersetzt, dann
+sieht es immer noch viel zu komplex aus, als dass man es **realistisch**
+als ein DAG darstellen kann. Und selbst wenn es ginge, dann hätte man
+noch nicht die entsprechend nötige Stichprobengrösse, um es auswerten
+und sich auf das Ergebnis stützen zu können (Quimpo and Steiner 2026).
+
+Die Frage wird also sein, wie lange einzelne Psycholog/innen weiterhin
+widerstehen werden, das ‘c-word’ (Hernán 2018) freizügig zu verwenden,
+bzw. auf Anwendung ausgerichtete Tutorial-Paper (Zhu, Tay, and Zhang
+2026) sozusagen ungenutzt zu lassen. Brady et al. (2023) beobachten
+jedenfalls einen ‘increasing trend of squezzing causality \[…\] from
+non-intervention studies’. Sloman and Lagnado (2015) lassen ihren
+Artikel namens ‘Causality in thought’ damit ausklingen, dass Dinge wie
+DAGs als rein theoretisches Instrument durchaus Sinn machen können, mit
+denen ein/e Forscher/in sich selbst ein psychologisches Narrativ
+veranschaulichen kann (‘\[…\] mental simulation helps to construct such
+narratives.’). Als praktisches Instrument können sie jedoch nicht gelten
+(‘\[…\] but currently eludes a strict formal analysis.’), jedenfalls
+nicht in der angewandten Psychologie.
+
+**Fazit**: Ich hätte gegen DAGs (und dergleichen) nichts einzuwenden,
+solange unmissverständlich klar gemacht wird, dass es sich um die
+Visualisierung des subjektiven mentalen Modells von Psycholg/in x
+handelt.
+
 <!--
 Melodie im Hintergrund vom likelihood video: Anthem of Inspiration
 - Thematisieren und empirisches, korrektes(!) Prüfen der Testannahmen, und es publizieren.
@@ -2658,6 +2723,16 @@ Frequentists.” *Bmj* 317 (7166): 1151–60.
 Bollen, Kenneth A, and Judea Pearl. 2013. “Eight Myths about Causality
 and Structural Equation Models.” In *Handbook of Causal Analysis for
 Social Research*, 301–28. Springer.
+
+</div>
+
+<div id="ref-brady2023scientific" class="csl-entry">
+
+Brady, Anna C, Marlynn M Griffin, Ariah R Lewis, Carlton J Fong, and
+Daniel H Robinson. 2023. “How Scientific Is Educational Psychology
+Research? The Increasing Trend of Squeezing Causality and
+Recommendations from Non-Intervention Studies.” *Educational Psychology
+Review* 35 (1): 37.
 
 </div>
 
@@ -2993,6 +3068,14 @@ as Illustrated by Random Confounding and Design Unfaithfulness.”
 
 </div>
 
+<div id="ref-grosz2020taboo" class="csl-entry">
+
+Grosz, Michael P, Julia M Rohrer, and Felix Thoemmes. 2020. “The Taboo
+Against Explicit Causal Inference in Nonexperimental Psychology.”
+*Perspectives on Psychological Science* 15 (5): 1243–55.
+
+</div>
+
 <div id="ref-haber2022causal" class="csl-entry">
 
 Haber, Noah A, Sarah E Wieten, Julia M Rohrer, Onyebuchi A Arah, Peter
@@ -3042,6 +3125,14 @@ Alcoholism* 60 (1): agae089.
 Hemerik, Jesse, and Nick Koning. 2026. “Choosing Alpha Post Hoc: The
 Danger of Multiple Standard Significance Thresholds.” *Statistical
 Science* 41 (1): 222–26.
+
+</div>
+
+<div id="ref-hernan2018c" class="csl-entry">
+
+Hernán, Miguel A. 2018. “The c-Word: Scientific Euphemisms Do Not
+Improve Causal Inference from Observational Data.” *American Journal of
+Public Health* 108 (5): 616–19.
 
 </div>
 
@@ -3433,6 +3524,13 @@ Report* 29 (10): 2698–2715.
 
 </div>
 
+<div id="ref-quimpo2026drawing" class="csl-entry">
+
+Quimpo, Nathan J, and Peter M Steiner. 2026. “Drawing Credible Directed
+Acyclic Graphs for Causal Inference.” *Psychological Methods*.
+
+</div>
+
 <div id="ref-rafi2020semantic" class="csl-entry">
 
 Rafi, Zad, and Sander Greenland. 2020. “Semantic and Cognitive Tools to
@@ -3550,6 +3648,13 @@ Sidebotham, David, C Jake Barlow, Janet Martin, and Philip M Jones.
 2023. “Interpreting Frequentist Hypothesis Tests: Insights from Bayesian
 Inference.” *Canadian Journal of Anesthesia/Journal Canadien
 d’anesthésie* 70 (10): 1560–75.
+
+</div>
+
+<div id="ref-sloman2015causality" class="csl-entry">
+
+Sloman, Steven A, and David Lagnado. 2015. “Causality in Thought.”
+*Annual Review of Psychology* 66 (1): 223–47.
 
 </div>
 
@@ -3702,6 +3807,14 @@ ABCD Study.” *Development and Psychopathology* 37 (4): 2055–64.
 Zanga, Alessio, Elif Ozkirimli, and Fabio Stella. 2022. “A Survey on
 Causal Discovery: Theory and Practice.” *International Journal of
 Approximate Reasoning* 151: 101–29.
+
+</div>
+
+<div id="ref-zhu2026causal" class="csl-entry">
+
+Zhu, Guangyu, Li Qian Tay, and Mengyan Zhang. 2026. “Causal Discovery
+Methods in Psychological Research: Foundations, Algorithms, and a
+Practical Tutorial in r.” *Behavior Research Methods* 58 (2): 64.
 
 </div>
 
