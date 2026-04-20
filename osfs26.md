@@ -2532,9 +2532,9 @@ als in anderen Bereichen der Wissenschaft? Ein möglicher Grund ist, dass
 Wissenschaft zwingend verlangt, nichts zu behaupten, das man nicht
 (wenigstens theoretisch) experimentell überprüfen kann. Wissenschaft
 verbietet natürlich keine Gedankenexperimente, ganz im Gegenteil! Jedoch
-besteht die Gefahr, dass man allein durch Verwendung des Wortes
-‘kausal’, sich selbst und/oder anderen gegenüber suggeriert, man verfüge
-über entsprechend glaubhafte Belege, z.B. aus einer Reihe durchgeführter
+besteht die Gefahr, dass man allein durch Verwendung des Wortes ‘kausal’
+sich selbst und/oder anderen gegenüber suggeriert, man verfüge über
+entsprechend starke Belege, z.B. aus einer Reihe durchgeführter
 Präventionsstudien, deren Ergebnisse nahelegen, dass ‘Kausalität’
 zwischen Variable x und Ereignis y in der Realität plausibel angenommen
 werden könne. Dies scheint jedoch gegenwärtig in der Psychologie
@@ -2547,10 +2547,10 @@ zeigt sich bereits sehr deutlich, dass die Zahl an Papern sehr gross ist
 und weiter steigt, die sich für die Verwendung des Wortes ‘kausal’ in
 Forschungsfragen und Hypothesen aussprechen (z.B. Labrecque and Kezios
 2026). Eine oberflächlich nachvollziehbare Begründung lautet, dass es
-Forscher/innen doch nicht verboten werden solle, kausale
-Forschungsfragen zu stellen, wenn sie kausale Forschungsfragen haben,
-anstatt sie zu zwingen, jegliche Kausalausdrücke als Tabu (Grosz,
-Rohrer, and Thoemmes 2020) zu behandeln.
+Forscher/innen nicht verboten werden solle, kausale Forschungsfragen zu
+stellen, wenn sie solche haben, anstatt sie zu zwingen, jegliche
+Kausalausdrücke als Tabu (Grosz, Rohrer, and Thoemmes 2020) zu
+behandeln.
 
 Ich bin unsicher, ob man sagen kann, dass es absehbar ist, dass sich
 mehr und mehr Psycholog/innen dazu entscheiden werden, das Wort ‘kausal’
@@ -2558,13 +2558,14 @@ auch im Rahmen von Beobachtungsstudien zu verwenden. Ein aktuelles
 Paper, das davor warnt, stammt von Quimpo and Steiner (2026), worin
 (ähnlich wie in Eronen (2020)) erläutert wird, das kausale Effekte in
 der Psychologie (derzeit) häufig unmöglich bestimmt werden können. Warum
-eigentlich nicht? Ein Hinweis: Selbst wenn man die komplexe reale Welt
-mit einfacheren, psychologischen Kausalitätsauffassungen (z.B.
-biopsychosoziales Entstehungsmodell psychischer Störungen) ersetzt, dann
-sieht es immer noch viel zu komplex aus, als dass man es **realistisch**
-als ein DAG darstellen kann. Und selbst wenn es ginge, dann hätte man
-noch nicht die entsprechend nötige Stichprobengrösse, um es auswerten
-und sich auf das Ergebnis stützen zu können (Quimpo and Steiner 2026).
+eigentlich nicht? Eine Teilantwort: Selbst wenn man die komplexe reale
+Welt mit einfacheren, psychologischen Kausalitätsauffassungen (z.B.
+bio-psycho-soziales Entstehungsmodell psychischer Störungen) ersetzt,
+dann sieht es immer noch viel zu komplex aus, als dass man es
+**realistisch** als ein DAG darstellen kann. Und selbst wenn es ginge,
+dann hätte man noch nicht die entsprechend nötige Stichprobengrösse, um
+es auswerten und sich auf das Ergebnis stützen zu können (Quimpo and
+Steiner 2026).
 
 Die Frage wird also sein, wie lange einzelne Psycholog/innen weiterhin
 widerstehen werden, das ‘c-word’ (Hernán 2018) freizügig zu verwenden,
@@ -2574,16 +2575,25 @@ jedenfalls einen ‘increasing trend of squezzing causality \[…\] from
 non-intervention studies’. Sloman and Lagnado (2015) lassen ihren
 Artikel namens ‘Causality in thought’ damit ausklingen, dass Dinge wie
 DAGs als rein theoretisches Instrument durchaus Sinn machen können, mit
-denen ein/e Forscher/in sich selbst ein psychologisches Narrativ
-veranschaulichen kann (‘\[…\] mental simulation helps to construct such
-narratives.’). Als praktisches Instrument können sie jedoch nicht gelten
-(‘\[…\] but currently eludes a strict formal analysis.’), jedenfalls
-nicht in der angewandten Psychologie.
+denen man sich das eigene psychologische Narrativ veranschaulichen kann
+(‘\[…\] mental simulation helps to construct such narratives.’). Als
+praktisches Instrument können sie jedoch nicht gelten (‘\[…\] but
+currently eludes a strict formal analysis.’), jedenfalls nicht in der
+angewandten Psychologie. Vielleicht wird dies am besten in der sozialen
+Epidemiologie deutlich (Krieger 2024), wo der (leider zu erwartende?)
+oberflächliche (= falsche) Gebrauch von DAGs leicht dazu beitragen kann,
+dass bestehende soziale Ungerechtigkeiten sogar noch verschärft werden
+(Krieger and Davey Smith 2016; Swilley-Martinez et al. 2023).
 
 **Fazit**: Ich hätte gegen DAGs (und dergleichen) nichts einzuwenden,
-solange unmissverständlich klar gemacht wird, dass es sich um die
-Visualisierung des subjektiven mentalen Modells von Psycholg/in x
-handelt.
+solange unmissverständlich klar gemacht wird, dass es sich um nichts
+weiter als die Visualisierung des subjektiven mentalen Modells von
+Psycholog/in x handelt. Doch ‘nur’ dafür scheinen DAGs nicht gedacht zu
+sein. Selbst wenn Psycholog/in x es also unmissverständlich als eigenes
+mentales Narrativ kennzeichnen sollte, könnte es dennoch geschehen, dass
+manche (psychologisch naive) Leser/innen das DAGs als etwas anderes
+auffassen, z.B. als empirisch nachgewiesenen (**realistischen**)
+kausalen Effekt von x auf y.
 
 <!--
 Melodie im Hintergrund vom likelihood video: Anthem of Inspiration
@@ -3233,6 +3243,25 @@ Research Studies: Adjusting for Covariates.” *JAMA Psychiatry* 72 (10):
 
 </div>
 
+<div id="ref-krieger2024theorizing" class="csl-entry">
+
+Krieger, Nancy. 2024. “Theorizing Epidemiology, the Stories Bodies Tell,
+and Embodied Truths: A Status Update on Contending 21st c CE
+Epidemiological Theories of Disease Distribution.” *International
+Journal of Social Determinants of Health and Health Services* 54 (4):
+331–42.
+
+</div>
+
+<div id="ref-krieger2016tale" class="csl-entry">
+
+Krieger, Nancy, and George Davey Smith. 2016. “The Tale Wagged by the
+DAG: Broadening the Scope of Causal Inference and Explanation for
+Epidemiology.” *International Journal of Epidemiology* 45 (6):
+1787–1808.
+
+</div>
+
 <div id="ref-krieger2026psychological" class="csl-entry">
 
 Krieger, Nancy, Nykesha Johnson, Jarvis T Chen, Sari L Reisner,
@@ -3671,6 +3700,17 @@ Physical Anthropology*. Wiley Online Library.
 Stoudt, Sara, and Deborah Nolan. 2025. “The Storyboard: A Tool to
 Synthesize, Reflect on, and Write about Data Investigations.” *The
 American Statistician*, 1–9.
+
+</div>
+
+<div id="ref-swilley2023we" class="csl-entry">
+
+Swilley-Martinez, Monica E, Serita A Coles, Vanessa E Miller, Ishrat Z
+Alam, Kate Vinita Fitch, Theresa H Cruz, Bernadette Hohl, Regan Murray,
+and Shabbar I Ranapurwala. 2023. “‘We Adjusted for Race’: Now What? A
+Systematic Review of Utilization and Reporting of Race in American
+Journal of Epidemiology and Epidemiology, 2020–2021.” *Epidemiologic
+Reviews* 45 (1): 15–31.
 
 </div>
 
