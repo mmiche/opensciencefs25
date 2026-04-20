@@ -2541,31 +2541,38 @@ werden könne. Dies scheint jedoch gegenwärtig in der Psychologie
 **realistisch** unmöglich zu sein (Eronen 2020).
 
 Kommen wir jetzt zur Realität. Es zeigt sich leider fast immer, dass
-blosse Mehrheiten ausreichen (selbst in der Wissenschaft), um etwas zu
-erzwingen, selbst wenn es Unfug sein sollte, z.B. NHST (Ting 2026). Es
-zeigt sich bereits sehr deutlich, dass die Zahl an Papern sehr gross ist
-und weiter steigt, die sich für die Verwendung des Wortes ‘kausal’ in
-Forschungsfragen und Hypothesen aussprechen (z.B. Labrecque and Kezios
-2026). Eine oberflächlich nachvollziehbare Begründung lautet, dass es
-Forscher/innen nicht verboten werden solle, kausale Forschungsfragen zu
-stellen, wenn sie solche haben, anstatt sie zu zwingen, jegliche
-Kausalausdrücke als Tabu (Grosz, Rohrer, and Thoemmes 2020) zu
-behandeln.
+blosse Mehrheiten ausreichen (auch in der Wissenschaft), um etwas zu
+erzwingen, selbst wenn es wissenschaftlich desaströs sein sollte, z.B.
+NHST (Ting 2026). Es zeigt sich bereits deutlich, dass die Zahl an
+Papern gross ist und weiter steigt, die sich entschieden für die
+Verwendung des Wortes ‘kausal’ in Forschungsfragen und Hypothesen
+aussprechen (z.B. Labrecque and Kezios 2026). Eine oberflächlich
+nachvollziehbare Begründung lautet, dass es Forscher/innen nicht
+verboten sein sollte, kausale Forschungsfragen zu stellen, wenn sie
+solche haben, anstatt sie zu zwingen, jegliche Kausalausdrücke als Tabu
+(Grosz, Rohrer, and Thoemmes 2020) zu behandeln.
 
-Ich bin unsicher, ob man sagen kann, dass es absehbar ist, dass sich
-mehr und mehr Psycholog/innen dazu entscheiden werden, das Wort ‘kausal’
-auch im Rahmen von Beobachtungsstudien zu verwenden. Ein aktuelles
-Paper, das davor warnt, stammt von Quimpo and Steiner (2026), worin
-(ähnlich wie in Eronen (2020)) erläutert wird, das kausale Effekte in
-der Psychologie (derzeit) häufig unmöglich bestimmt werden können. Warum
-eigentlich nicht? Eine Teilantwort: Selbst wenn man die komplexe reale
-Welt mit einfacheren, psychologischen Kausalitätsauffassungen (z.B.
+Ich bin unsicher, ob man sagen kann, es sei absehbar, dass sich mehr und
+mehr Psycholog/innen dazu entscheiden werden, das Wort ‘kausal’ auch im
+Rahmen von Beobachtungsstudien zu verwenden. Ein aktuelles Paper, das
+davor warnt, stammt von Quimpo and Steiner (2026), worin (ähnlich wie in
+Eronen (2020)) erläutert wird, das kausale Effekte in der Psychologie
+(derzeit) häufig unmöglich bestimmt werden können. Warum eigentlich
+nicht? Eine Teilantwort: Selbst wenn man die komplexe reale Welt mit
+einfacheren, psychologischen Kausalitätsauffassungen (z.B.
 bio-psycho-soziales Entstehungsmodell psychischer Störungen) ersetzt,
 dann sieht es immer noch viel zu komplex aus, als dass man es
 **realistisch** als ein DAG darstellen kann. Und selbst wenn es ginge,
-dann hätte man noch nicht die entsprechend nötige Stichprobengrösse, um
-es auswerten und sich auf das Ergebnis stützen zu können (Quimpo and
-Steiner 2026).
+dann hätte man noch längst nicht die entsprechend nötige
+Stichprobengrösse, um es auswerten und sich auf das Ergebnis stützen zu
+können (Quimpo and Steiner 2026). Hierzu passend ist das Paper von
+Kunicki, Smith, and Murray (2023), das DAGs und
+Strukturgleichungsmodelle (SEMs) in der Psychologie vergleicht. Leider
+(symptomatisch für die akademische Psychologie) sind im Artikel
+Limitationen sehr komprimiert angedeutet, z.B. durch Textstellen wie
+‘multiple strong assumptions must be acknowledged’ oder ‘very strong
+assumptions’. Das im Normalfall (sehr) grosse Stichproben nötig sind,
+bleibt unerwähnt.
 
 Die Frage wird also sein, wie lange einzelne Psycholog/innen weiterhin
 widerstehen werden, das ‘c-word’ (Hernán 2018) freizügig zu verwenden,
@@ -2590,12 +2597,12 @@ verwendet (Swilley-Martinez et al. 2023).
 **Fazit**: Ich hätte gegen DAGs (und dergleichen) nichts einzuwenden,
 solange unmissverständlich klar gemacht wird, dass es sich um nichts
 weiter als die Visualisierung des subjektiven mentalen Modells von
-Psycholog/in x handelt. Doch ‘nur’ dafür scheinen DAGs nicht gedacht zu
-sein. Selbst wenn Psycholog/in x es also unmissverständlich als eigenes
-mentales Narrativ kennzeichnen sollte, könnte es dennoch geschehen, dass
-manche (psychologisch naive) Leser/innen das DAGs als etwas anderes
-auffassen, z.B. als empirisch nachgewiesenen (**realistischen**)
-kausalen Effekt von x auf y.
+Psycholog/in soundso handelt. Doch ‘nur’ dafür scheinen DAGs nicht
+gedacht zu sein. Selbst wenn Psycholog/in soundso es also
+unmissverständlich als eigenes mentales Narrativ kennzeichnen sollte,
+könnte es dennoch geschehen, dass (psychologisch naive) Leser/innen das
+DAGs als etwas anderes auffassen, z.B. als empirisch bewiesenen
+(**realistischen**) kausalen Effekt von x auf y.
 
 <!--
 Melodie im Hintergrund vom likelihood video: Anthem of Inspiration
@@ -3272,6 +3279,16 @@ Maddalena Marini, Merrily E LeBlanc, Kenneth H Mayer, et al. 2026.
 Ageism, and Sizeism: Analyzing Patterns of Association Using Explicit
 and Implicit Measures of Discrimination.” *AJE Advances: Research in
 Epidemiology* 2 (1): uuag007.
+
+</div>
+
+<div id="ref-kunicki2023primer" class="csl-entry">
+
+Kunicki, Zachary J, Meghan L Smith, and Eleanor J Murray. 2023. “A
+Primer on Structural Equation Model Diagrams and Directed Acyclic
+Graphs: When and How to Use Each in Psychological and Epidemiological
+Research.” *Advances in Methods and Practices in Psychological Science*
+6 (2): 25152459231156085.
 
 </div>
 
