@@ -2571,7 +2571,7 @@ Strukturgleichungsmodelle (SEMs) in der Psychologie vergleicht. Leider
 (symptomatisch für die akademische Psychologie) sind im Artikel
 Limitationen sehr komprimiert angedeutet, z.B. durch Textstellen wie
 ‘multiple strong assumptions must be acknowledged’ oder ‘very strong
-assumptions’. Das im Normalfall (sehr) grosse Stichproben nötig sind,
+assumptions’. Dass im Normalfall (sehr) grosse Stichproben nötig sind,
 bleibt unerwähnt. Es scheint auch im Forschungsbereich Ökologie
 unerwähnt zu bleiben (Correia et al. 2026), die ebenfalls auf die
 Verwendung von DAGs drängen, zur Beantwortung kausaler Forschungsfragen.
