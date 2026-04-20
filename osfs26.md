@@ -2583,7 +2583,9 @@ angewandten Psychologie. Vielleicht wird dies am besten in der sozialen
 Epidemiologie deutlich (Krieger 2024), wo der (leider zu erwartende?)
 oberflächliche (= falsche) Gebrauch von DAGs leicht dazu beitragen kann,
 dass bestehende soziale Ungerechtigkeiten sogar noch verschärft werden
-(Krieger and Davey Smith 2016; Swilley-Martinez et al. 2023).
+(Krieger and Davey Smith 2016), z.B. wenn man missverständliche
+Variablen wie ‘Rasse’ aus Gewohnheit wie ein homogenes Konstrukt im DAG
+verwendet (Swilley-Martinez et al. 2023).
 
 **Fazit**: Ich hätte gegen DAGs (und dergleichen) nichts einzuwenden,
 solange unmissverständlich klar gemacht wird, dass es sich um nichts
