@@ -2614,7 +2614,7 @@ DAGs falsch anwenden? Ein aktuelles Review von Eisenberg-Guyot et al.
 causal inference’ Studien, worin von 29 eingeschlossenen Studien nur 11
 das wichtigste Kriterien für diese Art von Studie erfüllten (eine
 ‘well-defined’ Intervention vorzuweisen). Wie steht es um die Sorge um
-Stichprobengrösse? Ich zitieren aus dem Abstract von Huth et al. (2025):
+Stichprobengrösse? Ich zitiere aus dem Abstract von Huth et al. (2025):
 ‘Our study shows that networks are often supported by too little
 evidence from the data for the results to be reported with confidence,
 \[…\]’. Network models sind eine DAG-Variante. Wie sieht es auf
