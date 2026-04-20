@@ -2572,7 +2572,11 @@ Strukturgleichungsmodelle (SEMs) in der Psychologie vergleicht. Leider
 Limitationen sehr komprimiert angedeutet, z.B. durch Textstellen wie
 ‘multiple strong assumptions must be acknowledged’ oder ‘very strong
 assumptions’. Das im Normalfall (sehr) grosse Stichproben nötig sind,
-bleibt unerwähnt.
+bleibt unerwähnt. Es scheint auch im Forschungsbereich Ökologie
+unerwähnt zu bleiben (Correia et al. 2026), die ebenfalls auf die
+Verwendung von DAGs drängen, zur Beantwortung kausaler Forschungsfragen.
+Möglicherweise spielt bei ihnen die Stichprobengrösse keine nennenwerte
+Rolle (ich bin überfragt), aber in der Psychologie eben schon.
 
 Die Frage wird also sein, wie lange einzelne Psycholog/innen weiterhin
 widerstehen werden, das ‘c-word’ (Hernán 2018) freizügig zu verwenden,
@@ -2594,15 +2598,36 @@ dass bestehende soziale Ungerechtigkeiten sogar noch verschärft werden
 Variablen wie ‘Rasse’ aus Gewohnheit wie ein homogenes Konstrukt im DAG
 verwendet (Swilley-Martinez et al. 2023).
 
-**Fazit**: Ich hätte gegen DAGs (und dergleichen) nichts einzuwenden,
+**Fazit 1**: Ich hätte gegen DAGs (und dergleichen) nichts einzuwenden,
 solange unmissverständlich klar gemacht wird, dass es sich um nichts
 weiter als die Visualisierung des subjektiven mentalen Modells von
-Psycholog/in soundso handelt. Doch ‘nur’ dafür scheinen DAGs nicht
+Psycholog/in soundso handelt. Doch ‘nur dafür’ scheinen DAGs nicht
 gedacht zu sein. Selbst wenn Psycholog/in soundso es also
 unmissverständlich als eigenes mentales Narrativ kennzeichnen sollte,
 könnte es dennoch geschehen, dass (psychologisch naive) Leser/innen das
-DAGs als etwas anderes auffassen, z.B. als empirisch bewiesenen
+DAG als etwas anderes auffassen, z.B. als empirisch bewiesenen
 (**realistischen**) kausalen Effekt von x auf y.
+
+**Fazit 2**: Wie steht es um die Sorge, Psycholog/innen würden womöglich
+DAGs falsch anwenden? Ein aktuelles Review von Eisenberg-Guyot et al.
+(2025) bezieht sich auf eine leicht andere Form von ‘observational
+causal inference’ Studien, worin von 29 eingeschlossenen Studien nur 11
+das wichtigste Kriterien für diese Art von Studie erfüllten (eine
+‘well-defined’ Intervention vorzuweisen). Wie steht es um die Sorge um
+Stichprobengrösse? Ich zitieren aus dem Abstract von Huth et al. (2025):
+‘Our study shows that networks are often supported by too little
+evidence from the data for the results to be reported with confidence,
+\[…\]’. Network models sind eine DAG-Variante. Wie sieht es auf
+konzeptueller Ebene aus, d.h. wissen alle, die ‘causal inference’
+Modelle benutzen, was diese Modelle erfordern? ‘Conceptual incoherence
+of the network approach’ (Oude Maatman and Eronen 2025) lässt eher ein
+Nein vermuten, genauso der Manuskripttitel ‘Consistency: A Critical but
+Often Overlooked Requirement for Causal Inference in Psychological
+Research’ von Junker and Grosz (2026).
+
+**Hinweis**: Einziger Zweck von Fazit 2 ist es, an den ersten Punkt
+dieses Online-Dokuments zu erinnern, Misstrauen ist angebracht, d.h.
+empfehlenswerter als Vertrauen.
 
 <!--
 Melodie im Hintergrund vom likelihood video: Anthem of Inspiration
@@ -2852,6 +2877,15 @@ Research Methods* 29 (2): 147–76.
 
 </div>
 
+<div id="ref-correia2026best" class="csl-entry">
+
+Correia, Hannah E, Laura E Dee, Jarrett EK Byrnes, John R Fieberg,
+Marie-Josée Fortin, Clark Glymour, Jakob Runge, et al. 2026. “Best
+Practices for Moving from Correlation to Causation in Ecological
+Research.” *Nature Communications*.
+
+</div>
+
 <div id="ref-dAmico2025association" class="csl-entry">
 
 D’Amico, Filippo, Marilena Marmiere, Martina Fonti, Mariarita Battaglia,
@@ -2949,6 +2983,15 @@ Clinical Epidemiology*, 111960.
 ———. 2026. “Response to:‘identifying Variables That Independently
 Predict…’ Is Not a Well-Defined Research Task.” *Journal of Clinical
 Epidemiology* 189.
+
+</div>
+
+<div id="ref-eisenberg2025inconsistent" class="csl-entry">
+
+Eisenberg-Guyot, Jerzy, Katrina L Kezios, Seth J Prins, and Sharon
+Schwartz. 2025. “Inconsistent Consistency: Evaluating the Well-Defined
+Intervention Assumption in Applied Epidemiological Research.”
+*International Journal of Epidemiology* 54 (2): dyaf015.
 
 </div>
 
@@ -3187,6 +3230,14 @@ Review* 84 (6): 1218–36.
 
 </div>
 
+<div id="ref-huth2025statistical" class="csl-entry">
+
+Huth, Karoline BS, Jonas MB Haslbeck, Sara Keetelaar, Ruth J van Holst,
+and Maarten Marsman. 2025. “Statistical Evidence in Psychological
+Networks.” *Nature Human Behaviour*, 1–14.
+
+</div>
+
 <div id="ref-igelstrom2022causal" class="csl-entry">
 
 Igelström, Erik, Peter Craig, Jim Lewsey, John Lynch, Anna Pearce, and
@@ -3234,6 +3285,14 @@ Bias in Higher Education: Pedagogical Insights on Critical Thinking.”
 Jørgensen, Frederik Hytting, Luigi Gresele, and Sebastian Weichwald.
 2025. “What Is Causal about Causal Models and Representations?” *arXiv
 Preprint arXiv:2501.19335*.
+
+</div>
+
+<div id="ref-junkerconsistency2026" class="csl-entry">
+
+Junker, Lukas, and Michael P Grosz. 2026. “Consistency: A Critical but
+Often Overlooked Requirement for Causal Inference in Psychological
+Research.”
 
 </div>
 
@@ -3505,6 +3564,15 @@ Oberndorfer, Moritz, Annie Herbert, S Vittal Katikireddi, and Anna
 Pearce. 2026. “Descriptive Estimands, Causal Estimands, and Avoiding the
 Jungle of Adjusted Associations ‘in Between’.” *Journal of Epidemiology
 and Community Health*. BMJ Publishing Group Ltd.
+
+</div>
+
+<div id="ref-maatman2025unraveling" class="csl-entry">
+
+Oude Maatman, Freek JW, and Markus I Eronen. 2025. “Unraveling Networks:
+The Conceptual Incoherence of the Network Approach.” *The Journal of
+Medicine and Philosophy: A Forum for Bioethics and Philosophy of
+Medicine* 54: 167–82.
 
 </div>
 
