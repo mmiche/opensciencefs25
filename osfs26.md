@@ -1,7 +1,7 @@
 Open science FS26
 ================
 Marcel Miché
-2026-04-20
+2026-04-21
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
@@ -1332,12 +1332,12 @@ Zwei weitere wichtige, methodische Details, die hierhin gehören:
     setzen. Was die numerischen Ergebnisse betrifft, kann es jedoch so
     sein, dass diese sich so gut wie nicht voneinander unterscheiden,
     und zwar je geringer die Outcomehäufigkeit ist (siehe Table 2 in
-    Schmidt and Kohlmann (2008), point estimate bei Inzidenz von 4%
-    wesentlich ähnlicher als bei Inzidenz 62%). Die Bedeutung des Wortes
-    muss man zudem beachten: Ein Faktor kann nur dann inhaltlich als
-    ‘Risikofaktor’ gelten, wenn garantiert ist, dass er zeitlich vor der
-    Erstmanifestation des Outcome vorgelegen hat. Dasselbe gilt auch für
-    ‘Protektivfaktor’. Während ein Risikofaktor das Risiko für den
+    C. O. Schmidt and Kohlmann (2008), point estimate bei Inzidenz von
+    4% wesentlich ähnlicher als bei Inzidenz 62%). Die Bedeutung des
+    Wortes muss man zudem beachten: Ein Faktor kann nur dann inhaltlich
+    als ‘Risikofaktor’ gelten, wenn garantiert ist, dass er zeitlich vor
+    der Erstmanifestation des Outcome vorgelegen hat. Dasselbe gilt auch
+    für ‘Protektivfaktor’. Während ein Risikofaktor das Risiko für den
     Outcome erhöht, verringert ein Protektivfaktor das Risiko, den
     Outcome zu entwickeln.
 2.  Bei Meta-Analysen wird empfohlen, dass man das ‘prediction interval’
@@ -1622,6 +1622,28 @@ gehörige Verständnisschwierigkeiten mit der NHST-‘Logik’ gibt.
 > 2 - März 2026), in dem beschrieben wird, wann und weshalb NHST zur
 > Dominanz gelangt ist und welche Zerstörung es versucht (hat) (Ting
 > 2026).
+
+Weitere Paper oder Manuskripte zu NHST:
+
+Befürwortung, Ergebnisse der Studie zu beschreiben (siehe Eingangszitat
+von J. Cohen). Life After NHST: How to Describe Your Data Without
+‘p-ing’ Everywhere, Basic and Applied Social Psychology (Valentine,
+Aloe, and Lau 2015).
+
+Die Logik von NHST ist nicht ‘flawed’, sondern die Anwendung von NHST
+ist es, weil die Logik in der Anwendung bis zur Unkenntlichkeit verzerrt
+worden ist (siehe Patriota 2018).
+
+Verbesserungsvorschlag, vor der Überzeugung, dass NHST unter allen
+Umständen weiterhin auf dieselbe Weise wie bisher benutzt (missbraucht!)
+werden wird: Es wird vorgeschlagen das Wort ‘clarity’ statt
+‘significance’ zu verwenden (Dushoff, Kain, and Bolker 2019).
+
+Das Manuskript von Lai et al. (2010) verweist darauf, dass dichotomes
+Denken das Problem sei, egal ob hierzu NHST oder etwas anderes verwendet
+wird. (Siehe oben [Dichotomanie](#dichotomanie).)
+
+Das Paper von The (2011) fragt ‘are we ready yet to abandon’ NHST?
 
 ### Zwischenfazit 1
 
@@ -2543,8 +2565,9 @@ werden könne. Dies scheint jedoch gegenwärtig in der Psychologie
 Kommen wir jetzt zur Realität. Es zeigt sich leider fast immer, dass
 blosse Mehrheiten ausreichen (auch in der Wissenschaft), um etwas zu
 erzwingen, selbst wenn es wissenschaftlich desaströs sein sollte, z.B.
-NHST (Ting 2026). Es zeigt sich bereits deutlich, dass die Zahl an
-Papern gross ist und weiter steigt, die sich entschieden für die
+NHST (Ting 2026; F. Schmidt and Hunter 2002; Krueger 2002; Gliner,
+Leech, and Morgan 2002). Es zeigt sich bereits deutlich, dass die Zahl
+an Papern gross ist und weiter steigt, die sich entschieden für die
 Verwendung des Wortes ‘kausal’ in Forschungsfragen und Hypothesen
 aussprechen (z.B. Labrecque and Kezios 2026). Eine oberflächlich
 nachvollziehbare Begründung lautet, dass es Forscher/innen nicht
@@ -2970,6 +2993,14 @@ Work Practice* 31 (5): 438–53.
 
 </div>
 
+<div id="ref-dushoff2019can" class="csl-entry">
+
+Dushoff, Jonathan, Morgan P Kain, and Benjamin M Bolker. 2019. “I Can
+See Clearly Now: Reinterpreting Statistical Significance.” *Methods in
+Ecology and Evolution* 10 (6): 756–59.
+
+</div>
+
 <div id="ref-dyer2025distinction" class="csl-entry">
 
 Dyer, Brett P. 2025. “The Distinction Between Causal, Predictive, and
@@ -3064,6 +3095,14 @@ Gaona, José, Daniel Sánchez, Cesar González, Fabio González, Angélica
 Rueda, and Sebastián Ortiz. 2022. “Frequentist and Bayesian Hypothesis
 Testing: An Intuitive Guide for Urologists and Clinicians.” *Urologı́a
 Colombiana* 31 (3): 130–40.
+
+</div>
+
+<div id="ref-gliner2002problems" class="csl-entry">
+
+Gliner, Jeffrey A, Nancy L Leech, and George A Morgan. 2002. “Problems
+with Null Hypothesis Significance Testing (NHST): What Do the Textbooks
+Say?” *The Journal of Experimental Education* 71 (1): 83–92.
 
 </div>
 
@@ -3341,6 +3380,12 @@ Epidemiology* 2 (1): uuag007.
 
 </div>
 
+<div id="ref-krueger2002bayes" class="csl-entry">
+
+Krueger, Joachim. 2002. “Bayes Rules.”
+
+</div>
+
 <div id="ref-kunicki2023primer" class="csl-entry">
 
 Kunicki, Zachary J, Meghan L Smith, and Eleanor J Murray. 2023. “A
@@ -3355,6 +3400,14 @@ Research.” *Advances in Methods and Practices in Psychological Science*
 
 Labrecque, Jeremy A, and Katrina L Kezios. 2026. “How and When to Use
 Causal and Associational Language.” *Bmj* 392.
+
+</div>
+
+<div id="ref-lai2010dichotomous" class="csl-entry">
+
+Lai, Jerry, P Kalinowski, F Fidler, and G Cumming. 2010. “Dichotomous
+Thinking: A Problem Beyond NHST.” *Data and Context in Statistics
+Education: Towards an Evidence Based Society*, 1–4.
 
 </div>
 
@@ -3592,6 +3645,13 @@ Positivism Paradigm of Research.” *Academic Medicine* 95 (5): 690–94.
 
 </div>
 
+<div id="ref-patriota2018nhst" class="csl-entry">
+
+Patriota, Alexandre Galvão. 2018. “Is NHST Logically Flawed? Commentary
+on:‘NHST Is Still Logically Flawed’.” *Scientometrics* 116 (3): 2189–91.
+
+</div>
+
 <div id="ref-pedersen2025maximum" class="csl-entry">
 
 Pedersen, Cæcilie Bøje. 2025. “Maximum Likelihood Estimation.”
@@ -3703,6 +3763,12 @@ Interpreting Data.” *Applied Sciences* 12 (15): 7691.
 Schmidt, Carsten Oliver, and Thomas Kohlmann. 2008. “When to Use the
 Odds Ratio or the Relative Risk?” *International Journal of Public
 Health* 53 (3): 165.
+
+</div>
+
+<div id="ref-schmidt2002there" class="csl-entry">
+
+Schmidt, Frank, and John Hunter. 2002. “Are There Benefits from NHST?”
 
 </div>
 
@@ -3820,6 +3886,13 @@ Epidemiology* 50 (2): 620–32.
 
 </div>
 
+<div id="ref-the2011significance" class="csl-entry">
+
+The, Bertram. 2011. “Significance Testing–Are We Ready yet to Abandon
+Its Use?” *Current Medical Research and Opinion* 27 (11): 2087–90.
+
+</div>
+
 <div id="ref-thomson2017making" class="csl-entry">
 
 Thomson, Carrie Louise, Neal Maskrey, and Ivo Vlaev. 2017. “Making
@@ -3860,6 +3933,14 @@ Psychology and Behavioral Medicine*. Taylor & Francis.
 Ung, Lawson, and Issa J Dahabreh. 2025. “Keep Asking: What Do i Want?
 What Do i Have? What Do i Do? L. Ung, IJ Dahabreh.” *European Journal of
 Epidemiology* 40 (3): 245–54.
+
+</div>
+
+<div id="ref-valentine2015life" class="csl-entry">
+
+Valentine, Jeffrey C, Ariel M Aloe, and Timothy S Lau. 2015. “Life After
+NHST: How to Describe Your Data Without ‘p-Ing’ Everywhere.” *Basic and
+Applied Social Psychology* 37 (5): 260–73.
 
 </div>
 
