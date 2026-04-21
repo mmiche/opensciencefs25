@@ -1620,7 +1620,7 @@ gehörige Verständnisschwierigkeiten mit der NHST-‘Logik’ gibt.
 
 > Ich empfehle dringend das Manuskript von Carol Ting zu lesen (Version
 > 2 - März 2026), in dem beschrieben wird, wann und weshalb NHST zur
-> Dominanz gelangt ist und welche Zerstörung es versucht (hat) (Ting
+> Dominanz gelangt ist und welche Zerstörung es verursacht (hat) (Ting
 > 2026).
 
 Weitere Paper oder Manuskripte zu NHST:
