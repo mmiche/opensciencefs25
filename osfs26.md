@@ -1,7 +1,7 @@
 Open science FS26
 ================
 Marcel Miché
-2026-04-21
+2026-04-22
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
@@ -2630,6 +2630,17 @@ unmissverständlich als eigenes mentales Narrativ kennzeichnen sollte,
 könnte es dennoch geschehen, dass (psychologisch naive) Leser/innen das
 DAG als etwas anderes auffassen, z.B. als empirisch bewiesenen
 (**realistischen**) kausalen Effekt von x auf y.
+
+Bei Quimpo and Steiner (2026) liest es sich ähnlich:
+
+> ‘\[…\] even if credible causal DAGs for observational studies almost
+> never allow for successful identification of a causal effect given the
+> observed data, such graphs are still invaluable for study planning and
+> more modest causal inference.’
+
+**Notiz**: Solange die Publikationsanreize in der Psychologie jedoch
+‘boldness’ anstatt ‘modesty’ belohnen, wird ‘modesty’ ein frommer
+Wunschtraum bleiben.
 
 **Fazit 2**: Wie steht es um die Sorge, Psycholog/innen würden womöglich
 DAGs falsch anwenden? Ein aktuelles Review von Eisenberg-Guyot et al.

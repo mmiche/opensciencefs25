@@ -906,6 +906,12 @@ Die Frage wird also sein, wie lange einzelne Psycholog/innen weiterhin widersteh
 
 **Fazit 1**: Ich hätte gegen DAGs (und dergleichen) nichts einzuwenden, solange unmissverständlich klar gemacht wird, dass es sich um nichts weiter als die Visualisierung des subjektiven mentalen Modells von Psycholog/in soundso handelt. Doch 'nur dafür' scheinen DAGs nicht gedacht zu sein. Selbst wenn Psycholog/in soundso es also unmissverständlich als eigenes mentales Narrativ kennzeichnen sollte, könnte es dennoch geschehen, dass (psychologisch naive) Leser/innen das DAG als etwas anderes auffassen, z.B. als empirisch bewiesenen (**realistischen**) kausalen Effekt von x auf y.
 
+Bei @quimpo2026drawing liest es sich ähnlich:
+
+> '[...] even if credible causal DAGs for observational studies almost never allow for successful identification of a causal effect given the observed data, such graphs are still invaluable for study planning and more modest causal inference.'
+
+**Notiz**: Solange die Publikationsanreize in der Psychologie jedoch 'boldness' anstatt 'modesty' belohnen, wird 'modesty' ein frommer Wunschtraum bleiben.
+
 **Fazit 2**: Wie steht es um die Sorge, Psycholog/innen würden womöglich DAGs falsch anwenden? Ein aktuelles Review von @eisenberg2025inconsistent bezieht sich auf eine leicht andere Form von 'observational causal inference' Studien, worin von 29 eingeschlossenen Studien nur 11 das wichtigste Kriterien für diese Art von Studie erfüllten (eine 'well-defined' Intervention vorzuweisen). Wie steht es um die Sorge um Stichprobengrösse? Ich zitiere aus dem Abstract von @huth2025statistical: 'Our study shows that networks are often supported by too little evidence from the data for the results to be reported with confidence, [...]'. Network models sind eine DAG-Variante. Wie sieht es auf konzeptueller Ebene aus, d.h. wissen alle, die 'causal inference' Modelle benutzen, was diese Modelle erfordern? 'Conceptual incoherence of the network approach' [@maatman2025unraveling] lässt eher ein Nein vermuten, genauso der Manuskripttitel 'Consistency: A Critical but Often Overlooked Requirement for Causal Inference in Psychological Research' von @junkerconsistency2026.
 
 **Hinweis**: Einziger Zweck von Fazit 2 ist es, an den ersten Punkt dieses Online-Dokuments zu erinnern, Misstrauen ist angebracht, d.h. empfehlenswerter als Vertrauen.
