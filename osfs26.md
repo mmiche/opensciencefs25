@@ -2730,6 +2730,98 @@ Eintrag begonnen habe.
 begründetes Urteil gebildet hat, könnte es sich lohnen, die Inhalte
 [hiervon](https://mmiche.github.io/GitHubHowTo/) zur Kenntnis zu nehmen.
 
+**Zahlenbeispiel** zu ‘homogene’ versus ‘heterogene’ Zahlen, die dem
+Modell übergeben werden, und warum sich das auf oben beschriebene Art
+auf die Breite des 95% KI auswirkt.
+
+``` r
+set.seed(24)
+group0 <- rnorm(n=20, mean=3, sd=2)
+set.seed(19)
+group1 <- rnorm(n=20, mean=4, sd=2)
+psych::describe(data.frame(group0, group1))[,c("mean", "sd")]
+```
+
+    ##        mean   sd
+    ## group0 2.94 1.53
+    ## group1 4.15 1.39
+
+``` r
+df <- data.frame(outcome=c(group0, group1),
+                 pred=rep(c("G0", "G1"), each=20))
+model <- lm(outcome ~ pred, data=df)
+coefficients(summary(model))
+```
+
+    ##             Estimate Std. Error  t value     Pr(>|t|)
+    ## (Intercept) 2.935305  0.3272913 8.968478 6.428073e-11
+    ## predG1      1.215222  0.4628598 2.625465 1.239930e-02
+
+``` r
+confint(model)[2,]
+```
+
+    ##     2.5 %    97.5 % 
+    ## 0.2782118 2.1522331
+
+Nun werden die simulierten Zahlen von group0 auf ganze Zahlen gerundet
+(group1 bleibt unverändert). Der Mittelwert von group0 bleibt fast
+unverändert (2.9 statt 2.94), aber die Standardabweichung (sd) erhöht
+sich von 1.53 auf 1.65. Höhere sd heisst, dass die Zahlen stärker um
+ihren Mittelwert variieren bzw. eine höhere Variabilität der Zahlen in
+dieser Gruppe ist. Da nun also der Unterschied zwischen den Gruppen
+weiterhin sehr ähnlich wie zuvor ist, aber die Variabilität in einer der
+Gruppen zugenommen hat, muss das 95% KI breiter als zuvor sein, bzw.
+analog, muss der *p*-Wert etwas grösser als zuvor sein.
+
+``` r
+group0 <- round(group0, 0)
+c(mean(group0), sd(group0))
+```
+
+    ## [1] 2.900000 1.651156
+
+``` r
+df1 <- data.frame(outcome=c(group0, group1),
+                 pred=rep(c("G0", "G1"), each=20))
+model1 <- lm(outcome ~ pred, data=df1)
+coefficients(summary(model1))
+```
+
+    ##             Estimate Std. Error  t value     Pr(>|t|)
+    ## (Intercept) 2.900000  0.3413614 8.495396 2.582542e-10
+    ## predG1      1.250527  0.4827579 2.590382 1.352106e-02
+
+``` r
+confint(model1)[2,]
+```
+
+    ##     2.5 %    97.5 % 
+    ## 0.2732352 2.2278197
+
+Die Veränderung des 95% KI vom Gruppenunterschied (Estimate) ist nicht
+stark (vorher: .278-2.15; nachher: .273-2.23), aber das war auch nicht
+das Ziel. Es ist ohne Probleme erkennbar, dass die Variabilität
+innerhalb der Gruppe stärker zugenommen hat als der Unterschied zwischen
+den Gruppen, der ebenfalls ein klein wenig stärker als zuvor ist.
+
+Genauso kann man es übrigens auch am t value erkennen, der zuvor
+2.625465, nun aber 2.590382 ist. Unter der Nullhypothese mit 38
+Freiheitsgraden kann man den empirischen *p*-Wert nachrechnen
+(beidseitig):
+
+``` r
+pt(q=2.625465, df=38, lower.tail = FALSE)*2
+```
+
+    ## [1] 0.01239931
+
+``` r
+pt(q=2.590382, df=38, lower.tail = FALSE)*2
+```
+
+    ## [1] 0.01352108
+
 <!--
 Melodie im Hintergrund vom likelihood video: Anthem of Inspiration
 - Thematisieren und empirisches, korrektes(!) Prüfen der Testannahmen, und es publizieren.
