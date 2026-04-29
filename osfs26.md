@@ -1,7 +1,7 @@
 Open science FS26
 ================
 Marcel Miché
-2026-04-22
+2026-04-29
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
@@ -46,6 +46,7 @@ Marcel Miché
     - [Systematik](#systematik)
     - [G-computation](#g-computation)
     - [Kausalität und Psychologie?](#kausalität-und-psychologie)
+    - [Vertrauen, Glaubwürdigkeit](#vertrauen-glaubwürdigkeit)
   - [Lesehinweise](#lesehinweise)
 - [Literaturverzeichnis](#literaturverzeichnis)
 
@@ -2662,6 +2663,67 @@ Research’ von Junker and Grosz (2026).
 **Hinweis**: Einziger Zweck von Fazit 2 ist es, an den ersten Punkt
 dieses Online-Dokuments zu erinnern, Misstrauen ist angebracht, d.h.
 empfehlenswerter als Vertrauen.
+
+### Vertrauen, Glaubwürdigkeit
+
+Ich halte für richtig, dass man Vertrauen und Glaubwürdigkeit nicht aus
+einem statistischen Modell erhalten kann. Man kann lediglich als
+Individuum behaupten, man habe soundso viel Vertrauen oder man finde
+etwas soundso glaubwürdig. Somit kann also kein methodisches Werkzeug
+Vertrauen oder Glaubwürdigkeit als ‘Ergebnis’ ausgeben. Ergebnisse eines
+methodischen Werkzeugs, inklusive Bayesianische Statistik, geben ein
+systematisch komprimiertes Fazit aus, in Form einer Zahl, basierend auf
+dem numerischen Input.
+
+Die Bayesianer/innen und die Frequentist/innen sitzen, wie alle anderen
+auch, im selben Boot.
+
+Wer obigen Aussagen zustimmt bzw. sie vielleicht einfach nur für
+selbstverständlich richtig hält, der/die **muss** eine sehr starke
+kognitive Veränderung erleben, sobald er/sie glaubt, dass das 95%
+Vertrauensintervall (95% KI) bedeute, man könne zu 95% Vertrauen haben,
+dass sich der ‘wahre Wert’ im 95% KI befände. Dieser Glaube sollte
+mühelos als falsch erkannt werden können.
+
+Wer obigen Aussagen jedoch nicht zustimmt, der/die müsste unbedingt
+begründen können, warum die Aussagen falsch sind und welche Aussage/n
+stattdessen (wiederum begründet!) richtig sei/en.
+
+Bayesianer/innen behaupten jedoch, dass ihre Methode es erlaube, man
+könne es als 95% glaubwürdig (95% credibility interval) erachten, dass
+der wahre Wert in jenem Intervall läge. Aber die Bayesianer/innen müssen
+ihre *a priori* Annahme (prior probability) in die Analyse hineingeben,
+um danach ein *a posteriori* Update ihrer *a priori* Annahme (posterior
+probability) erhalten zu können. Sie haben also vorher und nachher ein
+subjektives Gefühl der relativen Glaubwürdigkeit. Die Durchführung des
+statistischen Modells wird von ihnen sozusagen zwischengeschaltet,
+scheinbar um ihr *a priori* Gefühl der Glaubwürdigkeit ‘zu überprüfen’.
+Grösster Knackpunkt war, ist und bleibt: Sollte die *a priori* Annahme
+(völlig) falsch sein, dann wird dadurch auch ihr ‘Update’ (völlig)
+falsch sein. Ob und inwiefern ihre *a priori* Annahme aber richtig ist,
+kann vom statistischen Modell nie beantwortet werden.
+
+**Fazit**: Menschen halten Unsicherheit auf die Dauer generell nicht gut
+aus. Unter Umständen ist das ein treibender Faktor, der erklärt, warum
+so erbittert gestritten wird, wer weshalb wie viel Prozent ‘Vertrauen’
+oder ‘Glaubwürdigkeit’ aus ‘ihrem Intervall’ glaubt entnehmen zu können.
+Ich plädiere dafür, Ergebnisse, egal ob als Punktschätzung oder als
+Intervall, als das zu sehen, was sie sind, nämlich als Zusammenfassung
+von nackten Zahlen. Beispiel: Ein enges Intervall deutet darauf hin,
+dass entweder genügend viele und/oder einigermassen homogene Zahlen
+(homogen = wenig Variabilität innerhalb von Kategorien, die innerhalb
+des Modells gebildet werden) an das Modell übergegeben worden sind.
+Umgekehrt bedeutet ein breites Intervall, dass entweder (zu) wenig
+und/oder einigermassen heterogene Zahlen an das Modell übergegeben
+worden sind. Hier läge der Fokus auf der durch und durch nüchternen
+Beschreibung dessen, was man **faktisch** macht, wenn man *ein Modell
+auf Zahlen anwendet* (model fitting). Ob und inwiefern diese Zahlen
+valide Daten sind, kann und wird deshalb nie vom statistischen Modell
+beantwortet werden können, auch wenn man es sich noch so sehr wünschen
+mag. Für die letztlich zentrale Frage der Datengültigkeit ist
+ausschliesslich das menschliche Individuum verantwortlich. Hiermit wären
+wir also wieder bei den ersten beiden Sätzen, mit denen ich diesen
+Eintrag begonnen habe.
 
 <!--
 Melodie im Hintergrund vom likelihood video: Anthem of Inspiration
