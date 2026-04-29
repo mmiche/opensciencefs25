@@ -2710,20 +2710,25 @@ oder ‘Glaubwürdigkeit’ aus ‘ihrem Intervall’ glaubt entnehmen zu könne
 Ich plädiere dafür, Ergebnisse, egal ob als Punktschätzung oder als
 Intervall, als das zu sehen, was sie sind, nämlich als Zusammenfassung
 von nackten Zahlen. Beispiel: Ein enges Intervall deutet darauf hin,
-dass entweder genügend viele und/oder einigermassen homogene Zahlen
-(homogen = wenig Variabilität innerhalb von Kategorien, die innerhalb
-des Modells gebildet werden) an das Modell übergegeben worden sind.
-Umgekehrt bedeutet ein breites Intervall, dass entweder (zu) wenig
-und/oder einigermassen heterogene Zahlen an das Modell übergegeben
-worden sind. Hier läge der Fokus auf der durch und durch nüchternen
-Beschreibung dessen, was man **faktisch** macht, wenn man *ein Modell
-auf Zahlen anwendet* (model fitting). Ob und inwiefern diese Zahlen
-valide Daten sind, kann und wird deshalb nie vom statistischen Modell
-beantwortet werden können, auch wenn man es sich noch so sehr wünschen
-mag. Für die letztlich zentrale Frage der Datengültigkeit ist
-ausschliesslich das menschliche Individuum verantwortlich. Hiermit wären
-wir also wieder bei den ersten beiden Sätzen, mit denen ich diesen
+dass entweder genügend viele und/oder einigermassen homogene Zahlen an
+das Modell übergegeben worden sind (homogen = Unterschiede zwischen
+Gruppen, die innerhalb des Modells gebildet werden, zugleich wenig
+Variabilität innerhalb jener Gruppen). Umgekehrt bedeutet ein breites
+Intervall, dass entweder (zu) wenig und/oder einigermassen heterogene
+Zahlen an das Modell übergegeben worden sind. Hier läge der Fokus auf
+der durch und durch nüchternen Beschreibung dessen, was man **faktisch**
+macht, wenn man *ein statistisches Modell auf Zahlen anwendet*
+(statistical model fitting). Ob und inwiefern diese Zahlen valide Daten
+sind, kann und wird deshalb nie vom statistischen Modell beantwortet
+werden können, auch wenn man es sich noch so sehr wünschen mag. Für die
+letztlich zentrale Frage der Datengültigkeit ist ausschliesslich das
+menschliche Individuum verantwortlich. Bei Aussagen zur Datengültigkeit
+wären wir also wieder bei den ersten beiden Sätzen, mit denen ich diesen
 Eintrag begonnen habe.
+
+**Hinweis**: Sobald man obigen Inhalt genügend reflektiert und sich sein
+begründetes Urteil gebildet hat, könnte es sich lohnen, die Inhalte
+[hiervon](https://mmiche.github.io/GitHubHowTo/) zur Kenntnis zu nehmen.
 
 <!--
 Melodie im Hintergrund vom likelihood video: Anthem of Inspiration
