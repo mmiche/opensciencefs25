@@ -1,11 +1,11 @@
 Open science FS26
 ================
 Marcel Miché
-2026-04-29
+2026-05-05
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
-    - [Transparenz](#transparenz)
+    - [Transparenz 1](#transparenz-1)
     - [Orientierung, Kompass](#orientierung-kompass)
     - [Checklisten, Regelsammlungen](#checklisten-regelsammlungen)
     - [emmeans und marginaleffects](#emmeans-und-marginaleffects)
@@ -17,7 +17,7 @@ Marcel Miché
   - [Ordinaler Prädiktor](#ordinaler-prädiktor)
   - [URLs etc. zu Visualisierung](#urls-etc-zu-visualisierung)
 - [Vermeide Kontraproduktivität](#vermeide-kontraproduktivität)
-  - [Methodische Sicherheit](#methodische-sicherheit)
+  - [Methodische Sicherheit 1](#methodische-sicherheit-1)
   - [Methodische Details](#methodische-details)
     - [Inzidenz und Regressionsmodell](#inzidenz-und-regressionsmodell)
     - [Überfrachtetes
@@ -47,6 +47,9 @@ Marcel Miché
     - [G-computation](#g-computation)
     - [Kausalität und Psychologie?](#kausalität-und-psychologie)
     - [Vertrauen, Glaubwürdigkeit](#vertrauen-glaubwürdigkeit)
+    - [Transparenz 2](#transparenz-2)
+    - [Zwischenfazit 3](#zwischenfazit-3)
+    - [Methodische Sicherheit 2](#methodische-sicherheit-2)
   - [Lesehinweise](#lesehinweise)
 - [Literaturverzeichnis](#literaturverzeichnis)
 
@@ -81,7 +84,7 @@ dass man sich nicht sicher genug ist, ob man den Kern einer Sache, z.B.
 eines statistischen Werkzeugs, ausreichend gut verstanden hat, um mit
 dessen Hilfe etwas öffentlich in die Tat umzusetzen.
 
-### Transparenz
+### Transparenz 1
 
 Transparenz ist **das** Synonym schlechthin für open science. Beginnen
 wir also mit dem Dokumenttyp dieses
@@ -854,7 +857,7 @@ Kontraproduktivität praktisch unausweichlich. Ich spreche von
 methodischen Grundprinzipien, die man sich aneignen kann. Es sind wenige
 und sie sind nicht kompliziert. Bewerte selbst …
 
-## Methodische Sicherheit
+## Methodische Sicherheit 1
 
 Ohne Statistik, Mathematik o.ä. zu studieren, lässt sich dennoch
 methodische Sicherheit gewinnen. Wie das? Man muss sich bewusst machen
@@ -2822,6 +2825,187 @@ pt(q=2.590382, df=38, lower.tail = FALSE)*2
 
     ## [1] 0.01352108
 
+### Transparenz 2
+
+Es scheint derzeit so, als ob **die mit Abstand wichtigste Kompetenz der
+Zukunft** darin bestünde, möglichst zutreffend unterscheiden zu können,
+welcher Teil der Ausgabe künstlicher Intelligenz (KI) richtig und
+welcher Teil falsch ist. Dies ist natürlich nur möglich, wenn man
+begründen kann, warum dies richtig und warum jenes falsch sein soll.
+Zugleich behaupten jedoch viele Menschen (hauptsächlich diejenigen, die
+auf ein gutes KI-Geschäft aus sind), dass Menschen (grösstenteils
+Kinder) in Zukunft ‘KI-gestützt’ lernen sollen, d.h. KI soll daran
+beteiligt sein, menschliche Kompetenzen zu entwickeln. Das erscheint
+widersprüchlich, jedenfalls teilweise.
+
+Lässt sich das Kernproblem relativ einfach erkennen? Mal sehen: KI
+funktioniert nur auf Grundlage von Input, genauer, durch Zahlen
+repräsentierter Input. Dieser Input ist in allen Fällen indirekt, d.h.
+von menschlichen Möglichkeiten abhängig, welche begrenzt sind.
+
+Zwei Beispiele:
+
+1.  Lichtsensible Sensoren sind vom Menschen entwickelt worden, d.h. sie
+    messen Licht im Rahmen technischer Möglichkeiten, genauer, anhand
+    dessen, was der Mensch als Wellenlänge definieren kann. KI kann
+    diesen indirekten Input (gemessene Wellenlängen) nur so und nicht
+    anders nutzen. Hingegen nehmen manche Menschen, ohne genau zu wissen
+    wie und weshalb, Wellenlängen sowohl als Farben und zugleich als
+    Emotion wahr (Kaur 2020). KI kann das nicht, weil es keine Emotionen
+    haben kann, es sein denn sie werden durch Zahlen im Computer
+    repräsentiert, aber das sind dann höchstens KI-Emotionen, was auch
+    immer wir Menschen darunter zu verstehen glauben würden.
+2.  Dasselbe gilt für large language models (LLMs). Worte, egal wie
+    viele und egal in welcher Sprache, sind abhängig von menschlichen
+    Sprachmöglichkeiten, welche begrenzt sind. Bezogen auf den Menschen
+    (nicht auf den Computer) heisst es, Sprache sei ‘the infinite use of
+    finite means’, womit die menschliche Kreativität gemeint ist, die
+    der Computer nicht haben kann, höchsten KI-Kreativität, was auch
+    immer wir Menschen darunter zu verstehen glauben. Bezüglich der
+    Sprache haben wir vielleicht folgendes Hauptproblem: Alle
+    Komplexitäten des Menschen drücken sich in der Sprache aus, die er
+    produziert. Irgendetwas davon, aber garantiert nicht alles, wird
+    durch den vom Menschen produzierten, maschinenkompatiblen
+    Softwarecode in den vom Menschen produzierten Computer aufgenommen,
+    d.h. dieser Anteil produzierter Sprache wird im Computer in Form von
+    Zahlen repräsentiert, manipuliert und dann (in Buchstabenfolgen
+    übersetzt) wieder ausgegeben, Buchstabe für Buchstabe und
+    Satzzeichen für Satzzeichen. Wortbedeutungen bzw.
+    Inhaltsverständnis, egal wie einfach oder vielschichtig, kann vom
+    Computer nur simuliert werden, mit extrem hohem Energieaufwand und
+    oberflächlich durchaus beeindruckend, jedenfalls anfänglich. Bei
+    längerem und genauerem Hinsehen scheint recht bald Ernüchterung
+    einzusetzen.
+
+**Fazit**: Jeder Output eines Computers kann nie etwas anderes sein als
+eine gewichtete Auswahl und Umordnung dessen, was irgendwann zuvor dem
+Computer in einer maschinenkompatiblen Weise als Input gegeben worden
+ist. Der Input stammt in allen Fällen vom Menschen, d.h. es ist eine
+unentwirrbare Mischung aus Dingen, die richtig oder die falsch sind,
+oder etwas richtig und zugleich etwas falsch sind. Niemals wird der
+Computer fehlerfrei und begründet entscheiden können, welcher Teil
+‘seines’ Outputs richtig und welcher Teil falsch ist. Heisst: Was auch
+immer KI in Zukunft ermöglichen, erleichtern oder verbessern sollte, es
+wird den Preis einer grösseren Kompetenzanforderung haben. Leider werden
+wir diese Kompetenz nicht von der KI erhalten können, wie ich oben
+hoffentlich verständlich(?) angedeutet habe.
+
+Zwei von unzähligen Literaturbeispielen, in diesem Fall zur Frage ‘Wie
+werde ich zum Thema machine learning kompetent(er)?’:
+
+‘What are they not telling me?’ Learning machine learning: … (Cinca et
+al. 2025)
+
+What they forgot to tell you about machine learning … (Johnson and Kuhn
+2025)
+
+Es dürfte fast sicher sein, dass auch jene beiden Publikationen wichtige
+Aspekte ‘vergessen’ und/oder falsch oder nicht deutlich genug richtig
+beschrieben haben. Ich erinnere deshalb gerne nochmals an den
+allerersten Eintrag dieses Dokuments: Misstrauen ist besser als
+Vertrauen, weil es erhöhte Wachsamkeit fordert und fördert.
+
+### Zwischenfazit 3
+
+Open science ist nicht nur mit dem Wort Transparenz synonym, sondern aus
+diesem Grund auch mit dem Wort ‘Durchdenken’ bzw. ‘gründlich
+reflektieren’. NHST ist hier (erneut) ein warnendes Beispiel. Wird
+etwas, wie NHST (oder multiple choice Klausuren), erst einmal etabliert,
+dann dauert es nicht lange, dass dies eine Rückwirkung zeigt. Bei NHST
+zeigt sich die Rückwirkung u.a. darin, dass dessen Nutzer/innen (also so
+ziemlich alle von uns) dazu erzogen werden, auf Basis ihres einzelnen
+statistischen Ergebnisses eine zumindest ansatzweise generalisierende
+‘Inferenz’ (Schlussfolgerung) durchzuführen, obwohl genau das Gegenteil
+gemeint ist mit **frequentistischer** Inferenzstatistik, wo also nur
+(unheimlich) viele Ergebnisse unabhängiger Studien eine Schlussfolgerung
+erlauben. Für das Ergebnis einer einzelnen Studie wäre die beschreibende
+Herangehensweise (Stichworte: Abweichungs-P-Wert,
+Kompatibilitätsintervall, p-value function und Surprisal index)
+wesentlich geeigneter, weil die datengestützten Informationen damit
+wesentlich nuancierter zur Geltung kommen. Man bekäme also mehr
+Informationsgehalt, verglichen mit NHST, bei gleichbleibender
+Investition der Steuergelder in die Forschung. Dafür müssten jedoch
+künftige Forscher/innen entsprechend Kompetenzen erwerben, was u.a.
+deshalb nicht geschieht, weil lehrende Forscher/innen nur NHST lehren,
+was leider nicht ausreicht, wofür sie jedoch mit einer akademischen
+Karriere belohnt werden. Dieser Kreislauf erschwert es extrem, dass sich
+etwas grundlegend ändert. Grundlegende Veränderungen müssen also ‘von
+unten’ kommen, wofür Misstrauen empfehlenswert ist. Ein äusserst
+seltsamer Kreislauf, der hauptsächlich deshalb funktioniert, weil er
+‘gründliches Reflektieren’ wirksam auszuhebeln scheint.
+
+### Methodische Sicherheit 2
+
+Grundprinzip: Unterschiede (zwischen Gruppen) werden an Variabilität (in
+den Gruppen) relativiert. Genau dies wurde bereits oben geschrieben
+([siehe Methodische Sicherheit 1](#methodische-sicherheit-1)).
+
+Ich wiederhole es, weil es wichtig zu wissen ist, dass dieses
+Grundprinzip in allen datengestützten Methoden die Hauptrolle spielt und
+weil dieses Grundprinzip so primitiv einfach ist, dass es nicht nur
+einer elitären Gruppe verständlich gemacht werden kann.
+
+Dieses Grundprinzip zeigt sich (wie erwartet) z.B. in der bivariaten
+Korrelation zwischen den kontinuierlichen Variablen x und y. Grob
+gesagt: Produkt der Unterschiede zwischen den ‘Gruppen’ (Kovarianz: Sxy)
+wird relativiert am Produkt der Variabilität innerhalb jeder ‘Gruppe’
+(Standardabweichung SD: SDx SDy), wobei ich jede der beiden Variablen
+hier als ‘Gruppe’ bezeichne.
+
+``` r
+x <- c(4, 6, 3, 5, 7)
+y <- c(32, 54, 38, 55, 79)
+cor(x, y)
+```
+
+    ## [1] 0.8993633
+
+``` r
+# Prüfe
+cov(x, y)
+```
+
+    ## [1] 26
+
+``` r
+sd(x)
+```
+
+    ## [1] 1.581139
+
+``` r
+sd(y)
+```
+
+    ## [1] 18.28387
+
+``` r
+cov(x, y)/(sd(x)*sd(y))
+```
+
+    ## [1] 0.8993633
+
+Ein weiteres Beispiel ist die Ergebnisausgabe von jedem
+Regressionsmodell, inklusive Strukturgleichungsmodellen. Wie schon
+mehrfach oben gezeigt, sehen wir in jenen Ausgaben (wie erwartet) immer:
+Estimate/Std. Error = …, wobei diese drei Punkte in der linearen
+Regression ein t value sind, der unter der Nullhypothese der
+t-Verteilung mit bla vielen Freiheitsgraden dem empirischen p-Wert
+entspricht. Hierzu passend ist die ‘Quasi-Definition’ des p-Werts, der
+laut Kraemer (2012) anzeigt, dass der verwendete statistische Test (bzw.
+das Regressionsmodell) und die Grösse des Datensatzes ausgereicht haben,
+um einen statistischen Unterschied (siehe Grundprinzip oben) sichtbar zu
+machen, dessen empirischer p-Wert soundso lautet. In dieser isolierten
+Art der ‘Ergebnispräsentation’ würde völlig irrelevant bleiben, ob der
+statistische Unterschied irgendeine praktische Relevanz hat. NHST legt
+nahe, dass solche ‘Details’ ruhig als irrelevant gelten dürfen
+(Hauptsache der empirische p-Wert ist \< 5%).
+
+Die Quasi-Definition des p-Werts lautet im Original: The p-value is best
+interpreted as an indication that the sample size was large enough to
+detect a non-null effect size, not as an indicator of effect size.
+(Kraemer 2012, Seite 189)
+
 <!--
 Melodie im Hintergrund vom likelihood video: Anthem of Inspiration
 - Thematisieren und empirisches, korrektes(!) Prüfen der Testannahmen, und es publizieren.
@@ -3020,6 +3204,15 @@ Science* 7 (1): 25152459241236149.
 Ciapponi, Agustı́n, José M Belizán, Gilda Piaggio, and Sanni Yaya. 2021.
 “There Is Life Beyond the Statistical Significance.” *Reproductive
 Health* 18 (1): 80.
+
+</div>
+
+<div id="ref-cinca2025they" class="csl-entry">
+
+Cinca, Robert, Enrico Costanza, Mirco Musolesi, and Muna Alebri. 2025.
+“’What Are They Not Telling Me?’ Learning Machine Learning:
+Understanding the Challenges for Novices.” *International Journal of
+Human-Computer Studies* 196: 103438.
 
 </div>
 
@@ -3489,6 +3682,14 @@ Bias in Higher Education: Pedagogical Insights on Critical Thinking.”
 
 </div>
 
+<div id="ref-johnson2025they" class="csl-entry">
+
+Johnson, Kjell, and Max Kuhn. 2025. “What They Forgot to Tell You about
+Machine Learning with an Application to Pharmaceutical Manufacturing.”
+*Pharmaceutical Statistics* 24 (1): e2366.
+
+</div>
+
 <div id="ref-jorgensen2025causal" class="csl-entry">
 
 Jørgensen, Frederik Hytting, Luigi Gresele, and Sebastian Weichwald.
@@ -3512,11 +3713,27 @@ Why We Should Use Them.” *Journal of Clinical Epidemiology*, 112054.
 
 </div>
 
+<div id="ref-kaur2020link" class="csl-entry">
+
+Kaur, Achint. 2020. “A Link Between Colors and Emotions; a Study of
+Undergraduate Females.” *International Journal of Engineering Research &
+Technology (IJERT)* 9 (9): 553–57.
+
+</div>
+
+<div id="ref-kraemer2012determining" class="csl-entry">
+
+Kraemer, Helena Chmura. 2012. “Determining Gene Moderation of
+Environmental Risk Factors for a Mental Disorder: A ‘Perfect Storm’ of
+Methodological Problems.” *International Journal of Methods in
+Psychiatric Research* 21 (3): 185–94.
+
+</div>
+
 <div id="ref-kraemer2015source" class="csl-entry">
 
-Kraemer, Helena Chmura. 2015. “A Source of False Findings in Published
-Research Studies: Adjusting for Covariates.” *JAMA Psychiatry* 72 (10):
-961–62.
+———. 2015. “A Source of False Findings in Published Research Studies:
+Adjusting for Covariates.” *JAMA Psychiatry* 72 (10): 961–62.
 
 </div>
 

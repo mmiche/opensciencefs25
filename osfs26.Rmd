@@ -25,7 +25,7 @@ Nachdem dies nun geschrieben ist, sei betont, dass Checklisten und Regelsammlung
 
 Eine während des FS26 produzierte Sammlung von hoffentlich relevanten Hinweisen als auch konkreten Anleitungen, zu Umsetzungsmöglichkeiten von [open science](https://poldrack.github.io/psych-open-science-guide/README.html). Open science macht hauptsächlich dann Sinn, wenn Personen keine (Existenz-)Angst zu haben brauchen, wenn sie öffentlich zeigen (= dokumentieren), was sie aus welchem Grund, auf welche Weise und zu welchem Zweck in die Tat umgesetzt haben. Zugleich will sich selbstverständlich niemand öffentlich lächerlich machen. Genau diesem Zweck sollen alle Inhalte dieses Dokuments dienen, denn die dumpfe, latente Angst, sich lächerlich zu machen, scheint meist daher zu kommen, dass man sich nicht sicher genug ist, ob man den Kern einer Sache, z.B. eines statistischen Werkzeugs, ausreichend gut verstanden hat, um mit dessen Hilfe etwas öffentlich in die Tat umzusetzen.
 
-### Transparenz
+### Transparenz 1
 
 Transparenz ist **das** Synonym schlechthin für open science. Beginnen wir also mit dem Dokumenttyp dieses [markdown](https://www.markdownguide.org/) Dokuments. Es wurde mittels [rmarkdown](https://rmarkdown.rstudio.com/index.html) produziert ([weitere rmarkdown Quelle](https://yihui.org/rmarkdown/)). Wie bei jedem Dokumenttyp, stellt sich auch hier die Frage nach dem Ziel, d.h. was soll in welcher Form und auf welchem Weg an wen gelangen, und weshalb?
 
@@ -353,7 +353,7 @@ Erinnerung: Checklisten sind kontraproduktiv, solange man nicht genau weiss, was
 
 Aus diesen Aussagen ergibt sich ein Reihenfolgeproblem (wer hat eigentlich die Führung, die Checkliste oder der/die Forscher/in?), das man ernstnehmen sollte. Da es eine Tatsache ist, dass es sehr viele methodische Details gibt, über deren (Un-)Wichtigkeit man selbst entweder nur eingeschränkt oder gar nicht kompetent urteilen kann, braucht es eine gute Strategie. Sich einer Checkliste zu unterwerfen, ist mit die schlechteste Strategie. Eine bessere Strategie ist, dass man sich methodische Sicherheit aneignet, und zwar so, dass man sie berechtigt empfindet. Ohne Einsicht und subjektives Verständnis ist Kontraproduktivität praktisch unausweichlich. Ich spreche von methodischen Grundprinzipien, die man sich aneignen kann. Es sind wenige und sie sind nicht kompliziert. Bewerte selbst ...
 
-## Methodische Sicherheit
+## Methodische Sicherheit 1
 
 Ohne Statistik, Mathematik o.ä. zu studieren, lässt sich dennoch methodische Sicherheit gewinnen. Wie das? Man muss sich bewusst machen und darf es dann nicht mehr vergessen, dass es eine allgemein menschliche Fähigkeit ist, Unterschiede zu erkennen und sie gewöhnlich adäquat zu interpretieren. Diese Fähigkeit stellen alle Menschen vielfach täglich unter Beweis. Wenn in einem Regal im Supermarkt nur noch zwei Packungen Toastbrot liegen, statt wie üblich 20 oder mehr, sind wir erleichtert noch eine Packung bekommen zu haben. Dieses implizite bzw. intuitive Verständnis für Unterschiede ist in der Publikation von @masnick2022model geschildert. Das Endergebnis eines beliebigen statistischen Testverfahrens zeigt an, ob ein Unterschied festgestellt werden konnte. Statistische Testverfahren sind also bloss Hilfsmittel, um Unterschiede festzustellen, ähnlich wie eine Brille ein Hilfsmittel ist, um besser zu sehen. Man darf somit nicht blind sein, sonst hilft auch keine Brille.
 
@@ -966,6 +966,54 @@ Genauso kann man es übrigens auch am t value erkennen, der zuvor 2.625465, nun 
 pt(q=2.625465, df=38, lower.tail = FALSE)*2
 pt(q=2.590382, df=38, lower.tail = FALSE)*2
 ```
+
+### Transparenz 2
+
+Es scheint derzeit so, als ob **die mit Abstand wichtigste Kompetenz der Zukunft** darin bestünde, möglichst zutreffend unterscheiden zu können, welcher Teil der Ausgabe künstlicher Intelligenz (KI) richtig und welcher Teil falsch ist. Dies ist natürlich nur möglich, wenn man begründen kann, warum dies richtig und warum jenes falsch sein soll. Zugleich behaupten jedoch viele Menschen (hauptsächlich diejenigen, die auf ein gutes KI-Geschäft aus sind), dass Menschen (grösstenteils Kinder) in Zukunft 'KI-gestützt' lernen sollen, d.h. KI soll daran beteiligt sein, menschliche Kompetenzen zu entwickeln. Das erscheint widersprüchlich, jedenfalls teilweise.
+
+Lässt sich das Kernproblem relativ einfach erkennen? Mal sehen: KI funktioniert nur auf Grundlage von Input, genauer, durch Zahlen repräsentierter Input. Dieser Input ist in allen Fällen indirekt, d.h. von menschlichen Möglichkeiten abhängig, welche begrenzt sind.
+
+Zwei Beispiele:
+
+1. Lichtsensible Sensoren sind vom Menschen entwickelt worden, d.h. sie messen Licht im Rahmen technischer Möglichkeiten, genauer, anhand dessen, was der Mensch als Wellenlänge definieren kann. KI kann diesen indirekten Input (gemessene Wellenlängen) nur so und nicht anders nutzen. Hingegen nehmen manche Menschen, ohne genau zu wissen wie und weshalb, Wellenlängen sowohl als Farben und zugleich als Emotion wahr [@kaur2020link]. KI kann das nicht, weil es keine Emotionen haben kann, es sein denn sie werden durch Zahlen im Computer repräsentiert, aber das sind dann höchstens KI-Emotionen, was auch immer wir Menschen darunter zu verstehen glauben würden.
+2. Dasselbe gilt für large language models (LLMs). Worte, egal wie viele und egal in welcher Sprache, sind abhängig von menschlichen Sprachmöglichkeiten, welche begrenzt sind. Bezogen auf den Menschen (nicht auf den Computer) heisst es, Sprache sei 'the infinite use of finite means', womit die menschliche Sprachkreativität gemeint ist, die der Computer nicht haben kann, höchsten KI-Kreativität, was auch immer wir Menschen darunter zu verstehen glauben. Bezüglich der Sprache haben wir vielleicht folgendes Hauptproblem: Alle Komplexitäten des Menschen drücken sich in der Sprache aus, die er produziert. Irgendetwas davon, aber garantiert nicht alles, wird durch den vom Menschen produzierten, maschinenkompatiblen Softwarecode in den vom Menschen produzierten Computer aufgenommen, d.h. dieser Anteil produzierter Sprache wird im Computer in Form von Zahlen repräsentiert, manipuliert und dann (in Buchstabenfolgen übersetzt) wieder ausgegeben, Buchstabe für Buchstabe und Satzzeichen für Satzzeichen. Wortbedeutungen bzw. Inhaltsverständnis, egal wie einfach oder vielschichtig, kann vom Computer nur simuliert werden, mit extrem hohem Energieaufwand und oberflächlich durchaus beeindruckend, jedenfalls anfänglich. Bei längerem und genauerem Hinsehen scheint recht bald Ernüchterung einzusetzen.
+
+**Fazit**: Jeder Output eines Computers kann nie etwas anderes sein als eine gewichtete Auswahl und Umordnung dessen, was irgendwann zuvor dem Computer in einer maschinenkompatiblen Weise als Input gegeben worden ist. Der Input stammt in allen Fällen vom Menschen, d.h. es ist eine unentwirrbare Mischung aus Dingen, die richtig oder die falsch sind, oder etwas richtig und zugleich etwas falsch sind. Niemals wird der Computer fehlerfrei und begründet entscheiden können, welcher Teil 'seines' Outputs richtig und welcher Teil falsch ist. Heisst: Was auch immer KI in Zukunft ermöglichen, erleichtern oder verbessern sollte, es wird den Preis einer grösseren Kompetenzanforderung haben. Leider werden wir diese Kompetenz nicht von der KI erhalten können, wie ich oben hoffentlich verständlich(?) angedeutet habe.
+
+Zwei von unzähligen Literaturbeispielen, in diesem Fall zur Frage 'Wie werde ich zum Thema machine learning kompetent(er)?':
+
+'What are they not telling me?' Learning machine learning: ... [@cinca2025they]
+
+What they forgot to tell you about machine learning ... [@johnson2025they]
+
+Es dürfte fast sicher sein, dass auch jene beiden Publikationen wichtige Aspekte 'vergessen' und/oder falsch oder nicht deutlich genug richtig beschrieben haben. Ich erinnere deshalb gerne nochmals an den allerersten Eintrag dieses Dokuments: Misstrauen ist besser als Vertrauen, weil es erhöhte Wachsamkeit fordert und fördert.
+
+### Zwischenfazit 3
+
+Open science ist nicht nur mit dem Wort Transparenz synonym, sondern aus diesem Grund auch mit dem Wort 'Durchdenken' bzw. 'gründlich reflektieren'. NHST ist hier (erneut) ein warnendes Beispiel. Wird etwas, wie NHST (oder multiple choice Klausuren), erst einmal etabliert, dann dauert es nicht lange, dass dies eine Rückwirkung zeigt. Bei NHST zeigt sich die Rückwirkung u.a. darin, dass dessen Nutzer/innen (also so ziemlich alle von uns) dazu erzogen werden, auf Basis ihres einzelnen statistischen Ergebnisses eine zumindest ansatzweise generalisierende 'Inferenz' (Schlussfolgerung) durchzuführen, obwohl genau das Gegenteil gemeint ist mit **frequentistischer** Inferenzstatistik, wo also nur (unheimlich) viele Ergebnisse unabhängiger Studien eine Schlussfolgerung erlauben. Für das Ergebnis einer einzelnen Studie wäre die beschreibende Herangehensweise (Stichworte: Abweichungs-P-Wert, Kompatibilitätsintervall, p-value function und Surprisal index) wesentlich geeigneter, weil die datengestützten Informationen damit wesentlich nuancierter zur Geltung kommen. Man bekäme also mehr Informationsgehalt, verglichen mit NHST, bei gleichbleibender Investition der Steuergelder in die Forschung. Dafür müssten jedoch künftige Forscher/innen entsprechend Kompetenzen erwerben, was u.a. deshalb nicht geschieht, weil lehrende Forscher/innen nur NHST lehren, was leider nicht ausreicht, wofür sie jedoch mit einer akademischen Karriere belohnt werden. Dieser Kreislauf erschwert es extrem, dass sich etwas grundlegend ändert. Grundlegende Veränderungen müssen also 'von unten' kommen, wofür Misstrauen empfehlenswert ist. Ein äusserst seltsamer Kreislauf, der hauptsächlich deshalb funktioniert, weil er 'gründliches Reflektieren' wirksam auszuhebeln scheint.
+
+### Methodische Sicherheit 2
+
+Grundprinzip: Unterschiede (zwischen Gruppen) werden an Variabilität (in den Gruppen) relativiert. Genau dies wurde bereits oben geschrieben ([siehe Methodische Sicherheit 1](#methodische-sicherheit-1)).
+
+Ich wiederhole es, weil es wichtig zu wissen ist, dass dieses Grundprinzip in allen datengestützten Methoden die Hauptrolle spielt und weil dieses Grundprinzip so primitiv einfach ist, dass es nicht nur einer elitären Gruppe verständlich gemacht werden kann.
+
+Dieses Grundprinzip zeigt sich (wie erwartet) z.B. in der bivariaten Korrelation zwischen den kontinuierlichen Variablen x und y. Grob gesagt: Produkt der Unterschiede zwischen den 'Gruppen' (Kovarianz: Sxy) wird relativiert am Produkt der Variabilität innerhalb jeder 'Gruppe' (Standardabweichung SD: SDx SDy), wobei ich jede der beiden Variablen hier als 'Gruppe' bezeichne.
+
+```{r chunk23}
+x <- c(4, 6, 3, 5, 7)
+y <- c(32, 54, 38, 55, 79)
+cor(x, y)
+# Prüfe
+cov(x, y)
+sd(x)
+sd(y)
+cov(x, y)/(sd(x)*sd(y))
+```
+
+Ein weiteres Beispiel ist die Ergebnisausgabe von jedem Regressionsmodell, inklusive Strukturgleichungsmodellen. Wie schon mehrfach oben gezeigt, sehen wir in jenen Ausgaben (wie erwartet) immer: Estimate/Std. Error = ..., wobei diese drei Punkte in der linearen Regression ein t value sind, der unter der Nullhypothese der t-Verteilung mit bla vielen Freiheitsgraden dem empirischen p-Wert entspricht. Hierzu passend ist die 'Quasi-Definition' des p-Werts, der laut @kraemer2012determining anzeigt, dass der verwendete statistische Test (bzw. das Regressionsmodell) und die Grösse des Datensatzes ausgereicht haben, um einen statistischen Unterschied (siehe Grundprinzip oben) sichtbar zu machen, dessen empirischer p-Wert soundso lautet. In dieser isolierten Art der 'Ergebnispräsentation' würde völlig irrelevant bleiben, ob der statistische Unterschied irgendeine praktische Relevanz hat. NHST legt nahe, dass solche 'Details' ruhig als irrelevant gelten dürfen (Hauptsache der empirische p-Wert ist < 5%).
+
+Die Quasi-Definition des p-Werts lautet im Original: The p-value is best interpreted as an indication that the sample size was large enough to detect a non-null effect size, not as an indicator of effect size. [@kraemer2012determining, Seite 189]
 
 <!--
 Melodie im Hintergrund vom likelihood video: Anthem of Inspiration
