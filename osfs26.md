@@ -2859,8 +2859,8 @@ Zwei Beispiele:
     viele und egal in welcher Sprache, sind abhängig von menschlichen
     Sprachmöglichkeiten, welche begrenzt sind. Bezogen auf den Menschen
     (nicht auf den Computer) heisst es, Sprache sei ‘the infinite use of
-    finite means’, womit die menschliche Kreativität gemeint ist, die
-    der Computer nicht haben kann, höchsten KI-Kreativität, was auch
+    finite means’, womit die menschliche Sprachkreativität gemeint ist,
+    die der Computer nicht haben kann, höchsten KI-Kreativität, was auch
     immer wir Menschen darunter zu verstehen glauben. Bezüglich der
     Sprache haben wir vielleicht folgendes Hauptproblem: Alle
     Komplexitäten des Menschen drücken sich in der Sprache aus, die er
