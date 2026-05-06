@@ -1,7 +1,7 @@
 Open science FS26
 ================
 Marcel Miché
-2026-05-05
+2026-05-06
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
@@ -2995,16 +2995,49 @@ entspricht. Hierzu passend ist die ‘Quasi-Definition’ des p-Werts, der
 laut Kraemer (2012) anzeigt, dass der verwendete statistische Test (bzw.
 das Regressionsmodell) und die Grösse des Datensatzes ausgereicht haben,
 um einen statistischen Unterschied (siehe Grundprinzip oben) sichtbar zu
-machen, dessen empirischer p-Wert soundso lautet. In dieser isolierten
-Art der ‘Ergebnispräsentation’ würde völlig irrelevant bleiben, ob der
-statistische Unterschied irgendeine praktische Relevanz hat. NHST legt
-nahe, dass solche ‘Details’ ruhig als irrelevant gelten dürfen
-(Hauptsache der empirische p-Wert ist \< 5%).
+machen, dessen empirischer p-Wert soundso lautet. In dieser
+**isolierten** Art der ‘Ergebnispräsentation’ würde völlig irrelevant
+bleiben, ob der statistische Unterschied irgendeine praktische Relevanz
+hat. NHST legt nahe, dass solche ‘Details’ ruhig als irrelevant gelten
+dürfen (Hauptsache der empirische p-Wert ist \< 5%).
 
 Die Quasi-Definition des p-Werts lautet im Original: The p-value is best
 interpreted as an indication that the sample size was large enough to
 detect a non-null effect size, not as an indicator of effect size.
 (Kraemer 2012, Seite 189)
+
+**Fazit**: Das (aus meiner Sicht) sinnvollste Vorgehen für
+Forscher/innen, inklusive Masterstudierende (die häufig wie hilflose
+Kinder behandelt werden), ist zuerst die deutliche Klärung des
+Forschungsinteresses (ob ja oder nein; wird vielleicht häufiger als
+gedacht mit nein beantwortet, muss eben explizit gefragt werden),
+gefolgt von der eindeutigen Klärung jeder Forschungsfrage (ist sie
+eindeutig genug, was klare Verständlichkeit voraussetzt, z.B.
+Abkürzungen von Messinstrumenten müssen klar und einfach beschrieben
+sein). Dann und erst dann muss eindeutig geklärt werden, welche Art von
+Informationen am besten zur einzelnen Forschungsfrage passen würden.
+Dann fragt sich, wie man die benötigen Informationen aus dem vorhandenen
+Datensatz herausholen kann. Das gilt es dann umzusetzen. **Beachte**:
+Würde man dieses Vorgehen beherzigen, dann würde der empirische p-Wert
+vermutlich (sehr) häufig nur noch eine entfernte Nebenrolle spielen. Man
+kann aus dieser Perspektive festhalten, dass Forscher/innen (und leider
+auch die von ihnen betreuten Studierenden) wie selbstverständlich (sehr)
+häufig dem empirischen p-Wert die Hauptrolle geben, ohne genau
+durchdacht zu haben, ob oder warum dies die beste Information sein
+sollte, die zur Forschungsfrage passt. Warum ist das so? Vielleicht weil
+weder Forscher/innen noch Studierende es zuvor deutlich (für sich
+selbst) klargestellt haben, ob sie überhaupt ein echtes
+Forschungsinteresse haben und/oder welche eindeutig sowie klar
+verständliche Forschungsfrage sie eigentlich haben. Ein ganz
+wesentlicher Teil der Forschungsfrage ist, ob sie die Messlatte der
+**isoliert** betrachteten statistischen Signifikanz als ausreichend
+ansehen oder ob es ihnen um praktische Signifikanz geht. Die
+Publikationen zeigen überdeutlich, dass statistische Signifikanz als
+Messlatte gilt (trotz der extremen Armseligkeit bzgl.
+Informationsgehalt), was insbesondere bei Studien angewandter
+Wissenschaften sehr irritiert, denn man fragt sich wofür das Wort
+‘angewandt’ eigentlich steht, wenn nicht für die ‘praktische Anwendung
+in der wirklichen Welt’.
 
 <!--
 Melodie im Hintergrund vom likelihood video: Anthem of Inspiration
