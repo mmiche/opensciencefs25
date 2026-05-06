@@ -3013,21 +3013,21 @@ Forschungsinteresses (ob ja oder nein; wird vielleicht häufiger als
 gedacht mit nein beantwortet, sofern explizit gefragt werden würde),
 gefolgt von der eindeutigen Klärung jeder Forschungsfrage (ist sie
 eindeutig genug, was klare Verständlichkeit voraussetzt, z.B.
-Abkürzungen von Messinstrumenten müssen klar und einfach beschrieben
-sein). Dann und erst dann muss eindeutig geklärt werden, welche Art von
-Informationen am besten zur einzelnen Forschungsfrage passen würden.
-Dann fragt sich, wie man die benötigen Informationen aus dem vorhandenen
-Datensatz herausholen kann, gefolgt von der Umsetzung. **Beachte**:
-Würde man dieses Vorgehen beherzigen, dann würde der empirische p-Wert
-vermutlich (sehr) häufig nur noch eine kleine Nebenrolle spielen. Man
-kann aus dieser Perspektive festhalten, dass Forscher/innen (und leider
-auch die von ihnen betreuten Studierenden) wie selbstverständlich (sehr)
-häufig dem empirischen p-Wert die Hauptrolle geben, ohne genau
-durchdacht zu haben, ob oder warum dies die beste Information sein
-sollte, die zur Forschungsfrage passt. Warum ist das (viel zu häufig)
-so? Vielleicht weil weder Forscher/innen noch Studierende es zuvor
-deutlich (für sich selbst) klargestellt haben, ob sie überhaupt ein
-echtes Forschungsinteresse haben und/oder welche eindeutig sowie klar
+Abkürzungen müssen klar und einfach beschrieben sein). Dann und erst
+dann muss eindeutig geklärt werden, welche Art von Informationen am
+besten zur einzelnen Forschungsfrage passen würden. Dann fragt sich, wie
+man die benötigen Informationen aus dem vorhandenen Datensatz
+herausholen kann, gefolgt von der Umsetzung. **Beachte**: Würde man
+dieses Vorgehen beherzigen, dann würde der empirische p-Wert vermutlich
+(sehr) häufig nur noch eine kleine Nebenrolle spielen. Man kann aus
+dieser Perspektive festhalten, dass Forscher/innen (und leider auch die
+von ihnen betreuten Studierenden) wie selbstverständlich (sehr) häufig
+dem empirischen p-Wert die Hauptrolle geben, ohne genau durchdacht zu
+haben, ob oder warum dies die beste Information sein sollte, die zur
+Forschungsfrage passt. Warum ist das (viel zu häufig) so? Vielleicht
+weil weder Forscher/innen noch Studierende es zuvor deutlich (für sich
+selbst) klargestellt haben, ob sie überhaupt ein echtes
+Forschungsinteresse haben und/oder welche eindeutig sowie klar
 verständliche Forschungsfrage sie eigentlich haben. Ein wichtiger Aspekt
 der Forschungsfrage ist, falls diese einen statistischen Test zur Folge
 hat, ob die Messlatte der **isoliert** betrachteten statistischen
