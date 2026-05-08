@@ -1,7 +1,7 @@
 Open science FS26
 ================
 Marcel Miché
-2026-05-06
+2026-05-08
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
@@ -3102,6 +3102,34 @@ beschreibt den Kreislauf, der nötig ist, um Studierenden open science
 als ‘normale’ wissenschaftliche Praxis beizubringen, wozu u.a. die
 Qualität der gegenwärtigen open science Umsetzung zählt.
 
+Open-Science Training in American Psychological Association–Accredited
+Clinical-Psychology Programs: A Registered Report (Van Til et al. 2025)
+
+International initiatives to enhance awareness and uptake of open
+research in psychology: a systematic mapping review (Skubera et al.
+2025)
+
+Breaking down barriers: Benefits of open science for rural school
+psychologists (Hardin 2025)
+
+Open science practices in personality disorder journals (Vize and Lynam
+2025)
+
+Redesigning the introductory psychology course to support statistical
+literacy at an open-admissions college (Brooks et al. 2025)
+
+After the Fall: Challenges of Teaching Critical Thinking in
+Post-Pandemic Undergraduate Psychology (Dunn and Baker 2025). In diesem
+Buchkapitel wird vermutet, dass Studierende seit der COVID-19 Pandemie
+schlechter als davor kritisches Denken lernen können. Ich frage mich, ob
+das *wirklich* möglich sein soll.
+
+Developmental reviewing: Is it really good for science? (Allen et al.
+2025) Sehr interessant ist das Eingangszitat. Die Autor/innen schlagen
+eine andere Version des Peer-reviewing vor. Reaktionen auf diesen
+Artikel sind ebenfalls sehr interessant (z.B. Obenauer and Griep 2026;
+Weiss et al. 2026).
+
 # Literaturverzeichnis
 
 <div id="refs" class="references csl-bib-body hanging-indent"
@@ -3124,6 +3152,14 @@ Allmendinger, Azar Shahgholian, Yu-wang Chen, Mohammad Ali Mansournia,
 and Mark S Gilthorpe. 2025. “Composite Variable Bias: Causal Analysis of
 Weight Outcomes: Epidemiology and Population Health.” *International
 Journal of Obesity* 49 (6): 1043–50.
+
+</div>
+
+<div id="ref-allen2025developmental" class="csl-entry">
+
+Allen, Tammy D, Kimberly A French, Derek R Avery, Eden B King, and
+Brenton M Wiernik. 2025. “Developmental Reviewing: Is It Really Good for
+Science?” *Industrial and Organizational Psychology*, 1–15.
 
 </div>
 
@@ -3187,6 +3223,16 @@ Daniel H Robinson. 2023. “How Scientific Is Educational Psychology
 Research? The Increasing Trend of Squeezing Causality and
 Recommendations from Non-Intervention Studies.” *Educational Psychology
 Review* 35 (1): 37.
+
+</div>
+
+<div id="ref-brooks2025redesigning" class="csl-entry">
+
+Brooks, Patricia J, C Donnan Gravelle, Nicole M Zapparrata, Elizabeth S
+Che, Arshia K Lodhi, Raoul Roberts, and Jessica E Brodsky. 2025.
+“Redesigning the Introductory Psychology Course to Support Statistical
+Literacy at an Open-Admissions College.” *Scholarship of Teaching and
+Learning in Psychology* 11 (1): 122.
 
 </div>
 
@@ -3389,6 +3435,15 @@ Work Practice* 31 (5): 438–53.
 
 </div>
 
+<div id="ref-dunn2025after" class="csl-entry">
+
+Dunn, Dana S, and Suzanne C Baker. 2025. “After the Fall: Challenges of
+Teaching Critical Thinking in Post-Pandemic Undergraduate Psychology.”
+In *Critical Thinking Across Disciplines, Vol. 2: Applications in the
+Digital Age*, 67–89. Springer.
+
+</div>
+
 <div id="ref-dushoff2019can" class="csl-entry">
 
 Dushoff, Jonathan, Morgan P Kain, and Benjamin M Bolker. 2019. “I Can
@@ -3587,6 +3642,14 @@ Systematic Evaluation.” *American Journal of Epidemiology* 191 (12):
 
 Haeffel, Gerald J. 2022. “Psychology Needs to Get Tired of Winning.”
 *Royal Society Open Science* 9 (6).
+
+</div>
+
+<div id="ref-hardin2025breaking" class="csl-entry">
+
+Hardin, Amanda J. 2025. “Breaking down Barriers: Benefits of Open
+Science for Rural School Psychologists.” *School Psychology Review* 54
+(4): 459–68.
 
 </div>
 
@@ -4031,6 +4094,14 @@ Nuzzo, Regina. 2014. “Scientific Method: Statistical Errors.” *Nature*
 
 </div>
 
+<div id="ref-obenauer2026problem" class="csl-entry">
+
+Obenauer, William G, and Yannick Griep. 2026. “Is the Problem
+Developmental Review, or the Development of Peer Review?” *Industrial
+and Organizational Psychology* 19 (1): 16–20.
+
+</div>
+
 <div id="ref-oberndorfer2026descriptive" class="csl-entry">
 
 Oberndorfer, Moritz, Annie Herbert, S Vittal Katikireddi, and Anna
@@ -4253,6 +4324,15 @@ d’anesthésie* 70 (10): 1560–75.
 
 </div>
 
+<div id="ref-skubera2025international" class="csl-entry">
+
+Skubera, Magda, Max Korbmacher, Thomas Rhys Evans, Flavio Azevedo, and
+Charlotte R Pennington. 2025. “International Initiatives to Enhance
+Awareness and Uptake of Open Research in Psychology: A Systematic
+Mapping Review.” *Royal Society Open Science* 12 (3): 241726.
+
+</div>
+
 <div id="ref-sloman2015causality" class="csl-entry">
 
 Sloman, Steven A, and David Lagnado. 2015. “Causality in Thought.”
@@ -4372,6 +4452,15 @@ Statistics and Modelling.” *Nature Reviews Methods Primers* 1 (1): 1.
 
 </div>
 
+<div id="ref-van2025open" class="csl-entry">
+
+Van Til, Kaela, Nathaniel L Phillips, Tianwei V Du, Leigha Rose, Joshua
+D Miller, and Donald R Lynam. 2025. “Open-Science Training in American
+Psychological Association–Accredited Clinical-Psychology Programs: A
+Registered Report.” *Clinical Psychological Science* 13 (6): 1146–60.
+
+</div>
+
 <div id="ref-van2026statistical" class="csl-entry">
 
 van Zwet, Erik, Andrew Gelman, and Witold Więcek. 2026. “A Statistical
@@ -4385,6 +4474,14 @@ Vincent, Coralie, Alexandra M Bodnaruc, Denis Prud’homme, Jacob
 Guenette, and Isabelle Giroux. 2024. “Disordered Eating Behaviours
 During the Menopausal Transition: A Systematic Review.” *Applied
 Physiology, Nutrition, and Metabolism* 49 (10): 1286–1308.
+
+</div>
+
+<div id="ref-vize2025open" class="csl-entry">
+
+Vize, Colin E, and Donald R Lynam. 2025. “Open Science Practices in
+Personality Disorder Journals.” *Personality Disorders: Theory,
+Research, and Treatment*.
 
 </div>
 
@@ -4402,6 +4499,15 @@ Instrumental Variable Studies: Guide, Glossary, and Checklist.” *Bmj*
 Weidlich, Joshua, Dragan Gašević, and Hendrik Drachsler. 2022. “Causal
 Inference and Bias in Learning Analytics: A Primer on Pitfalls Using
 Directed Acyclic Graphs.” *Journal of Learning Analytics* 9 (3): 183–99.
+
+</div>
+
+<div id="ref-weiss2026my" class="csl-entry">
+
+Weiss, Mona, Wiebke Doden, Mirko Antino, Jan B Schmutz, and Dana Unger.
+2026. “Where Is My Theoretical Framework? When Developmental Reviewing
+Turns into Theorizing After Results Are Known (TARKing).” *Industrial
+and Organizational Psychology* 19 (1): 25–28.
 
 </div>
 

@@ -1052,4 +1052,18 @@ Dieses preprint Manuscript von @darda2023promoting macht darauf aufmerksam, dass
 
 Dieses Paper von @bakermans2024integrating (Bereich: Ecology and Evolution) beschreibt den Kreislauf, der nötig ist, um Studierenden open science als 'normale' wissenschaftliche Praxis beizubringen, wozu u.a. die Qualität der gegenwärtigen open science Umsetzung zählt.
 
+Open-Science Training in American Psychological Association--Accredited Clinical-Psychology Programs: A Registered Report [@van2025open]
+
+International initiatives to enhance awareness and uptake of open research in psychology: a systematic mapping review [@skubera2025international]
+
+Breaking down barriers: Benefits of open science for rural school psychologists [@hardin2025breaking]
+
+Open science practices in personality disorder journals [@vize2025open]
+
+Redesigning the introductory psychology course to support statistical literacy at an open-admissions college [@brooks2025redesigning]
+
+After the Fall: Challenges of Teaching Critical Thinking in Post-Pandemic Undergraduate Psychology [@dunn2025after]. In diesem Buchkapitel wird vermutet, dass Studierende seit der COVID-19 Pandemie schlechter als davor kritisches Denken lernen können. Ich frage mich, ob das *wirklich* möglich sein soll.
+
+Developmental reviewing: Is it really good for science? [@allen2025developmental] Sehr interessant ist das Eingangszitat. Die Autor/innen schlagen eine andere Version des Peer-reviewing vor. Reaktionen auf diesen Artikel sind ebenfalls sehr interessant [z.B. @obenauer2026problem; @weiss2026my].
+
 # Literaturverzeichnis
