@@ -1,7 +1,7 @@
 Open science FS26
 ================
 Marcel Miché
-2026-05-08
+2026-05-10
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
@@ -50,6 +50,7 @@ Marcel Miché
     - [Transparenz 2](#transparenz-2)
     - [Zwischenfazit 3](#zwischenfazit-3)
     - [Methodische Sicherheit 2](#methodische-sicherheit-2)
+    - [Wissenschaftliche Methodik](#wissenschaftliche-methodik)
   - [Lesehinweise](#lesehinweise)
 - [Literaturverzeichnis](#literaturverzeichnis)
 
@@ -3039,6 +3040,76 @@ angewandter Wissenschaften sehr irritiert, denn man fragt sich wofür das
 Wort ‘angewandt’ eigentlich steht, wenn nicht für die ‘praktische
 Anwendung in der wirklichen Welt’.
 
+### Wissenschaftliche Methodik
+
+Die [wissenschaftliche
+Methodik](https://plato.stanford.edu/entries/scientific-method/)
+bedeutet den Versuch, beobachtete Naturphänomene aufzuklären, d.h. ihre
+Ursache(n) zu entdecken. Der Entdeckungsversuch soll letztlich
+unabhängig von der/dem erstmaligen Entdecker/in überprüfbar sein. Hier
+kommt die lückenlose Offenlegung (open science) ins Spiel. Dies bedeutet
+ausdrücklich **nicht**, dass der/die Wissenschaftler/in etwas immer
+(fast) genauso wie alle anderen Wissenschaftler/innen machen muss. Es
+bedeutet nur, dass man alles, was man macht, lückenlos offenlegt. Die
+tatsächliche Vorgehensweise, die man lückenlos offenlegen würde, wäre
+zwingend systematisch, denn in jeder ernsthaft durchdachten, komplexen
+Handlungsfolge muss eine Systematik enthalten sein. Andernfalls würde
+sehr schnell erkennbar werden, dass Willkür oder Chaos vorherrscht. Jede
+wissenschaftliche Methodik ist, wenn ernsthaft durchdacht, eine komplexe
+Handlungsfolge, also systematisch.
+
+**Folgerung**: Es zählt hauptsächlich, dass man mit eigenen Mitteln so
+gut wie möglich durchdenkt, was man aus welchem Hauptgrund zu entdecken
+versucht, und auf welche Art und Weise dies gelingen soll. Dies liesse
+sich unabhängig von der tatsächlichen Durchführung schriftlich
+festhalten, z.B. in Form einer Präregistrierung (PR). Generell (mit oder
+ohne PR o.ä.) muss man alles lückenlos notieren und in nachvollziehbarer
+Form (Einleitung, Methodik, Resultate, Diskussion) offenlegen. Zur
+Methodik gehört sowohl der komplette Analysecode als auch die Rohdaten
+(falls deren Offenlegung kein Verstoss des Datenschutzes darstellt).
+Damit wären die [open science Kompontenten
+1-4](https://poldrack.github.io/psych-open-science-guide/README.html)
+berücksichtigt. Komponente 5 (reproducible manuscript) ist aus meiner
+Sicht annähernd überflüssig, während Komponente 6 (open access)
+eigentlich eine Selbstverständlichkeit sein sollte. Abgesehen davon
+finde ich, dass ‘open peer-review’ ebenfalls eine open science
+Komponente sein sollte, die ich auch als selbstverständlich betrachte.
+
+**Beachte**: Wissenschaftler/innen sind verpflichtet, zu durchdenken,
+was sie selbst zu tun beabsichtigen, aber auch, was sie lesen. Jenes
+Durchdenken nennt man Reflektieren, an dessen Ende zwingend das eigene
+Urteil stehen muss, das wiederum konsequentes Handeln erfordert.
+Beispiel: Obwohl die wissenschaftliche Methodik an allen Ecken und Enden
+verlangt, dass alles so genau wie möglich definiert worden ist, scheint
+es verschwendete Zeit und Energie zu sein, ‘wissenschaftliche Methodik’
+zu definieren (Editorial 2009; Benjamin 1949). Etwas, das sich bisher
+konstant gezeigt hat, ist der (teils skandalös starke) **Unterschied
+zwischen Anspruch und Wirklichkeit in der Wissenschaft** (z.B. Pirosca
+et al. 2022; Daly et al. 2025; Michie et al. 2009). **Das** ist es, das
+zentral unter ‘Geschichte der Wissenschaft’ in Psychologie, Medizin,
+Soziologie usw. thematisiert und diskutiert werden sollte. Tatsächlich
+scheint es jedoch so zu sein, dass auf ‘solche Details’ keine Zeit
+verwendet wird, denn man ist ständig bis über beide Ohren beschäftigt,
+Ergebnisse (scheinbar wissenschaftlicher Art) zu produzieren und zu
+publizieren. Dieses Vorgehen ist Routine. Open science ist der Versuch,
+dieser etablierten Tradition einen Spiegel vor die Nase zu halten, damit
+vielleicht die (teils skandalöse) Lücke zwischen Anspruch und
+Wirklichkeit erkannt werden kann; sofern man sich traut, hinzuschauen.
+
+**Fazit**: Aus allem, das oben steht, folgt, dass einzig und allein die
+ernsthafte subjektive Auseinandersetzung des/der Wissenschaftler/in mit
+einer bestimmten Problematik zählt, z.B. wirkt Therapiekomponente x wie
+beabsichtigt auf Symptomkomponente y? Diese Auseinandersetzung muss für
+andere nachvollziehbar (somit objektiv) transparent gemacht werden. Open
+science betont allerhöchstens, dass die Transparenz lückenlos sein muss,
+damit zu ‘theoretisch nachvollziehbar’ auch noch ‘praktisch
+reproduzierbar’ hinzutritt. Somit bedeutet open science hauptsächlich
+eine gut dokumentierte, (selbst-)kritische Auseinandersetzung mit einem
+problematischen Inhalt. Jahrzehntelanges Beharren auf statistischen
+Hypothesentests mit fixem 5% Signifikanzniveau ist in mehrfacher
+Hinsicht das genaue Gegenteil einer (selbst-)kritischen
+Auseinandersetzung.
+
 <!--
 Melodie im Hintergrund vom likelihood video: Anthem of Inspiration
 - Thematisieren und empirisches, korrektes(!) Prüfen der Testannahmen, und es publizieren.
@@ -3198,6 +3269,13 @@ Nontechnical Introduction to Overfitting in Regression-Type Models.”
 Bakermans, Marja H. 2024. “Integrating Open Education Practices with
 Data Analysis of Open Science in an Undergraduate Course.” *Ecology and
 Evolution* 14 (8): e70129.
+
+</div>
+
+<div id="ref-benjamin1949defining" class="csl-entry">
+
+Benjamin, A Cornelius. 1949. “On Defining ’Science’.” *The Scientific
+Monthly* 68 (3): 192–98.
 
 </div>
 
@@ -3370,6 +3448,14 @@ for Psychology* 17 (1): 1–6.
 
 </div>
 
+<div id="ref-daly2025tolerating" class="csl-entry">
+
+Daly, Anna, Shaun Treweek, Genevieve Shiely Hayes, and Frances Shiely.
+2025. “Tolerating Bad Health Research (Part 2): Still as Many Bad
+Trials, but More Good Ones Too.” *Trials* 26 (1): 110.
+
+</div>
+
 <div id="ref-darda2023promoting" class="csl-entry">
 
 Darda, Kohinoor M, Clare Conry-Murray, Kathleen Schmidt, Mahmoud M
@@ -3465,6 +3551,13 @@ Clinical Epidemiology*, 111960.
 ———. 2026. “Response to:‘identifying Variables That Independently
 Predict…’ Is Not a Well-Defined Research Task.” *Journal of Clinical
 Epidemiology* 189.
+
+</div>
+
+<div id="ref-carroll2009defining" class="csl-entry">
+
+Editorial. 2009. “Defining the Scientific Method.” *Nature Methods* 6
+(4): 237. https://doi.org/<https://doi.org/10.1038/nmeth0409-237>.
 
 </div>
 
@@ -4025,6 +4118,14 @@ Practice.” *Journal of General Internal Medicine* 40 (2): 492–92.
 
 </div>
 
+<div id="ref-michie2009specifying" class="csl-entry">
+
+Michie, Susan, Dean Fixsen, Jeremy M Grimshaw, and Martin P Eccles.
+2009. “Specifying and Reporting Complex Behaviour Change Interventions:
+The Need for a Scientific Method.” *Implementation Science* 4 (1): 40.
+
+</div>
+
 <div id="ref-mize2019general" class="csl-entry">
 
 Mize, Trenton D, Long Doan, and J Scott Long. 2019. “A General Framework
@@ -4170,6 +4271,14 @@ Evidence from Randomized Trials.” *Journal of Clinical Epidemiology*
 
 Peter, J Paul, and Jerry C Olson. 1983. “Is Science Marketing?” *Journal
 of Marketing* 47 (4): 111–25.
+
+</div>
+
+<div id="ref-pirosca2022tolerating" class="csl-entry">
+
+Pirosca, Stefania, Frances Shiely, Mike Clarke, and Shaun Treweek. 2022.
+“Tolerating Bad Health Research: The Continuing Scandal.” *Trials* 23
+(1): 458.
 
 </div>
 
