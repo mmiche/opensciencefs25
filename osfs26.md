@@ -1,7 +1,7 @@
 Open science FS26
 ================
 Marcel Miché
-2026-05-10
+2026-05-11
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
@@ -3084,17 +3084,31 @@ verlangt, dass alles so genau wie möglich definiert worden ist, scheint
 es verschwendete Zeit und Energie zu sein, ‘wissenschaftliche Methodik’
 zu definieren (Editorial 2009; Benjamin 1949). Etwas, das sich bisher
 konstant gezeigt hat, ist der (teils skandalös starke) **Unterschied
-zwischen Anspruch und Wirklichkeit in der Wissenschaft** (z.B. Pirosca
-et al. 2022; Daly et al. 2025; Michie et al. 2009). **Das** ist es, das
-zentral unter ‘Geschichte der Wissenschaft’ in Psychologie, Medizin,
-Soziologie usw. thematisiert und diskutiert werden sollte. Tatsächlich
-scheint es jedoch so zu sein, dass auf ‘solche Details’ keine Zeit
-verwendet wird, denn man ist ständig bis über beide Ohren beschäftigt,
-Ergebnisse (scheinbar wissenschaftlicher Art) zu produzieren und zu
-publizieren. Dieses Vorgehen ist Routine. Open science ist der Versuch,
-dieser etablierten Tradition einen Spiegel vor die Nase zu halten, damit
-vielleicht die (teils skandalöse) Lücke zwischen Anspruch und
-Wirklichkeit erkannt werden kann; sofern man sich traut, hinzuschauen.
+zwischen Anspruch und Wirklichkeit in einigen Wissenschaftszweigen**
+(z.B. Pirosca et al. 2022; Daly et al. 2025; Michie et al. 2009).
+**Das** ist es, das zentral unter ‘Geschichte der Wissenschaft’ in
+Psychologie, Medizin, Soziologie usw. thematisiert und diskutiert werden
+sollte. Tatsächlich scheint es jedoch so zu sein, dass auf ‘solche
+Details’ keine Zeit verwendet wird, denn man ist ständig bis über beide
+Ohren beschäftigt, Ergebnisse (scheinbar wissenschaftlicher Art) zu
+produzieren und zu publizieren. Dieses Vorgehen ist Routine. Open
+science ist der Versuch, dieser etablierten Tradition einen Spiegel vor
+die Nase zu halten, damit vielleicht die (teils skandalöse) Lücke
+zwischen Anspruch und Wirklichkeit erkannt werden kann; sofern man sich
+traut, hinzuschauen.
+
+> Der Grund für den (teils skandalös starken) Unterschied zwischen
+> Anspruch und Wirklichkeit in manchen Wissenschaftszweigen scheint sehr
+> deutlich hausgemacht zu sein. Während Ting (2026) die historische
+> Entstehung aufzeigt, wird deren Konsequenz von Van Til et al. (2025)
+> so beschrieben: ‘The replication was \[…\] driven \[…\] by
+> ubiquitious, problematic research practices and a strong set of
+> publication incentives supporting such practices.’ Auf Deutsch:
+> Fragwürdige Forschung wurde stark belohnt. Es scheint somit, dass
+> Forscher/innen-Generationen grossenteils ‘erfolgreich’ auf fragwürdige
+> Forschungspraktiken (Nagy et al. 2025; Miller, Phillips, and Lynam
+> 2025; Clark et al. 2025; Anderson and Liu 2025) konditioniert wurden.
+> Wen kann solch ein Skandal gleichgültig lassen?!
 
 **Fazit**: Aus allem, das oben steht, folgt, dass einzig und allein die
 ernsthafte subjektive Auseinandersetzung des/der Wissenschaftler/in mit
@@ -3249,6 +3263,15 @@ Amrhein, Valentin, Sander Greenland, and Blake McShane. 2019.
 
 </div>
 
+<div id="ref-anderson2025questionable" class="csl-entry">
+
+Anderson, Samantha F, and Xinran Liu. 2025. “Questionable Research
+Practices and Cumulative Science: The Consequences of Selective
+Reporting on Effect Size Bias and Heterogeneity.” *Psychological
+Methods* 30 (5): 1017.
+
+</div>
+
 <div id="ref-azzalini2023use" class="csl-entry">
 
 Azzalini, Adelchi. 2023. “On the Use of Ordered Factors as Explanatory
@@ -3378,6 +3401,14 @@ Human-Computer Studies* 196: 103438.
 Cinelli, Carlos, Andrew Forney, and Judea Pearl. 2024. “A Crash Course
 in Good and Bad Controls.” *Sociological Methods & Research* 53 (3):
 1071–1104.
+
+</div>
+
+<div id="ref-clark2025honest" class="csl-entry">
+
+Clark, Alexander M, Bailey J Sousa, Chantal F Ski, and David R Thompson.
+2025. “Honest yet Unacceptable Research Practices: When Research Becomes
+a Health Risk.” *BMJ Open* 15 (6): e097757.
 
 </div>
 
@@ -4126,6 +4157,14 @@ The Need for a Scientific Method.” *Implementation Science* 4 (1): 40.
 
 </div>
 
+<div id="ref-miller2025questionable" class="csl-entry">
+
+Miller, Joshua D, Nathaniel L Phillips, and Donald R Lynam. 2025.
+“Questionable Research Practices Violate the American Psychological
+Association’s Code of Ethics.”
+
+</div>
+
 <div id="ref-mize2019general" class="csl-entry">
 
 Mize, Trenton D, Long Doan, and J Scott Long. 2019. “A General Framework
@@ -4145,6 +4184,15 @@ Philosophy of the Life Sciences*, 365–79.
 
 Morgan, Josh L. 2025. “Alternative to the Statistical Mass Confusion of
 Testing for ‘No Effect’.” *Journal of Cell Biology* 224 (8): e202403034.
+
+</div>
+
+<div id="ref-nagy2025bestiary" class="csl-entry">
+
+Nagy, Tamás, Jane Hergert, Mahmoud M Elsherif, Lukas Wallrich, Kathleen
+Schmidt, Tal Waltzer, Jason W Payne, et al. 2025. “Bestiary of
+Questionable Research Practices in Psychology.” *Advances in Methods and
+Practices in Psychological Science* 8 (3): 25152459251348431.
 
 </div>
 
