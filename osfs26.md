@@ -3104,11 +3104,19 @@ traut, hinzuschauen.
 > so beschrieben: ‘The replication was \[…\] driven \[…\] by
 > ubiquitious, problematic research practices and a strong set of
 > publication incentives supporting such practices.’ Auf Deutsch:
-> Fragwürdige Forschung wurde stark belohnt. Es scheint somit, dass
-> Forscher/innen-Generationen grossenteils ‘erfolgreich’ auf fragwürdige
-> Forschungspraktiken (Nagy et al. 2025; Miller, Phillips, and Lynam
-> 2025; Clark et al. 2025; Anderson and Liu 2025; Maassen et al. 2025)
-> konditioniert wurden. Wen kann solch ein Skandal gleichgültig lassen?!
+> Fragwürdige Forschung wurde STARK BELOHNT. Es scheint somit, dass
+> mind. zwei Forscher/innen-Generationen (ca. 60 Jahre) überwiegend auf
+> problematische Forschungspraktiken (Nagy et al. 2025; Miller,
+> Phillips, and Lynam 2025; Clark et al. 2025; Anderson and Liu 2025;
+> Maassen et al. 2025) ‘erfolgreich’ konditioniert wurden. Wenn die
+> Inhalte der kleinen Auswahl präsentierter Paper zutreffen sollten,
+> dann wäre es nicht nur skandalös, sondern zusätzlich paradox, denn
+> dann würde open science so etwas wie den Kampf von
+> Wissenschafler/innen sein, die die derzeit gängige (weil STARK
+> BELOHNTE) Forschungspraxis (und somit Publikationspraxis) zu
+> reformieren versuchen. Doch wer genau wäre es, der diese
+> Reformationsversuche erschwert, wenn nicht viele der ‘erfolgreich’
+> konditionierten ’Wissenschaftler/innen?!
 
 **Fazit**: Aus allem, das oben steht, folgt, dass einzig und allein die
 ernsthafte subjektive Auseinandersetzung des/der Wissenschaftler/in mit
