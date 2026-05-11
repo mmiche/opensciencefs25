@@ -3111,12 +3111,12 @@ traut, hinzuschauen.
 > Maassen et al. 2025) ‘erfolgreich’ konditioniert wurden. Wenn die
 > Inhalte der kleinen Auswahl präsentierter Paper zutreffen sollten,
 > dann wäre es nicht nur skandalös, sondern zusätzlich paradox, denn
-> dann würde open science so etwas wie den Kampf von
+> dann würde open science so etwas wie der Kampf von
 > Wissenschafler/innen sein, die die derzeit gängige (weil STARK
-> BELOHNTE) Forschungspraxis (und somit Publikationspraxis) zu
-> reformieren versuchen. Doch wer genau wäre es, der diese
-> Reformationsversuche erschwert, wenn nicht viele der ‘erfolgreich’
-> konditionierten ’Wissenschaftler/innen?!
+> BELOHNTE) Forschungs- und somit auch Publikationspraxis zu reformieren
+> versuchen. Doch wer genau wäre es, der diese Reformationsversuche
+> erschwert, wenn nicht viele der ‘erfolgreich’ konditionierten
+> ‘Wissenschaftler/innen, die zudem die nächste Generation ’ausbildet’?!
 
 **Fazit**: Aus allem, das oben steht, folgt, dass einzig und allein die
 ernsthafte subjektive Auseinandersetzung des/der Wissenschaftler/in mit
