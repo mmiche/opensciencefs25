@@ -3116,7 +3116,8 @@ traut, hinzuschauen.
 > BELOHNTE) Forschungs- und somit auch Publikationspraxis zu reformieren
 > versuchen. Doch wer genau wäre es, der diese Reformationsversuche
 > erschwert, wenn nicht viele der ‘erfolgreich’ konditionierten
-> ‘Wissenschaftler/innen, die zudem die nächste Generation ’ausbildet’?!
+> Wissenschaftler/innen, die zudem die nächste Generation darin
+> trainiert, ‘erfolgreich’ zu sein?!
 
 **Fazit**: Aus allem, das oben steht, folgt, dass einzig und allein die
 ernsthafte subjektive Auseinandersetzung des/der Wissenschaftler/in mit
