@@ -3107,8 +3107,8 @@ traut, hinzuschauen.
 > Fragwürdige Forschung wurde stark belohnt. Es scheint somit, dass
 > Forscher/innen-Generationen grossenteils ‘erfolgreich’ auf fragwürdige
 > Forschungspraktiken (Nagy et al. 2025; Miller, Phillips, and Lynam
-> 2025; Clark et al. 2025; Anderson and Liu 2025) konditioniert wurden.
-> Wen kann solch ein Skandal gleichgültig lassen?!
+> 2025; Clark et al. 2025; Anderson and Liu 2025; Maassen et al. 2025)
+> konditioniert wurden. Wen kann solch ein Skandal gleichgültig lassen?!
 
 **Fazit**: Aus allem, das oben steht, folgt, dass einzig und allein die
 ernsthafte subjektive Auseinandersetzung des/der Wissenschaftler/in mit
@@ -4080,6 +4080,15 @@ Shams, Hamnah Shahid, Peter Hoang, et al. 2020. “A Comparison of
 Electronically-Delivered and Face to Face Cognitive Behavioural
 Therapies in Depressive Disorders: A Systematic Review and
 Meta-Analysis.” *EClinicalMedicine* 24.
+
+</div>
+
+<div id="ref-maassen2025impact" class="csl-entry">
+
+Maassen, Esther, MALM van Assen, Michèle B Nuijten, and Jelte M
+Wicherts. 2025. “The Impact of Publication Bias and Single and Combined
+p-Hacking Practices on Effect Size and Heterogeneity Estimates in
+Meta-Analysis.”
 
 </div>
 
