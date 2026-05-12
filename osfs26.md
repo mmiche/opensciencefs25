@@ -3281,8 +3281,8 @@ oben](#inzidenz-und-regressionsmodell) in diesem Dokument.
 Nebenbemerkung: In vielen Lehrmaterialien liest man, dass der Intercept
 (häufig) ohne Bedeutung sei und deshalb ignoriert werden könne. Manche
 Personen können das jedoch leider völlig falsch verstehen, so als ob er
-‘völlig egal’ sei. Der Intercept gehört aber zum Modell dazu, d.h. ohne
-Intercept kein Modell.
+‘generell völlig egal’ sei. Der Intercept gehört zum Modell dazu, d.h.
+ohne Intercept kein Modell.
 
 Ich schliesse den Eintrag ‘Logistische Regression’ damit ab, deutlich zu
 zeigen, **exakt** welcher Outcome eigentlich modeliert wird, nämlich der
@@ -3341,9 +3341,9 @@ Unterschied 4 Prädiktoreinheiten sind.
 
 **Fazit**: In der wissenschaftlichen Psychologie wird **extrem** häufig
 ein parametrischer statistischer Test durchgeführt, z.B. eine
-Survivalanalyse, der zur Familie des *verallgemeinerten linearen
-Modells* gehört bzw. dieser Familie sehr nahe steht. Das bedeutet, dass
-das Prinzip permanent dasselbe ist (durchschnittliche Veränderung des
+Survivalanalyse, der zur Familie des *verallgemeinerten linearen Models*
+gehört bzw. dieser Familie sehr nahe steht. Das bedeutet, dass das
+Prinzip permanent dasselbe ist (durchschnittliche Veränderung des
 Outcome je Erhöhung des Prädiktors um eine Einheit). Das legt nahe,
 einmal dieses Prinzip durchschaut und verstanden zu haben (auch
 intuitiv), um es in der Folge mit berechtigtem Selbstvertrauen anwenden
@@ -3352,20 +3352,23 @@ wenn das unnötig sein sollte, eine selbstsichere Verwendung eines
 Werkzeugs ist sowohl in der Wissenschaft als auch in jedem Handwerk eine
 selbstverständliche Notwendigkeit, ohne die kein gutes Ergebnis zustande
 kommen kann, mit Ausnahme extrem seltener Zufälle (auf die man sich aber
-doch nicht verlassen möchte).
+besser nicht verlassen möchte).
 
 Eine vielleicht positive Konsequenz eines **klaren** Verständnisses von
 Regressionsgewichten könnte sein, dass Studierende realisieren, dass ein
-Regressionsgewicht ziemlich uninformativ ist und gar nicht unbedingt das
-zu erkennen gibt, was dem/der Studierenden eigentlich wichtig ist. Dann
-also würde der/die Studierende vielleicht ganz automatisch aus
-Unzufriedenheit eine bessere Herangehensweise wählen, z.B. mehr Details
-durch spezifischere Vergleichsmethoden ([siehe
+Regressionsgewicht ziemlich uninformativ ist (weil extrem komprimiert)
+und gar nicht unbedingt das zu erkennen gibt, was dem/der Studierenden
+eigentlich wichtig ist. Dann also würde der/die Studierende vielleicht
+ganz automatisch aus Unzufriedenheit eine bessere Herangehensweise
+wählen, z.B. mehr Details durch spezifischere Vergleichsmethoden ([siehe
 oben](#emmeans-und-marginaleffects)) liefern und/oder mit geeigneten
 Visualisierungen auf das eigentlich relevante Geschehen aufmerksam
 machen. Damit wären 2 Fliegen mit einer Klappe geschlagen: Open science
 wäre gedient, genauso wie der wissenschaftlichen Methodik (= nicht
-zwingend alles so machen wie alle anderen).
+zwingend alles so machen wie alle anderen, sondern gezielt nach eigenen
+Vorstellungen). Und wer weiss, vielleicht wäre das sogar ein erster
+Schritt in die richtige Richtung, nämlich raus aus der
+Replikationskrise.
 
 <!--
 Melodie im Hintergrund vom likelihood video: Anthem of Inspiration
