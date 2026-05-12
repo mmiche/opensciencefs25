@@ -3346,26 +3346,26 @@ Modells* gehört bzw. dieser Familie sehr nahe steht. Das bedeutet, dass
 das Prinzip permanent dasselbe ist (durchschnittliche Veränderung des
 Outcome je Erhöhung des Prädiktors um eine Einheit). Das legt nahe,
 einmal dieses Prinzip durchschaut und verstanden zu haben (auch
-intuitiv), um es in der Folge mit berechtigter Selbstsicherheit und
-Selbstvertrauen anwenden zu können oder es gegebenenfalls, wenn nötig,
-abändern zu können. Sogar wenn das unnötig sein sollte, eine
-selbstsichere Verwendung eines Werkzeugs ist sowohl in der Wissenschaft
-als auch in jedem Handwerk eine selbstverständliche Notwendigkeit, ohne
-die kein gutes Ergebnis zustande kommen kann, mit Ausnahme extrem
-seltener Zufälle.
+intuitiv), um es in der Folge mit berechtigtem Selbstvertrauen anwenden
+zu können oder es gegebenenfalls, wenn nötig, abändern zu können. Sogar
+wenn das unnötig sein sollte, eine selbstsichere Verwendung eines
+Werkzeugs ist sowohl in der Wissenschaft als auch in jedem Handwerk eine
+selbstverständliche Notwendigkeit, ohne die kein gutes Ergebnis zustande
+kommen kann, mit Ausnahme extrem seltener Zufälle (auf die man sich aber
+doch nicht verlassen möchte).
 
 Eine vielleicht positive Konsequenz eines **klaren** Verständnisses von
 Regressionsgewichten könnte sein, dass Studierende realisieren, dass ein
 Regressionsgewicht ziemlich uninformativ ist und gar nicht unbedingt das
-zu erkennen gibt, worum es dem/der Studierenden eigentlich geht. Dann
+zu erkennen gibt, was dem/der Studierenden eigentlich wichtig ist. Dann
 also würde der/die Studierende vielleicht ganz automatisch aus
 Unzufriedenheit eine bessere Herangehensweise wählen, z.B. mehr Details
 durch spezifischere Vergleichsmethoden ([siehe
 oben](#emmeans-und-marginaleffects)) liefern und/oder mit geeigneten
 Visualisierungen auf das eigentlich relevante Geschehen aufmerksam
 machen. Damit wären 2 Fliegen mit einer Klappe geschlagen: Open science
-wäre gedient, genauso wie der wissenschaftlichen Methodik (= nicht alles
-so machen wie alle anderen).
+wäre gedient, genauso wie der wissenschaftlichen Methodik (= nicht
+zwingend alles so machen wie alle anderen).
 
 <!--
 Melodie im Hintergrund vom likelihood video: Anthem of Inspiration
