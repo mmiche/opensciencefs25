@@ -1025,9 +1025,130 @@ Die [wissenschaftliche Methodik](https://plato.stanford.edu/entries/scientific-m
 
 **Beachte**: Wissenschaftler/innen sind verpflichtet, zu durchdenken, was sie selbst zu tun beabsichtigen, aber auch, was sie lesen. Jenes Durchdenken nennt man Reflektieren, an dessen Ende zwingend das eigene Urteil stehen muss, das wiederum konsequentes Handeln erfordert. Beispiel: Obwohl die wissenschaftliche Methodik an allen Ecken und Enden verlangt, dass alles so genau wie möglich definiert worden ist, scheint es verschwendete Zeit und Energie zu sein, 'wissenschaftliche Methodik' zu definieren [@carroll2009defining; @benjamin1949defining]. Etwas, das sich bisher konstant gezeigt hat, ist der (teils skandalös starke) **Unterschied zwischen Anspruch und Wirklichkeit in einigen Wissenschaftszweigen** [z.B. @pirosca2022tolerating; @daly2025tolerating; @michie2009specifying]. **Das** ist es, das zentral unter 'Geschichte der Wissenschaft' in Psychologie, Medizin, Soziologie usw. thematisiert und diskutiert werden sollte. Tatsächlich scheint es jedoch so zu sein, dass auf 'solche Details' keine Zeit verwendet wird, denn man ist ständig bis über beide Ohren beschäftigt, Ergebnisse (scheinbar wissenschaftlicher Art) zu produzieren und zu publizieren. Dieses Vorgehen ist Routine. Open science ist der Versuch, dieser etablierten Tradition einen Spiegel vor die Nase zu halten, damit vielleicht die (teils skandalöse) Lücke zwischen Anspruch und Wirklichkeit erkannt werden kann; sofern man sich traut, hinzuschauen.
 
-> Der Grund für den (teils skandalös starken) Unterschied zwischen Anspruch und Wirklichkeit in manchen Wissenschaftszweigen scheint sehr deutlich hausgemacht zu sein. Während @ting2026rise die historische Entstehung aufzeigt, wird deren Konsequenz von @van2025open so beschrieben: 'The replication was [...] driven [...] by ubiquitious, problematic research practices and a strong set of publication incentives supporting such practices.' Auf Deutsch: Fragwürdige Forschung wurde STARK BELOHNT. Es scheint somit, dass mind. zwei Forscher/innen-Generationen (ca. 60 Jahre) überwiegend auf problematische Forschungspraktiken [@nagy2025bestiary; @miller2025questionable; @clark2025honest; @anderson2025questionable; @maassen2025impact] 'erfolgreich' konditioniert wurden. Wenn die Inhalte der kleinen Auswahl präsentierter Paper zutreffen sollten, dann wäre es nicht nur skandalös, sondern zusätzlich paradox, denn dann würde open science so etwas wie der Kampf von Wissenschafler/innen sein, die die derzeit gängige (weil STARK BELOHNTE) Forschungs- und somit auch Publikationspraxis zu reformieren versuchen. Doch wer genau wäre es, der diese Reformationsversuche erschwert, wenn nicht viele der 'erfolgreich' konditionierten Wissenschaftler/innen, die zudem die nächste Generation darin trainiert, 'erfolgreich' zu sein?!
+> Der Grund für den (teils skandalös starken) Unterschied zwischen Anspruch und Wirklichkeit in manchen Wissenschaftszweigen scheint sehr deutlich hausgemacht zu sein. Während @ting2026rise die historische Entstehung aufzeigt, wird deren Konsequenz von @van2025open so beschrieben: 'The replication crisis was [...] driven [...] by ubiquitious, problematic research practices and a strong set of publication incentives supporting such practices.' Auf Deutsch: Fragwürdige Forschung wurde STARK BELOHNT. Es scheint somit, dass mind. zwei Forscher/innen-Generationen (ca. 60 Jahre) überwiegend auf problematische Forschungspraktiken [@nagy2025bestiary; @miller2025questionable; @clark2025honest; @anderson2025questionable; @maassen2025impact] 'erfolgreich' konditioniert wurden. Wenn die Inhalte der kleinen Auswahl präsentierter Paper zutreffen sollten, dann wäre es nicht nur skandalös, sondern zusätzlich paradox, denn dann würde open science so etwas wie der Kampf von Wissenschafler/innen sein, die die derzeit gängige (weil STARK BELOHNTE) Forschungs- und somit auch Publikationspraxis zu reformieren versuchen. Doch wer genau wäre es, der diese Reformationsversuche erschwert, wenn nicht viele der 'erfolgreich' konditionierten Wissenschaftler/innen, die zudem die nächste Generation darin trainiert, 'erfolgreich' zu sein?!
 
 **Fazit**: Aus allem, das oben steht, folgt, dass einzig und allein die ernsthafte subjektive Auseinandersetzung des/der Wissenschaftler/in mit einer bestimmten Problematik zählt, z.B. wirkt Therapiekomponente x wie beabsichtigt auf Symptomkomponente y? Diese Auseinandersetzung muss für andere nachvollziehbar (somit objektiv) transparent gemacht werden. Open science betont allerhöchstens, dass die Transparenz lückenlos sein muss, damit zu 'theoretisch nachvollziehbar' auch noch 'praktisch reproduzierbar' hinzutritt. Somit bedeutet open science hauptsächlich eine gut dokumentierte, (selbst-)kritische Auseinandersetzung mit einem problematischen Inhalt. Jahrzehntelanges Beharren auf statistischen Hypothesentests mit fixem 5% Signifikanzniveau ist in mehrfacher Hinsicht das genaue Gegenteil einer (selbst-)kritischen Auseinandersetzung.
+
+### Logistische Regression
+
+Dieser Beitrag zeigt eine neuartige Perspektive darauf, was in der maximal komprimierten Ergebnisausgabe der logistischen Regression enthalten ist. Meine Absicht dahinter ist dieselbe wie in meinem R Paket [correlatio](https://cran.r-project.org/web/packages/correlatio/vignettes/correlatio.html), nämlich den komprimierten Inhalt visuell soweit zu entfalten, damit insbesondere auch (statistischen) Laien klar werden könnte, was die komprimierten Ergebnisse anzeigen. Solange dies unklar oder nicht klar genug ist, solange werden Ergebnisausgaben entweder völlig ignoriert oder falsch eingeschätzt, z.B. (masslos) überbewertet. Sobald Ergebnisausgaben klar genug sind, kann gezielt(er) und nüchtern(er) darüber gesprochen werden, welchen inhaltlichen Informationsgehalt die Ergebnisse haben, was natürlich auch einschliesst, dass sie keinen Informationsgehalt haben.
+
+Eine weitere, zentrale Motivation dieser Darstellung ist die vielfache Beobachtung, dass Menschen, z.B. Studierende und Doktorierende, einfache Verständnisfragen zu Ergebnisausgaben der logistischen Regression entweder gar nicht oder nicht (völlig) richtig beantworten können. Und dies, obwohl sie mit solchen und ähnlichen Ergebnisausgaben sehr häufig zu tun haben. Dies ist beschämend, aber leider plausibel, da die universitäre Lehre in den letzten Jahrzehnten mehr und mehr zur Massenabfertigung verkommen ist, was mit prinzipiellem Verstehen nicht vereinbar ist. Jedoch kann das Verstehen eines Prinzips leider (oder zum Glück) nicht durch mechanisches Imitieren ersetzt werden. Nun aber zur Darstellung. Der gesamte R code ist im R script LogregViz [hier](https://github.com/mmiche/opensciencefs26/tree/main) enthalten, d.h. in diesem Dokument soll ausschliesslich der relevante Output zu sehen sein, der dem Transport meiner Absicht nutzt.
+
+```{r chunk24, echo=FALSE, eval=TRUE}
+library(aplore3)
+# All variables in vars are dichotomous, e.g., alive or dead, no or yes, etc.
+vars <- c("death", "gender", "inh_inj", "flame", "race")
+burn1000Num <- burn1000[,vars]
+# Change the columns in vars from factor to numeric.
+for(i in vars) {
+    if(any(c("gender", "race") == i)) {
+        burn1000Num[,i] <- abs(as.numeric(burn1000Num[,i]) - 2)
+    } else {
+        burn1000Num[,i] <- as.numeric(burn1000Num[,i]) - 1
+    }
+}
+# Check, how many observations for each
+apply(burn1000Num, 2, function(x) table(x))
+
+# Result output from logistic regression
+coefficients(summary(glm(death ~  gender + inh_inj + flame + race, family = binomial, data = burn1000Num)))
+
+# eg = expand.grid
+# This are ALL the groups that are produced,
+# by combining each level of one of these
+# binary predictors with the levels of the
+# remaining predictors.
+eg <- base::expand.grid(
+    gender=0:1,
+    inh_inj=0:1,
+    flame=0:1,
+    race=0:1
+)
+# sum3, because the sum exludes gender.
+sum3 <- apply(eg[,-1], 1, sum)
+# Produce increasing order of whether just
+# one of the 3 predictors is present, two,
+# or all 3.
+eg <- eg[order(sum3),]
+cbind(eg, sort(sum3))
+```
+
+Der erste Outputteil zeigt an, wie viele der 1000 Beobachtungen Klasse 0 und wie viele Klasse 1 angehören, z.B. 850 nicht gestorben, 150 gestorben. Es folgt der (komprimierte) Output der logistischen Regression. Zuletzt sieht man die 16 Gruppen, die intern im Modell gebildet werden. Zur leichteren Verständlichkeit der abschliessenden Visualisierung sind die 16 Zeilen danach geordnet, ob von den 3 Prädiktoren inh_inj, flame und race keiner, einer, zwei oder alle drei vorhanden sind, getrennt für Männer (gender = 0) und Frauen.
+
+```{r chunk25, echo=FALSE, eval=TRUE, warning=FALSE}
+d1 <- burn1000Num[,-1]
+datString <- as.character(unlist(d1))
+datStringMat <- matrix(datString, nrow=nrow(d1))
+
+datStringLs <- list()
+for(i in 1:nrow(datStringMat)) {
+    datStringLs[[i]] <- paste0(datStringMat[i,], collapse = "")
+}
+datStringVec <- unlist(datStringLs)
+
+rows <- cases <- c()
+for(i in 1:nrow(eg)) {
+    idx_i <- which(datStringVec %in% paste0(eg[i,], collapse = ""))
+    rows <- c(rows, nrow(burn1000Num[idx_i,]))
+    cases <- c(cases, sum(burn1000Num[idx_i,"death"]))
+}
+perc <- cases/rows *100
+perc[is.na(perc)] <- NA
+resDf <- data.frame(rows, cases, Percent=perc, gender=eg$gender)
+resDf$gender <- forcats::as_factor(resDf$gender)
+resDf
+ggplot(data=resDf, aes(x=1:nrow(resDf), y=Percent, color=gender)) +
+    geom_point()
+```
+
+In den 16 Zeilen oberhalb der Graphik sehen wir die Zahlen, die visualisiert wurden und wie sie zustande kamen. Beispiel: 156 der 1000 Beobachtungen sind Männer, bei denen keiner der 3 Prädiktoren (inh_inj, flame, race) vorhanden ist und sieben Todesfälle (4.49%) vorkamen. Zwei der insgesamt 16 Gruppen (Gruppe 4 und 12) sind leer (keinerlei Beobachtungen).
+
+Die Tendenz in der Graphik zeigt (nach Geschlecht getrennt) an, dass mit steigender Menge vorliegender Prädiktoren (= Klasse 1 statt 0 in inh_inj, flame und race) der Outcome death häufiger vorkam. Die visualisierte Tendenz ist völlig separat zu betrachten vom Output der logistischen Regression, d.h. man kann nicht sagen, dass die logistische Regression 'exakt' das als Ergebnis ausgibt, was in der Graphik zu sehen ist. Wichtig ist, dass das visualisierte **Muster** die exakt selben Daten verwendet wie die logistische Regression, weshalb jene ansteigende Tendenz sowohl hier wie auch dort zum Ausdruck kommen muss. Die Visualisierung soll also 'nur' dem **intuitiven Verständnis** dessen dienen, was in der (rein numerischen) Ergebnisausgabe, wenn isoliert betrachtet, dem intuitiven Verständnis überhaupt nicht hilft. Ich vermute, dass ein **klares Verständnis** stark auf das intuitive Verständnis angewiesen ist, zumindest bei einigen, vielleicht sogar bei vielen Menschen.
+
+Es folgt die paarweise Gegenüberstellung jedes Prädiktors und des Outcome:
+
+```{r chunk26, echo=FALSE, eval=TRUE, warning=FALSE}
+for(i in vars[-1]) {
+    print(prop.table(table(burn1000Num[,c(i, "death")]), margin=1)*100)
+    cat("-----------\n")
+}
+```
+
+Bis auf race ist es bei den anderen Prädiktoren so, dass der Outcome häufiger in der Klasse 1 des Prädiktors vorkam als in Klasse 0, z.B. 16.6% bei den Frauen gegenüber 14.3% bei den Männern. Das zeigt sich auch im Vorzeichen der Estimates, d.h. positiv bei den drei Prädiktoren gender, inh_inj und flame, negativ bei race. **Vorsicht**: Dies muss nicht immer so sein, siehe das [statistische Artefakt weiter oben](#inzidenz-und-regressionsmodell) in diesem Dokument.
+
+Nebenbemerkung: In vielen Lehrmaterialien liest man, dass der Intercept (häufig) ohne Bedeutung sei und deshalb ignoriert werden könne. Manche Personen können das jedoch leider völlig falsch verstehen, so als ob er 'völlig egal' sei. Der Intercept gehört aber zum Modell dazu, d.h. ohne Intercept kein Modell.
+
+Ich schliesse den Eintrag 'Logistische Regression' damit ab, deutlich zu zeigen, **exakt** welcher Outcome eigentlich modeliert wird, nämlich der log odds der Outcomewahrscheinlichkeit. Hierfür verwende ich 15 simulierte Zahlen, die keinerlei Bedeutung zu haben brauchen, denn es geht einzig darum, zu verstehen, was **exakt** das Regressionsgewicht anzeigt, und zwar dasselbe wie immer: Durchschnittliche Änderung des modelierten Outcomes je Erhöhung des Prädiktors um eine Einheit.
+
+```{r chunk27, echo=FALSE, eval=TRUE}
+simDat <- data.frame(
+    y = rep(c(0,1), times=c(8,7)),
+    x = c(142, 145, 145, 146, 150, 153, 154, 162,
+          155, 156, 157, 161, 162, 163, 166))
+lgm <- glm(y ~ x, family = binomial(link="logit"), data=simDat)
+simDat$prob <- lgm$fitted.values
+simDat$logOddsProb <- log(simDat$prob/(1-simDat$prob))
+simDat
+coefficients(lgm)
+```
+
+Ich prüfe zwei Mal, ob das Regressionsgewicht .3405161 stimmt. Einmal in Zeilen 9 und 10, weil dort der Prädiktor sich um nur eine Einheit unterscheidet (155 zu 156). Und einmal in Zeilen 4 und 5, wo sich der Prädiktor um vier Einheiten unterscheidet (146 zu 150). Der modelierte Outcome steht in Spalte logOddsProb.
+
+```{r chunk28, echo=TRUE, eval=TRUE}
+# Difference in the modeled outcome between row 10 and 9:
+simDat$logOddsProb[10] - simDat$logOddsProb[9]
+# One more time? Select rows 4 and 5:
+# Difference in predictor is 4 (150 - 146).
+# Difference in modeled outcome divided by 4 = regression weight.
+(simDat$logOddsProb[5] - simDat$logOddsProb[4])/4
+```
+
+Siehe Codebeispiel: Differenz zwischen logOddsProb in Zeilen 9 und 10 ist gleich dem Regressionsgewicht und auch in Zeilen 4 und 5 entspricht es dem Regressionsgewicht, nachdem man durch 4 geteilt hat, weil der Unterschied 4 Prädiktoreinheiten sind.
+
+**Fazit**: In der wissenschaftlichen Psychologie wird **extrem** häufig ein parametrischer statistischer Test durchgeführt, z.B. eine Survivalanalyse, der zur Familie des *verallgemeinerten linearen Modells* gehört bzw. dieser Familie sehr nahe steht. Das bedeutet, dass das Prinzip permanent dasselbe ist (durchschnittliche Veränderung des Outcome je Erhöhung des Prädiktors um eine Einheit). Das legt nahe, einmal dieses Prinzip durchschaut und verstanden zu haben (auch intuitiv), um es in der Folge mit berechtigter Selbstsicherheit und Selbstvertrauen anwenden zu können oder es gegebenenfalls, wenn nötig, abändern zu können. Sogar wenn das unnötig sein sollte, eine selbstsichere Verwendung eines Werkzeugs ist sowohl in der Wissenschaft als auch in jedem Handwerk eine selbstverständliche Notwendigkeit, ohne die kein gutes Ergebnis zustande kommen kann, mit Ausnahme extrem seltener Zufälle.
+
+Eine vielleicht positive Konsequenz eines **klaren** Verständnisses von Regressionsgewichten könnte sein, dass Studierende realisieren, dass ein Regressionsgewicht ziemlich uninformativ ist und gar nicht unbedingt das zu erkennen gibt, worum es dem/der Studierenden eigentlich geht. Dann also würde der/die Studierende vielleicht ganz automatisch aus Unzufriedenheit eine bessere Herangehensweise wählen, z.B. mehr Details durch spezifischere Vergleichsmethoden ([siehe oben](#emmeans-und-marginaleffects)) liefern und/oder mit geeigneten Visualisierungen auf das eigentlich relevante Geschehen aufmerksam machen. Damit wären 2 Fliegen mit einer Klappe geschlagen: Open science wäre gedient, genauso wie der wissenschaftlichen Methodik (= nicht alles so machen wie alle anderen).
 
 <!--
 Melodie im Hintergrund vom likelihood video: Anthem of Inspiration

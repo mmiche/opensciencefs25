@@ -1,7 +1,7 @@
 Open science FS26
 ================
 Marcel Miché
-2026-05-11
+2026-05-12
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
@@ -51,6 +51,7 @@ Marcel Miché
     - [Zwischenfazit 3](#zwischenfazit-3)
     - [Methodische Sicherheit 2](#methodische-sicherheit-2)
     - [Wissenschaftliche Methodik](#wissenschaftliche-methodik)
+    - [Logistische Regression](#logistische-regression)
   - [Lesehinweise](#lesehinweise)
 - [Literaturverzeichnis](#literaturverzeichnis)
 
@@ -3101,7 +3102,7 @@ traut, hinzuschauen.
 > Anspruch und Wirklichkeit in manchen Wissenschaftszweigen scheint sehr
 > deutlich hausgemacht zu sein. Während Ting (2026) die historische
 > Entstehung aufzeigt, wird deren Konsequenz von Van Til et al. (2025)
-> so beschrieben: ‘The replication was \[…\] driven \[…\] by
+> so beschrieben: ‘The replication crisis was \[…\] driven \[…\] by
 > ubiquitious, problematic research practices and a strong set of
 > publication incentives supporting such practices.’ Auf Deutsch:
 > Fragwürdige Forschung wurde STARK BELOHNT. Es scheint somit, dass
@@ -3132,6 +3133,239 @@ problematischen Inhalt. Jahrzehntelanges Beharren auf statistischen
 Hypothesentests mit fixem 5% Signifikanzniveau ist in mehrfacher
 Hinsicht das genaue Gegenteil einer (selbst-)kritischen
 Auseinandersetzung.
+
+### Logistische Regression
+
+Dieser Beitrag zeigt eine neuartige Perspektive darauf, was in der
+maximal komprimierten Ergebnisausgabe der logistischen Regression
+enthalten ist. Meine Absicht dahinter ist dieselbe wie in meinem R Paket
+[correlatio](https://cran.r-project.org/web/packages/correlatio/vignettes/correlatio.html),
+nämlich den komprimierten Inhalt visuell soweit zu entfalten, damit
+insbesondere auch (statistischen) Laien klar werden könnte, was die
+komprimierten Ergebnisse anzeigen. Solange dies unklar oder nicht klar
+genug ist, solange werden Ergebnisausgaben entweder völlig ignoriert
+oder falsch eingeschätzt, z.B. (masslos) überbewertet. Sobald
+Ergebnisausgaben klar genug sind, kann gezielt(er) und nüchtern(er)
+darüber gesprochen werden, welchen inhaltlichen Informationsgehalt die
+Ergebnisse haben, was natürlich auch einschliesst, dass sie keinen
+Informationsgehalt haben.
+
+Eine weitere, zentrale Motivation dieser Darstellung ist die vielfache
+Beobachtung, dass Menschen, z.B. Studierende und Doktorierende, einfache
+Verständnisfragen zu Ergebnisausgaben der logistischen Regression
+entweder gar nicht oder nicht (völlig) richtig beantworten können. Und
+dies, obwohl sie mit solchen und ähnlichen Ergebnisausgaben sehr häufig
+zu tun haben. Dies ist beschämend, aber leider plausibel, da die
+universitäre Lehre in den letzten Jahrzehnten mehr und mehr zur
+Massenabfertigung verkommen ist, was mit prinzipiellem Verstehen nicht
+vereinbar ist. Jedoch kann das Verstehen eines Prinzips leider (oder zum
+Glück) nicht durch mechanisches Imitieren ersetzt werden. Nun aber zur
+Darstellung. Der gesamte R code ist im R script LogregViz
+[hier](https://github.com/mmiche/opensciencefs26/tree/main) enthalten,
+d.h. in diesem Dokument soll ausschliesslich der relevante Output zu
+sehen sein, der dem Transport meiner Absicht nutzt.
+
+    ##   death gender inh_inj flame race
+    ## 0   850    705     878   471  589
+    ## 1   150    295     122   529  411
+
+    ##                Estimate Std. Error     z value     Pr(>|z|)
+    ## (Intercept) -3.29464769  0.2654041 -12.4137040 2.202241e-35
+    ## gender       0.35531654  0.2215650   1.6036674 1.087874e-01
+    ## inh_inj      2.21376215  0.2306693   9.5971269 8.220385e-22
+    ## flame        1.43320100  0.2686265   5.3352929 9.539045e-08
+    ## race        -0.04836566  0.2140418  -0.2259636 8.212297e-01
+
+    ##    gender inh_inj flame race sort(sum3)
+    ## 1       0       0     0    0          0
+    ## 2       1       0     0    0          0
+    ## 3       0       1     0    0          1
+    ## 4       1       1     0    0          1
+    ## 5       0       0     1    0          1
+    ## 6       1       0     1    0          1
+    ## 9       0       0     0    1          1
+    ## 10      1       0     0    1          1
+    ## 7       0       1     1    0          2
+    ## 8       1       1     1    0          2
+    ## 11      0       1     0    1          2
+    ## 12      1       1     0    1          2
+    ## 13      0       0     1    1          2
+    ## 14      1       0     1    1          2
+    ## 15      0       1     1    1          3
+    ## 16      1       1     1    1          3
+
+Der erste Outputteil zeigt an, wie viele der 1000 Beobachtungen Klasse 0
+und wie viele Klasse 1 angehören, z.B. 850 nicht gestorben, 150
+gestorben. Es folgt der (komprimierte) Output der logistischen
+Regression. Zuletzt sieht man die 16 Gruppen, die intern im Modell
+gebildet werden. Zur leichteren Verständlichkeit der abschliessenden
+Visualisierung sind die 16 Zeilen danach geordnet, ob von den 3
+Prädiktoren inh_inj, flame und race keiner, einer, zwei oder alle drei
+vorhanden sind, getrennt für Männer (gender = 0) und Frauen.
+
+    ##    rows cases   Percent gender
+    ## 1   156     7  4.487179      0
+    ## 2    74     3  4.054054      1
+    ## 3     3     1 33.333333      0
+    ## 4     0     0        NA      1
+    ## 5   219    29 13.242009      0
+    ## 6    65    14 21.538462      1
+    ## 7   149     5  3.355705      0
+    ## 8    86     3  3.488372      1
+    ## 9    55    34 61.818182      0
+    ## 10   17     7 41.176471      1
+    ## 11    3     1 33.333333      0
+    ## 12    0     0        NA      1
+    ## 13   94    10 10.638298      0
+    ## 14   35     7 20.000000      1
+    ## 15   26    14 53.846154      0
+    ## 16   18    15 83.333333      1
+
+![](osfs26_files/figure-gfm/chunk25-1.png)<!-- -->
+
+In den 16 Zeilen oberhalb der Graphik sehen wir die Zahlen, die
+visualisiert wurden und wie sie zustande kamen. Beispiel: 156 der 1000
+Beobachtungen sind Männer, bei denen keiner der 3 Prädiktoren (inh_inj,
+flame, race) vorhanden ist und sieben Todesfälle (4.49%) vorkamen. Zwei
+der insgesamt 16 Gruppen (Gruppe 4 und 12) sind leer (keinerlei
+Beobachtungen).
+
+Die Tendenz in der Graphik zeigt (nach Geschlecht getrennt) an, dass mit
+steigender Menge vorliegender Prädiktoren (= Klasse 1 statt 0 in
+inh_inj, flame und race) der Outcome death häufiger vorkam. Die
+visualisierte Tendenz ist völlig separat zu betrachten vom Output der
+logistischen Regression, d.h. man kann nicht sagen, dass die logistische
+Regression ‘exakt’ das als Ergebnis ausgibt, was in der Graphik zu sehen
+ist. Wichtig ist, dass das visualisierte **Muster** die exakt selben
+Daten verwendet wie die logistische Regression, weshalb jene ansteigende
+Tendenz sowohl hier wie auch dort zum Ausdruck kommen muss. Die
+Visualisierung soll also ‘nur’ dem **intuitiven Verständnis** dessen
+dienen, was in der (rein numerischen) Ergebnisausgabe, wenn isoliert
+betrachtet, dem intuitiven Verständnis überhaupt nicht hilft. Ich
+vermute, dass ein **klares Verständnis** stark auf das intuitive
+Verständnis angewiesen ist, zumindest bei einigen, vielleicht sogar bei
+vielen Menschen.
+
+Es folgt die paarweise Gegenüberstellung jedes Prädiktors und des
+Outcome:
+
+    ##       death
+    ## gender        0        1
+    ##      0 85.67376 14.32624
+    ##      1 83.38983 16.61017
+    ## -----------
+    ##        death
+    ## inh_inj         0         1
+    ##       0 91.116173  8.883827
+    ##       1 40.983607 59.016393
+    ## -----------
+    ##      death
+    ## flame         0         1
+    ##     0 95.753715  4.246285
+    ##     1 75.425331 24.574669
+    ## -----------
+    ##     death
+    ## race        0        1
+    ##    0 83.87097 16.12903
+    ##    1 86.61800 13.38200
+    ## -----------
+
+Bis auf race ist es bei den anderen Prädiktoren so, dass der Outcome
+häufiger in der Klasse 1 des Prädiktors vorkam als in Klasse 0, z.B.
+16.6% bei den Frauen gegenüber 14.3% bei den Männern. Das zeigt sich
+auch im Vorzeichen der Estimates, d.h. positiv bei den drei Prädiktoren
+gender, inh_inj und flame, negativ bei race. **Vorsicht**: Dies muss
+nicht immer so sein, siehe das [statistische Artefakt weiter
+oben](#inzidenz-und-regressionsmodell) in diesem Dokument.
+
+Nebenbemerkung: In vielen Lehrmaterialien liest man, dass der Intercept
+(häufig) ohne Bedeutung sei und deshalb ignoriert werden könne. Manche
+Personen können das jedoch leider völlig falsch verstehen, so als ob er
+‘völlig egal’ sei. Der Intercept gehört aber zum Modell dazu, d.h. ohne
+Intercept kein Modell.
+
+Ich schliesse den Eintrag ‘Logistische Regression’ damit ab, deutlich zu
+zeigen, **exakt** welcher Outcome eigentlich modeliert wird, nämlich der
+log odds der Outcomewahrscheinlichkeit. Hierfür verwende ich 15
+simulierte Zahlen, die keinerlei Bedeutung zu haben brauchen, denn es
+geht einzig darum, zu verstehen, was **exakt** das Regressionsgewicht
+anzeigt, und zwar dasselbe wie immer: Durchschnittliche Änderung des
+modelierten Outcomes je Erhöhung des Prädiktors um eine Einheit.
+
+    ##    y   x        prob logOddsProb
+    ## 1  0 142 0.009414686  -4.6560252
+    ## 2  0 145 0.025718820  -3.6344769
+    ## 3  0 145 0.025718820  -3.6344769
+    ## 4  0 146 0.035778949  -3.2939609
+    ## 5  0 150 0.126540811  -1.9318965
+    ## 6  0 153 0.286928572  -0.9103483
+    ## 7  0 154 0.361275543  -0.5698322
+    ## 8  0 162 0.896069582   2.1542965
+    ## 9  1 155 0.442920880  -0.2293161
+    ## 10 1 156 0.527771378   0.1112000
+    ## 11 1 157 0.611047160   0.4517160
+    ## 12 1 161 0.859818146   1.8137804
+    ## 13 1 162 0.896069582   2.1542965
+    ## 14 1 163 0.923777358   2.4948125
+    ## 15 1 166 0.971149715   3.5163608
+
+    ## (Intercept)           x 
+    ## -53.0093089   0.3405161
+
+Ich prüfe zwei Mal, ob das Regressionsgewicht .3405161 stimmt. Einmal in
+Zeilen 9 und 10, weil dort der Prädiktor sich um nur eine Einheit
+unterscheidet (155 zu 156). Und einmal in Zeilen 4 und 5, wo sich der
+Prädiktor um vier Einheiten unterscheidet (146 zu 150). Der modelierte
+Outcome steht in Spalte logOddsProb.
+
+``` r
+# Difference in the modeled outcome between row 10 and 9:
+simDat$logOddsProb[10] - simDat$logOddsProb[9]
+```
+
+    ## [1] 0.3405161
+
+``` r
+# One more time? Select rows 4 and 5:
+# Difference in predictor is 4 (150 - 146).
+# Difference in modeled outcome divided by 4 = regression weight.
+(simDat$logOddsProb[5] - simDat$logOddsProb[4])/4
+```
+
+    ## [1] 0.3405161
+
+Siehe Codebeispiel: Differenz zwischen logOddsProb in Zeilen 9 und 10
+ist gleich dem Regressionsgewicht und auch in Zeilen 4 und 5 entspricht
+es dem Regressionsgewicht, nachdem man durch 4 geteilt hat, weil der
+Unterschied 4 Prädiktoreinheiten sind.
+
+**Fazit**: In der wissenschaftlichen Psychologie wird **extrem** häufig
+ein parametrischer statistischer Test durchgeführt, z.B. eine
+Survivalanalyse, der zur Familie des *verallgemeinerten linearen
+Modells* gehört bzw. dieser Familie sehr nahe steht. Das bedeutet, dass
+das Prinzip permanent dasselbe ist (durchschnittliche Veränderung des
+Outcome je Erhöhung des Prädiktors um eine Einheit). Das legt nahe,
+einmal dieses Prinzip durchschaut und verstanden zu haben (auch
+intuitiv), um es in der Folge mit berechtigter Selbstsicherheit und
+Selbstvertrauen anwenden zu können oder es gegebenenfalls, wenn nötig,
+abändern zu können. Sogar wenn das unnötig sein sollte, eine
+selbstsichere Verwendung eines Werkzeugs ist sowohl in der Wissenschaft
+als auch in jedem Handwerk eine selbstverständliche Notwendigkeit, ohne
+die kein gutes Ergebnis zustande kommen kann, mit Ausnahme extrem
+seltener Zufälle.
+
+Eine vielleicht positive Konsequenz eines **klaren** Verständnisses von
+Regressionsgewichten könnte sein, dass Studierende realisieren, dass ein
+Regressionsgewicht ziemlich uninformativ ist und gar nicht unbedingt das
+zu erkennen gibt, worum es dem/der Studierenden eigentlich geht. Dann
+also würde der/die Studierende vielleicht ganz automatisch aus
+Unzufriedenheit eine bessere Herangehensweise wählen, z.B. mehr Details
+durch spezifischere Vergleichsmethoden ([siehe
+oben](#emmeans-und-marginaleffects)) liefern und/oder mit geeigneten
+Visualisierungen auf das eigentlich relevante Geschehen aufmerksam
+machen. Damit wären 2 Fliegen mit einer Klappe geschlagen: Open science
+wäre gedient, genauso wie der wissenschaftlichen Methodik (= nicht alles
+so machen wie alle anderen).
 
 <!--
 Melodie im Hintergrund vom likelihood video: Anthem of Inspiration
