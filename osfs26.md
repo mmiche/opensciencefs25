@@ -3160,10 +3160,10 @@ universitäre Lehre in den letzten Jahrzehnten mehr und mehr zur
 Massenabfertigung verkommen ist, was mit prinzipiellem Verstehen nicht
 vereinbar ist. Jedoch kann das Verstehen eines Prinzips leider (oder zum
 Glück) nicht durch mechanisches Imitieren ersetzt werden. Nun aber zur
-Darstellung. Der gesamte R code ist im R script LogregViz
-[hier](https://github.com/mmiche/opensciencefs26/tree/main) enthalten,
+Darstellung. Der gesamte R code ist in logregViz.R enthalten (Download
+script von [hier](https://github.com/mmiche/opensciencefs26/tree/main)),
 d.h. in diesem Dokument soll ausschliesslich der relevante Output zu
-sehen sein, der dem Transport meiner Absicht nutzt.
+sehen sein, der dem Transport meiner Absicht dient.
 
     ##   death gender inh_inj flame race
     ## 0   850    705     878   471  589
