@@ -3148,7 +3148,7 @@ oder falsch eingeschätzt, z.B. (masslos) überbewertet. Sobald
 Ergebnisausgaben klar genug sind, kann gezielt(er) und nüchtern(er)
 darüber gesprochen werden, welchen inhaltlichen Informationsgehalt die
 Ergebnisse haben, was natürlich auch einschliesst, dass sie keinen
-Informationsgehalt haben.
+Informationsgehalt haben könnten.
 
 Eine weitere, zentrale Motivation dieser Darstellung ist die vielfache
 Beobachtung, dass Menschen, z.B. Studierende und Doktorierende, einfache
