@@ -1,7 +1,7 @@
 Open science FS26
 ================
 Marcel Miché
-2026-05-12
+2026-05-13
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
@@ -3359,8 +3359,8 @@ Regressionsgewichten könnte sein, dass Studierende realisieren, dass ein
 Regressionsgewicht ziemlich uninformativ ist (weil extrem komprimiert)
 und gar nicht unbedingt das zu erkennen gibt, was dem/der Studierenden
 eigentlich wichtig ist. Dann also würde der/die Studierende vielleicht
-ganz automatisch aus Unzufriedenheit eine bessere Herangehensweise
-wählen, z.B. mehr Details durch spezifischere Vergleichsmethoden ([siehe
+ganz natürlich aus Unzufriedenheit eine bessere Herangehensweise wählen,
+z.B. mehr Details durch spezifischere Vergleichsmethoden ([siehe
 oben](#emmeans-und-marginaleffects)) liefern und/oder mit geeigneten
 Visualisierungen auf das eigentlich relevante Geschehen aufmerksam
 machen. Damit wären 2 Fliegen mit einer Klappe geschlagen: Open science
