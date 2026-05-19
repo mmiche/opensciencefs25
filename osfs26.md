@@ -1,7 +1,7 @@
 Open science FS26
 ================
 Marcel Miché
-2026-05-13
+2026-05-19
 
 - [Misstrauen, Skepsis](#misstrauen-skepsis)
   - [Was ist das hier?](#was-ist-das-hier)
@@ -3338,6 +3338,18 @@ Siehe Codebeispiel: Differenz zwischen logOddsProb in Zeilen 9 und 10
 ist gleich dem Regressionsgewicht und auch in Zeilen 4 und 5 entspricht
 es dem Regressionsgewicht, nachdem man durch 4 geteilt hat, weil der
 Unterschied 4 Prädiktoreinheiten sind.
+
+Auf dieselbe Weise lässt sich auch der Intercept von -53.009309 prüfen,
+da der Intercept dem modellierten Outcome entspricht, bezogen auf den
+Prädiktorwert 0. Es liegen 142 Einheiten zwischen 0 und 142, woraus sich
+der Intercept ergibt als:
+
+``` r
+# -4.6560252 - (142 * .3405161) = -53.009309
+-4.6560252 - (142 * .3405161)
+```
+
+    ## [1] -53.00931
 
 **Fazit**: In der wissenschaftlichen Psychologie wird **extrem** häufig
 ein parametrischer statistischer Test durchgeführt, z.B. eine

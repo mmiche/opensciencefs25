@@ -1154,6 +1154,13 @@ simDat$logOddsProb[10] - simDat$logOddsProb[9]
 
 Siehe Codebeispiel: Differenz zwischen logOddsProb in Zeilen 9 und 10 ist gleich dem Regressionsgewicht und auch in Zeilen 4 und 5 entspricht es dem Regressionsgewicht, nachdem man durch 4 geteilt hat, weil der Unterschied 4 Prädiktoreinheiten sind.
 
+Auf dieselbe Weise lässt sich auch der Intercept von -53.009309 prüfen, da der Intercept dem modellierten Outcome entspricht, bezogen auf den Prädiktorwert 0. Es liegen 142 Einheiten zwischen 0 und 142, woraus sich der Intercept ergibt als:
+
+```{r chunk29, echo=TRUE, eval=TRUE}
+# -4.6560252 - (142 * .3405161) = -53.009309
+-4.6560252 - (142 * .3405161)
+```
+
 **Fazit**: In der wissenschaftlichen Psychologie wird **extrem** häufig ein parametrischer statistischer Test durchgeführt, z.B. eine Survivalanalyse, der zur Familie des *verallgemeinerten linearen Models* gehört bzw. dieser Familie sehr nahe steht. Das bedeutet, dass das Prinzip permanent dasselbe ist (durchschnittliche Veränderung des Outcome je Erhöhung des Prädiktors um eine Einheit). Das legt nahe, einmal dieses Prinzip durchschaut und verstanden zu haben (auch intuitiv), um es in der Folge mit berechtigtem Selbstvertrauen anwenden zu können oder es gegebenenfalls, wenn nötig, abändern zu können. Sogar wenn das unnötig sein sollte, eine selbstsichere Verwendung eines Werkzeugs ist sowohl in der Wissenschaft als auch in jedem Handwerk eine selbstverständliche Notwendigkeit, ohne die kein gutes Ergebnis zustande kommen kann, mit Ausnahme extrem seltener Zufälle (auf die man sich aber besser nicht verlassen möchte).
 
 Eine vielleicht positive Konsequenz eines **klaren** Verständnisses von Regressionsgewichten könnte sein, dass Studierende realisieren, dass ein Regressionsgewicht ziemlich uninformativ ist (weil extrem komprimiert) und gar nicht unbedingt das zu erkennen gibt, was dem/der Studierenden eigentlich wichtig ist. Dann also würde der/die Studierende vielleicht ganz natürlich aus Unzufriedenheit eine bessere Herangehensweise wählen, z.B. mehr Details durch spezifischere Vergleichsmethoden ([siehe oben](#emmeans-und-marginaleffects)) liefern und/oder mit geeigneten Visualisierungen auf das eigentlich relevante Geschehen aufmerksam machen. Damit wären 2 Fliegen mit einer Klappe geschlagen: Open science wäre gedient, genauso wie der wissenschaftlichen Methodik (= nicht zwingend alles so machen wie alle anderen, sondern gezielt nach eigenen Vorstellungen). Und wer weiss, vielleicht wäre das sogar ein erster Schritt in die richtige Richtung, nämlich raus aus der Replikationskrise.
